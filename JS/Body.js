@@ -33,7 +33,7 @@ window.addEventListener("scroll", function () {
 });
 
 /**
-* ?botón para voler al inicio de la página
+* ?botón para volver al inicio de la página
 */
 window.addEventListener("scroll", function () {
   /**
@@ -43,7 +43,7 @@ window.addEventListener("scroll", function () {
   function btnStart() {
     // Dividiendo el alto de todo el documento entre 4 para así extraer solo el 25% del documento.
     let btnAutomatic = document.documentElement.scrollHeight / 4;
-    // Cuando el scrollY se haya movido un 25% de todo el documento el botón de inicio se va a mostrar. 
+    // Cuando el vertical se haya movido un 25% de todo el documento el botón de inicio se va a mostrar. 
     document.querySelector('.btn-start').classList.toggle('on', scrollY >= btnAutomatic);
   };
 
@@ -61,7 +61,7 @@ window.addEventListener("scroll", function () {
 
     document.documentElement.scrollTop >= head + estudios + sobreMi + contacto
 
-    // si la barra de navegación se ubica justamente en la posición donde se encuentra el footer, el btn de "home" se eleverá un poco (los "486" es porque se estos se le agregan a la barra de forma que desconozco)
+    // si la barra de navegación se ubica justamente en la posición donde se encuentra el footer, el btn de "home" se eleverá un poco (los "486" es porque  estos se le agregan a la barra de forma que desconozco)
     if (document.documentElement.scrollTop >= document.documentElement.scrollHeight - (footer.offsetHeight) - 486) {
       document.querySelector('.btn-start').style.bottom = `${footer.offsetHeight + 10}px`;
     } else {
