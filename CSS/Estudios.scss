@@ -1,0 +1,486 @@
+
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+.estudios {
+	display: grid;
+	grid-column: 1/9;
+	grid-row: 2/3;
+	grid-template-columns: repeat(2,auto);
+	grid-template-rows: repeat(2, auto);
+	// titulo
+	.container-title-estudios {
+		background-color: var(--bg_aliceBlue);
+		justify-self: center;
+		place-items: center;
+		border-top: 2px solid var(--border_gray_claro);
+		border-left: 2px solid var(--border_gray_claro);
+		border-right: 2px solid var(--border_gray_claro);
+		box-shadow: 0 -10px 10px var(--shadow_black_opacity50);
+		padding: 0 5px;
+		width: fit-content;
+		text-align: center;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+		z-index: 10;
+		transition: 0.5s;
+
+		display: flex;
+		grid-column: 1/3;
+		grid-row: 1/2;
+		&.darkMode {
+			background-color: var(--bg_gray_oscuro);
+			box-shadow: 0 -10px 10px var(--shadow_white_opacity50);
+		}
+		// TITULO====================
+		.title-estudios {
+			font-size: 1.5rem;
+			font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+			margin-right: 10px;
+			color: var(--text_teal_opacity100);
+			transition: 0.5s;
+			&.darkMode {
+				color: var(--text_gray_claro);
+			}
+		}
+		// LOGO SVG====================
+		.svg-estudios {
+			width: 40px;
+			fill: var(--iconSVG_teal_opacity100);
+			transition: 0.5s;
+			&.darkMode {
+				fill: var(--iconSVG_gray_claro);
+			}
+		}
+	}
+	// contenido
+	.content-estudios {
+		gap: 10px;
+		border: 2px solid var(--border_gray_claro);
+		box-shadow: 0 0 10px var(--shadow_black_opacity100);
+		background-color: var(--bg_aliceBlue);
+		margin: 0 4% 25px 4%;
+		padding: 25px;
+		border-radius: 10px;
+		transition: 0.5s;
+		position: relative;
+		overflow: hidden;
+
+		display: grid;
+		grid-column: 1/3;
+		grid-row: 2/3;
+		grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+		// grid-template-rows: repeat(auto-fit, minmax(250px, 150px));
+		&.darkMode {
+			color: var(--text_gray_claro);
+			background-color: var(--bg_gray_oscuro);
+			box-shadow: 0 0 10px var(--shadow_white_opacity100);
+		}
+		/**
+	** Tarjetas del contenedor "Estudios".
+	*/
+		.container_dpw,
+		.container_microsoftOffice,
+		.container_window_nt,
+		.container_auxiliar_ventas,
+		.container-bachillerato,
+		.card_adobe {
+			overflow: hidden;
+			position: relative;
+			box-shadow: 0 0 5px var(--shadow_black_opacity25);
+			border-radius: 5px;
+			min-height: 200px;
+			transition: .5s;
+			.front-face {
+				width: 100%;
+				height: 100%;
+				border-radius: 5px;
+				background: var(--bg_gray_medioClaro);
+				place-items: center;
+				overflow: hidden;
+				transition: 0.5s;
+				position: absolute;
+
+				display: grid;
+				grid-template-columns: repeat(8, 1fr);
+				grid-template-rows: repeat(8, 1fr);
+				/**
+				** Titulos de las tarjetas de "Estudios".
+				*/
+				.title-dpw,
+				.title-office,
+				.title-windowNT,
+				.title-auxiliarVentas,
+				.title-bachillerato,
+				.title-adobe {
+					background: var(--bg_white_opacity25);
+					width: 100%;
+					font-size: 1rem;
+					color: var(--text_teal_opacity100);
+					text-shadow: 0 0 10px var(--shadow_white_opacity50);
+					text-align: center;
+					transition: 0.5s;
+					margin-top: -5px;
+
+					grid-column: 1/9;
+					grid-row: 1/2;
+					&.darkMode {
+						color: var(--text_gray_medioOscuro);
+						text-shadow: 0 0 10px var(--shadow_white_opacity50);
+					}
+				}
+				/**
+			** Imagenes o Logos de las tarjetas de "Estudios".
+			*/
+				.svg-dpw,
+				.png-microsoftOffice,
+				.png-windowNT,
+				.svg-auxiliarVentas,
+				.svg-bachillerato,
+				.png-adobe {
+					width: 125px;
+					height: min-content;
+					place-self: center;
+
+					grid-column: 1/9;
+					grid-row: 2/8;
+				}
+				/**
+		** Contenedor para ver más información de las tarjetas de "Estudios".
+		*/
+				.container_masInfo {
+					width: 100%;
+					justify-content: space-between;
+					align-items: center;
+
+					display: flex;
+					grid-column: 1/9;
+					grid-row: 8/9;
+					// Logo del lugar estudiado
+					.lugarEstudio {
+						margin-bottom: 0;
+						.logo {
+							border-radius: 5px;
+							background: var(--bg_gray_claro);
+							padding: 5px;
+							margin-left: 5px;
+							width: 25px;
+							height: 25px;
+							cursor: pointer;
+							position: relative;
+						}
+						h2 {
+							color: var(--text_white_opacity100);
+							font-size: .7rem;
+							position: absolute;
+							background: var(--bg_teal_opacity100);
+							border-radius: 5px;
+							text-align: center;
+							padding: 0 5px;
+							bottom: 55px;
+							z-index: 50;
+							height: fit-content;
+							pointer-events: none;
+							opacity: 0;
+							&.darkMode {
+								color: var(--text_gray_oscuro);
+							}
+							&::before {
+								content: "";
+								width: 15px;
+								height: 15px;
+								background: var(--bg_teal_opacity100);
+								transform: rotateZ(45deg);
+								position: absolute;
+								z-index: -5;
+								bottom: -5px;
+								left: 15px;
+							}
+						}
+						&:hover h2 {
+							transition: 0.3s;
+							transition-delay: 0.3s;
+							opacity: 1;
+							pointer-events: none;
+						}
+					}
+					// botón para ver más sobre el contenido de la tarjeta
+					.verMas {
+						justify-items: end;
+						justify-content: space-between;
+						margin-right: 5px;
+
+						display: grid;
+						/**
+				** Botón "Mas"
+				*/
+						.btn_mas_SVG {
+							fill: var(--iconSVG_white_opacity100);
+							background-color: var(--bg_white_opacity25);
+							box-shadow: 0 0 10px var(--shadow_white_opacity50);
+							border: 3px solid var(--border_white_opacity100);
+							border-radius: 50%;
+							width: 20px;
+							height: 20px;
+							cursor: pointer;
+							transition: 0.5s;
+							&.darkMode {
+								border: 3px solid var(--iconSVG_gray_medioOscuro);
+								fill: var(--iconSVG_gray_medioOscuro);
+								text-shadow: 0 0 10px var(--shadow_white_opacity50);
+							}
+						}
+						.descripcion_btn_VerMas {
+							font-size: .7rem;
+							position: absolute;
+							transform: translateY(-40px);
+							background: var(--bg_teal_opacity100);
+							border-radius: 5px;
+							color: var(--text_white_opacity100);
+							padding: 0 5px;
+							z-index: 50;
+							opacity: 0;
+							bottom: 5px;
+							right: 0;
+							pointer-events: none;
+							&.darkMode {
+								text-shadow: 0 0 10px var(--shadow_white_opacity100);
+								color: var(--bg_gray_oscuro);
+							}
+							&::before {
+								content: "";
+								width: 15px;
+								height: 15px;
+								background: var(--bg_teal_opacity100);
+								position: absolute;
+								bottom: -5px;
+								right: 10px;
+								transform: rotate(45deg);
+								z-index: -5;
+							}
+						}
+						&:hover .descripcion_btn_VerMas {
+							transition: 0.3s;
+							transition-delay: 0.3s;
+							opacity: 1;
+							pointer-events: none;
+						}
+					}
+				}
+			}
+		}
+
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		.container_window_nt {
+			.front-face {
+				.png-windowNT {
+					width: 100px;
+				}
+			}
+		}
+	}
+}
+
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+@media screen and (max-width: 650px) {
+	.estudios {
+		/**
+	    ** Tarjetas del contenedor "Estudios".
+	    */
+		.container_dpw,
+		.container_microsoftOffice,
+		.container_window_nt,
+		.container_auxiliar_ventas,
+		.container-bachillerato,
+		.card_adobe {
+			.front-face {
+				/**
+			** Titulos de las tarjetas de "Estudios".
+			*/
+				.title-dpw,
+				.title-office,
+				.title-windowNT,
+				.title-auxiliarVentas,
+				.title-bachillerato,
+				.title-adobe {
+					background: var(--bg_white_opacity25);
+					width: 100%;
+					margin-top: -5px;
+					font-size: 1rem;
+					color: var(--text_teal_opacity100);
+					text-shadow: 0 0 10px var(--shadow_white_opacity50);
+					text-align: center;
+					transition: 0.5s;
+
+					grid-column: 1/9;
+					grid-row: 1/2;
+				}
+				/**
+			** Contenedor para ver más información de las tarjetas de "Estudios".
+			*/
+				.container_masInfo {
+					width: 100%;
+					justify-content: space-between;
+					align-items: center;
+
+					display: flex;
+					grid-column: 1/9;
+					grid-row: 8/9;
+					// Logo del lugar estudiado
+					.lugarEstudio {
+						margin-bottom: 0;
+						.logo {
+							border-radius: 5px;
+							background: var(--bg_gray_claro);
+							padding: 5px;
+							margin-left: 5px;
+							width: 25px;
+							height: 25px;
+							cursor: pointer;
+							position: relative;
+						}
+						h2 {
+							color: var(--text_white_opacity100);
+							font-size: .7rem;
+							position: absolute;
+							background: var(--bg_teal_opacity100);
+							border-radius: 5px;
+							text-align: center;
+							padding: 0 5px;
+							bottom: 55px;
+							z-index: 50;
+							height: fit-content;
+							pointer-events: none;
+							opacity: 0;
+
+							display: none;
+							&.darkMode {
+								color: var(--text_gray_oscuro);
+							}
+							&::before {
+								content: "";
+								width: 15px;
+								height: 15px;
+								background: var(--bg_teal_opacity100);
+								transform: rotateZ(45deg);
+								position: absolute;
+								z-index: -5;
+								bottom: -5px;
+								left: 15px;
+							}
+						}
+						&:hover h2 {
+							transition: 0.3s;
+							transition-delay: 0.3s;
+							opacity: 1;
+							pointer-events: none;
+						}
+					}
+					// botón para ver más sobre el contenido de la tarjeta
+					.verMas {
+						justify-items: end;
+						justify-content: space-between;
+						margin-right: 5px;
+
+						display: grid;
+						/**
+						** Botón "Mas"
+						*/
+						.btn_mas_SVG {
+							fill: var(--iconSVG_white_opacity100);
+							background-color: var(--bg_white_opacity25);
+							box-shadow: 0 0 10px var(--shadow_white_opacity50);
+							border: 3px solid var(--border_white_opacity100);
+							border-radius: 50%;
+							width: 20px;
+							height: 20px;
+							cursor: pointer;
+							transition: 0.5s;
+							&.darkMode {
+								border: 3px solid var(--iconSVG_gray_medioOscuro);
+								fill: var(--iconSVG_gray_medioOscuro);
+								text-shadow: 0 0 10px var(--shadow_white_opacity50);
+							}
+						}
+						.descripcion_btn_VerMas {
+							font-size: .7rem;
+							position: absolute;
+							transform: translateY(-40px);
+							background: var(--bg_teal_opacity100);
+							border-radius: 5px;
+							color: var(--text_white_opacity100);
+							padding: 0 5px;
+							z-index: 50;
+							opacity: 0;
+							bottom: 5px;
+							right: 0;
+							pointer-events: none;
+
+							display: none;
+							&.darkMode {
+								text-shadow: 0 0 10px var(--shadow_white_opacity100);
+								color: var(--bg_gray_oscuro);
+							}
+							&::before {
+								content: "";
+								width: 15px;
+								height: 15px;
+								background: var(--bg_teal_opacity100);
+								position: absolute;
+								bottom: -5px;
+								right: 10px;
+								transform: rotate(45deg);
+								z-index: -5;
+							}
+						}
+						&:hover .descripcion_btn_VerMas {
+							transition: 0.3s;
+							transition-delay: 0.3s;
+							opacity: 1;
+							pointer-events: none;
+						}
+					}
+				}
+			}
+		}
+
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+		.container_window_nt {
+			.front-face {
+				.png-windowNT {
+					width: 100px;
+				}
+			}
+		}
+	}
+}
