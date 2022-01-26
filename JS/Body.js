@@ -58,8 +58,6 @@ window.addEventListener("scroll", function () {
     let footer = document.querySelector('.footer');
     let docElem = document.documentElement;
 
-    console.log(docElem.scrollTop, docElem.scrollHeight)
-
     // variables para detectar las diferentes alturas de la barra de escroleo vertical
     let scroll486 = (docElem.scrollTop >= docElem.scrollHeight - (footer.offsetHeight) - 486);
     let scroll780 = (docElem.scrollTop >= docElem.scrollHeight - (footer.offsetHeight) - 780);

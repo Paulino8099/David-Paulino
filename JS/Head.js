@@ -15,6 +15,20 @@ window.addEventListener('scroll', function () {
     }
 });
 
+/**
+ * ?volviendo a inicio
+ */
+// volver a inicio al presionar el título principal
+backStart();
+function backStart() {
+    let titlePrimary = document.querySelector('.title-head');
+    titlePrimary.addEventListener('click', function () {
+        if (document.documentElement.scrollTop >= 5) {
+            document.documentElement.scrollTop = 0;
+        }
+    });
+}
+
 // agregando eventos a los botones del menú de navegación y creando condicionales para que el indicador se mueva a la posición del botón donde se escuchó el click.
 let btnNav = document.querySelector('.main-head').children;
 for (let i = 0; i < btnNav.length; i++) {
@@ -260,21 +274,3 @@ function main() {
         });
     };
 };
-
-// const sections = document.querySelectorAll('.contacto');
-
-// const observer = new IntersectionObserver((entradas, observador) => {
-
-//     entradas.forEach(entrada => {
-//         if (entrada.isIntersecting) {
-//             alert(125);
-//         }
-//     });
-// }, {
-//     threshold: 1,
-//     rootMargin: '0px 0px 50% 0px'
-// });
-
-// sections.forEach(entrada => {
-//     observer.observe(entrada);
-// })
