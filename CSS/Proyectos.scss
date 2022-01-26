@@ -12,7 +12,7 @@
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: repeat(2, auto);
 	// title
-	.container-title-proyectos {
+	.title-proyectos-container {
 		background-color: var(--bg_aliceBlue);
 		justify-self: center;
 		place-items: center;
@@ -49,7 +49,7 @@
 		}
 	}
 	// content
-	.container-proyectos {
+	.proyectos-container {
 		border: 2px solid var(--border_gray_claro);
 		box-shadow: 0 0 10px var(--shadow_black_opacity100);
 		background-color: var(--bg_aliceBlue);
@@ -134,7 +134,7 @@
 		grid-template-columns: repeat(2, auto);
 		grid-template-rows: repeat(2, auto);
 		// title
-		.container-title-proyectos {
+		.title-proyectos-container {
 			/**
 			*?	repeat
 			*/
@@ -158,7 +158,7 @@
 			}
 		}
 		// content
-		.container-proyectos {
+		.proyectos-container {
 			.content-proyectos {
 				transition: 0.5s;
 				position: relative;

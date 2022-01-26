@@ -13,7 +13,7 @@
 	grid-template-columns: repeat(2,auto);
 	grid-template-rows: repeat(2, auto);
 	// titulo
-	.container-title-estudios {
+	.title-study-container {
 		background-color: var(--bg_aliceBlue);
 		justify-self: center;
 		place-items: center;
@@ -37,7 +37,7 @@
 			box-shadow: 0 -10px 10px var(--shadow_white_opacity50);
 		}
 		// TITULO====================
-		.title-estudios {
+		.title-study {
 			font-size: 1.5rem;
 			font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 			margin-right: 10px;
@@ -58,7 +58,7 @@
 		}
 	}
 	// contenido
-	.content-estudios {
+	.study-content {
 		gap: 10px;
 		border: 2px solid var(--border_gray_claro);
 		box-shadow: 0 0 10px var(--shadow_black_opacity100);
@@ -83,12 +83,12 @@
 		/**
 	** Tarjetas del contenedor "Estudios".
 	*/
-		.container_dpw,
-		.container_microsoftOffice,
-		.container_window_nt,
-		.container_auxiliar_ventas,
-		.container-bachillerato,
-		.card_adobe {
+		.dpw-container,
+		.microsoftOffice-container,
+		.windowNT-container,
+		.auxVentas-container,
+		.bachillerato-container,
+		.adobe-card {
 			overflow: hidden;
 			position: relative;
 			box-shadow: 0 0 5px var(--shadow_black_opacity25);
@@ -152,7 +152,7 @@
 				/**
 		** Contenedor para ver más información de las tarjetas de "Estudios".
 		*/
-				.container_masInfo {
+				.masInfo-container {
 					width: 100%;
 					justify-content: space-between;
 					align-items: center;
@@ -281,7 +281,7 @@
 		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
 		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
 		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		.container_window_nt {
+		.windowNT-container {
 			.front-face {
 				.png-windowNT {
 					width: 100px;
@@ -303,12 +303,12 @@
 		/**
 	    ** Tarjetas del contenedor "Estudios".
 	    */
-		.container_dpw,
-		.container_microsoftOffice,
-		.container_window_nt,
-		.container_auxiliar_ventas,
-		.container-bachillerato,
-		.card_adobe {
+		.dpw-container,
+		.microsoftOffice-container,
+		.windowNT-container,
+		.auxVentas-container,
+		.bachillerato-container,
+		.adobe-card {
 			.front-face {
 				/**
 			** Titulos de las tarjetas de "Estudios".
@@ -334,7 +334,7 @@
 				/**
 			** Contenedor para ver más información de las tarjetas de "Estudios".
 			*/
-				.container_masInfo {
+				.masInfo-container {
 					width: 100%;
 					justify-content: space-between;
 					align-items: center;
@@ -475,7 +475,7 @@
 		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
 		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
 		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		.container_window_nt {
+		.windowNT-container {
 			.front-face {
 				.png-windowNT {
 					width: 100px;

@@ -10,7 +10,7 @@ document.querySelector(".btn_cancelar").addEventListener("click", () => {
 window.addEventListener("scroll", function () {
   const getPixelsStart = () => document.documentElement.scrollTop || document.body.scrollTop;
 
-  let containerIndicadorscroll = document.querySelector(".caja-container-indicadorScroll");
+  let containerIndicadorscroll = document.querySelector(".indicatorScroll-container");
   let IndicadorScroll = document.querySelector('.indicadorScroll');
   let indicadorPorcentaje = document.querySelector(".contador-porcentaje");
 

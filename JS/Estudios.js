@@ -1,9 +1,9 @@
 
 
-let contentStudies = document.querySelector('.content-estudios').children;
+let contentStudies = document.querySelector('.study-content').children;
 
 // Contenedor de información 
-let containerInfo = document.querySelector('.container-info');
+let containerInfo = document.querySelector('.info-container');
 
 // Titulo del contenedor de información.
 let titleInfo = document.getElementById('title-info');

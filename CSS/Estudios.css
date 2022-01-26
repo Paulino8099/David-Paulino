@@ -14,7 +14,7 @@
       grid-template-rows: repeat(2, auto);
 }
 
-.estudios .container-title-estudios {
+.estudios .title-study-container {
   background-color: var(--bg_aliceBlue);
   justify-self: center;
   place-items: center;
@@ -44,13 +44,13 @@
   grid-row: 1/2;
 }
 
-.estudios .container-title-estudios.darkMode {
+.estudios .title-study-container.darkMode {
   background-color: var(--bg_gray_oscuro);
   -webkit-box-shadow: 0 -10px 10px var(--shadow_white_opacity50);
           box-shadow: 0 -10px 10px var(--shadow_white_opacity50);
 }
 
-.estudios .container-title-estudios .title-estudios {
+.estudios .title-study-container .title-study {
   font-size: 1.5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-right: 10px;
@@ -59,22 +59,22 @@
   transition: 0.5s;
 }
 
-.estudios .container-title-estudios .title-estudios.darkMode {
+.estudios .title-study-container .title-study.darkMode {
   color: var(--text_gray_claro);
 }
 
-.estudios .container-title-estudios .svg-estudios {
+.estudios .title-study-container .svg-estudios {
   width: 40px;
   fill: var(--iconSVG_teal_opacity100);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.estudios .container-title-estudios .svg-estudios.darkMode {
+.estudios .title-study-container .svg-estudios.darkMode {
   fill: var(--iconSVG_gray_claro);
 }
 
-.estudios .content-estudios {
+.estudios .study-content {
   gap: 10px;
   border: 2px solid var(--border_gray_claro);
   -webkit-box-shadow: 0 0 10px var(--shadow_black_opacity100);
@@ -102,19 +102,19 @@
 	*/
 }
 
-.estudios .content-estudios.darkMode {
+.estudios .study-content.darkMode {
   color: var(--text_gray_claro);
   background-color: var(--bg_gray_oscuro);
   -webkit-box-shadow: 0 0 10px var(--shadow_white_opacity100);
           box-shadow: 0 0 10px var(--shadow_white_opacity100);
 }
 
-.estudios .content-estudios .container_dpw,
-.estudios .content-estudios .container_microsoftOffice,
-.estudios .content-estudios .container_window_nt,
-.estudios .content-estudios .container_auxiliar_ventas,
-.estudios .content-estudios .container-bachillerato,
-.estudios .content-estudios .card_adobe {
+.estudios .study-content .dpw-container,
+.estudios .study-content .microsoftOffice-container,
+.estudios .study-content .windowNT-container,
+.estudios .study-content .auxVentas-container,
+.estudios .study-content .bachillerato-container,
+.estudios .study-content .adobe-card {
   overflow: hidden;
   position: relative;
   -webkit-box-shadow: 0 0 5px var(--shadow_black_opacity25);
@@ -125,12 +125,12 @@
   transition: .5s;
 }
 
-.estudios .content-estudios .container_dpw .front-face,
-.estudios .content-estudios .container_microsoftOffice .front-face,
-.estudios .content-estudios .container_window_nt .front-face,
-.estudios .content-estudios .container_auxiliar_ventas .front-face,
-.estudios .content-estudios .container-bachillerato .front-face,
-.estudios .content-estudios .card_adobe .front-face {
+.estudios .study-content .dpw-container .front-face,
+.estudios .study-content .microsoftOffice-container .front-face,
+.estudios .study-content .windowNT-container .front-face,
+.estudios .study-content .auxVentas-container .front-face,
+.estudios .study-content .bachillerato-container .front-face,
+.estudios .study-content .adobe-card .front-face {
   width: 100%;
   height: 100%;
   border-radius: 5px;
@@ -157,42 +157,42 @@
 		*/
 }
 
-.estudios .content-estudios .container_dpw .front-face .title-dpw,
-.estudios .content-estudios .container_dpw .front-face .title-office,
-.estudios .content-estudios .container_dpw .front-face .title-windowNT,
-.estudios .content-estudios .container_dpw .front-face .title-auxiliarVentas,
-.estudios .content-estudios .container_dpw .front-face .title-bachillerato,
-.estudios .content-estudios .container_dpw .front-face .title-adobe,
-.estudios .content-estudios .container_microsoftOffice .front-face .title-dpw,
-.estudios .content-estudios .container_microsoftOffice .front-face .title-office,
-.estudios .content-estudios .container_microsoftOffice .front-face .title-windowNT,
-.estudios .content-estudios .container_microsoftOffice .front-face .title-auxiliarVentas,
-.estudios .content-estudios .container_microsoftOffice .front-face .title-bachillerato,
-.estudios .content-estudios .container_microsoftOffice .front-face .title-adobe,
-.estudios .content-estudios .container_window_nt .front-face .title-dpw,
-.estudios .content-estudios .container_window_nt .front-face .title-office,
-.estudios .content-estudios .container_window_nt .front-face .title-windowNT,
-.estudios .content-estudios .container_window_nt .front-face .title-auxiliarVentas,
-.estudios .content-estudios .container_window_nt .front-face .title-bachillerato,
-.estudios .content-estudios .container_window_nt .front-face .title-adobe,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .title-dpw,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .title-office,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .title-windowNT,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .title-auxiliarVentas,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .title-bachillerato,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .title-adobe,
-.estudios .content-estudios .container-bachillerato .front-face .title-dpw,
-.estudios .content-estudios .container-bachillerato .front-face .title-office,
-.estudios .content-estudios .container-bachillerato .front-face .title-windowNT,
-.estudios .content-estudios .container-bachillerato .front-face .title-auxiliarVentas,
-.estudios .content-estudios .container-bachillerato .front-face .title-bachillerato,
-.estudios .content-estudios .container-bachillerato .front-face .title-adobe,
-.estudios .content-estudios .card_adobe .front-face .title-dpw,
-.estudios .content-estudios .card_adobe .front-face .title-office,
-.estudios .content-estudios .card_adobe .front-face .title-windowNT,
-.estudios .content-estudios .card_adobe .front-face .title-auxiliarVentas,
-.estudios .content-estudios .card_adobe .front-face .title-bachillerato,
-.estudios .content-estudios .card_adobe .front-face .title-adobe {
+.estudios .study-content .dpw-container .front-face .title-dpw,
+.estudios .study-content .dpw-container .front-face .title-office,
+.estudios .study-content .dpw-container .front-face .title-windowNT,
+.estudios .study-content .dpw-container .front-face .title-auxiliarVentas,
+.estudios .study-content .dpw-container .front-face .title-bachillerato,
+.estudios .study-content .dpw-container .front-face .title-adobe,
+.estudios .study-content .microsoftOffice-container .front-face .title-dpw,
+.estudios .study-content .microsoftOffice-container .front-face .title-office,
+.estudios .study-content .microsoftOffice-container .front-face .title-windowNT,
+.estudios .study-content .microsoftOffice-container .front-face .title-auxiliarVentas,
+.estudios .study-content .microsoftOffice-container .front-face .title-bachillerato,
+.estudios .study-content .microsoftOffice-container .front-face .title-adobe,
+.estudios .study-content .windowNT-container .front-face .title-dpw,
+.estudios .study-content .windowNT-container .front-face .title-office,
+.estudios .study-content .windowNT-container .front-face .title-windowNT,
+.estudios .study-content .windowNT-container .front-face .title-auxiliarVentas,
+.estudios .study-content .windowNT-container .front-face .title-bachillerato,
+.estudios .study-content .windowNT-container .front-face .title-adobe,
+.estudios .study-content .auxVentas-container .front-face .title-dpw,
+.estudios .study-content .auxVentas-container .front-face .title-office,
+.estudios .study-content .auxVentas-container .front-face .title-windowNT,
+.estudios .study-content .auxVentas-container .front-face .title-auxiliarVentas,
+.estudios .study-content .auxVentas-container .front-face .title-bachillerato,
+.estudios .study-content .auxVentas-container .front-face .title-adobe,
+.estudios .study-content .bachillerato-container .front-face .title-dpw,
+.estudios .study-content .bachillerato-container .front-face .title-office,
+.estudios .study-content .bachillerato-container .front-face .title-windowNT,
+.estudios .study-content .bachillerato-container .front-face .title-auxiliarVentas,
+.estudios .study-content .bachillerato-container .front-face .title-bachillerato,
+.estudios .study-content .bachillerato-container .front-face .title-adobe,
+.estudios .study-content .adobe-card .front-face .title-dpw,
+.estudios .study-content .adobe-card .front-face .title-office,
+.estudios .study-content .adobe-card .front-face .title-windowNT,
+.estudios .study-content .adobe-card .front-face .title-auxiliarVentas,
+.estudios .study-content .adobe-card .front-face .title-bachillerato,
+.estudios .study-content .adobe-card .front-face .title-adobe {
   background: var(--bg_white_opacity25);
   width: 100%;
   font-size: 1rem;
@@ -210,82 +210,82 @@
   grid-row: 1/2;
 }
 
-.estudios .content-estudios .container_dpw .front-face .title-dpw.darkMode,
-.estudios .content-estudios .container_dpw .front-face .title-office.darkMode,
-.estudios .content-estudios .container_dpw .front-face .title-windowNT.darkMode,
-.estudios .content-estudios .container_dpw .front-face .title-auxiliarVentas.darkMode,
-.estudios .content-estudios .container_dpw .front-face .title-bachillerato.darkMode,
-.estudios .content-estudios .container_dpw .front-face .title-adobe.darkMode,
-.estudios .content-estudios .container_microsoftOffice .front-face .title-dpw.darkMode,
-.estudios .content-estudios .container_microsoftOffice .front-face .title-office.darkMode,
-.estudios .content-estudios .container_microsoftOffice .front-face .title-windowNT.darkMode,
-.estudios .content-estudios .container_microsoftOffice .front-face .title-auxiliarVentas.darkMode,
-.estudios .content-estudios .container_microsoftOffice .front-face .title-bachillerato.darkMode,
-.estudios .content-estudios .container_microsoftOffice .front-face .title-adobe.darkMode,
-.estudios .content-estudios .container_window_nt .front-face .title-dpw.darkMode,
-.estudios .content-estudios .container_window_nt .front-face .title-office.darkMode,
-.estudios .content-estudios .container_window_nt .front-face .title-windowNT.darkMode,
-.estudios .content-estudios .container_window_nt .front-face .title-auxiliarVentas.darkMode,
-.estudios .content-estudios .container_window_nt .front-face .title-bachillerato.darkMode,
-.estudios .content-estudios .container_window_nt .front-face .title-adobe.darkMode,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .title-dpw.darkMode,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .title-office.darkMode,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .title-windowNT.darkMode,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .title-auxiliarVentas.darkMode,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .title-bachillerato.darkMode,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .title-adobe.darkMode,
-.estudios .content-estudios .container-bachillerato .front-face .title-dpw.darkMode,
-.estudios .content-estudios .container-bachillerato .front-face .title-office.darkMode,
-.estudios .content-estudios .container-bachillerato .front-face .title-windowNT.darkMode,
-.estudios .content-estudios .container-bachillerato .front-face .title-auxiliarVentas.darkMode,
-.estudios .content-estudios .container-bachillerato .front-face .title-bachillerato.darkMode,
-.estudios .content-estudios .container-bachillerato .front-face .title-adobe.darkMode,
-.estudios .content-estudios .card_adobe .front-face .title-dpw.darkMode,
-.estudios .content-estudios .card_adobe .front-face .title-office.darkMode,
-.estudios .content-estudios .card_adobe .front-face .title-windowNT.darkMode,
-.estudios .content-estudios .card_adobe .front-face .title-auxiliarVentas.darkMode,
-.estudios .content-estudios .card_adobe .front-face .title-bachillerato.darkMode,
-.estudios .content-estudios .card_adobe .front-face .title-adobe.darkMode {
+.estudios .study-content .dpw-container .front-face .title-dpw.darkMode,
+.estudios .study-content .dpw-container .front-face .title-office.darkMode,
+.estudios .study-content .dpw-container .front-face .title-windowNT.darkMode,
+.estudios .study-content .dpw-container .front-face .title-auxiliarVentas.darkMode,
+.estudios .study-content .dpw-container .front-face .title-bachillerato.darkMode,
+.estudios .study-content .dpw-container .front-face .title-adobe.darkMode,
+.estudios .study-content .microsoftOffice-container .front-face .title-dpw.darkMode,
+.estudios .study-content .microsoftOffice-container .front-face .title-office.darkMode,
+.estudios .study-content .microsoftOffice-container .front-face .title-windowNT.darkMode,
+.estudios .study-content .microsoftOffice-container .front-face .title-auxiliarVentas.darkMode,
+.estudios .study-content .microsoftOffice-container .front-face .title-bachillerato.darkMode,
+.estudios .study-content .microsoftOffice-container .front-face .title-adobe.darkMode,
+.estudios .study-content .windowNT-container .front-face .title-dpw.darkMode,
+.estudios .study-content .windowNT-container .front-face .title-office.darkMode,
+.estudios .study-content .windowNT-container .front-face .title-windowNT.darkMode,
+.estudios .study-content .windowNT-container .front-face .title-auxiliarVentas.darkMode,
+.estudios .study-content .windowNT-container .front-face .title-bachillerato.darkMode,
+.estudios .study-content .windowNT-container .front-face .title-adobe.darkMode,
+.estudios .study-content .auxVentas-container .front-face .title-dpw.darkMode,
+.estudios .study-content .auxVentas-container .front-face .title-office.darkMode,
+.estudios .study-content .auxVentas-container .front-face .title-windowNT.darkMode,
+.estudios .study-content .auxVentas-container .front-face .title-auxiliarVentas.darkMode,
+.estudios .study-content .auxVentas-container .front-face .title-bachillerato.darkMode,
+.estudios .study-content .auxVentas-container .front-face .title-adobe.darkMode,
+.estudios .study-content .bachillerato-container .front-face .title-dpw.darkMode,
+.estudios .study-content .bachillerato-container .front-face .title-office.darkMode,
+.estudios .study-content .bachillerato-container .front-face .title-windowNT.darkMode,
+.estudios .study-content .bachillerato-container .front-face .title-auxiliarVentas.darkMode,
+.estudios .study-content .bachillerato-container .front-face .title-bachillerato.darkMode,
+.estudios .study-content .bachillerato-container .front-face .title-adobe.darkMode,
+.estudios .study-content .adobe-card .front-face .title-dpw.darkMode,
+.estudios .study-content .adobe-card .front-face .title-office.darkMode,
+.estudios .study-content .adobe-card .front-face .title-windowNT.darkMode,
+.estudios .study-content .adobe-card .front-face .title-auxiliarVentas.darkMode,
+.estudios .study-content .adobe-card .front-face .title-bachillerato.darkMode,
+.estudios .study-content .adobe-card .front-face .title-adobe.darkMode {
   color: var(--text_gray_medioOscuro);
   text-shadow: 0 0 10px var(--shadow_white_opacity50);
 }
 
-.estudios .content-estudios .container_dpw .front-face .svg-dpw,
-.estudios .content-estudios .container_dpw .front-face .png-microsoftOffice,
-.estudios .content-estudios .container_dpw .front-face .png-windowNT,
-.estudios .content-estudios .container_dpw .front-face .svg-auxiliarVentas,
-.estudios .content-estudios .container_dpw .front-face .svg-bachillerato,
-.estudios .content-estudios .container_dpw .front-face .png-adobe,
-.estudios .content-estudios .container_microsoftOffice .front-face .svg-dpw,
-.estudios .content-estudios .container_microsoftOffice .front-face .png-microsoftOffice,
-.estudios .content-estudios .container_microsoftOffice .front-face .png-windowNT,
-.estudios .content-estudios .container_microsoftOffice .front-face .svg-auxiliarVentas,
-.estudios .content-estudios .container_microsoftOffice .front-face .svg-bachillerato,
-.estudios .content-estudios .container_microsoftOffice .front-face .png-adobe,
-.estudios .content-estudios .container_window_nt .front-face .svg-dpw,
-.estudios .content-estudios .container_window_nt .front-face .png-microsoftOffice,
-.estudios .content-estudios .container_window_nt .front-face .png-windowNT,
-.estudios .content-estudios .container_window_nt .front-face .svg-auxiliarVentas,
-.estudios .content-estudios .container_window_nt .front-face .svg-bachillerato,
-.estudios .content-estudios .container_window_nt .front-face .png-adobe,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .svg-dpw,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .png-microsoftOffice,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .png-windowNT,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .svg-auxiliarVentas,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .svg-bachillerato,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .png-adobe,
-.estudios .content-estudios .container-bachillerato .front-face .svg-dpw,
-.estudios .content-estudios .container-bachillerato .front-face .png-microsoftOffice,
-.estudios .content-estudios .container-bachillerato .front-face .png-windowNT,
-.estudios .content-estudios .container-bachillerato .front-face .svg-auxiliarVentas,
-.estudios .content-estudios .container-bachillerato .front-face .svg-bachillerato,
-.estudios .content-estudios .container-bachillerato .front-face .png-adobe,
-.estudios .content-estudios .card_adobe .front-face .svg-dpw,
-.estudios .content-estudios .card_adobe .front-face .png-microsoftOffice,
-.estudios .content-estudios .card_adobe .front-face .png-windowNT,
-.estudios .content-estudios .card_adobe .front-face .svg-auxiliarVentas,
-.estudios .content-estudios .card_adobe .front-face .svg-bachillerato,
-.estudios .content-estudios .card_adobe .front-face .png-adobe {
+.estudios .study-content .dpw-container .front-face .svg-dpw,
+.estudios .study-content .dpw-container .front-face .png-microsoftOffice,
+.estudios .study-content .dpw-container .front-face .png-windowNT,
+.estudios .study-content .dpw-container .front-face .svg-auxiliarVentas,
+.estudios .study-content .dpw-container .front-face .svg-bachillerato,
+.estudios .study-content .dpw-container .front-face .png-adobe,
+.estudios .study-content .microsoftOffice-container .front-face .svg-dpw,
+.estudios .study-content .microsoftOffice-container .front-face .png-microsoftOffice,
+.estudios .study-content .microsoftOffice-container .front-face .png-windowNT,
+.estudios .study-content .microsoftOffice-container .front-face .svg-auxiliarVentas,
+.estudios .study-content .microsoftOffice-container .front-face .svg-bachillerato,
+.estudios .study-content .microsoftOffice-container .front-face .png-adobe,
+.estudios .study-content .windowNT-container .front-face .svg-dpw,
+.estudios .study-content .windowNT-container .front-face .png-microsoftOffice,
+.estudios .study-content .windowNT-container .front-face .png-windowNT,
+.estudios .study-content .windowNT-container .front-face .svg-auxiliarVentas,
+.estudios .study-content .windowNT-container .front-face .svg-bachillerato,
+.estudios .study-content .windowNT-container .front-face .png-adobe,
+.estudios .study-content .auxVentas-container .front-face .svg-dpw,
+.estudios .study-content .auxVentas-container .front-face .png-microsoftOffice,
+.estudios .study-content .auxVentas-container .front-face .png-windowNT,
+.estudios .study-content .auxVentas-container .front-face .svg-auxiliarVentas,
+.estudios .study-content .auxVentas-container .front-face .svg-bachillerato,
+.estudios .study-content .auxVentas-container .front-face .png-adobe,
+.estudios .study-content .bachillerato-container .front-face .svg-dpw,
+.estudios .study-content .bachillerato-container .front-face .png-microsoftOffice,
+.estudios .study-content .bachillerato-container .front-face .png-windowNT,
+.estudios .study-content .bachillerato-container .front-face .svg-auxiliarVentas,
+.estudios .study-content .bachillerato-container .front-face .svg-bachillerato,
+.estudios .study-content .bachillerato-container .front-face .png-adobe,
+.estudios .study-content .adobe-card .front-face .svg-dpw,
+.estudios .study-content .adobe-card .front-face .png-microsoftOffice,
+.estudios .study-content .adobe-card .front-face .png-windowNT,
+.estudios .study-content .adobe-card .front-face .svg-auxiliarVentas,
+.estudios .study-content .adobe-card .front-face .svg-bachillerato,
+.estudios .study-content .adobe-card .front-face .png-adobe {
   width: 125px;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -299,12 +299,12 @@
   grid-row: 2/8;
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo {
+.estudios .study-content .dpw-container .front-face .masInfo-container,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container,
+.estudios .study-content .windowNT-container .front-face .masInfo-container,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container,
+.estudios .study-content .adobe-card .front-face .masInfo-container {
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -323,21 +323,21 @@
   grid-row: 8/9;
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .lugarEstudio,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .lugarEstudio,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .lugarEstudio,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .lugarEstudio,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .lugarEstudio,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .lugarEstudio {
+.estudios .study-content .dpw-container .front-face .masInfo-container .lugarEstudio,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .lugarEstudio,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .lugarEstudio,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .lugarEstudio,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .lugarEstudio,
+.estudios .study-content .adobe-card .front-face .masInfo-container .lugarEstudio {
   margin-bottom: 0;
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .lugarEstudio .logo,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .lugarEstudio .logo,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .lugarEstudio .logo,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .lugarEstudio .logo,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .lugarEstudio .logo,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .lugarEstudio .logo {
+.estudios .study-content .dpw-container .front-face .masInfo-container .lugarEstudio .logo,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .lugarEstudio .logo,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .lugarEstudio .logo,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .lugarEstudio .logo,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .lugarEstudio .logo,
+.estudios .study-content .adobe-card .front-face .masInfo-container .lugarEstudio .logo {
   border-radius: 5px;
   background: var(--bg_gray_claro);
   padding: 5px;
@@ -348,12 +348,12 @@
   position: relative;
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .lugarEstudio h2,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .lugarEstudio h2,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .lugarEstudio h2,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .lugarEstudio h2,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .lugarEstudio h2,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .lugarEstudio h2 {
+.estudios .study-content .dpw-container .front-face .masInfo-container .lugarEstudio h2,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .lugarEstudio h2,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .lugarEstudio h2,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .lugarEstudio h2,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .lugarEstudio h2,
+.estudios .study-content .adobe-card .front-face .masInfo-container .lugarEstudio h2 {
   color: var(--text_white_opacity100);
   font-size: .7rem;
   position: absolute;
@@ -370,21 +370,21 @@
   opacity: 0;
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .lugarEstudio h2.darkMode,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .lugarEstudio h2.darkMode,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .lugarEstudio h2.darkMode,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .lugarEstudio h2.darkMode,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .lugarEstudio h2.darkMode,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .lugarEstudio h2.darkMode {
+.estudios .study-content .dpw-container .front-face .masInfo-container .lugarEstudio h2.darkMode,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .lugarEstudio h2.darkMode,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .lugarEstudio h2.darkMode,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .lugarEstudio h2.darkMode,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .lugarEstudio h2.darkMode,
+.estudios .study-content .adobe-card .front-face .masInfo-container .lugarEstudio h2.darkMode {
   color: var(--text_gray_oscuro);
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .lugarEstudio h2::before,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .lugarEstudio h2::before,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .lugarEstudio h2::before,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .lugarEstudio h2::before,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .lugarEstudio h2::before,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .lugarEstudio h2::before {
+.estudios .study-content .dpw-container .front-face .masInfo-container .lugarEstudio h2::before,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .lugarEstudio h2::before,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .lugarEstudio h2::before,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .lugarEstudio h2::before,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .lugarEstudio h2::before,
+.estudios .study-content .adobe-card .front-face .masInfo-container .lugarEstudio h2::before {
   content: "";
   width: 15px;
   height: 15px;
@@ -397,12 +397,12 @@
   left: 15px;
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .lugarEstudio:hover h2,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .lugarEstudio:hover h2,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .lugarEstudio:hover h2,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .lugarEstudio:hover h2,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .lugarEstudio:hover h2,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .lugarEstudio:hover h2 {
+.estudios .study-content .dpw-container .front-face .masInfo-container .lugarEstudio:hover h2,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .lugarEstudio:hover h2,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .lugarEstudio:hover h2,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .lugarEstudio:hover h2,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .lugarEstudio:hover h2,
+.estudios .study-content .adobe-card .front-face .masInfo-container .lugarEstudio:hover h2 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transition-delay: 0.3s;
@@ -411,12 +411,12 @@
   pointer-events: none;
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .verMas,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .verMas,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .verMas,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .verMas,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .verMas {
+.estudios .study-content .dpw-container .front-face .masInfo-container .verMas,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .verMas,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .verMas,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .verMas,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .verMas,
+.estudios .study-content .adobe-card .front-face .masInfo-container .verMas {
   justify-items: end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -429,12 +429,12 @@
 				*/
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .verMas .btn_mas_SVG,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .verMas .btn_mas_SVG,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .verMas .btn_mas_SVG,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas .btn_mas_SVG,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .verMas .btn_mas_SVG,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .verMas .btn_mas_SVG {
+.estudios .study-content .dpw-container .front-face .masInfo-container .verMas .btn_mas_SVG,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .verMas .btn_mas_SVG,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .verMas .btn_mas_SVG,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .verMas .btn_mas_SVG,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .verMas .btn_mas_SVG,
+.estudios .study-content .adobe-card .front-face .masInfo-container .verMas .btn_mas_SVG {
   fill: var(--iconSVG_white_opacity100);
   background-color: var(--bg_white_opacity25);
   -webkit-box-shadow: 0 0 10px var(--shadow_white_opacity50);
@@ -448,23 +448,23 @@
   transition: 0.5s;
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .verMas .btn_mas_SVG.darkMode,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .verMas .btn_mas_SVG.darkMode,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .verMas .btn_mas_SVG.darkMode,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas .btn_mas_SVG.darkMode,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .verMas .btn_mas_SVG.darkMode,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .verMas .btn_mas_SVG.darkMode {
+.estudios .study-content .dpw-container .front-face .masInfo-container .verMas .btn_mas_SVG.darkMode,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .verMas .btn_mas_SVG.darkMode,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .verMas .btn_mas_SVG.darkMode,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .verMas .btn_mas_SVG.darkMode,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .verMas .btn_mas_SVG.darkMode,
+.estudios .study-content .adobe-card .front-face .masInfo-container .verMas .btn_mas_SVG.darkMode {
   border: 3px solid var(--iconSVG_gray_medioOscuro);
   fill: var(--iconSVG_gray_medioOscuro);
   text-shadow: 0 0 10px var(--shadow_white_opacity50);
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .verMas .descripcion_btn_VerMas,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .verMas .descripcion_btn_VerMas,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .verMas .descripcion_btn_VerMas,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas .descripcion_btn_VerMas,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .verMas .descripcion_btn_VerMas,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .verMas .descripcion_btn_VerMas {
+.estudios .study-content .dpw-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas,
+.estudios .study-content .adobe-card .front-face .masInfo-container .verMas .descripcion_btn_VerMas {
   font-size: .7rem;
   position: absolute;
   -webkit-transform: translateY(-40px);
@@ -480,22 +480,22 @@
   pointer-events: none;
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .verMas .descripcion_btn_VerMas.darkMode,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .verMas .descripcion_btn_VerMas.darkMode,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .verMas .descripcion_btn_VerMas.darkMode,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas .descripcion_btn_VerMas.darkMode,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .verMas .descripcion_btn_VerMas.darkMode,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .verMas .descripcion_btn_VerMas.darkMode {
+.estudios .study-content .dpw-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode,
+.estudios .study-content .adobe-card .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode {
   text-shadow: 0 0 10px var(--shadow_white_opacity100);
   color: var(--bg_gray_oscuro);
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .verMas .descripcion_btn_VerMas::before,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .verMas .descripcion_btn_VerMas::before,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .verMas .descripcion_btn_VerMas::before,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas .descripcion_btn_VerMas::before,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .verMas .descripcion_btn_VerMas::before,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .verMas .descripcion_btn_VerMas::before {
+.estudios .study-content .dpw-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before,
+.estudios .study-content .adobe-card .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before {
   content: "";
   width: 15px;
   height: 15px;
@@ -508,12 +508,12 @@
   z-index: -5;
 }
 
-.estudios .content-estudios .container_dpw .front-face .container_masInfo .verMas:hover .descripcion_btn_VerMas,
-.estudios .content-estudios .container_microsoftOffice .front-face .container_masInfo .verMas:hover .descripcion_btn_VerMas,
-.estudios .content-estudios .container_window_nt .front-face .container_masInfo .verMas:hover .descripcion_btn_VerMas,
-.estudios .content-estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas:hover .descripcion_btn_VerMas,
-.estudios .content-estudios .container-bachillerato .front-face .container_masInfo .verMas:hover .descripcion_btn_VerMas,
-.estudios .content-estudios .card_adobe .front-face .container_masInfo .verMas:hover .descripcion_btn_VerMas {
+.estudios .study-content .dpw-container .front-face .masInfo-container .verMas:hover .descripcion_btn_VerMas,
+.estudios .study-content .microsoftOffice-container .front-face .masInfo-container .verMas:hover .descripcion_btn_VerMas,
+.estudios .study-content .windowNT-container .front-face .masInfo-container .verMas:hover .descripcion_btn_VerMas,
+.estudios .study-content .auxVentas-container .front-face .masInfo-container .verMas:hover .descripcion_btn_VerMas,
+.estudios .study-content .bachillerato-container .front-face .masInfo-container .verMas:hover .descripcion_btn_VerMas,
+.estudios .study-content .adobe-card .front-face .masInfo-container .verMas:hover .descripcion_btn_VerMas {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transition-delay: 0.3s;
@@ -522,7 +522,7 @@
   pointer-events: none;
 }
 
-.estudios .content-estudios .container_window_nt .front-face .png-windowNT {
+.estudios .study-content .windowNT-container .front-face .png-windowNT {
   width: 100px;
 }
 
@@ -532,12 +532,12 @@
 	    ** Tarjetas del contenedor "Estudios".
 	    */
   }
-  .estudios .container_dpw .front-face,
-  .estudios .container_microsoftOffice .front-face,
-  .estudios .container_window_nt .front-face,
-  .estudios .container_auxiliar_ventas .front-face,
-  .estudios .container-bachillerato .front-face,
-  .estudios .card_adobe .front-face {
+  .estudios .dpw-container .front-face,
+  .estudios .microsoftOffice-container .front-face,
+  .estudios .windowNT-container .front-face,
+  .estudios .auxVentas-container .front-face,
+  .estudios .bachillerato-container .front-face,
+  .estudios .adobe-card .front-face {
     /**
 			** Titulos de las tarjetas de "Estudios".
 			*/
@@ -545,42 +545,42 @@
 			** Contenedor para ver más información de las tarjetas de "Estudios".
 			*/
   }
-  .estudios .container_dpw .front-face .title-dpw,
-  .estudios .container_dpw .front-face .title-office,
-  .estudios .container_dpw .front-face .title-windowNT,
-  .estudios .container_dpw .front-face .title-auxiliarVentas,
-  .estudios .container_dpw .front-face .title-bachillerato,
-  .estudios .container_dpw .front-face .title-adobe,
-  .estudios .container_microsoftOffice .front-face .title-dpw,
-  .estudios .container_microsoftOffice .front-face .title-office,
-  .estudios .container_microsoftOffice .front-face .title-windowNT,
-  .estudios .container_microsoftOffice .front-face .title-auxiliarVentas,
-  .estudios .container_microsoftOffice .front-face .title-bachillerato,
-  .estudios .container_microsoftOffice .front-face .title-adobe,
-  .estudios .container_window_nt .front-face .title-dpw,
-  .estudios .container_window_nt .front-face .title-office,
-  .estudios .container_window_nt .front-face .title-windowNT,
-  .estudios .container_window_nt .front-face .title-auxiliarVentas,
-  .estudios .container_window_nt .front-face .title-bachillerato,
-  .estudios .container_window_nt .front-face .title-adobe,
-  .estudios .container_auxiliar_ventas .front-face .title-dpw,
-  .estudios .container_auxiliar_ventas .front-face .title-office,
-  .estudios .container_auxiliar_ventas .front-face .title-windowNT,
-  .estudios .container_auxiliar_ventas .front-face .title-auxiliarVentas,
-  .estudios .container_auxiliar_ventas .front-face .title-bachillerato,
-  .estudios .container_auxiliar_ventas .front-face .title-adobe,
-  .estudios .container-bachillerato .front-face .title-dpw,
-  .estudios .container-bachillerato .front-face .title-office,
-  .estudios .container-bachillerato .front-face .title-windowNT,
-  .estudios .container-bachillerato .front-face .title-auxiliarVentas,
-  .estudios .container-bachillerato .front-face .title-bachillerato,
-  .estudios .container-bachillerato .front-face .title-adobe,
-  .estudios .card_adobe .front-face .title-dpw,
-  .estudios .card_adobe .front-face .title-office,
-  .estudios .card_adobe .front-face .title-windowNT,
-  .estudios .card_adobe .front-face .title-auxiliarVentas,
-  .estudios .card_adobe .front-face .title-bachillerato,
-  .estudios .card_adobe .front-face .title-adobe {
+  .estudios .dpw-container .front-face .title-dpw,
+  .estudios .dpw-container .front-face .title-office,
+  .estudios .dpw-container .front-face .title-windowNT,
+  .estudios .dpw-container .front-face .title-auxiliarVentas,
+  .estudios .dpw-container .front-face .title-bachillerato,
+  .estudios .dpw-container .front-face .title-adobe,
+  .estudios .microsoftOffice-container .front-face .title-dpw,
+  .estudios .microsoftOffice-container .front-face .title-office,
+  .estudios .microsoftOffice-container .front-face .title-windowNT,
+  .estudios .microsoftOffice-container .front-face .title-auxiliarVentas,
+  .estudios .microsoftOffice-container .front-face .title-bachillerato,
+  .estudios .microsoftOffice-container .front-face .title-adobe,
+  .estudios .windowNT-container .front-face .title-dpw,
+  .estudios .windowNT-container .front-face .title-office,
+  .estudios .windowNT-container .front-face .title-windowNT,
+  .estudios .windowNT-container .front-face .title-auxiliarVentas,
+  .estudios .windowNT-container .front-face .title-bachillerato,
+  .estudios .windowNT-container .front-face .title-adobe,
+  .estudios .auxVentas-container .front-face .title-dpw,
+  .estudios .auxVentas-container .front-face .title-office,
+  .estudios .auxVentas-container .front-face .title-windowNT,
+  .estudios .auxVentas-container .front-face .title-auxiliarVentas,
+  .estudios .auxVentas-container .front-face .title-bachillerato,
+  .estudios .auxVentas-container .front-face .title-adobe,
+  .estudios .bachillerato-container .front-face .title-dpw,
+  .estudios .bachillerato-container .front-face .title-office,
+  .estudios .bachillerato-container .front-face .title-windowNT,
+  .estudios .bachillerato-container .front-face .title-auxiliarVentas,
+  .estudios .bachillerato-container .front-face .title-bachillerato,
+  .estudios .bachillerato-container .front-face .title-adobe,
+  .estudios .adobe-card .front-face .title-dpw,
+  .estudios .adobe-card .front-face .title-office,
+  .estudios .adobe-card .front-face .title-windowNT,
+  .estudios .adobe-card .front-face .title-auxiliarVentas,
+  .estudios .adobe-card .front-face .title-bachillerato,
+  .estudios .adobe-card .front-face .title-adobe {
     background: var(--bg_white_opacity25);
     width: 100%;
     margin-top: -5px;
@@ -597,12 +597,12 @@
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
-  .estudios .container_dpw .front-face .container_masInfo,
-  .estudios .container_microsoftOffice .front-face .container_masInfo,
-  .estudios .container_window_nt .front-face .container_masInfo,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo,
-  .estudios .container-bachillerato .front-face .container_masInfo,
-  .estudios .card_adobe .front-face .container_masInfo {
+  .estudios .dpw-container .front-face .masInfo-container,
+  .estudios .microsoftOffice-container .front-face .masInfo-container,
+  .estudios .windowNT-container .front-face .masInfo-container,
+  .estudios .auxVentas-container .front-face .masInfo-container,
+  .estudios .bachillerato-container .front-face .masInfo-container,
+  .estudios .adobe-card .front-face .masInfo-container {
     width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -620,20 +620,20 @@
     -ms-grid-row-span: 1;
     grid-row: 8/9;
   }
-  .estudios .container_dpw .front-face .container_masInfo .lugarEstudio,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .lugarEstudio,
-  .estudios .container_window_nt .front-face .container_masInfo .lugarEstudio,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .lugarEstudio,
-  .estudios .container-bachillerato .front-face .container_masInfo .lugarEstudio,
-  .estudios .card_adobe .front-face .container_masInfo .lugarEstudio {
+  .estudios .dpw-container .front-face .masInfo-container .lugarEstudio,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .lugarEstudio,
+  .estudios .windowNT-container .front-face .masInfo-container .lugarEstudio,
+  .estudios .auxVentas-container .front-face .masInfo-container .lugarEstudio,
+  .estudios .bachillerato-container .front-face .masInfo-container .lugarEstudio,
+  .estudios .adobe-card .front-face .masInfo-container .lugarEstudio {
     margin-bottom: 0;
   }
-  .estudios .container_dpw .front-face .container_masInfo .lugarEstudio .logo,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .lugarEstudio .logo,
-  .estudios .container_window_nt .front-face .container_masInfo .lugarEstudio .logo,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .lugarEstudio .logo,
-  .estudios .container-bachillerato .front-face .container_masInfo .lugarEstudio .logo,
-  .estudios .card_adobe .front-face .container_masInfo .lugarEstudio .logo {
+  .estudios .dpw-container .front-face .masInfo-container .lugarEstudio .logo,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .lugarEstudio .logo,
+  .estudios .windowNT-container .front-face .masInfo-container .lugarEstudio .logo,
+  .estudios .auxVentas-container .front-face .masInfo-container .lugarEstudio .logo,
+  .estudios .bachillerato-container .front-face .masInfo-container .lugarEstudio .logo,
+  .estudios .adobe-card .front-face .masInfo-container .lugarEstudio .logo {
     border-radius: 5px;
     background: var(--bg_gray_claro);
     padding: 5px;
@@ -643,12 +643,12 @@
     cursor: pointer;
     position: relative;
   }
-  .estudios .container_dpw .front-face .container_masInfo .lugarEstudio h2,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .lugarEstudio h2,
-  .estudios .container_window_nt .front-face .container_masInfo .lugarEstudio h2,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .lugarEstudio h2,
-  .estudios .container-bachillerato .front-face .container_masInfo .lugarEstudio h2,
-  .estudios .card_adobe .front-face .container_masInfo .lugarEstudio h2 {
+  .estudios .dpw-container .front-face .masInfo-container .lugarEstudio h2,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .lugarEstudio h2,
+  .estudios .windowNT-container .front-face .masInfo-container .lugarEstudio h2,
+  .estudios .auxVentas-container .front-face .masInfo-container .lugarEstudio h2,
+  .estudios .bachillerato-container .front-face .masInfo-container .lugarEstudio h2,
+  .estudios .adobe-card .front-face .masInfo-container .lugarEstudio h2 {
     color: var(--text_white_opacity100);
     font-size: .7rem;
     position: absolute;
@@ -665,20 +665,20 @@
     opacity: 0;
     display: none;
   }
-  .estudios .container_dpw .front-face .container_masInfo .lugarEstudio h2.darkMode,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .lugarEstudio h2.darkMode,
-  .estudios .container_window_nt .front-face .container_masInfo .lugarEstudio h2.darkMode,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .lugarEstudio h2.darkMode,
-  .estudios .container-bachillerato .front-face .container_masInfo .lugarEstudio h2.darkMode,
-  .estudios .card_adobe .front-face .container_masInfo .lugarEstudio h2.darkMode {
+  .estudios .dpw-container .front-face .masInfo-container .lugarEstudio h2.darkMode,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .lugarEstudio h2.darkMode,
+  .estudios .windowNT-container .front-face .masInfo-container .lugarEstudio h2.darkMode,
+  .estudios .auxVentas-container .front-face .masInfo-container .lugarEstudio h2.darkMode,
+  .estudios .bachillerato-container .front-face .masInfo-container .lugarEstudio h2.darkMode,
+  .estudios .adobe-card .front-face .masInfo-container .lugarEstudio h2.darkMode {
     color: var(--text_gray_oscuro);
   }
-  .estudios .container_dpw .front-face .container_masInfo .lugarEstudio h2::before,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .lugarEstudio h2::before,
-  .estudios .container_window_nt .front-face .container_masInfo .lugarEstudio h2::before,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .lugarEstudio h2::before,
-  .estudios .container-bachillerato .front-face .container_masInfo .lugarEstudio h2::before,
-  .estudios .card_adobe .front-face .container_masInfo .lugarEstudio h2::before {
+  .estudios .dpw-container .front-face .masInfo-container .lugarEstudio h2::before,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .lugarEstudio h2::before,
+  .estudios .windowNT-container .front-face .masInfo-container .lugarEstudio h2::before,
+  .estudios .auxVentas-container .front-face .masInfo-container .lugarEstudio h2::before,
+  .estudios .bachillerato-container .front-face .masInfo-container .lugarEstudio h2::before,
+  .estudios .adobe-card .front-face .masInfo-container .lugarEstudio h2::before {
     content: "";
     width: 15px;
     height: 15px;
@@ -690,12 +690,12 @@
     bottom: -5px;
     left: 15px;
   }
-  .estudios .container_dpw .front-face .container_masInfo .lugarEstudio:hover h2,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .lugarEstudio:hover h2,
-  .estudios .container_window_nt .front-face .container_masInfo .lugarEstudio:hover h2,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .lugarEstudio:hover h2,
-  .estudios .container-bachillerato .front-face .container_masInfo .lugarEstudio:hover h2,
-  .estudios .card_adobe .front-face .container_masInfo .lugarEstudio:hover h2 {
+  .estudios .dpw-container .front-face .masInfo-container .lugarEstudio:hover h2,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .lugarEstudio:hover h2,
+  .estudios .windowNT-container .front-face .masInfo-container .lugarEstudio:hover h2,
+  .estudios .auxVentas-container .front-face .masInfo-container .lugarEstudio:hover h2,
+  .estudios .bachillerato-container .front-face .masInfo-container .lugarEstudio:hover h2,
+  .estudios .adobe-card .front-face .masInfo-container .lugarEstudio:hover h2 {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     -webkit-transition-delay: 0.3s;
@@ -703,12 +703,12 @@
     opacity: 1;
     pointer-events: none;
   }
-  .estudios .container_dpw .front-face .container_masInfo .verMas,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .verMas,
-  .estudios .container_window_nt .front-face .container_masInfo .verMas,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas,
-  .estudios .container-bachillerato .front-face .container_masInfo .verMas,
-  .estudios .card_adobe .front-face .container_masInfo .verMas {
+  .estudios .dpw-container .front-face .masInfo-container .verMas,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .verMas,
+  .estudios .windowNT-container .front-face .masInfo-container .verMas,
+  .estudios .auxVentas-container .front-face .masInfo-container .verMas,
+  .estudios .bachillerato-container .front-face .masInfo-container .verMas,
+  .estudios .adobe-card .front-face .masInfo-container .verMas {
     justify-items: end;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -720,12 +720,12 @@
 						** Botón "Mas"
 						*/
   }
-  .estudios .container_dpw .front-face .container_masInfo .verMas .btn_mas_SVG,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .verMas .btn_mas_SVG,
-  .estudios .container_window_nt .front-face .container_masInfo .verMas .btn_mas_SVG,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas .btn_mas_SVG,
-  .estudios .container-bachillerato .front-face .container_masInfo .verMas .btn_mas_SVG,
-  .estudios .card_adobe .front-face .container_masInfo .verMas .btn_mas_SVG {
+  .estudios .dpw-container .front-face .masInfo-container .verMas .btn_mas_SVG,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .verMas .btn_mas_SVG,
+  .estudios .windowNT-container .front-face .masInfo-container .verMas .btn_mas_SVG,
+  .estudios .auxVentas-container .front-face .masInfo-container .verMas .btn_mas_SVG,
+  .estudios .bachillerato-container .front-face .masInfo-container .verMas .btn_mas_SVG,
+  .estudios .adobe-card .front-face .masInfo-container .verMas .btn_mas_SVG {
     fill: var(--iconSVG_white_opacity100);
     background-color: var(--bg_white_opacity25);
     -webkit-box-shadow: 0 0 10px var(--shadow_white_opacity50);
@@ -738,22 +738,22 @@
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-  .estudios .container_dpw .front-face .container_masInfo .verMas .btn_mas_SVG.darkMode,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .verMas .btn_mas_SVG.darkMode,
-  .estudios .container_window_nt .front-face .container_masInfo .verMas .btn_mas_SVG.darkMode,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas .btn_mas_SVG.darkMode,
-  .estudios .container-bachillerato .front-face .container_masInfo .verMas .btn_mas_SVG.darkMode,
-  .estudios .card_adobe .front-face .container_masInfo .verMas .btn_mas_SVG.darkMode {
+  .estudios .dpw-container .front-face .masInfo-container .verMas .btn_mas_SVG.darkMode,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .verMas .btn_mas_SVG.darkMode,
+  .estudios .windowNT-container .front-face .masInfo-container .verMas .btn_mas_SVG.darkMode,
+  .estudios .auxVentas-container .front-face .masInfo-container .verMas .btn_mas_SVG.darkMode,
+  .estudios .bachillerato-container .front-face .masInfo-container .verMas .btn_mas_SVG.darkMode,
+  .estudios .adobe-card .front-face .masInfo-container .verMas .btn_mas_SVG.darkMode {
     border: 3px solid var(--iconSVG_gray_medioOscuro);
     fill: var(--iconSVG_gray_medioOscuro);
     text-shadow: 0 0 10px var(--shadow_white_opacity50);
   }
-  .estudios .container_dpw .front-face .container_masInfo .verMas .descripcion_btn_VerMas,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .verMas .descripcion_btn_VerMas,
-  .estudios .container_window_nt .front-face .container_masInfo .verMas .descripcion_btn_VerMas,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas .descripcion_btn_VerMas,
-  .estudios .container-bachillerato .front-face .container_masInfo .verMas .descripcion_btn_VerMas,
-  .estudios .card_adobe .front-face .container_masInfo .verMas .descripcion_btn_VerMas {
+  .estudios .dpw-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas,
+  .estudios .windowNT-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas,
+  .estudios .auxVentas-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas,
+  .estudios .bachillerato-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas,
+  .estudios .adobe-card .front-face .masInfo-container .verMas .descripcion_btn_VerMas {
     font-size: .7rem;
     position: absolute;
     -webkit-transform: translateY(-40px);
@@ -769,21 +769,21 @@
     pointer-events: none;
     display: none;
   }
-  .estudios .container_dpw .front-face .container_masInfo .verMas .descripcion_btn_VerMas.darkMode,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .verMas .descripcion_btn_VerMas.darkMode,
-  .estudios .container_window_nt .front-face .container_masInfo .verMas .descripcion_btn_VerMas.darkMode,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas .descripcion_btn_VerMas.darkMode,
-  .estudios .container-bachillerato .front-face .container_masInfo .verMas .descripcion_btn_VerMas.darkMode,
-  .estudios .card_adobe .front-face .container_masInfo .verMas .descripcion_btn_VerMas.darkMode {
+  .estudios .dpw-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode,
+  .estudios .windowNT-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode,
+  .estudios .auxVentas-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode,
+  .estudios .bachillerato-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode,
+  .estudios .adobe-card .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode {
     text-shadow: 0 0 10px var(--shadow_white_opacity100);
     color: var(--bg_gray_oscuro);
   }
-  .estudios .container_dpw .front-face .container_masInfo .verMas .descripcion_btn_VerMas::before,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .verMas .descripcion_btn_VerMas::before,
-  .estudios .container_window_nt .front-face .container_masInfo .verMas .descripcion_btn_VerMas::before,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas .descripcion_btn_VerMas::before,
-  .estudios .container-bachillerato .front-face .container_masInfo .verMas .descripcion_btn_VerMas::before,
-  .estudios .card_adobe .front-face .container_masInfo .verMas .descripcion_btn_VerMas::before {
+  .estudios .dpw-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before,
+  .estudios .windowNT-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before,
+  .estudios .auxVentas-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before,
+  .estudios .bachillerato-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before,
+  .estudios .adobe-card .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before {
     content: "";
     width: 15px;
     height: 15px;
@@ -795,12 +795,12 @@
             transform: rotate(45deg);
     z-index: -5;
   }
-  .estudios .container_dpw .front-face .container_masInfo .verMas:hover .descripcion_btn_VerMas,
-  .estudios .container_microsoftOffice .front-face .container_masInfo .verMas:hover .descripcion_btn_VerMas,
-  .estudios .container_window_nt .front-face .container_masInfo .verMas:hover .descripcion_btn_VerMas,
-  .estudios .container_auxiliar_ventas .front-face .container_masInfo .verMas:hover .descripcion_btn_VerMas,
-  .estudios .container-bachillerato .front-face .container_masInfo .verMas:hover .descripcion_btn_VerMas,
-  .estudios .card_adobe .front-face .container_masInfo .verMas:hover .descripcion_btn_VerMas {
+  .estudios .dpw-container .front-face .masInfo-container .verMas:hover .descripcion_btn_VerMas,
+  .estudios .microsoftOffice-container .front-face .masInfo-container .verMas:hover .descripcion_btn_VerMas,
+  .estudios .windowNT-container .front-face .masInfo-container .verMas:hover .descripcion_btn_VerMas,
+  .estudios .auxVentas-container .front-face .masInfo-container .verMas:hover .descripcion_btn_VerMas,
+  .estudios .bachillerato-container .front-face .masInfo-container .verMas:hover .descripcion_btn_VerMas,
+  .estudios .adobe-card .front-face .masInfo-container .verMas:hover .descripcion_btn_VerMas {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     -webkit-transition-delay: 0.3s;
@@ -808,7 +808,7 @@
     opacity: 1;
     pointer-events: none;
   }
-  .estudios .container_window_nt .front-face .png-windowNT {
+  .estudios .windowNT-container .front-face .png-windowNT {
     width: 100px;
   }
 }

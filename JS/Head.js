@@ -9,9 +9,9 @@
 // FIJAR LA BARRA DE NAVEGACION EN LA PARTE SUPERIOR============================================================
 window.addEventListener('scroll', function () {
     if (window.scrollY > 200) {
-        document.querySelector('.container-barraNav').classList.add('fixedOn');
+        document.querySelector('.barraNav-container').classList.add('fixedOn');
     } else if (window.scrollY < 25) {
-        document.querySelector('.container-barraNav').classList.remove('fixedOn');
+        document.querySelector('.barraNav-container').classList.remove('fixedOn');
     }
 });
 
@@ -143,13 +143,13 @@ window.addEventListener('scroll', () => {
 });
 
 // Activar/Desactivar información personal
-document.querySelector('.imagen_navegador').addEventListener('click', () => {
-    document.querySelector('.container-datosPersonales').classList.add('on')
+document.querySelector('.imgNavigate').addEventListener('click', () => {
+    document.querySelector('.myData-float-container').classList.add('on')
 
     // Desactivar contenedor información personal 
     document.querySelector('.btn-back-datosPersonales').addEventListener('click', () => {
         // Botón para desactivar
-        document.querySelector('.container-datosPersonales').classList.remove('on');
+        document.querySelector('.myData-float-container').classList.remove('on');
     })
 });
 
@@ -158,7 +158,7 @@ window.addEventListener('scroll', () => {
     let heightHead = document.querySelector('.head').offsetWidth;
     if (scrollY >= heightHead) {
         // Botón para desactivar
-        document.querySelector('.container-datosPersonales').classList.remove('on');
+        document.querySelector('.myData-float-container').classList.remove('on');
     };
 });
 
@@ -179,36 +179,36 @@ addEventListener('DOMContentLoaded', function () {
 function main() {
     // Abriendo menú al dar click en boton open
     document.querySelector('.btn-open-mainMovil').addEventListener('click', function () {
-        document.querySelector('.container-mainNav').classList.add('on');
+        document.querySelector('.mainNav-container').classList.add('on');
         // Opacidad y filtro blur del fondo del menú
-        document.querySelector('.container-mainNav').classList.toggle('opacityOn');
+        document.querySelector('.mainNav-container').classList.toggle('opacityOn');
 
     });
 
     // Abriendo menú al dar click en el boton dentro del contenedor de todo el menú
     document.querySelector('.btn-close-mainMovil').addEventListener('click', function () {
         // Contenedor del menú
-        document.querySelector('.container-mainNav').classList.toggle('on');
+        document.querySelector('.mainNav-container').classList.toggle('on');
 
         // Opacidad y filtro blur del fondo del menú
-        document.querySelector('.container-mainNav').classList.toggle('opacityOn');
+        document.querySelector('.mainNav-container').classList.toggle('opacityOn');
     });
 
     // Activer barra de titulo y boton al escuchar evento scroll
     window.addEventListener('scroll', function () {
         if (scrollY >= 300) {
-            document.querySelector('.container-mainNav').classList.add('onFixed');
+            document.querySelector('.mainNav-container').classList.add('onFixed');
             // // Opacidad y filtro blur del fondo del menú
-            // document.querySelector('.container-mainNav').classList.remove('opacityOn');
+            // document.querySelector('.mainNav-container').classList.remove('opacityOn');
 
         }
         // Sentencia para cerrar todo el menú automaticamente
         else if (scrollY <= 150) {
             // Contenedor del menú ... Removiendo la barra fixed
-            document.querySelector('.container-mainNav').classList.remove('onFixed');
+            document.querySelector('.mainNav-container').classList.remove('onFixed');
 
             // Contenedor del menú 
-            document.querySelector('.container-mainNav').classList.remove('on');
+            document.querySelector('.mainNav-container').classList.remove('on');
         };
     });
 
@@ -224,10 +224,10 @@ function main() {
             ocultarMenu();
             function ocultarMenu() {
                 // Contenedor de todo el menú 
-                document.querySelector('.container-mainNav').classList.remove('on');
+                document.querySelector('.mainNav-container').classList.remove('on');
 
                 // Opacidad y filtro blur del fondo del menú
-                document.querySelector('.container-mainNav').classList.toggle('opacityOn');
+                document.querySelector('.mainNav-container').classList.toggle('opacityOn');
             }
 
             // función para moverse entre cada sección o cada elemento dentro de todo el body de acuerdo al botón que se escuche el evento click dentro del contenedor de botones del menú.

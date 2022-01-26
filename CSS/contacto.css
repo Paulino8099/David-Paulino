@@ -13,7 +13,7 @@
       grid-template-rows: repeat(2, auto);
 }
 
-.contacto .container-titleContacto {
+.contacto .title-contact-container {
   background-color: var(--bg_aliceBlue);
   justify-self: center;
   place-items: center;
@@ -43,13 +43,13 @@
   grid-row: 1/2;
 }
 
-.contacto .container-titleContacto.darkMode {
+.contacto .title-contact-container.darkMode {
   background-color: var(--bg_gray_oscuro);
   -webkit-box-shadow: 0 -10px 10px var(--shadow_white_opacity50);
           box-shadow: 0 -10px 10px var(--shadow_white_opacity50);
 }
 
-.contacto .container-titleContacto h3 {
+.contacto .title-contact-container h3 {
   font-size: 1.5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-right: 10px;
@@ -58,22 +58,22 @@
   transition: 0.5s;
 }
 
-.contacto .container-titleContacto h3.darkMode {
+.contacto .title-contact-container h3.darkMode {
   color: var(--text_gray_claro);
 }
 
-.contacto .container-titleContacto svg {
+.contacto .title-contact-container svg {
   width: 2rem;
   fill: var(--iconSVG_teal_opacity100);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.contacto .container-titleContacto svg.darkMode {
+.contacto .title-contact-container svg.darkMode {
   fill: var(--iconSVG_gray_claro);
 }
 
-.contacto .content-contacto {
+.contacto .contact-content {
   border: 2px solid var(--border_gray_claro);
   overflow: hidden;
   -webkit-box-shadow: 0 0 10px var(--shadow_black_opacity100);
@@ -101,24 +101,24 @@
 		*/
 }
 
-.contacto .content-contacto hr {
+.contacto .contact-content hr {
   background: var(--iconSVG_gray_medioOscuro);
   width: 2px;
   border: none;
   outline: none;
 }
 
-.contacto .content-contacto .container-pensamiento {
+.contacto .contact-content .thought-container {
   width: 30%;
   display: -ms-grid;
   display: grid;
 }
 
-.contacto .content-contacto .container-pensamiento h1 {
+.contacto .contact-content .thought-container h1 {
   font-size: 1.5rem;
 }
 
-.contacto .content-contacto .container-pensamiento p {
+.contacto .contact-content .thought-container p {
   text-align: left;
   font-family: monospace;
   font-size: 1rem;
@@ -127,7 +127,7 @@
   color: var(--text_gray_medioOscuro);
 }
 
-.contacto .content-contacto .container-pensamiento .autorWrite {
+.contacto .contact-content .thought-container .autorWrite {
   margin-top: 10px;
   text-align: end;
   -webkit-text-decoration: underline 1px solid #000;
@@ -135,7 +135,7 @@
   color: var(--text_black_opacity100);
 }
 
-.contacto .content-contacto .container-redesSociales {
+.contacto .contact-content .redesSociales-container {
   width: 30%;
   justify-items: center;
   height: -webkit-min-content;
@@ -148,11 +148,11 @@
   -ms-grid-rows: (auto)[8];
       grid-template-rows: repeat(8, auto);
   /**
-		**  logos de las redes sociales y sus nombres
+		**  logos de las redes sociales y sus names
 		*/
 }
 
-.contacto .content-contacto .container-redesSociales h1 {
+.contacto .contact-content .redesSociales-container h1 {
   font-size: 1.5rem;
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
@@ -162,7 +162,7 @@
   grid-row: 1/3;
 }
 
-.contacto .content-contacto .container-redesSociales .container-redes {
+.contacto .contact-content .redesSociales-container .redes-container {
   width: 100%;
   place-self: center;
   display: -ms-grid;
@@ -175,14 +175,14 @@
   grid-row: 3/5;
 }
 
-.contacto .content-contacto .container-redesSociales .container-redes div {
+.contacto .contact-content .redesSociales-container .redes-container div {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contacto .content-contacto .container-redesSociales .container-redes div div a {
+.contacto .contact-content .redesSociales-container .redes-container div div a {
   place-items: center;
   width: 100%;
   -webkit-transition: .5s;
@@ -192,27 +192,27 @@
   display: grid;
 }
 
-.contacto .content-contacto .container-redesSociales .container-redes div div a img {
+.contacto .contact-content .redesSociales-container .redes-container div div a img {
   -webkit-transition: .3s;
   transition: .3s;
   width: 50%;
 }
 
-.contacto .content-contacto .container-redesSociales .container-redes div div a img:hover {
+.contacto .contact-content .redesSociales-container .redes-container div div a img:hover {
   cursor: pointer;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   opacity: .8;
 }
 
-.contacto .content-contacto .container-redesSociales .container-redes div div a h3 {
+.contacto .contact-content .redesSociales-container .redes-container div div a h3 {
   padding: 0px 4px;
   font-size: .8rem;
   margin-top: 5px;
   color: var(--text_black_opacity100);
 }
 
-.contacto .content-contacto .container-redesSociales .container-redes div div a h3:hover {
+.contacto .contact-content .redesSociales-container .redes-container div div a h3:hover {
   background: var(--bg_teal_opacity100);
   border-radius: 5px;
   -webkit-transition: .5s;
@@ -220,7 +220,7 @@
   cursor: pointer;
 }
 
-.contacto .content-contacto .container-redesSociales .container-codigosQR {
+.contacto .contact-content .redesSociales-container .codigosQR-container {
   width: 100%;
   margin-top: 50px;
   display: -ms-grid;
@@ -233,20 +233,20 @@
   grid-row: 5/9;
 }
 
-.contacto .content-contacto .container-redesSociales .container-codigosQR div {
+.contacto .contact-content .redesSociales-container .codigosQR-container div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contacto .content-contacto .container-redesSociales .container-codigosQR div div {
+.contacto .contact-content .redesSociales-container .codigosQR-container div div {
   width: 100%;
   place-items: center;
   display: -ms-grid;
   display: grid;
 }
 
-.contacto .content-contacto .container-redesSociales .container-codigosQR div div h3 {
+.contacto .contact-content .redesSociales-container .codigosQR-container div div h3 {
   border-radius: 0;
   background: none;
   pointer-events: none;
@@ -254,14 +254,14 @@
   font-weight: 900;
 }
 
-.contacto .content-contacto .container-redesSociales .container-codigosQR div div img {
+.contacto .contact-content .redesSociales-container .codigosQR-container div div img {
   pointer-events: none;
   border-radius: 0;
   background: none;
   width: 50%;
 }
 
-.contacto .content-contacto .container-infoContacto {
+.contacto .contact-content .infoContact-container {
   width: 30%;
   gap: 10px;
   display: -ms-grid;
@@ -275,7 +275,7 @@
         */
 }
 
-.contacto .content-contacto .container-infoContacto h1 {
+.contacto .contact-content .infoContact-container h1 {
   width: 100%;
   gap: 25px;
   -ms-grid-column: 1;
@@ -286,11 +286,11 @@
   grid-row: 1/2;
 }
 
-.contacto .content-contacto .container-infoContacto h3 {
+.contacto .contact-content .infoContact-container h3 {
   font-size: 1rem;
 }
 
-.contacto .content-contacto .container-infoContacto div {
+.contacto .contact-content .infoContact-container div {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -299,7 +299,7 @@
   border-radius: 10px;
 }
 
-.contacto .content-contacto .container-infoContacto .content-direccion {
+.contacto .contact-content .infoContact-container .direction-content {
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -319,12 +319,12 @@
   grid-row: 2/3;
 }
 
-.contacto .content-contacto .container-infoContacto .content-direccion svg {
+.contacto .contact-content .infoContact-container .direction-content svg {
   fill: var(--iconSVG_gray_medioOscuro);
   width: 10rem;
 }
 
-.contacto .content-contacto .container-infoContacto .content-numTelefonicos {
+.contacto .contact-content .infoContact-container .numTel-content {
   padding: 0 5px;
   width: 100%;
   -webkit-box-align: center;
@@ -344,12 +344,12 @@
   grid-row: 4/5;
 }
 
-.contacto .content-contacto .container-infoContacto .content-numTelefonicos svg {
+.contacto .contact-content .infoContact-container .numTel-content svg {
   fill: var(--iconSVG_gray_medioOscuro);
   width: 3.5rem;
 }
 
-.contacto .content-contacto .container-infoContacto .content-email {
+.contacto .contact-content .infoContact-container .email-content {
   padding: 0 5px;
   width: 100%;
   -webkit-box-align: center;
@@ -369,13 +369,13 @@
   grid-row: 6/7;
 }
 
-.contacto .content-contacto .container-infoContacto .content-email svg {
+.contacto .contact-content .infoContact-container .email-content svg {
   fill: var(--iconSVG_gray_medioOscuro);
   width: 3.5rem;
 }
 
 @media screen and (max-width: 650px) {
-  .contacto .content-contacto {
+  .contacto .contact-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -393,30 +393,30 @@
         ** Lineas divisoras de los tres contenedores
         */
   }
-  .contacto .content-contacto hr {
+  .contacto .contact-content hr {
     background: var(--iconSVG_gray_medioOscuro);
     width: 2px;
     border: none;
     outline: none;
   }
-  .contacto .content-contacto .container-pensamiento {
+  .contacto .contact-content .thought-container {
     width: 100%;
     margin: 0 0 25px 0;
     display: -ms-grid;
     display: grid;
   }
-  .contacto .content-contacto .container-pensamiento h1 {
+  .contacto .contact-content .thought-container h1 {
     font-size: 1.3rem;
     -ms-grid-column-align: center;
         justify-self: center;
     color: var(--text_teal_opacity100);
   }
-  .contacto .content-contacto .container-pensamiento p {
+  .contacto .contact-content .thought-container p {
     text-align: start;
     font-family: monospace;
     font-size: 1rem;
   }
-  .contacto .content-contacto .container-redesSociales {
+  .contacto .contact-content .redesSociales-container {
     width: 100%;
     margin: 0 0 25px 0;
     justify-items: center;
@@ -430,10 +430,10 @@
     -ms-grid-rows: (auto)[12];
         grid-template-rows: repeat(12, auto);
     /**
-            **  logos de las redes sociales y sus nombres
+            **  logos de las redes sociales y sus names
             */
   }
-  .contacto .content-contacto .container-redesSociales h1 {
+  .contacto .contact-content .redesSociales-container h1 {
     color: var(--text_teal_opacity100);
     font-size: 1.3rem;
     -ms-grid-column: 1;
@@ -443,7 +443,7 @@
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
-  .contacto .content-contacto .container-redesSociales .container-redes {
+  .contacto .contact-content .redesSociales-container .redes-container {
     width: 100%;
     -ms-grid-column-align: center;
         justify-self: center;
@@ -457,13 +457,13 @@
     -ms-grid-row-span: 2;
     grid-row: 3/5;
   }
-  .contacto .content-contacto .container-redesSociales .container-redes div {
+  .contacto .contact-content .redesSociales-container .redes-container div {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .contacto .content-contacto .container-redesSociales .container-redes div div a {
+  .contacto .contact-content .redesSociales-container .redes-container div div a {
     -webkit-box-shadow: 0 0 5px var(--shadow_black_opacity25);
             box-shadow: 0 0 5px var(--shadow_black_opacity25);
     border-radius: 25px;
@@ -476,34 +476,34 @@
     display: -ms-grid;
     display: grid;
   }
-  .contacto .content-contacto .container-redesSociales .container-redes div div a:active {
+  .contacto .contact-content .redesSociales-container .redes-container div div a:active {
     background-color: var(--bg_teal_opacity75);
   }
-  .contacto .content-contacto .container-redesSociales .container-redes div div a img {
+  .contacto .contact-content .redesSociales-container .redes-container div div a img {
     -webkit-transition: .3s;
     transition: .3s;
     width: 50%;
   }
-  .contacto .content-contacto .container-redesSociales .container-redes div div a img:hover {
+  .contacto .contact-content .redesSociales-container .redes-container div div a img:hover {
     cursor: pointer;
     -webkit-box-shadow: none;
             box-shadow: none;
     border-radius: none;
   }
-  .contacto .content-contacto .container-redesSociales .container-redes div div a h3 {
+  .contacto .contact-content .redesSociales-container .redes-container div div a h3 {
     padding: 0px 4px;
     font-size: .8rem;
     margin-top: 5px;
     color: var(--text_black_opacity100);
   }
-  .contacto .content-contacto .container-redesSociales .container-redes div div a h3:hover {
+  .contacto .contact-content .redesSociales-container .redes-container div div a h3:hover {
     background: none;
     border-radius: none;
     -webkit-transition: .5s;
     transition: .5s;
     cursor: pointer;
   }
-  .contacto .content-contacto .container-redesSociales .container-codigosQR {
+  .contacto .contact-content .redesSociales-container .codigosQR-container {
     width: 100%;
     margin-top: 25px;
     display: none;
@@ -514,31 +514,31 @@
     -ms-grid-row-span: 4;
     grid-row: 5/9;
   }
-  .contacto .content-contacto .container-redesSociales .container-codigosQR div {
+  .contacto .contact-content .redesSociales-container .codigosQR-container div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .contacto .content-contacto .container-redesSociales .container-codigosQR div div {
+  .contacto .contact-content .redesSociales-container .codigosQR-container div div {
     width: 100%;
     place-items: center;
     display: -ms-grid;
     display: grid;
   }
-  .contacto .content-contacto .container-redesSociales .container-codigosQR div div h3 {
+  .contacto .contact-content .redesSociales-container .codigosQR-container div div h3 {
     border-radius: 0;
     background: none;
     pointer-events: none;
     font-size: .6rem;
     font-weight: 900;
   }
-  .contacto .content-contacto .container-redesSociales .container-codigosQR div div img {
+  .contacto .contact-content .redesSociales-container .codigosQR-container div div img {
     pointer-events: none;
     border-radius: 0;
     background: none;
     width: 50%;
   }
-  .contacto .content-contacto .container-infoContacto {
+  .contacto .contact-content .infoContact-container {
     width: 100%;
     gap: 10px;
     display: -ms-grid;
@@ -551,7 +551,7 @@
         ** Todos los contenedores
         */
   }
-  .contacto .content-contacto .container-infoContacto h1 {
+  .contacto .contact-content .infoContact-container h1 {
     width: 100%;
     font-size: 1.6rem;
     gap: 25px;
@@ -562,16 +562,16 @@
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
-  .contacto .content-contacto .container-infoContacto h3 {
+  .contacto .contact-content .infoContact-container h3 {
     font-size: 1rem;
   }
-  .contacto .content-contacto .container-infoContacto div {
+  .contacto .contact-content .infoContact-container div {
     -webkit-box-shadow: 0 5px 5px var(--shadow_black_opacity25);
             box-shadow: 0 5px 5px var(--shadow_black_opacity25);
     border-radius: 10px;
     padding-bottom: 3px;
   }
-  .contacto .content-contacto .container-infoContacto .content-direccion {
+  .contacto .contact-content .infoContact-container .direction-content {
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -590,11 +590,11 @@
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
-  .contacto .content-contacto .container-infoContacto .content-direccion svg {
+  .contacto .contact-content .infoContact-container .direction-content svg {
     fill: var(--iconSVG_gray_medioOscuro);
     width: 7rem;
   }
-  .contacto .content-contacto .container-infoContacto .content-numTelefonicos {
+  .contacto .contact-content .infoContact-container .numTel-content {
     padding: 0 5px;
     width: 100%;
     -webkit-box-align: center;
@@ -613,11 +613,11 @@
     -ms-grid-row-span: 1;
     grid-row: 4/5;
   }
-  .contacto .content-contacto .container-infoContacto .content-numTelefonicos svg {
+  .contacto .contact-content .infoContact-container .numTel-content svg {
     fill: var(--iconSVG_gray_medioOscuro);
     width: 3.5rem;
   }
-  .contacto .content-contacto .container-infoContacto .content-email {
+  .contacto .contact-content .infoContact-container .email-content {
     padding: 0 5px;
     width: 100%;
     -webkit-box-align: center;
@@ -636,7 +636,7 @@
     -ms-grid-row-span: 1;
     grid-row: 6/7;
   }
-  .contacto .content-contacto .container-infoContacto .content-email svg {
+  .contacto .contact-content .infoContact-container .email-content svg {
     fill: var(--iconSVG_gray_medioOscuro);
     width: 3.5rem;
   }
