@@ -94,8 +94,8 @@
   padding: 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(auto, 100px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(auto, 100px));
+  -ms-grid-columns: (minmax(auto, 150px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(auto, 150px));
   -ms-grid-rows: ()[auto-fill], minmax(auto, 200px);
       grid-template-rows: repeat(auto-fill), minmax(auto, 200px);
 }
@@ -112,8 +112,8 @@
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  -webkit-box-shadow: 0 5px 5px var(--shadow_black_opacity25);
-          box-shadow: 0 5px 5px var(--shadow_black_opacity25);
+  -webkit-box-shadow: 0 0 5px var(--shadow_black_opacity50);
+          box-shadow: 0 0 5px var(--shadow_black_opacity50);
   border-radius: 10px;
 }
 

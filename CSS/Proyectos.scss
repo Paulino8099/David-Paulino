@@ -67,17 +67,17 @@
 			padding: 10px;
 
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(auto, 100px));
+			grid-template-columns: repeat(auto-fit, minmax(auto, 150px));
 			grid-template-rows: repeat(auto-fill), minmax(auto, 200px);
 			&.darkMode {
 				color: var(--text_gray_claro);
 				box-shadow: 0 0 10px var(--shadow_white_opacity100);
 			}
-			// content
+			// content cards
 			div {
 				justify-self: center;
 				height: min-content;
-				box-shadow: 0 5px 5px var(--shadow_black_opacity25);
+				box-shadow: 0 0 5px var(--shadow_black_opacity50);
 				border-radius: 10px;
 				div {
 					justify-content: center;
