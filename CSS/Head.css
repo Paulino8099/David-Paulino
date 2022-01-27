@@ -56,32 +56,46 @@
   grid-row: 1/2;
 }
 
-.head .barraNav-container h3 {
-  color: var(--text_teal_opacity100);
+.head .barraNav-container div {
   padding: 2px 5px;
-  font-size: 1.5rem;
-  border: 3px solid var(--border_teal_opacity100);
   border-radius: 25px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 128, 128, 0.2)), color-stop(50%, rgba(9, 56, 121, 0.2)), to(rgba(0, 212, 255, 0.2)));
-  background: linear-gradient(90deg, rgba(0, 128, 128, 0.2) 0%, rgba(9, 56, 121, 0.2) 50%, rgba(0, 212, 255, 0.2) 100%);
+  place-items: center;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid var(--border_teal_opacity100);
+  -webkit-box-shadow: inset 0 0 5px var(--shadow_teal_opacity100);
+          box-shadow: inset 0 0 5px var(--shadow_teal_opacity100);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.head .barraNav-container h3.darkMode {
+.head .barraNav-container div.darkMode {
   border: 3px solid var(--border_gray_claro);
   color: var(--text_gray_claro);
 }
 
-.head .barraNav-container h3.darkMode.title-head:hover {
+.head .barraNav-container div.darkMode.title-head-container:hover {
   color: var(--text_white_opacity100);
   border: 3px solid var(--border_white_opacity100);
 }
 
-.head .barraNav-container h3:hover {
-  color: var(--text_teal_opacity50);
-  border: 3px solid var(--border_teal_opacity50);
-  cursor: pointer;
+.head .barraNav-container div:hover {
+  opacity: .9;
+}
+
+.head .barraNav-container div img {
+  margin: 5px;
+  z-index: 10;
+  width: 50px;
+}
+
+.head .barraNav-container div h3 {
+  color: var(--text_teal_opacity100);
+  font-size: 1.5rem;
 }
 
 .head .barraNav-container ul {
@@ -104,27 +118,17 @@
       justify-self: center;
   padding: 0 5px;
   border-radius: 25px;
-  font-size: 1rem;
-  border: 3px solid var(--border_teal_opacity100);
+  font-size: 1.2rem;
+  border: 2px solid var(--border_teal_opacity100);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.head .barraNav-container ul a.darkMode {
-  border: 3px solid var(--border_gray_claro);
-  color: var(--text_gray_claro);
-}
-
-.head .barraNav-container ul a.darkMode .subMenu:hover {
-  color: var(--text_gray_claro);
-  border: 3px solid var(--border_white_opacity100);
-}
-
 .head .barraNav-container ul a:hover {
-  color: var(--text_white_opacity100);
-  border: 3px solid var(--border_white_opacity100);
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 128, 128, 0.5)), color-stop(50%, rgba(9, 56, 121, 0.5)), to(rgba(0, 212, 255, 0.5)));
-  background: linear-gradient(90deg, rgba(0, 128, 128, 0.5) 0%, rgba(9, 56, 121, 0.5) 50%, rgba(0, 212, 255, 0.5) 100%);
+  -webkit-box-shadow: inset 0 0 5px var(--shadow_teal_opacity100);
+          box-shadow: inset 0 0 5px var(--shadow_teal_opacity100);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .head .barraNav-container.fixedOn {
@@ -146,18 +150,12 @@
   transition: .3s;
 }
 
-.head .barraNav-container.fixedOn h3 {
+.head .barraNav-container.fixedOn div {
   margin-left: 4%;
-  border: 3px solid var(--border_white_opacity100);
-  background: none;
-  font-size: 1rem;
-  color: var(--text_white_opacity100);
-}
-
-.head .barraNav-container.fixedOn h3:hover {
-  color: none;
-  border: 3px solid var(--bg_black_opacity100);
-  cursor: pointer;
+  background: var(--bg_white_opacity100);
+  -webkit-box-shadow: inset 0 0 5px var(--border_teal_opacity100);
+          box-shadow: inset 0 0 5px var(--border_teal_opacity100);
+  border: none;
 }
 
 .head .barraNav-container.fixedOn ul {
@@ -174,6 +172,9 @@
   transition: .5s;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  -webkit-box-shadow: 0 -5px 10px 2px var(--shadow_white_opacity100);
+          box-shadow: 0 -5px 10px 2px var(--shadow_white_opacity100);
+  z-index: 100;
 }
 
 .head .barraNav-container.fixedOn ul .indicador.delay {
@@ -186,12 +187,22 @@
   border: 3px solid transparent;
   border-radius: 0px;
   color: var(--text_white_opacity100);
+  position: relative;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-.head .barraNav-container.fixedOn ul a:hover {
-  background: none;
+.head .barraNav-container.fixedOn ul a:hover::after {
+  -webkit-box-shadow: 0 -5px 10px 2px var(--bg_gray_medioClaro);
+          box-shadow: 0 -5px 10px 2px var(--bg_gray_medioClaro);
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 2px;
+  background: var(--bg_gray_medioClaro);
+  z-index: 50;
+  left: 0;
+  bottom: -11px;
 }
 
 .head .imgNavigate-container {
@@ -585,30 +596,6 @@
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
-  .head .barraNav-container h3 {
-    color: var(--text_teal_opacity100);
-    padding: 2px 5px;
-    font-size: 1.5rem;
-    border: 3px solid var(--border_teal_opacity100);
-    border-radius: 25px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 128, 128, 0.2)), color-stop(50%, rgba(9, 56, 121, 0.2)), to(rgba(0, 212, 255, 0.2)));
-    background: linear-gradient(90deg, rgba(0, 128, 128, 0.2) 0%, rgba(9, 56, 121, 0.2) 50%, rgba(0, 212, 255, 0.2) 100%);
-  }
-  .head .barraNav-container h3.darkMode {
-    border: 3px solid var(--border_gray_claro);
-    color: var(--text_gray_claro);
-  }
-  .head .barraNav-container h3.darkMode.title-head:hover {
-    color: var(--text_white_opacity100);
-    border: 3px solid var(--border_white_opacity100);
-  }
-  .head .barraNav-container h3:hover {
-    color: text_tealOpacity50;
-    border: 3px solid borde_tealOpacity50;
-    cursor: pointer;
-  }
   .head .barraNav-container ul {
     gap: 10px;
     color: var(--text_white_opacity100);
@@ -650,31 +637,13 @@
   }
   .head .barraNav-container.fixedOn {
     background-color: transparent;
-    top: 0;
-    width: 100%;
     -ms-grid-column-align: center;
         justify-self: center;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     margin: 10px 4%;
-    padding: 0;
     position: relative;
-    z-index: 10;
-    -webkit-transition: .3s;
-    transition: .3s;
-  }
-  .head .barraNav-container.fixedOn h3 {
-    margin-left: 0;
-    border: 3px solid var(--border_teal_opacity100);
-    background: none;
-    font-size: 1.5rem;
-    color: var(--text_teal_opacity100);
-  }
-  .head .barraNav-container.fixedOn h3:hover {
-    color: none;
-    border: 3px solid var(--bg_black_opacity100);
-    cursor: pointer;
   }
   .head .barraNav-container.fixedOn ul {
     margin-right: 4%;
@@ -1058,6 +1027,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-shadow: 0 5px 5px var(--shadow_black_opacity25);
+            box-shadow: 0 5px 5px var(--shadow_black_opacity25);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1068,18 +1039,27 @@
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
-  .head .mainNav-container .content-mainNav .content-titleBoton h1 {
+  .head .mainNav-container .content-mainNav .content-titleBoton .titleHead-movil-container {
+    margin-left: 4%;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
-    text-align: center;
-    color: var(--text_white_opacity100);
-    padding: 2px 5px;
+    border-radius: 50px;
+    place-items: center;
+    -webkit-box-shadow: inset 0 0 5px var(--shadow_teal_opacity100);
+            box-shadow: inset 0 0 5px var(--shadow_teal_opacity100);
+    background: var(--bg_white_opacity100);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .head .mainNav-container .content-mainNav .content-titleBoton .titleHead-movil-container img {
+    margin: 10px;
+    width: 50px;
+  }
+  .head .mainNav-container .content-mainNav .content-titleBoton .titleHead-movil-container h3 {
+    margin-right: 5px;
+    color: var(--text_teal_opacity100);
     font-size: 1.5rem;
-    border: 3px solid var(--border_white_opacity100);
-    border-radius: 25px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
   }
   .head .mainNav-container .content-mainNav .content-titleBoton svg {
     fill: var(--iconSVG_white_opacity100);

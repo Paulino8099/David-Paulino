@@ -1,4 +1,15 @@
 
+
+/**
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+*/
+
 //DESACTIVAR LA VENTANA DE ACTUALIZACION=========================================================================
 document.querySelector(".btn_cancelar").addEventListener("click", () => {
   document.querySelector('.actualización').classList.toggle('off');
@@ -32,6 +43,83 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
+/**
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+*/
+// todas las configuraciones de los comentarios flotantes para cada elemento (Solo para dispositivos pc)
+allConfigComment();
+function allConfigComment() {
+  let commentsContainer = document.querySelector('.comments-container');
+  let commentsContent = document.querySelector('.comments-content');
+
+  /**
+   * ?ventana  de mensajes...
+   */
+  // ventana especial para mostrar mensajes cunado se pase el cursor por "x" elementos
+  commnentsFloat();
+  function commnentsFloat() {
+    document.addEventListener('mousemove', function (e) {
+      let y = e.clientY;
+      let x = e.clientX;
+
+      commentsContainer.style.top = y + 10 + 'px';
+      commentsContainer.style.left = x + 10 + 'px';
+    });
+  };
+
+  /***
+   * ?titulo principal...
+   */
+  // cuando se pase el cursor por el titulo de la página se mostrará el siguiente mensaje
+  titlePrimary();
+  function titlePrimary() {
+    let titleHead = document.querySelector('.title-head-container');
+    // activando mensaje al poner el cursor encima del titulo principal 
+    titleHead.addEventListener('mouseover', function () {
+      // solo se va a ejecutar este código si el ancho de pantalla es mayor "750px"
+      if (document.documentElement.offsetWidth >= 750) {
+        commentsContent.innerHTML = `
+                                  <h3 class="title-comments">
+                                    Portafolio
+                                  </h3>
+                                  <p class="paragraph-comments">
+                                    Título principal de la página
+                                  </p>
+                                  <div class="img-comments">
+                                      <img src="" alt="auto">
+                                  </div>
+                                  `;
+        commentsContent.classList.add('active');
+      };
+    });
+
+    // desactivando comentario del titulo principal al sacar el cursor de este 
+    titleHead.addEventListener('mouseout', function () {
+      // solo se va a ejecutar este código si el ancho de pantalla es mayor "750px"
+      if (document.documentElement.offsetWidth >= 750) {
+        commentsContent.innerHTML = ``;
+        commentsContent.classList.remove('active');
+      };
+    });
+  };
+};
+
+/**
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦btn Start¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦btn Start¦¦¦¦¦¦¦¦¦btn Start¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦btn Start¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦btn Start¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦btn Start¦¦¦¦¦¦¦¦¦btn Start¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦btn Start¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+*/
 /**
 * ?botón start...
 */
@@ -70,6 +158,7 @@ window.addEventListener("scroll", function () {
     };
   }
 });
+
 
 /**
  *? ocultar ventana de actualización...

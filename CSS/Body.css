@@ -38,7 +38,7 @@ body {
 }
 
 body * {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 body *::-moz-selection {
@@ -115,6 +115,29 @@ body .indicatorScroll-container .indicatorScroll-container .indicadorScroll .con
   height: -moz-min-content;
   height: min-content;
   color: var(--text_white_opacity100);
+}
+
+body .comments-container {
+  position: fixed;
+  z-index: 500;
+}
+
+body .comments-container .comments-content {
+  background: var(--bg_white_opacity100);
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 10px var(--bg_black_opacity50);
+          box-shadow: 0 0 10px var(--bg_black_opacity50);
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+  pointer-events: none;
+  opacity: 0;
+  color: #80c55e;
+}
+
+body .comments-container .comments-content.active {
+  opacity: 1;
 }
 
 body .btn-start {

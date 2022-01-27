@@ -21,9 +21,9 @@ window.addEventListener('scroll', function () {
 // volver a inicio al presionar el título principal
 backStart();
 function backStart() {
-    let titlePrimary = document.querySelector('.title-head');
+    let titlePrimary = document.querySelector('.title-head-container');
     titlePrimary.addEventListener('click', function () {
-        if (document.documentElement.scrollTop >= 5) {
+        if (document.documentElement.scrollTop > 5) {
             document.documentElement.scrollTop = 0;
         }
     });
@@ -183,94 +183,110 @@ window.addEventListener('scroll', () => {
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
-addEventListener('DOMContentLoaded', function () {
-    // Todas las funciones del menú móvil
-    main();
-});
-
-
-// Todas las funciones del menú. 
-function main() {
-    // Abriendo menú al dar click en boton open
-    document.querySelector('.btn-open-mainMovil').addEventListener('click', function () {
-        document.querySelector('.mainNav-container').classList.add('on');
-        // Opacidad y filtro blur del fondo del menú
-        document.querySelector('.mainNav-container').classList.toggle('opacityOn');
-
-    });
-
-    // Abriendo menú al dar click en el boton dentro del contenedor de todo el menú
-    document.querySelector('.btn-close-mainMovil').addEventListener('click', function () {
-        // Contenedor del menú
-        document.querySelector('.mainNav-container').classList.toggle('on');
-
-        // Opacidad y filtro blur del fondo del menú
-        document.querySelector('.mainNav-container').classList.toggle('opacityOn');
-    });
-
-    // Activer barra de titulo y boton al escuchar evento scroll
-    window.addEventListener('scroll', function () {
-        if (scrollY >= 300) {
-            document.querySelector('.mainNav-container').classList.add('onFixed');
-            // // Opacidad y filtro blur del fondo del menú
-            // document.querySelector('.mainNav-container').classList.remove('opacityOn');
-
-        }
-        // Sentencia para cerrar todo el menú automaticamente
-        else if (scrollY <= 150) {
-            // Contenedor del menú ... Removiendo la barra fixed
-            document.querySelector('.mainNav-container').classList.remove('onFixed');
-
-            // Contenedor del menú 
-            document.querySelector('.mainNav-container').classList.remove('on');
-        };
-    });
-
+// todas las configuraciones para los dispositivos móviles
+allConfigMovil();
+function allConfigMovil() {
     /**
-     * TODO: Añadiendo eventos click a los botones de navegación del menú móvil.
+     * ?menú móvil...
      */
-    let mainMovil = document.querySelector('.container-mainMovil').children;
-    for (let i = 0; i < mainMovil.length; i++) {
-        // buscando todos los botones en formato SVG del contenedor de los botones que se encuentra en el menú y agregándole un evente click.
-        mainMovil[i].children[1].addEventListener('click', () => {
+    // Todas las funciones del menú. 
+    main();
+    function main() {
+        // Abriendo menú al dar click en boton open
+        document.querySelector('.btn-open-mainMovil').addEventListener('click', function () {
+            document.querySelector('.mainNav-container').classList.add('on');
+            // Opacidad y filtro blur del fondo del menú
+            document.querySelector('.mainNav-container').classList.toggle('opacityOn');
 
-            // Función para ocultar el menú una vez se haya dado click en cualquiera de los botones que se ecnuetra en el. 
-            ocultarMenu();
-            function ocultarMenu() {
-                // Contenedor de todo el menú 
-                document.querySelector('.mainNav-container').classList.remove('on');
+        });
 
-                // Opacidad y filtro blur del fondo del menú
-                document.querySelector('.mainNav-container').classList.toggle('opacityOn');
+        // Abriendo menú al dar click en el boton dentro del contenedor de todo el menú
+        document.querySelector('.btn-close-mainMovil').addEventListener('click', function () {
+            // Contenedor del menú
+            document.querySelector('.mainNav-container').classList.toggle('on');
+
+            // Opacidad y filtro blur del fondo del menú
+            document.querySelector('.mainNav-container').classList.toggle('opacityOn');
+        });
+
+        // Activer barra de titulo y boton al escuchar evento scroll
+        window.addEventListener('scroll', function () {
+            if (scrollY >= 300) {
+                document.querySelector('.mainNav-container').classList.add('onFixed');
+                // // Opacidad y filtro blur del fondo del menú
+                // document.querySelector('.mainNav-container').classList.remove('opacityOn');
+
             }
+            // Sentencia para cerrar todo el menú automaticamente
+            else if (scrollY <= 150) {
+                // Contenedor del menú ... Removiendo la barra fixed
+                document.querySelector('.mainNav-container').classList.remove('onFixed');
 
-            // función para moverse entre cada sección o cada elemento dentro de todo el body de acuerdo al botón que se escuche el evento click dentro del contenedor de botones del menú.
-            moverseSecciones();
-            function moverseSecciones() {
-                let head = document.querySelector('.head');
-                let estudios = document.querySelector('.estudios');
-                let sobreMi = document.querySelector('.sobreMi');
-                let proyectos = document.querySelector('.proyectos');
-                // Contenedor del titulo y el boton del menú.
-                let barraTitleBtn = document.querySelector('.content-titleBoton');
-
-                // buscando los titulos de cada botón que se encuentra dentro del menú movil en formato string.
-                // Cuando se haga click en cada botón el cliente tendrá la opción de moverse entre las
-                // diferentes de todo el documento.
-                let titleBtn = mainMovil[i].children[0].childNodes[0].nodeValue;
-                if (titleBtn == 'Estudios') {
-                    document.documentElement.scrollTop = head.offsetHeight - barraTitleBtn.offsetHeight;
-                }
-                else if (titleBtn == 'Sobre Mi') {
-                    document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight - barraTitleBtn.offsetHeight;
-                }
-                else if (titleBtn == 'Proyectos') {
-                    document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight - barraTitleBtn.offsetHeight;;
-                }
-                else if (titleBtn == 'Contacto') {
-                    document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + proyectos.offsetHeight - barraTitleBtn.offsetHeight;;
-                };
+                // Contenedor del menú 
+                document.querySelector('.mainNav-container').classList.remove('on');
             };
         });
+
+        /**
+         * TODO: Añadiendo eventos click a los botones de navegación del menú móvil.
+         */
+        let mainMovil = document.querySelector('.container-mainMovil').children;
+        for (let i = 0; i < mainMovil.length; i++) {
+            // buscando todos los botones en formato SVG del contenedor de los botones que se encuentra en el menú y agregándole un evente click.
+            mainMovil[i].children[1].addEventListener('click', () => {
+
+                // Función para ocultar el menú una vez se haya dado click en cualquiera de los botones que se ecnuetra en el. 
+                ocultarMenu();
+                function ocultarMenu() {
+                    // Contenedor de todo el menú 
+                    document.querySelector('.mainNav-container').classList.remove('on');
+
+                    // Opacidad y filtro blur del fondo del menú
+                    document.querySelector('.mainNav-container').classList.toggle('opacityOn');
+                }
+
+                // función para moverse entre cada sección o cada elemento dentro de todo el body de acuerdo al botón que se escuche el evento click dentro del contenedor de botones del menú.
+                moverseSecciones();
+                function moverseSecciones() {
+                    let head = document.querySelector('.head');
+                    let estudios = document.querySelector('.estudios');
+                    let sobreMi = document.querySelector('.sobreMi');
+                    let proyectos = document.querySelector('.proyectos');
+                    // Contenedor del titulo y el boton del menú.
+                    let barraTitleBtn = document.querySelector('.content-titleBoton');
+
+                    // buscando los titulos de cada botón que se encuentra dentro del menú movil en formato string.
+                    // Cuando se haga click en cada botón el cliente tendrá la opción de moverse entre las
+                    // diferentes de todo el documento.
+                    let titleBtn = mainMovil[i].children[0].childNodes[0].nodeValue;
+                    if (titleBtn == 'Estudios') {
+                        document.documentElement.scrollTop = head.offsetHeight - barraTitleBtn.offsetHeight;
+                    }
+                    else if (titleBtn == 'Sobre Mi') {
+                        document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight - barraTitleBtn.offsetHeight;
+                    }
+                    else if (titleBtn == 'Proyectos') {
+                        document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight - barraTitleBtn.offsetHeight;;
+                    }
+                    else if (titleBtn == 'Contacto') {
+                        document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + proyectos.offsetHeight - barraTitleBtn.offsetHeight;;
+                    };
+                };
+            });
+        };
     };
-};
+    
+    /**
+     * ?volviendo a inicio...
+     */
+    // volver a inicio al presionar el título principal del menú para móvil
+    backStart();
+    function backStart() {
+        let titlePrimary = document.querySelector('.titlePrimay-navMovil');
+        titlePrimary.addEventListener('click', function () {
+            if (document.documentElement.scrollTop > 5) {
+                document.documentElement.scrollTop = 0;
+            }
+        });
+    }
+}
