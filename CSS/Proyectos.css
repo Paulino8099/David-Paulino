@@ -131,6 +131,9 @@
 }
 
 .proyectos .proyectos-container .content-proyectos div div img {
+  -webkit-box-shadow: inset 0 0 5px #000;
+          box-shadow: inset 0 0 5px #000;
+  border-radius: 15px;
   width: 100%;
   cursor: pointer;
 }
