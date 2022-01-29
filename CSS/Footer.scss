@@ -60,7 +60,7 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 @media screen and (max-width: 650px) {
   .footer {
-    background: #222222;
+    background: var(--bg_gray_oscuro);
     width: 100%;
     height: max-content;
     overflow: hidden;
@@ -80,7 +80,7 @@
       margin-right: 10px;
       z-index: 20;
       &:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
 
       grid-column: 1/9;
