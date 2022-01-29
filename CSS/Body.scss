@@ -6,6 +6,15 @@
 		border: none;
 		cursor: pointer;
 		outline: none;
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+			sans-serif;
+	}
+	input {
+		outline: none;
+		border: none;
+	}
+	&::selection {
+		background: var(--bg_teal_opacity50);
 	}
 }
 body::-webkit-scrollbar {
@@ -31,13 +40,6 @@ html {
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 body {
 	background: var(--bg_white_opacity100);
-	* {
-		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
-			sans-serif;
-		&::selection {
-			background: var(--bg_teal_opacity50);
-		}
-	}
 	transition: .5s;
 
 	display: grid;

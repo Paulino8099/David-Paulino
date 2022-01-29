@@ -13,12 +13,6 @@ conection.connect((err) => {
     console.log('La conexión funciona');
 });
 
-conection.query('SELECT * from users', (err, rows) => {
-    if (err) throw err;
-    console.log('Los datos son estos: ');
-    console.log(rows);
-});
-
 let insertar = 'INSERT INTO users (id, nombre) VALUES (NULL, "OTRO NOMBRE")';
 
 // insertando valores a la base de datos
@@ -26,6 +20,7 @@ conection.query(insertar, (err, rows) => {
     if (err) throw err;
 });
 
+// consultando a la base de datos y extrayendo todos los datos que esta contenga
 conection.query('SELECT * from users', (err, rows) => {
     if (err) throw err;
     console.log('Estos son los resultados de la busqueda en la base de datos:');

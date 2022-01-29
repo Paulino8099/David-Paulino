@@ -8,6 +8,20 @@
   border: none;
   cursor: pointer;
   outline: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+* input {
+  outline: none;
+  border: none;
+}
+
+*::-moz-selection {
+  background: var(--bg_teal_opacity50);
+}
+
+*::selection {
+  background: var(--bg_teal_opacity50);
 }
 
 body::-webkit-scrollbar {
@@ -35,18 +49,6 @@ body {
       grid-template-columns: repeat(8, auto);
   -ms-grid-rows: (auto)[12];
       grid-template-rows: repeat(12, auto);
-}
-
-body * {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-body *::-moz-selection {
-  background: var(--bg_teal_opacity50);
-}
-
-body *::selection {
-  background: var(--bg_teal_opacity50);
 }
 
 body .indicatorScroll-container {
