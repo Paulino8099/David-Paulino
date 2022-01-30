@@ -269,12 +269,12 @@
 		grid-row: 3/4;
 		// title primary
 		.titlePrimary-messaggeDirect {
+			margin-right: 10px;
 			width: 100%;
 			position: absolute;
 
 			display: grid;
 			h1 {
-				margin-right: 10px;
 				justify-self: center;
 			}
 		}
@@ -362,7 +362,6 @@
 			.btn-send-messaggeDirect {
 				justify-self: end;
 				background: var(--bg_teal_opacity100);
-				font-size: 1rem;
 				border-radius: 5px;
 				margin-top: 25px;
 				text-align: center;
@@ -379,6 +378,7 @@
 				grid-column: 1/7;
 				grid: 3/4;
 				h3 {
+					font-size: 1rem;
 					color: var(--text_white_opacity100);
 				}
 				svg {
@@ -431,11 +431,11 @@
 			grid-row: 2/3;
 			// lineas divisoras de contenedores
 			hr {
-				display: none;
+				display: none; //edit (delete: block, add: none)
 			}
 			// contenedor
 			div {
-				width: auto;
+				width: auto; 
 				// title
 				h1 {
 					text-align: center;
@@ -540,6 +540,7 @@
 					svg {
 						fill: var(--iconSVG_gray_medioOscuro);
 						width: 3rem;
+						opacity: 0.7;
 					}
 					h3 {
 						font-size: 1rem;
@@ -563,6 +564,93 @@
 					display: flex;
 					grid-column: 1/9;
 					grid-row: 6/7;
+				}
+			}
+		}
+		// messagge direct
+		.messaggeDirect-container {
+			height: min-content; //edit (delete: 300px, add: min-content)
+			background: linear-gradient(
+				0deg,
+				#a5a6c7 0%,
+				#a5a6c7 60%,
+				#4a4c7e 60%,
+				#4a4c7e 100%
+			); //edit (delete: [90deg, 30%, 30%], add: [0deg, 60%, 60%])
+
+			flex-direction: column; // edit (add: flex-direction)
+			// title primary
+			.titlePrimary-messaggeDirect {
+				position: relative; // edit (delete: absolute, add: relative)
+				height: 5%; // edit (add: height)
+				margin-bottom: 10px; // edit (add: 10px)
+				padding: 5px; // edit (add: px)
+				h1 {
+					border: 2px solid #a5a6c7;
+					border-radius: 10px; // edit (add: border-radius)
+					margin-right: 0px; // edit (delete: 10px, add: 0)
+					background: linear-gradient(
+						90deg,
+						#a5a6c7 0%,
+						#a5a6c7 50%,
+						#4a4c7e 50%,
+						#4a4c7e 100%
+					); // edit (add: background)
+				}
+			}
+			// imagen
+			span {
+				margin-top: 10px; // edit (add: 10px)
+				width: auto; // edit (delete: 50%, add: auto)
+				height: 20%;
+				// edit (add: 20%)
+			}
+			// formulario de envío
+			.messaggeDirect-content {
+				margin: 0; // edit (delete: 25px, add: 0)
+				width: auto; // edit (delete: 50%, add: auto)
+				height: 70%; // edit (add: 70%)
+				.input-content {
+					margin-bottom: 5px; // edit (delete: 15x, add: 5px)
+					span {
+						svg {
+							width: 70px; // edit (delete: 30px, add: 70px)
+						}
+						input {
+							padding: 10px; // edit (add: all 10px)
+							margin-left: 0; // edit (delete: 10px, add: 0)
+						}
+					}
+				} // btn send
+				.btn-send-messaggeDirect {
+					width: 115px; // edit (delete: 100px, add: 115px)
+					height: 40px;
+					// edit (delete: 30, add: 40px)
+					margin: 15px;
+					// edit (add: 15px)
+					h3 {
+						font-size: 1.2rem;
+					}
+					svg {
+						animation: identifier 3s ease infinite; // edit (delete: 1s, add: 3s)
+						@keyframes identifier {
+							0% {
+								transform: translateX(-15px); // edit (delete: , add: )
+							}
+							50% {
+								transform: translateX(5px); // edit (delete: 15px, add: 5px)
+							}
+							100% {
+								transform: translateX(-15px);
+							}
+						}
+					}
+					&:hover {
+						svg {
+							animation: identifier 3s ease infinite; // edit (delete: 1s, add: 3s)
+						}
+						box-shadow: none; // edit (delete: underline, add: none)
+					}
 				}
 			}
 		}

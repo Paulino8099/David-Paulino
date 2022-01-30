@@ -365,6 +365,7 @@
 }
 
 .contacto .messaggeDirect-container .titlePrimary-messaggeDirect {
+  margin-right: 10px;
   width: 100%;
   position: absolute;
   display: -ms-grid;
@@ -372,7 +373,6 @@
 }
 
 .contacto .messaggeDirect-container .titlePrimary-messaggeDirect h1 {
-  margin-right: 10px;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -524,7 +524,6 @@
 .contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect {
   justify-self: end;
   background: var(--bg_teal_opacity100);
-  font-size: 1rem;
   border-radius: 5px;
   margin-top: 25px;
   text-align: center;
@@ -553,6 +552,7 @@
 }
 
 .contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect h3 {
+  font-size: 1rem;
   color: var(--text_white_opacity100);
 }
 
@@ -750,6 +750,7 @@
   .contacto .contact-content .infoContact-container div svg {
     fill: var(--iconSVG_gray_medioOscuro);
     width: 3rem;
+    opacity: 0.7;
   }
   .contacto .contact-content .infoContact-container div h3 {
     font-size: 1rem;
@@ -786,6 +787,98 @@
     -ms-grid-row: 6;
     -ms-grid-row-span: 1;
     grid-row: 6/7;
+  }
+  .contacto .messaggeDirect-container {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    background: -webkit-gradient(linear, left bottom, left top, from(#a5a6c7), color-stop(60%, #a5a6c7), color-stop(60%, #4a4c7e), to(#4a4c7e));
+    background: linear-gradient(0deg, #a5a6c7 0%, #a5a6c7 60%, #4a4c7e 60%, #4a4c7e 100%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacto .messaggeDirect-container .titlePrimary-messaggeDirect {
+    position: relative;
+    height: 5%;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .contacto .messaggeDirect-container .titlePrimary-messaggeDirect h1 {
+    border: 2px solid #a5a6c7;
+    border-radius: 10px;
+    margin-right: 0px;
+    background: -webkit-gradient(linear, left top, right top, from(#a5a6c7), color-stop(50%, #a5a6c7), color-stop(50%, #4a4c7e), to(#4a4c7e));
+    background: linear-gradient(90deg, #a5a6c7 0%, #a5a6c7 50%, #4a4c7e 50%, #4a4c7e 100%);
+  }
+  .contacto .messaggeDirect-container span {
+    margin-top: 10px;
+    width: auto;
+    height: 20%;
+  }
+  .contacto .messaggeDirect-container .messaggeDirect-content {
+    margin: 0;
+    width: auto;
+    height: 70%;
+  }
+  .contacto .messaggeDirect-container .messaggeDirect-content .input-content {
+    margin-bottom: 5px;
+  }
+  .contacto .messaggeDirect-container .messaggeDirect-content .input-content span svg {
+    width: 70px;
+  }
+  .contacto .messaggeDirect-container .messaggeDirect-content .input-content span input {
+    padding: 10px;
+    margin-left: 0;
+  }
+  .contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect {
+    width: 115px;
+    height: 40px;
+    margin: 15px;
+  }
+  .contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect h3 {
+    font-size: 1.2rem;
+  }
+  .contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect svg {
+    -webkit-animation: identifier 3s ease infinite;
+            animation: identifier 3s ease infinite;
+  }
+  @-webkit-keyframes identifier {
+    0% {
+      -webkit-transform: translateX(-15px);
+              transform: translateX(-15px);
+    }
+    50% {
+      -webkit-transform: translateX(5px);
+              transform: translateX(5px);
+    }
+    100% {
+      -webkit-transform: translateX(-15px);
+              transform: translateX(-15px);
+    }
+  }
+  @keyframes identifier {
+    0% {
+      -webkit-transform: translateX(-15px);
+              transform: translateX(-15px);
+    }
+    50% {
+      -webkit-transform: translateX(5px);
+              transform: translateX(5px);
+    }
+    100% {
+      -webkit-transform: translateX(-15px);
+              transform: translateX(-15px);
+    }
+  }
+  .contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect:hover svg {
+    -webkit-animation: identifier 3s ease infinite;
+            animation: identifier 3s ease infinite;
   }
 }
 /*# sourceMappingURL=contacto.css.map */
