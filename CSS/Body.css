@@ -8,7 +8,8 @@
   border: none;
   cursor: pointer;
   outline: none;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+ sans-serif;
 }
 
 * input {
@@ -372,7 +373,7 @@ body .moveCenter {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
+max-width: 800px
 @media screen and (max-width: 650px) {
   .info-container {
     position: fixed;

@@ -419,7 +419,7 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
 	.contacto {
 		// content
 		.contact-content {
@@ -435,7 +435,7 @@
 			}
 			// contenedor
 			div {
-				width: auto; 
+				width: auto;
 				// title
 				h1 {
 					text-align: center;
@@ -600,10 +600,10 @@
 			}
 			// imagen
 			span {
-				margin-top: 10px; // edit (add: 10px)
+				margin-top: 50px; // edit (add: 10px)
 				width: auto; // edit (delete: 50%, add: auto)
-				height: 20%;
-				// edit (add: 20%)
+				height: 30%;
+				// edit (add: 25%)
 			}
 			// formulario de envío
 			.messaggeDirect-content {
@@ -611,7 +611,8 @@
 				width: auto; // edit (delete: 50%, add: auto)
 				height: 70%; // edit (add: 70%)
 				.input-content {
-					margin-bottom: 5px; // edit (delete: 15x, add: 5px)
+					margin-bottom: 5px;
+					// edit (delete: 15x, add: 5px)
 					span {
 						svg {
 							width: 70px; // edit (delete: 30px, add: 70px)

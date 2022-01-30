@@ -547,7 +547,7 @@
   background: linear-gradient(180deg, transparent 0%, #fff 100%);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   .head {
     -ms-grid-column-align: center;
         justify-self: center;

@@ -526,7 +526,7 @@
   width: 100px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   .estudios {
     /**
 	    ** Tarjetas del contenedor "Estudios".

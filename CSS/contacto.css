@@ -610,7 +610,7 @@
           box-shadow: none;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   .contacto .contact-content {
     gap: 50px;
     display: -webkit-box;
@@ -813,9 +813,9 @@
     background: linear-gradient(90deg, #a5a6c7 0%, #a5a6c7 50%, #4a4c7e 50%, #4a4c7e 100%);
   }
   .contacto .messaggeDirect-container span {
-    margin-top: 10px;
+    margin-top: 50px;
     width: auto;
-    height: 20%;
+    height: 30%;
   }
   .contacto .messaggeDirect-container .messaggeDirect-content {
     margin: 0;
