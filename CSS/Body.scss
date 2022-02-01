@@ -116,16 +116,38 @@ body {
 		position: fixed;
 		z-index: 500;
 		.comments-content {
-			background: var(--bg_white_opacity100);
-			border-radius: 15px;
+			background: var(--bg_gray_oscuro);
+			border-radius: 5px;
 			box-shadow: 0 0 10px var(--bg_black_opacity50);
-			transition: .3s;
-			transition-delay: .3s;
+			transition: .1s;
 			pointer-events: none;
+			padding: 5px;
 			opacity: 0;
-			color: hsl(100, 47%, 57%);
+			color: var(--text_gray_medioOscuro);
+			position: relative;
+
+			display: grid;
 			&.active {
+				transition: 1s;
 				opacity: 1;
+			}
+			// title & img
+			.imgTitle-comments-area {
+				justify-self: center;
+				align-items: center;
+				gap: 25px;
+
+				display: flex;
+				.title-comments {
+					color: var(--text_teal_opacity100);
+					justify-self: center;
+				}
+				img {
+					width: 100px;
+				}
+			}
+			.paragraph-comments {
+				color: var(--text_gray_medioClaro);
 			}
 		}
 	}

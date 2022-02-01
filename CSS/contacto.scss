@@ -64,6 +64,7 @@
 		background-color: var(--bg_aliceBlue);
 		margin: 0 4% 75px 4%;
 		padding: 4%;
+		padding-top: 0;
 		border-radius: 10px;
 		transition: 0.5s;
 		justify-content: space-between;
@@ -82,10 +83,10 @@
 		}
 		// contenedores
 		div {
-			width: auto;
+			width: 30%;
 			// title
 			h1 {
-				font-size: 1.5rem;
+				font-size: 1.8rem;
 			}
 		}
 		// pensamiento content
@@ -176,6 +177,7 @@
 				grid-column: 1/12;
 				grid-row: 5/9;
 				div {
+					width: 100%;
 					display: flex;
 					div {
 						width: 100%;

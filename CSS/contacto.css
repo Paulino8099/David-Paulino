@@ -83,6 +83,7 @@
   background-color: var(--bg_aliceBlue);
   margin: 0 4% 75px 4%;
   padding: 4%;
+  padding-top: 0;
   border-radius: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -110,11 +111,11 @@
 }
 
 .contacto .contact-content div {
-  width: auto;
+  width: 30%;
 }
 
 .contacto .contact-content div h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .contacto .contact-content .thought-container {
@@ -236,6 +237,7 @@
 }
 
 .contacto .contact-content .redesSociales-container .codigosQR-container div {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

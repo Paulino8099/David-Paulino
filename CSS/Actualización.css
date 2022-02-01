@@ -60,8 +60,9 @@
 }
 
 .actualización .content-actualización h1 {
+  margin: 0;
   text-align: center;
-  color: var(--text_black_opacity100);
+  color: var(--text_gray_medioOscuro);
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-column: 1/9;
@@ -72,11 +73,11 @@
 
 .actualización .content-actualización hr {
   background-color: var(--bg_black_opacity100);
-  width: 90%;
+  width: 85%;
   height: 2px;
-  margin: 0 0 10px 0;
-  border-radius: 100%;
+  background: var(--border_gray_claro);
   border: none;
+  margin-bottom: 5px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-column: 1/9;
@@ -88,7 +89,7 @@
 .actualización .content-actualización .container-descripcion {
   overflow: hidden;
   overflow-y: auto;
-  margin-bottom: 10px;
+  padding: 10px 0;
   border-radius: 10px;
   display: -ms-grid;
   display: grid;

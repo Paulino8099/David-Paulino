@@ -49,19 +49,20 @@
       grid-row: 1/2;
     }
     h1 {
+      margin: 0;
       text-align: center;
-      color: var(--text_black_opacity100);
+      color: var(--text_gray_medioOscuro);
 
       grid-column: 1/9;
       grid-row: 1/2;
     }
     hr {
       background-color: var(--bg_black_opacity100);
-      width: 90%;
+      width: 85%;
       height: 2px;
-      margin: 0 0 10px 0;
-      border-radius: 100%;
+      background: var(--border_gray_claro);
       border: none;
+      margin-bottom: 5px;
 
       grid-column: 1/9;
       grid-row: 2/3;
@@ -70,7 +71,7 @@
     .container-descripcion {
       overflow: hidden;
       overflow-y: auto;
-      margin-bottom: 10px;
+      padding: 10px 0;
       border-radius: 10px;
 
       display: grid;

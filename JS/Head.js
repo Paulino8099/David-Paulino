@@ -9,25 +9,44 @@
 // FIJAR LA BARRA DE NAVEGACION EN LA PARTE SUPERIOR============================================================
 window.addEventListener('scroll', function () {
     if (window.scrollY > 200) {
+        // barra de navegación
         document.querySelector('.barraNav-container').classList.add('fixedOn');
+        // logo copyRygt
+        document.querySelector('.copyRight-secundary').classList.add('active');
     } else if (window.scrollY < 25) {
+        // barra de navegación
         document.querySelector('.barraNav-container').classList.remove('fixedOn');
+        // logo copyRygt
+        document.querySelector('.copyRight-secundary').classList.remove('active');
+        
     }
 });
 
 /**
  * ?volviendo a inicio
  */
-// volver a inicio al presionar el título principal
+// volver a inicio al hacer click el logo del título principal
 backStart();
 function backStart() {
-    let titlePrimary = document.querySelector('.title-head-container');
-    titlePrimary.addEventListener('click', function () {
+    let logoPersonal = document.querySelector('.logo-personal');
+    logoPersonal.addEventListener('click', function () {
         if (document.documentElement.scrollTop > 5) {
             document.documentElement.scrollTop = 0;
         }
     });
 }
+
+/**
+ * ?desplazádose hasta el final al tocar btn copyRight
+ */
+scrollEnd();
+function scrollEnd() {
+    let copyRightBtn = document.querySelector('.copyRight-secundary');
+
+    copyRightBtn.addEventListener('click', function () {
+        document.documentElement.scrollTop = document.documentElement.scrollHeight - 250;
+    });
+};
 
 // agregando eventos a los botones del menú de navegación y creando condicionales para que el indicador se mueva a la posición del botón donde se escuchó el click.
 let btnNav = document.querySelector('.main-head').children;
@@ -167,7 +186,7 @@ document.querySelector('.imgNavigate').addEventListener('click', () => {
     })
 });
 
-// Desactivar información personal mediante scroleo
+// Desactivar información personal al scrollear
 window.addEventListener('scroll', () => {
     let heightHead = document.querySelector('.head').offsetWidth;
     if (scrollY >= heightHead) {
