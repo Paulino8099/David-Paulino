@@ -101,7 +101,6 @@
 				border-radius: 5px;
 				background: var(--bg_gray_medioClaro);
 				place-items: center;
-				overflow: hidden;
 				transition: 0.5s;
 				position: absolute;
 
@@ -124,7 +123,7 @@
 					text-shadow: 0 0 10px var(--shadow_white_opacity50);
 					text-align: center;
 					transition: 0.5s;
-					margin-top: -5px;
+					margin-top: 0;
 
 					grid-column: 1/9;
 					grid-row: 1/2;
@@ -299,188 +298,188 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 @media screen and (max-width: 800px) {
-	.estudios {
-		/**
-	    ** Tarjetas del contenedor "Estudios".
-	    */
-		.dpw-container,
-		.microsoftOffice-container,
-		.windowNT-container,
-		.auxVentas-container,
-		.bachillerato-container,
-		.adobe-card {
-			.front-face {
-				/**
-			** Titulos de las tarjetas de "Estudios".
-			*/
-				.title-dpw,
-				.title-office,
-				.title-windowNT,
-				.title-auxiliarVentas,
-				.title-bachillerato,
-				.title-adobe {
-					background: var(--bg_white_opacity25);
-					width: 100%;
-					margin-top: -5px;
-					font-size: 1rem;
-					color: var(--text_teal_opacity100);
-					text-shadow: 0 0 10px var(--shadow_white_opacity50);
-					text-align: center;
-					transition: 0.5s;
+	// .estudios {
+	// 	/**
+	//     ** Tarjetas del contenedor "Estudios".
+	//     */
+	// 	.dpw-container,
+	// 	.microsoftOffice-container,
+	// 	.windowNT-container,
+	// 	.auxVentas-container,
+	// 	.bachillerato-container,
+	// 	.adobe-card {
+	// 		.front-face {
+	// 			/**
+	// 		** Titulos de las tarjetas de "Estudios".
+	// 		*/
+	// 			.title-dpw,
+	// 			.title-office,
+	// 			.title-windowNT,
+	// 			.title-auxiliarVentas,
+	// 			.title-bachillerato,
+	// 			.title-adobe {
+	// 				background: var(--bg_white_opacity25);
+	// 				width: 100%;
+	// 				margin-top: -5px;
+	// 				font-size: 1rem;
+	// 				color: var(--text_teal_opacity100);
+	// 				text-shadow: 0 0 10px var(--shadow_white_opacity50);
+	// 				text-align: center;
+	// 				transition: 0.5s;
 
-					grid-column: 1/9;
-					grid-row: 1/2;
-				}
-				/**
-			** Contenedor para ver más información de las tarjetas de "Estudios".
-			*/
-				.masInfo-container {
-					width: 100%;
-					justify-content: space-between;
-					align-items: center;
+	// 				grid-column: 1/9;
+	// 				grid-row: 1/2;
+	// 			}
+	// 			/**
+	// 		** Contenedor para ver más información de las tarjetas de "Estudios".
+	// 		*/
+	// 			.masInfo-container {
+	// 				width: 100%;
+	// 				justify-content: space-between;
+	// 				align-items: center;
 
-					display: flex;
-					grid-column: 1/9;
-					grid-row: 8/9;
-					// Logo del lugar estudiado
-					.lugarEstudio {
-						margin-bottom: 0;
-						.logo {
-							border-radius: 5px;
-							background: var(--bg_gray_claro);
-							padding: 5px;
-							margin-left: 5px;
-							width: 25px;
-							height: 25px;
-							cursor: pointer;
-							position: relative;
-						}
-						h2 {
-							color: var(--text_white_opacity100);
-							font-size: .7rem;
-							position: absolute;
-							background: var(--bg_teal_opacity100);
-							border-radius: 5px;
-							text-align: center;
-							padding: 0 5px;
-							bottom: 55px;
-							z-index: 50;
-							height: fit-content;
-							pointer-events: none;
-							opacity: 0;
+	// 				display: flex;
+	// 				grid-column: 1/9;
+	// 				grid-row: 8/9;
+	// 				// Logo del lugar estudiado
+	// 				.lugarEstudio {
+	// 					margin-bottom: 0;
+	// 					.logo {
+	// 						border-radius: 5px;
+	// 						background: var(--bg_gray_claro);
+	// 						padding: 5px;
+	// 						margin-left: 5px;
+	// 						width: 25px;
+	// 						height: 25px;
+	// 						cursor: pointer;
+	// 						position: relative;
+	// 					}
+	// 					h2 {
+	// 						color: var(--text_white_opacity100);
+	// 						font-size: .7rem;
+	// 						position: absolute;
+	// 						background: var(--bg_teal_opacity100);
+	// 						border-radius: 5px;
+	// 						text-align: center;
+	// 						padding: 0 5px;
+	// 						bottom: 55px;
+	// 						z-index: 50;
+	// 						height: fit-content;
+	// 						pointer-events: none;
+	// 						opacity: 0;
 
-							display: none;
-							&.darkMode {
-								color: var(--text_gray_oscuro);
-							}
-							&::before {
-								content: "";
-								width: 15px;
-								height: 15px;
-								background: var(--bg_teal_opacity100);
-								transform: rotateZ(45deg);
-								position: absolute;
-								z-index: -5;
-								bottom: -5px;
-								left: 15px;
-							}
-						}
-						&:hover h2 {
-							transition: 0.3s;
-							transition-delay: 0.3s;
-							opacity: 1;
-							pointer-events: none;
-						}
-					}
-					// botón para ver más sobre el contenido de la tarjeta
-					.verMas {
-						justify-items: end;
-						justify-content: space-between;
-						margin-right: 5px;
+	// 						display: none;
+	// 						&.darkMode {
+	// 							color: var(--text_gray_oscuro);
+	// 						}
+	// 						&::before {
+	// 							content: "";
+	// 							width: 15px;
+	// 							height: 15px;
+	// 							background: var(--bg_teal_opacity100);
+	// 							transform: rotateZ(45deg);
+	// 							position: absolute;
+	// 							z-index: -5;
+	// 							bottom: -5px;
+	// 							left: 15px;
+	// 						}
+	// 					}
+	// 					&:hover h2 {
+	// 						transition: 0.3s;
+	// 						transition-delay: 0.3s;
+	// 						opacity: 1;
+	// 						pointer-events: none;
+	// 					}
+	// 				}
+	// 				// botón para ver más sobre el contenido de la tarjeta
+	// 				.verMas {
+	// 					justify-items: end;
+	// 					justify-content: space-between;
+	// 					margin-right: 5px;
 
-						display: grid;
-						/**
-						** Botón "Mas"
-						*/
-						.btn_mas_SVG {
-							fill: var(--iconSVG_white_opacity100);
-							background-color: var(--bg_white_opacity25);
-							box-shadow: 0 0 10px var(--shadow_white_opacity50);
-							border: 3px solid var(--border_white_opacity100);
-							border-radius: 50%;
-							width: 20px;
-							height: 20px;
-							cursor: pointer;
-							transition: 0.5s;
-							&.darkMode {
-								border: 3px solid var(--iconSVG_gray_medioOscuro);
-								fill: var(--iconSVG_gray_medioOscuro);
-								text-shadow: 0 0 10px var(--shadow_white_opacity50);
-							}
-						}
-						.descripcion_btn_VerMas {
-							font-size: .7rem;
-							position: absolute;
-							transform: translateY(-40px);
-							background: var(--bg_teal_opacity100);
-							border-radius: 5px;
-							color: var(--text_white_opacity100);
-							padding: 0 5px;
-							z-index: 50;
-							opacity: 0;
-							bottom: 5px;
-							right: 0;
-							pointer-events: none;
+	// 					display: grid;
+	// 					/**
+	// 					** Botón "Mas"
+	// 					*/
+	// 					.btn_mas_SVG {
+	// 						fill: var(--iconSVG_white_opacity100);
+	// 						background-color: var(--bg_white_opacity25);
+	// 						box-shadow: 0 0 10px var(--shadow_white_opacity50);
+	// 						border: 3px solid var(--border_white_opacity100);
+	// 						border-radius: 50%;
+	// 						width: 20px;
+	// 						height: 20px;
+	// 						cursor: pointer;
+	// 						transition: 0.5s;
+	// 						&.darkMode {
+	// 							border: 3px solid var(--iconSVG_gray_medioOscuro);
+	// 							fill: var(--iconSVG_gray_medioOscuro);
+	// 							text-shadow: 0 0 10px var(--shadow_white_opacity50);
+	// 						}
+	// 					}
+	// 					.descripcion_btn_VerMas {
+	// 						font-size: .7rem;
+	// 						position: absolute;
+	// 						transform: translateY(-40px);
+	// 						background: var(--bg_teal_opacity100);
+	// 						border-radius: 5px;
+	// 						color: var(--text_white_opacity100);
+	// 						padding: 0 5px;
+	// 						z-index: 50;
+	// 						opacity: 0;
+	// 						bottom: 5px;
+	// 						right: 0;
+	// 						pointer-events: none;
 
-							display: none;
-							&.darkMode {
-								text-shadow: 0 0 10px var(--shadow_white_opacity100);
-								color: var(--bg_gray_oscuro);
-							}
-							&::before {
-								content: "";
-								width: 15px;
-								height: 15px;
-								background: var(--bg_teal_opacity100);
-								position: absolute;
-								bottom: -5px;
-								right: 10px;
-								transform: rotate(45deg);
-								z-index: -5;
-							}
-						}
-						&:hover .descripcion_btn_VerMas {
-							transition: 0.3s;
-							transition-delay: 0.3s;
-							opacity: 1;
-							pointer-events: none;
-						}
-					}
-				}
-			}
-		}
+	// 						display: none;
+	// 						&.darkMode {
+	// 							text-shadow: 0 0 10px var(--shadow_white_opacity100);
+	// 							color: var(--bg_gray_oscuro);
+	// 						}
+	// 						&::before {
+	// 							content: "";
+	// 							width: 15px;
+	// 							height: 15px;
+	// 							background: var(--bg_teal_opacity100);
+	// 							position: absolute;
+	// 							bottom: -5px;
+	// 							right: 10px;
+	// 							transform: rotate(45deg);
+	// 							z-index: -5;
+	// 						}
+	// 					}
+	// 					&:hover .descripcion_btn_VerMas {
+	// 						transition: 0.3s;
+	// 						transition-delay: 0.3s;
+	// 						opacity: 1;
+	// 						pointer-events: none;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
 
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘Office◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
 
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-		.windowNT-container {
-			.front-face {
-				.png-windowNT {
-					width: 100px;
-				}
-			}
-		}
-	}
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘WindowNt◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	// ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+	// 	.windowNT-container {
+	// 		.front-face {
+	// 			.png-windowNT {
+	// 				width: 100px;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }

@@ -398,6 +398,7 @@
   font-family: "Open Sans", sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin: 0;
 }
 
 .head .nameDescription-container .name.off {

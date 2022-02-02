@@ -1,4 +1,5 @@
 
+// wath information navigator
 addEventListener('load', function () {
     console.log(navigator.userAgent.toLocaleLowerCase());
 });
@@ -26,9 +27,9 @@ document.querySelector(".btn_cancelar").addEventListener("click", () => {
 window.addEventListener("scroll", function () {
     const getPixelsStart = () => document.documentElement.scrollTop || document.body.scrollTop;
 
-    let containerIndicadorscroll = document.querySelector(".indicatorScroll-container");
-    let IndicadorScroll = document.querySelector('.indicadorScroll');
-    let indicadorPorcentaje = document.querySelector(".contador-porcentaje");
+    let indicatorScroll = document.querySelector(".indicatorScroll");
+    let IndicadorScrollContent = document.querySelector('.indicatorScroll-content');
+    let indicadorPorcentaje = document.querySelector(".porcentage-counter");
 
     let alto = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let avanceScroll = Math.round((getPixelsStart() / alto) * 100);
@@ -37,14 +38,14 @@ window.addEventListener("scroll", function () {
 
     if (scrollY >= 5) {
         // activando todo el contenedor del scroll. 
-        containerIndicadorscroll.classList.add('on')
-        IndicadorScroll.style.height = `${avanceScroll}%`;
+        indicatorScroll.classList.add('active')
+        IndicadorScrollContent.style.height = `${avanceScroll}%`;
         indicadorPorcentaje.innerHTML = ``;
         indicadorPorcentaje.innerHTML = `${avanceScroll - 1}`;
     }
     if (scrollY = 0 || scrollY < 5) {
         // desactivando todo el contenedor del scroll
-        containerIndicadorscroll.classList.remove('on');
+        indicatorScroll.classList.remove('active');
     }
 });
 

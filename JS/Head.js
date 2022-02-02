@@ -58,7 +58,7 @@ for (let i = 0; i < btnNav.length; i++) {
             let head = document.querySelector('.head');
             let estudios = document.querySelector('.estudios');
             let sobreMi = document.querySelector('.sobreMi');
-            let proyectos = document.querySelector('.proyectos');
+            let project = document.querySelector('.project');
             // Contenedor del titulo y el boton del menú.
             let barraTitleBtn = document.querySelector('.content-titleBoton');
             // Botón Estudios
@@ -74,11 +74,11 @@ for (let i = 0; i < btnNav.length; i++) {
                 document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight - 25;
             }
             /**
-             * !Botón Proyectos
+             * !Botón project
              */
             else if (btnNav[i].childNodes[0].nodeValue == 'Proyectos') {
 
-                // navegando entre las secciones al dar click en el botón "Proyectos". 
+                // navegando entre las secciones al dar click en el botón "project". 
                 document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight - 25;
             }
             /**
@@ -86,7 +86,7 @@ for (let i = 0; i < btnNav.length; i++) {
              */
             else if (btnNav[i].childNodes[0].nodeValue == 'Contacto') {
                 // navegando entre las secciones al dar click en el botón "Contacto". 
-                document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + proyectos.offsetHeight - 25;
+                document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + project.offsetHeight - 25;
             }
         }
     });
@@ -94,12 +94,12 @@ for (let i = 0; i < btnNav.length; i++) {
 
 // activar indicador y posicionarlo en su repectivo botón del navBar al detectar scroll en las diferentes secciones de todo el documento.
 window.addEventListener('scroll', () => {
-    navegationIndicatorScroll();
-    function navegationIndicatorScroll() {
+    navegationindicatorScroll();
+    function navegationindicatorScroll() {
         let head = document.querySelector('.head');
         let estudios = document.querySelector('.estudios');
         let sobreMi = document.querySelector('.sobreMi');
-        let proyectos = document.querySelector('.proyectos');
+        let project = document.querySelector('.project');
         /**
          * TODOS: Variables para la anchura de los botones del menú de navegación.
          */
@@ -107,8 +107,8 @@ window.addEventListener('scroll', () => {
         let widthBtnEstudios = document.querySelector('.btn-estudios').offsetWidth;
         // Botón Experiencias
         let widthBtnSobreMi = document.querySelector('.btn-sobreMi').offsetWidth;
-        // Botón Proyectos
-        let widthBtnProyectos = document.querySelector('.btn-proyectos').offsetWidth;
+        // Botón project
+        let widthBtnproject = document.querySelector('.btn-project').offsetWidth;
         // Botón Contacto
         let widthBtnContacto = document.querySelector('.btn-contacto').offsetWidth;
         /**
@@ -140,12 +140,12 @@ window.addEventListener('scroll', () => {
             document.querySelector('.indicador').style.transform = `translateX(${widthBtnEstudios + 6}px)`;
         }
         /**
-         *! Proyectos
+         *! project
          */
-        // cuando se detecte que el cliente ha hecho scroll y está posicionado en la sección de "Proyectos", se va a observar un indicador en el navegador del menú indicando que está sobre esa sección. 
+        // cuando se detecte que el cliente ha hecho scroll y está posicionado en la sección de "project", se va a observar un indicador en el navegador del menú indicando que está sobre esa sección. 
         else if (document.documentElement.scrollTop >= (head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight - 50) && document.documentElement.scrollTop <= (head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + 100)) {
             // Ancho del indicador de los botones del menú de navegación.
-            document.querySelector('.indicador').style.width = `${widthBtnProyectos}px`;
+            document.querySelector('.indicador').style.width = `${widthBtnproject}px`;
 
             // Distancia a trasladar el indicador de los botones del menú de navegación.
             document.querySelector('.indicador').style.transform = `translateX(${widthBtnEstudios + widthBtnSobreMi + 11}px)`;
@@ -154,12 +154,12 @@ window.addEventListener('scroll', () => {
          *! Contacto
          */
         // cuando se detecte que el cliente ha hecho scroll y está posicionado en la sección de "Contacto", se va a observar un indicador en el navegador del menú indicando que está sobre esa sección. 
-        else if ((document.documentElement.scrollTop >= (head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + proyectos.offsetHeight - 40)) && (document.documentElement.scrollTop <= (head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + proyectos.offsetHeight + 100))) {
+        else if ((document.documentElement.scrollTop >= (head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + project.offsetHeight - 40)) && (document.documentElement.scrollTop <= (head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + project.offsetHeight + 100))) {
             // Ancho del indicador de los botones del menú de navegación.
             document.querySelector('.indicador').style.width = `${widthBtnContacto}px`;
 
             // Distancia a trasladar el indicador de los botones del menú de navegación.
-            document.querySelector('.indicador').style.transform = `translateX(${widthBtnEstudios + widthBtnSobreMi + widthBtnProyectos + 15}px)`;
+            document.querySelector('.indicador').style.transform = `translateX(${widthBtnEstudios + widthBtnSobreMi + widthBtnproject + 15}px)`;
         }
         /**
          *! Head
@@ -270,7 +270,7 @@ function allConfigMovil() {
                     let head = document.querySelector('.head');
                     let estudios = document.querySelector('.estudios');
                     let sobreMi = document.querySelector('.sobreMi');
-                    let proyectos = document.querySelector('.proyectos');
+                    let project = document.querySelector('.project');
                     // Contenedor del titulo y el boton del menú.
                     let barraTitleBtn = document.querySelector('.content-titleBoton');
 
@@ -284,11 +284,11 @@ function allConfigMovil() {
                     else if (titleBtn == 'Sobre Mi') {
                         document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight - barraTitleBtn.offsetHeight;
                     }
-                    else if (titleBtn == 'Proyectos') {
+                    else if (titleBtn == 'project') {
                         document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight - barraTitleBtn.offsetHeight;;
                     }
                     else if (titleBtn == 'Contacto') {
-                        document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + proyectos.offsetHeight - barraTitleBtn.offsetHeight;;
+                        document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + project.offsetHeight - barraTitleBtn.offsetHeight;;
                     };
                 };
             });

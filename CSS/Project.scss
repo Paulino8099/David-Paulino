@@ -5,14 +5,14 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
-.proyectos {
+.project {
 	display: grid;
 	grid-column: 1/9;
 	grid-row: 4/5;
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: repeat(2, auto);
 	// title
-	.title-proyectos-container {
+	.title-project-container {
 		background-color: var(--bg_aliceBlue);
 		justify-self: center;
 		place-items: center;
@@ -33,7 +33,7 @@
 			background-color: var(--bg_gray_oscuro);
 			box-shadow: 0 -10px 10px var(--shadow_white_opacity50);
 		}
-		.title-proyectos {
+		.title-project {
 			font-size: 1.5rem;
 			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 			margin-right: 10px;
@@ -49,7 +49,7 @@
 		}
 	}
 	// content
-	.proyectos-container {
+	.project-container {
 		border: 2px solid var(--border_gray_claro);
 		box-shadow: 0 0 10px var(--shadow_black_opacity100);
 		background-color: var(--bg_aliceBlue);
@@ -61,31 +61,31 @@
 		grid-column: 1/3;
 		grid-row: 2/3;
 		// content
-		.content-proyectos {
+		.project-content  {
 			gap: 25px;
 			transition: 0.5s;
 			padding: 10px;
 
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(auto, 150px));
-			grid-template-rows: repeat(auto-fill), minmax(auto, 200px);
+			// grid-template-rows: repeat(auto-fill), minmax(auto, 200px);
 			&.darkMode {
 				color: var(--text_gray_claro);
 				box-shadow: 0 0 10px var(--shadow_white_opacity100);
 			}
-			// content cards
+			// cards
 			div {
 				justify-self: center;
 				height: min-content;
 				box-shadow: 0 0 5px var(--shadow_black_opacity50);
-				border-radius: 10px;
+				border-radius: 15px;
 				div {
 					justify-content: center;
 
 					display: flex;
 					flex-direction: column;
 					img {
-						box-shadow: inset 0 0 5px #000;
+						box-shadow: inset 0 0 5px var(--shadow_black_opacity100);
 						border-radius: 15px;
 						width: 100%;
 						cursor: pointer;
@@ -130,91 +130,11 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
-@media screen and (max-width: 2000px) {
-	.proyectos {
-		display: grid;
-		grid-template-columns: repeat(2, auto);
-		grid-template-rows: repeat(2, auto);
-		// title
-		.title-proyectos-container {
-			/**
-			*?	repeat
-			*/
-			&.darkMode {
-				background-color: var(--bg_gray_oscuro);
-				box-shadow: 0 -10px 10px var(--shadow_white_opacity50);
-			}
-			.title-proyectos {
-				font-size: 1.5rem;
-				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-				margin-right: 10px;
-				color: var(--text_teal_opacity100);
-				transition: 0.5s;
-				&.darkMode {
-					color: var(--text_gray_claro);
-				}
-			}
-			svg {
-				width: 2.5rem;
-				fill: var(--iconSVG_teal_opacity100);
-			}
-		}
-		// content
-		.proyectos-container {
-			.content-proyectos {
-				transition: 0.5s;
-				position: relative;
-				overflow: hidden;
-
-				display: grid;
-				grid-column: 1/3;
-				grid-row: 2/3;
-				grid-template-columns: repeat(auto-fit, minmax(auto, auto-fit));
-				&.darkMode {
-					color: var(--text_gray_claro);
-					box-shadow: 0 0 10px var(--shadow_white_opacity100);
-				}
-				// content
-				div {
-					box-shadow: 0 5px 5px var(--shadow_black_opacity25);
-					border-radius: 10px;
-					overflow: hidden;
-					div {
-						justify-content: center;
-
-						display: flex;
-						flex-direction: column;
-						img {
-							width: 100%;
-							cursor: pointer;
-						}
-						h1 {
-							text-align: center;
-							font-size: 1rem;
-							color: var(--text_gray_medioOscuro);
-						}
-					}
-				}
-				// ver mas
-				button {
-					justify-self: center;
-					align-self: flex-end;
-					border-radius: 5px;
-					background: var(--bg_teal_opacity100);
-					width: 25%;
-					padding: 5px 0;
-					margin-top: 25px;
-					justify-self: center;
-					align-self: flex-end;
-					color: var(--text_white_opacity100);
-					position: absolute;
-					&:hover {
-						box-shadow: none;
-					}
-					&:active {
-						box-shadow: none;
-					}
-				}
+@media screen and (max-width: 800px) {
+	.project {
+		.project-container {
+			.project-content  {
+				grid-template-columns: repeat(auto-fit, minmax(auto, 100px)); //edit (remove: 150px, add: 100px)
 			}
 		}
 	}

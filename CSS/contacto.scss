@@ -259,7 +259,7 @@
 	// messagge direct container
 	.messaggeDirect-container {
 		overflow: hidden;
-		margin: 25px 4% 75px 4%;
+		margin: 0 4% 75px 4%;
 		border-radius: 10px;
 		position: relative;
 		height: 300px;
@@ -272,6 +272,7 @@
 		// title primary
 		.titlePrimary-messaggeDirect {
 			margin-right: 10px;
+			margin-top: -20px;
 			width: 100%;
 			position: absolute;
 
@@ -283,10 +284,11 @@
 		// imagen
 		span {
 			width: 50%;
+
 			display: grid;
 			img {
 				place-self: center;
-				width: 50%;
+				width: 80%;
 				height: min-content;
 				place-self: center;
 			}
@@ -571,7 +573,8 @@
 		}
 		// messagge direct
 		.messaggeDirect-container {
-			height: min-content; //edit (delete: 300px, add: min-content)
+			height: 600px; //edit (delete: 300px, add: min-content)
+			justify-items: center;
 			background: linear-gradient(
 				0deg,
 				#a5a6c7 0%,
@@ -586,9 +589,9 @@
 				position: relative; // edit (delete: absolute, add: relative)
 				height: 5%; // edit (add: height)
 				margin-bottom: 10px; // edit (add: 10px)
-				padding: 5px; // edit (add: px)
+				padding: 5px; // edit (add: padding)
 				h1 {
-					border: 2px solid #a5a6c7;
+					border: 2px solid #a5a6c7; //edit (add: border)
 					border-radius: 10px; // edit (add: border-radius)
 					margin-right: 0px; // edit (delete: 10px, add: 0)
 					background: linear-gradient(
@@ -602,19 +605,25 @@
 			}
 			// imagen
 			span {
-				margin-top: 50px; // edit (add: 10px)
-				width: auto; // edit (delete: 50%, add: auto)
-				height: 30%;
-				// edit (add: 25%)
+				margin-top: 40px; // edit (add: 10px)
+				width: 100%; // edit (delete: 50%, add: auto)
+				height: 30%; // edit (add: 35%)
+				
+				display: grid; // edit (add: display)
+				img {
+					width: 230px;
+					justify-self: center;
+				}
 			}
 			// formulario de envío
 			.messaggeDirect-content {
+				padding-top: 0; // edit (add:  padding-top)
 				margin: 0; // edit (delete: 25px, add: 0)
 				width: auto; // edit (delete: 50%, add: auto)
-				height: 70%; // edit (add: 70%)
+				height: 60%; // edit (add: 60%)
 				.input-content {
-					margin-bottom: 5px;
-					// edit (delete: 15x, add: 5px)
+					margin-bottom: 0; // edit (remove: 15px, add: 0)
+					margin-left: -15px; // edit (add: margin-left)
 					span {
 						svg {
 							width: 70px; // edit (delete: 30px, add: 70px)
@@ -624,9 +633,11 @@
 							margin-left: 0; // edit (delete: 10px, add: 0)
 						}
 					}
-				} // btn send
+				} 
+				// btn send
 				.btn-send-messaggeDirect {
-					width: 115px; // edit (delete: 100px, add: 115px)
+					width: 115px;
+					// edit (delete: 100px, add: 115px)
 					height: 40px;
 					// edit (delete: 30, add: 40px)
 					margin: 15px;
