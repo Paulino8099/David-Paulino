@@ -83,14 +83,14 @@ body .indicatorScroll .indicatorScroll-content {
 }
 
 body .indicatorScroll .indicatorScroll-content .porcentage-counter {
-  background: var(--bg_white_opacity100);
+  background: #4a4c7e;
   -ms-grid-column-align: center;
       justify-self: center;
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: var(--text_black_opacity75);
+  color: var(--text_white_opacity100);
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 800;

@@ -134,7 +134,7 @@
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  background: var(--bg_gray_medioClaro);
+  background: #a5a6c7;
   place-items: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;

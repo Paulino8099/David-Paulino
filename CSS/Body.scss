@@ -78,13 +78,13 @@ body {
 
 			display: grid;
 			.porcentage-counter {
-				background: var(--bg_white_opacity100);
+				background: #4a4c7e;
 				justify-self: center;
 				position: absolute;
 				bottom: 0;
 				width: 100%;
 				text-align: center;
-				color: var(--text_black_opacity75);
+				color: var(--text_white_opacity100);
 				border-radius: 50px;
 				// padding: 2px;
 				font-size: 1rem;
