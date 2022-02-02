@@ -16,7 +16,8 @@
 		background-color: var(--bg_aliceBlue);
 		justify-self: center;
 		place-items: center;
-		outline: 2px solid var(--border_gray_claro);
+		border: 2px solid var(--border_gray_claro);
+		border-bottom: none;
 		box-shadow: 0 -10px 10px var(--shadow_black_opacity50);
 		padding: 0 5px;
 		width: fit-content;

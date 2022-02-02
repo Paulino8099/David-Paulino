@@ -1,7 +1,7 @@
 
 // wath information navigator
 addEventListener('load', function () {
-    console.log(navigator.userAgent.toLocaleLowerCase());
+    console.log(navigator.geolocation);
 });
 
 
@@ -21,7 +21,7 @@ document.querySelector(".btn_cancelar").addEventListener("click", () => {
 });
 
 /**
- *? indicador de scroleo
+ *? indicador de scrolleo
  */
 // indicador de scrolleo en la parte izquierda de la página
 window.addEventListener("scroll", function () {
@@ -60,7 +60,12 @@ window.addEventListener("scroll", function () {
  *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 */
 // todas las configuraciones de los comentarios flotantes para cada elemento (Solo para dispositivos pc)
-allConfigComment();
+// wath information navigator
+
+// identificando qué dispositivo es. El cógido solo se va a ejecutar si el dispositivo es una pc
+let identificator = navigator.userAgent.toLocaleLowerCase();
+if (identificator.search('windows') !== -1 || identificator.search('win') !== -1) { allConfigComment() }
+
 function allConfigComment() {
     let commentsContainer = document.querySelector('.comments-container');
     let commentsContent = document.querySelector('.comments-content');
@@ -68,7 +73,7 @@ function allConfigComment() {
     /**
      * ?ventana  de mensajes...
      */
-    // programando ventana especial para mostrar mensajes al pasar cursor por "x" elementos
+    // programando posición de la ventana flotante para mostrar mensajes al pasar cursor por "X" elementos
     commnentsFloat();
     function commnentsFloat() {
         document.addEventListener('mousemove', function (e) {
@@ -90,7 +95,6 @@ function allConfigComment() {
         /***
          * ?logo personal (title)...
          */
-
         // al pasar cursor por el "logo personal" de la página se mostrará la functión de dicho elemento
         logoPersonal();
         function logoPersonal() {
@@ -98,29 +102,54 @@ function allConfigComment() {
 
             // activando mensaje al posicionar el cursor encima del "logo personal" 
             logoPersonal.addEventListener('mouseover', function () {
-                // solo se va a ejecutar este código si el ancho de pantalla es mayor "750px" y el se ha hecho scroll hasta 10
-                if (document.documentElement.offsetWidth >= 750 && document.documentElement.scrollTop > 10) {
+                // solo se va a ejecutar este código si se ha hecho scroll hasta 100
+                if (document.documentElement.scrollTop > 400) {
                     commentsContent.innerHTML = `
-                                  <div class="imgTitle-comments-area">
+                                <div class="imgTitle-comments-area">
                                     <h3 class="title-comments"> 
-                                      Inicio:
+                                    Inicio:
                                     </h3>
                                     <img src="PNG/homePortafolioDavidPaulino.png" alt="auto">
-                                  </div>
-                                  <p class="paragraph-comments">
+                                </div>
+                                <p class="paragraph-comments">
                                     Volver al inicio de la página
-                                  </p>
-                                  `;
+                                </p>
+                                `;
                     commentsContent.classList.add('active');
                 };
             });
 
             // desactivando comentario del "logo personal" al sacar el cursor de este
             logoPersonal.addEventListener('mouseout', function () {
-                // solo se va a ejecutar este código si el ancho de pantalla es mayor "750px"
-                if (document.documentElement.offsetWidth >= 750) {
-                    commentsContent.classList.remove('active');
-                };
+                commentsContent.classList.remove('active');
+            });
+        };
+
+        /**
+         * ?logo copyRight (title)...
+         */
+        // al pasar cursor por el "logo copyRight" (al lado del título principal) de la página se mostrará la functión de dichos elementos
+        CopyRight();
+        function CopyRight() {
+            let logoCopyRight = document.querySelector('.copyRight-secundary');
+
+            logoCopyRight.addEventListener('mouseover', function () {
+                commentsContent.innerHTML = `
+                    <div class="imgTitle-comments-area">
+                        <h3 class="title-comments"> 
+                            CopyRight:
+                        </h3>
+                        <img src="PNG/pie_pagina.png" alt="copyRigth pie de página">
+                    </div>
+                    <p class="paragraph-comments">
+                        Ir al pie de la página donde se encuentra la información de derecho de autor
+                    </p>
+                    `;
+                commentsContent.classList.add('active');
+            });
+
+            logoCopyRight.addEventListener('mouseout', function () {
+                commentsContent.classList.remove('active');
             });
         };
 
@@ -133,62 +162,26 @@ function allConfigComment() {
 
             // activando mensaje al posicionar el cursor encima del "btn start" 
             btnStart.addEventListener('mouseover', function () {
-                // solo se va a ejecutar este código si el ancho de pantalla es mayor "750px" y el se ha hecho scroll hasta 10
-                if (document.documentElement.offsetWidth >= 750 && document.documentElement.scrollTop > 10) {
-                    commentsContent.innerHTML = `
-                                <div class="imgTitle-comments-area">
-                                    <h3 class="title-comments"> 
-                                    Inicio:
-                                    </h3>
-                                    <img src="IMG/homePortafolioDavidPaulino.png" alt="auto">
-                                </div>
-                                <p class="paragraph-comments">
-                                    Volver al inicio de la página
-                                </p>
-                                `;
-                    commentsContent.classList.add('active');
-                };
+                commentsContent.innerHTML = `
+                            <div class="imgTitle-comments-area">
+                                <h3 class="title-comments"> 
+                                Inicio:
+                                </h3>
+                                <img src="IMG/homePortafolioDavidPaulino.png" alt="auto">
+                            </div>
+                            <p class="paragraph-comments">
+                                Volver al inicio de la página
+                            </p>
+                            `;
+                commentsContent.classList.add('active');
             });
 
             // desactivando comentario del "btn start" al sacar el cursor de este
             btnStart.addEventListener('mouseout', function () {
-                // solo se va a ejecutar este código si el ancho de pantalla es mayor "750px"
-                if (document.documentElement.offsetWidth >= 750) {
-                    commentsContent.innerHTML = ``;
-                    commentsContent.classList.remove('active');
-                };
-            });
-        }
-        /**
-         * ?logo copyRight (title)...
-         */
-        // al pasar cursor por el "logo copyRight" (al lado del título principal) de la página se mostrará la functión de dichos elementos
-        CopyRight();
-        function CopyRight() {
-            let logoCopyRight = document.querySelector('.copyRight-secundary');
-
-            logoCopyRight.addEventListener('mouseover', function () {
-                // solo se va a ejecutar este código si el ancho de pantalla es mayor "750px" y el se ha hecho scroll hasta 10
-                if (document.documentElement.offsetWidth >= 750 && document.documentElement.scrollTop > 10) {
-                    commentsContent.innerHTML = `
-                                <div class="imgTitle-comments-area">
-                                    <h3 class="title-comments"> 
-                                        CopyRight:
-                                    </h3>
-                                    <img src="PNG/pie_pagina.png" alt="copyRigth pie de página">
-                                </div>
-                                <p class="paragraph-comments">
-                                    Ir al pie de la página donde se encuentra la información de derecho de autor
-                                </p>
-                                `;
-                    commentsContent.classList.add('active');
-                };
-            });
-
-            logoCopyRight.addEventListener('mouseout', function () {
+                commentsContent.innerHTML = ``;
                 commentsContent.classList.remove('active');
             });
-        };
+        }
     };
 };
 

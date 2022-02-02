@@ -17,7 +17,8 @@
 		background-color: var(--bg_aliceBlue);
 		justify-self: center;
 		place-items: center;
-		outline: 2px solid var(--border_gray_claro);
+		border: 2px solid var(--border_gray_claro);
+		border-bottom: none;
 		box-shadow: 0 -10px 10px var(--shadow_black_opacity50);
 		padding: 5px;
 		width: min-content;
@@ -79,7 +80,7 @@
 			background: var(--iconSVG_gray_medioOscuro);
 			width: 2px;
 			border: none;
-			outline: none;
+			border-radius: none;
 		}
 		// contenedores
 		div {
@@ -354,7 +355,7 @@
 				grid-row: 2/3;
 				&:focus {
 					border: none;
-					outline: none;
+					border-radius: none;
 					box-shadow: 0 0 10px var(--shadow_black_opacity50);
 				}
 				&::placeholder {

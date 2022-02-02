@@ -11,7 +11,7 @@
   height: 100vh;
   background: var(--bg_black_opacity50);
   backdrop-filter: blur(5px);
-  z-index: 200;
+  z-index: 1000;
   position: fixed;
   opacity: 0;
   pointer-events: none;

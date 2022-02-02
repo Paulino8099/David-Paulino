@@ -7,12 +7,13 @@
 * button {
   border: none;
   cursor: pointer;
-  outline: none;
+  border-radius: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 * input {
   outline: none;
+  border-radius: none;
   border: none;
 }
 
@@ -284,7 +285,7 @@ body .info-container .info-content .info::-webkit-scrollbar-thumb {
 
 body .info-container .info-content button {
   border: none;
-  outline: none;
+  border-radius: none;
   border-radius: 5px;
   color: var(--text_white_opacity100);
   cursor: pointer;
@@ -460,7 +461,7 @@ body .moveCenter {
   }
   .info-container .info-content button {
     border: none;
-    outline: none;
+    border-radius: none;
     border-radius: 5px;
     color: var(--text_white_opacity100);
     cursor: pointer;

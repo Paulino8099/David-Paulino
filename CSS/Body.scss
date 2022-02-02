@@ -5,12 +5,13 @@
 	button {
 		border: none;
 		cursor: pointer;
-		outline: none;
+		border-radius: none;
 		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
 			sans-serif;
 	}
 	input {
 		outline: none;
+		border-radius: none;
 		border: none;
 	}
 	&::selection {
@@ -258,7 +259,7 @@ body {
 			}
 			button {
 				border: none;
-				outline: none;
+				border-radius: none;
 				border-radius: 5px;
 				color: var(--text_white_opacity100);
 				cursor: pointer;
@@ -423,7 +424,7 @@ body {
 			}
 			button {
 				border: none;
-				outline: none;
+				border-radius: none;
 				border-radius: 5px;
 				color: var(--text_white_opacity100);
 				cursor: pointer;

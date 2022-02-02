@@ -19,7 +19,8 @@
   background-color: var(--bg_aliceBlue);
   justify-self: center;
   place-items: center;
-  outline: 2px solid var(--border_gray_claro);
+  border: 2px solid var(--border_gray_claro);
+  border-bottom: none;
   -webkit-box-shadow: 0 -10px 10px var(--shadow_black_opacity50);
           box-shadow: 0 -10px 10px var(--shadow_black_opacity50);
   padding: 5px;
@@ -107,7 +108,7 @@
   background: var(--iconSVG_gray_medioOscuro);
   width: 2px;
   border: none;
-  outline: none;
+  border-radius: none;
 }
 
 .contacto .contact-content div {
@@ -499,7 +500,7 @@
 
 .contacto .messaggeDirect-container .messaggeDirect-content textarea:focus {
   border: none;
-  outline: none;
+  border-radius: none;
   -webkit-box-shadow: 0 0 10px var(--shadow_black_opacity50);
           box-shadow: 0 0 10px var(--shadow_black_opacity50);
 }
