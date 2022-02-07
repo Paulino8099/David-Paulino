@@ -1,10 +1,34 @@
 
-// wath information navigator
-addEventListener('load', function () {
-    console.log(navigator.geolocation);
-});
+// // wath information navigator
+// addEventListener('load', function () {
+//     console.log(navigator);
+// });
 
+// observador
+// obser();
+function obser() {
+    const imagen1 = document.querySelector('.messageDirect-container');
 
+    const cargarImagen = (entry, salida) => {
+        console.log(entry);
+
+        entry.forEach((entrada) => {
+            if (entrada.isIntersecting) {
+                entrada.target.style.opacity = "0";
+            } else {
+                entrada.target.style.opacity = "1";
+            }
+        });
+    };
+
+    const observador = new IntersectionObserver(cargarImagen, {
+        root: null,
+        rootMargin: '500px 0px 100px 0px',
+        threshold: 1.0
+    });
+
+    observador.observe(imagen1);
+};
 /**
  *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
  *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
@@ -15,11 +39,24 @@ addEventListener('load', function () {
  *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 */
 
-//DESACTIVAR LA VENTANA DE ACTUALIZACION=========================================================================
+/**
+ *? ocultar ventana de actualización...
+    */
+//btn para ocultar la ventana de actualización
 document.querySelector(".btn_cancelar").addEventListener("click", () => {
-    document.querySelector('.actualización').classList.toggle('off');
+    document.querySelector('.actualización').classList.toggle('on');
 });
 
+
+/**
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Barra Scroll¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Barra Scroll¦¦¦¦¦¦¦¦¦Barra Scroll¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Barra Scroll¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Barra Scroll¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Barra Scroll¦¦¦¦¦¦¦¦¦Barra Scroll¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Barra Scroll¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+*/
 /**
  *? indicador de scrolleo
  */
@@ -233,11 +270,3 @@ window.addEventListener("scroll", function () {
     }
 });
 
-
-/**
- *? ocultar ventana de actualización...
-  */
-//btn para ocultar la ventana de actualización
-document.querySelector(".btn_cancelar").addEventListener("click", () => {
-    document.querySelector('.actualización').classList.toggle('on');
-});

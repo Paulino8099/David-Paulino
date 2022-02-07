@@ -346,7 +346,7 @@
   grid-row: 6/7;
 }
 
-.contacto .messaggeDirect-container {
+.contacto .messageDirect-container {
   overflow: hidden;
   margin: 0 4% 75px 4%;
   border-radius: 10px;
@@ -367,7 +367,7 @@
   grid-row: 3/4;
 }
 
-.contacto .messaggeDirect-container .titlePrimary-messaggeDirect {
+.contacto .messageDirect-container .titlePrimary-messageDirect {
   margin-right: 10px;
   margin-top: -20px;
   width: 100%;
@@ -376,18 +376,18 @@
   display: grid;
 }
 
-.contacto .messaggeDirect-container .titlePrimary-messaggeDirect h1 {
+.contacto .messageDirect-container .titlePrimary-messageDirect h1 {
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-.contacto .messaggeDirect-container span {
+.contacto .messageDirect-container span {
   width: 50%;
   display: -ms-grid;
   display: grid;
 }
 
-.contacto .messaggeDirect-container span img {
+.contacto .messageDirect-container span img {
   place-self: center;
   width: 80%;
   height: -webkit-min-content;
@@ -396,7 +396,7 @@
   place-self: center;
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content {
+.contacto .messageDirect-container .messageDirect-content {
   -ms-grid-column-align: center;
       justify-self: center;
   margin: 25px;
@@ -411,7 +411,7 @@
       grid-template-rows: repeat(6, auto);
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .input-content {
+.contacto .messageDirect-container .messageDirect-content .input-content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -431,7 +431,7 @@
   grid-row: 1/2;
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .input-content span {
+.contacto .messageDirect-container .messageDirect-content .input-content span {
   -ms-flex-line-pack: center;
       align-content: center;
   margin-top: 10px;
@@ -441,12 +441,12 @@
   display: flex;
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .input-content span svg {
+.contacto .messageDirect-container .messageDirect-content .input-content span svg {
   fill: var(--shadow_white_opacity100);
   width: 30px;
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .input-content span input {
+.contacto .messageDirect-container .messageDirect-content .input-content span input {
   color: var(--text_gray_medioOscuro);
   font-size: 1.2rem;
   width: 70%;
@@ -455,32 +455,32 @@
   border-radius: 10px;
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .input-content span input::-webkit-input-placeholder {
+.contacto .messageDirect-container .messageDirect-content .input-content span input::-webkit-input-placeholder {
   color: var(--text_teal_opacity100);
   opacity: .5;
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .input-content span input:-ms-input-placeholder {
+.contacto .messageDirect-container .messageDirect-content .input-content span input:-ms-input-placeholder {
   color: var(--text_teal_opacity100);
   opacity: .5;
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .input-content span input::-ms-input-placeholder {
+.contacto .messageDirect-container .messageDirect-content .input-content span input::-ms-input-placeholder {
   color: var(--text_teal_opacity100);
   opacity: .5;
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .input-content span input::placeholder {
+.contacto .messageDirect-container .messageDirect-content .input-content span input::placeholder {
   color: var(--text_teal_opacity100);
   opacity: .5;
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .input-content span input:focus {
+.contacto .messageDirect-container .messageDirect-content .input-content span input:focus {
   -webkit-box-shadow: 0 0 10px var(--shadow_black_opacity50);
           box-shadow: 0 0 10px var(--shadow_black_opacity50);
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content textarea {
+.contacto .messageDirect-container .messageDirect-content textarea {
   resize: none;
   border-radius: 10px;
   padding: 10px;
@@ -498,34 +498,34 @@
   grid-row: 2/3;
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content textarea:focus {
+.contacto .messageDirect-container .messageDirect-content textarea:focus {
   border: none;
   border-radius: none;
   -webkit-box-shadow: 0 0 10px var(--shadow_black_opacity50);
           box-shadow: 0 0 10px var(--shadow_black_opacity50);
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content textarea::-webkit-input-placeholder {
+.contacto .messageDirect-container .messageDirect-content textarea::-webkit-input-placeholder {
   opacity: .5;
   color: var(--text_teal_opacity100);
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content textarea:-ms-input-placeholder {
+.contacto .messageDirect-container .messageDirect-content textarea:-ms-input-placeholder {
   opacity: .5;
   color: var(--text_teal_opacity100);
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content textarea::-ms-input-placeholder {
+.contacto .messageDirect-container .messageDirect-content textarea::-ms-input-placeholder {
   opacity: .5;
   color: var(--text_teal_opacity100);
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content textarea::placeholder {
+.contacto .messageDirect-container .messageDirect-content textarea::placeholder {
   opacity: .5;
   color: var(--text_teal_opacity100);
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect {
+.contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect {
   justify-self: end;
   background: var(--bg_teal_opacity100);
   border-radius: 5px;
@@ -555,12 +555,12 @@
   grid: 3/4;
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect h3 {
+.contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect h3 {
   font-size: 1rem;
   color: var(--text_white_opacity100);
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect svg {
+.contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect svg {
   width: 25px;
   -webkit-transition: .5s;
   transition: .5s;
@@ -597,17 +597,17 @@
   }
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect:hover {
+.contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect:hover {
   -webkit-box-shadow: 0 0 10px var(--shadow_black_opacity50);
           box-shadow: 0 0 10px var(--shadow_black_opacity50);
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect:hover svg {
+.contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect:hover svg {
   -webkit-animation: identifier 1s linear infinite;
           animation: identifier 1s linear infinite;
 }
 
-.contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect:active {
+.contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect:active {
   -webkit-transition: 0;
   transition: 0;
   -webkit-box-shadow: none;
@@ -792,7 +792,7 @@
     -ms-grid-row-span: 1;
     grid-row: 6/7;
   }
-  .contacto .messaggeDirect-container {
+  .contacto .messageDirect-container {
     height: 600px;
     justify-items: center;
     background: -webkit-gradient(linear, left bottom, left top, from(#a5a6c7), color-stop(60%, #a5a6c7), color-stop(60%, #4a4c7e), to(#4a4c7e));
@@ -802,57 +802,57 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contacto .messaggeDirect-container .titlePrimary-messaggeDirect {
+  .contacto .messageDirect-container .titlePrimary-messageDirect {
     position: relative;
     height: 5%;
     margin-bottom: 10px;
     padding: 5px;
   }
-  .contacto .messaggeDirect-container .titlePrimary-messaggeDirect h1 {
+  .contacto .messageDirect-container .titlePrimary-messageDirect h1 {
     border: 2px solid #a5a6c7;
     border-radius: 10px;
     margin-right: 0px;
     background: -webkit-gradient(linear, left top, right top, from(#a5a6c7), color-stop(50%, #a5a6c7), color-stop(50%, #4a4c7e), to(#4a4c7e));
     background: linear-gradient(90deg, #a5a6c7 0%, #a5a6c7 50%, #4a4c7e 50%, #4a4c7e 100%);
   }
-  .contacto .messaggeDirect-container span {
+  .contacto .messageDirect-container span {
     margin-top: 40px;
     width: 100%;
     height: 30%;
     display: -ms-grid;
     display: grid;
   }
-  .contacto .messaggeDirect-container span img {
+  .contacto .messageDirect-container span img {
     width: 230px;
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  .contacto .messaggeDirect-container .messaggeDirect-content {
+  .contacto .messageDirect-container .messageDirect-content {
     padding-top: 0;
     margin: 0;
     width: auto;
     height: 60%;
   }
-  .contacto .messaggeDirect-container .messaggeDirect-content .input-content {
+  .contacto .messageDirect-container .messageDirect-content .input-content {
     margin-bottom: 0;
     margin-left: -15px;
   }
-  .contacto .messaggeDirect-container .messaggeDirect-content .input-content span svg {
+  .contacto .messageDirect-container .messageDirect-content .input-content span svg {
     width: 70px;
   }
-  .contacto .messaggeDirect-container .messaggeDirect-content .input-content span input {
+  .contacto .messageDirect-container .messageDirect-content .input-content span input {
     padding: 10px;
     margin-left: 0;
   }
-  .contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect {
+  .contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect {
     width: 115px;
     height: 40px;
     margin: 15px;
   }
-  .contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect h3 {
+  .contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect h3 {
     font-size: 1.2rem;
   }
-  .contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect svg {
+  .contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect svg {
     -webkit-animation: identifier 3s ease infinite;
             animation: identifier 3s ease infinite;
   }
@@ -884,11 +884,11 @@
               transform: translateX(-15px);
     }
   }
-  .contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect:hover {
+  .contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .contacto .messaggeDirect-container .messaggeDirect-content .btn-send-messaggeDirect:hover svg {
+  .contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect:hover svg {
     -webkit-animation: identifier 3s ease infinite;
             animation: identifier 3s ease infinite;
   }

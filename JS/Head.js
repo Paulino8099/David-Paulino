@@ -6,7 +6,10 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
-// FIJAR LA BARRA DE NAVEGACION EN LA PARTE SUPERIOR============================================================
+/**
+ * ? fijando barra superior de navegación...
+ */
+// FIJAR LA BARRA DE NAVEGACION EN LA PARTE SUPERIOR
 window.addEventListener('scroll', function () {
     if (window.scrollY > 200) {
         // barra de navegación
@@ -18,7 +21,7 @@ window.addEventListener('scroll', function () {
         document.querySelector('.barraNav-container').classList.remove('fixedOn');
         // logo copyRygt
         document.querySelector('.copyRight-secundary').classList.remove('active');
-        
+
     }
 });
 
@@ -37,8 +40,9 @@ function backStart() {
 }
 
 /**
- * ?desplazádose hasta el final al tocar btn copyRight
+ * ? yendo al final de la página...
  */
+// desplazádose hasta el final al tocar btn copyRight
 scrollEnd();
 function scrollEnd() {
     let copyRightBtn = document.querySelector('.copyRight-secundary');
@@ -48,6 +52,9 @@ function scrollEnd() {
     });
 };
 
+/**
+ * ?indicador de sesiones (click)...
+ */
 // agregando eventos a los botones del menú de navegación y creando condicionales para que el indicador se mueva a la posición del botón donde se escuchó el click.
 let btnNav = document.querySelector('.main-head').children;
 for (let i = 0; i < btnNav.length; i++) {
@@ -92,89 +99,104 @@ for (let i = 0; i < btnNav.length; i++) {
     });
 };
 
+/**
+ * ?indicador de sesiones (IntersectionObserver)...
+ */
 // activar indicador y posicionarlo en su repectivo botón del navBar al detectar scroll en las diferentes secciones de todo el documento.
 window.addEventListener('scroll', () => {
-    navegationindicatorScroll();
-    function navegationindicatorScroll() {
-        let head = document.querySelector('.head');
-        let estudios = document.querySelector('.estudios');
-        let sobreMi = document.querySelector('.sobreMi');
-        let project = document.querySelector('.project');
-        /**
-         * TODOS: Variables para la anchura de los botones del menú de navegación.
-         */
-        // Botón Estudios
-        let widthBtnEstudios = document.querySelector('.btn-estudios').offsetWidth;
-        // Botón Experiencias
-        let widthBtnSobreMi = document.querySelector('.btn-sobreMi').offsetWidth;
-        // Botón project
-        let widthBtnproject = document.querySelector('.btn-project').offsetWidth;
-        // Botón Contacto
-        let widthBtnContacto = document.querySelector('.btn-contacto').offsetWidth;
-        /**
-         * TODOS: FIN de las variables para la anchura de los botones del menú de navegación.
-         */
 
-        // Contenedor del titulo y el boton del menú.
-        let barraTitleBtn = document.querySelector('.content-titleBoton');
-        /**
-         *! Estudios
-         */
-        // cuando se detecte que el cliente ha hecho scroll y está posicionado en la sección de "estudios", se va a observar un indicador en el navegador del menú indicando que está sobre esa sección. 
-        if ((document.documentElement.scrollTop >= head.offsetHeight - barraTitleBtn.offsetHeight - 50) && (document.documentElement.scrollTop <= head.offsetHeight - barraTitleBtn.offsetHeight + 100)) {
-            // ancho del indicador del menú de navegación. 
-            document.querySelector('.indicador').style.width = `${widthBtnEstudios}px`;
+    let head = document.querySelector('.head');
+    let indicator = document.querySelector('.indicador');
 
-            // distancia a trasladar el indicador en el menú de navegación. 
-            document.querySelector('.indicador').style.transform = `translateX(${0}px)`;
-        }
-        /**
-         *! Sobre Mi
-         */
-        // cuando se detecte que el cliente ha hecho scroll y está posicionado en la sección de "Sobre Mi", se va a observar un indicador en el navegador del menú indicando que está sobre esa sección. 
-        else if ((document.documentElement.scrollTop >= (head.offsetHeight + estudios.offsetHeight - 50)) && (document.documentElement.scrollTop <= head.offsetHeight + estudios.offsetHeight + 100)) {
-            // Ancho del indicador de los botones del menú de navegación.
-            document.querySelector('.indicador').style.width = `${widthBtnSobreMi + 1}px`;
+    // width of the btns
+    let widthBtnEstudios = document.querySelector('.btn-estudios').offsetWidth;
+    let widthBtnSobreMi = document.querySelector('.btn-sobreMi').offsetWidth;
+    let widthBtnproject = document.querySelector('.btn-project').offsetWidth;
+    let widthBtnContacto = document.querySelector('.btn-contacto').offsetWidth;
 
-            // Distancia a trasladar el indicador de los botones del menú de navegación.
-            document.querySelector('.indicador').style.transform = `translateX(${widthBtnEstudios + 6}px)`;
-        }
-        /**
-         *! project
-         */
-        // cuando se detecte que el cliente ha hecho scroll y está posicionado en la sección de "project", se va a observar un indicador en el navegador del menú indicando que está sobre esa sección. 
-        else if (document.documentElement.scrollTop >= (head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight - 50) && document.documentElement.scrollTop <= (head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + 100)) {
-            // Ancho del indicador de los botones del menú de navegación.
-            document.querySelector('.indicador').style.width = `${widthBtnproject}px`;
+    // all of the sections
+    let sections = document.querySelectorAll('.section');
 
-            // Distancia a trasladar el indicador de los botones del menú de navegación.
-            document.querySelector('.indicador').style.transform = `translateX(${widthBtnEstudios + widthBtnSobreMi + 11}px)`;
-        }
-        /**
-         *! Contacto
-         */
-        // cuando se detecte que el cliente ha hecho scroll y está posicionado en la sección de "Contacto", se va a observar un indicador en el navegador del menú indicando que está sobre esa sección. 
-        else if ((document.documentElement.scrollTop >= (head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + project.offsetHeight - 40)) && (document.documentElement.scrollTop <= (head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + project.offsetHeight + 100))) {
-            // Ancho del indicador de los botones del menú de navegación.
-            document.querySelector('.indicador').style.width = `${widthBtnContacto}px`;
+    /**
+     * ?observador de sesiones...
+     */
+    const obser = (entry, salida) => {
+        entry.forEach(function (entry) {
+            if (entry.isIntersecting) {
 
-            // Distancia a trasladar el indicador de los botones del menú de navegación.
-            document.querySelector('.indicador').style.transform = `translateX(${widthBtnEstudios + widthBtnSobreMi + widthBtnproject + 15}px)`;
-        }
-        /**
-         *! Head
-         */
-        // cuando se detecte que el cliente ha hecho scroll y está posicionado en la sección de "Head", se va a observar un indicador en el navegador del menú indicando que está sobre esa sección. 
-        else if (document.documentElement.scrollTop <= (head.offsetHeight - 50)) {
-            // Ancho del indicador de los botones del menú de navegación.
-            document.querySelector('.indicador').style.width = `${0}px`;
+                /**
+                 * ?head...
+                 */
+                if (entry.target.classList == 'head section') {
+                    // Ancho y opacidad del indicador de los botones del menú de navegación.
+                    indicator.style.width = `${0 }px`;
+                    indicator.style.opacity = '0';
 
-            // Distancia a trasladar el indicador de los botones del menú de navegación.
-            document.querySelector('.indicador').style.transform = `translateX(${-100}%)`;
-        };
+                    // Distancia a trasladar el indicador de los botones del menú de navegación.
+                    indicator.style.transform = `translateX(${-100}%)`;
+                }
+                /**
+                 * ?studies...
+                 */
+                else if (entry.target.classList == 'estudios section') {
+                    // ancho y opacidad  del indicador del menú de navegación.
+                    indicator.style.width = `${widthBtnEstudios - 6}px`;
+                    indicator.style.opacity = '1';
+
+                    // distancia a trasladar el indicador en el menú de navegación. 
+                    indicator.style.transform = `translateX(${3}px)`;
+                }
+                /**
+                 * ?about me...
+                 */
+                else if (entry.target.classList == 'sobreMi section') {
+                    // Ancho y opacidad  del indicador de los botones del menú de navegación.
+                    indicator.style.width = `${widthBtnSobreMi - 7}px`;
+                    indicator.style.opacity = '1';
+
+                    // Distancia a trasladar el indicador de los botones del menú de navegación.
+                    indicator.style.transform = `translateX(${widthBtnEstudios + 6}px)`;
+                }
+                /**
+                 * ?project...
+                 */
+                else if (entry.target.classList == 'project section') {
+                    // Ancho y opacidad  del indicador de los botones del menú de navegación.
+                    indicator.style.width = `${widthBtnproject -6}px`;
+                    indicator.style.opacity = '1';
+
+                    // Distancia a trasladar el indicador de los botones del menú de navegación.
+                    indicator.style.transform = `translateX(${widthBtnEstudios + widthBtnSobreMi + 11}px)`;
+                }
+                /**
+                 * ?contact...
+                 */
+                else if (entry.target.classList == 'contacto section') {
+                    // Ancho y opacidad  del indicador de los botones del menú de navegación.
+                    indicator.style.width = `${widthBtnContacto -6}px`;
+                    indicator.style.opacity = '1';
+
+                    // Distancia a trasladar el indicador de los botones del menú de navegación.
+                    indicator.style.transform = `translateX(${widthBtnEstudios + widthBtnSobreMi + widthBtnproject + 15}px)`;
+                }
+            }
+        });
     };
+
+    const observador = new IntersectionObserver(obser, {
+        root: null,
+        rootMargin: "-50%",
+    });
+
+    // recoriendo la lista de todas las sesiones y observándolas 
+    sections.forEach(function (e) {
+        observador.observe(e);
+    });
 });
 
+/**
+ * ?onOff información personal (click)...
+ */
 // Activar/Desactivar información personal
 document.querySelector('.imgNavigate').addEventListener('click', () => {
     document.querySelector('.myData-float-container').classList.add('on')
@@ -186,6 +208,9 @@ document.querySelector('.imgNavigate').addEventListener('click', () => {
     })
 });
 
+/**
+ * ?desactivando información personal (scroll)...
+ */
 // Desactivar información personal al scrollear
 window.addEventListener('scroll', () => {
     let heightHead = document.querySelector('.head').offsetWidth;
@@ -294,7 +319,7 @@ function allConfigMovil() {
             });
         };
     };
-    
+
     /**
      * ?volviendo a inicio...
      */

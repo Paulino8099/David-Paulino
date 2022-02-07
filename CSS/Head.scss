@@ -157,12 +157,12 @@
 					transition: .5s;
 					&:hover {
 						&::after {
-							box-shadow: 0 -5px 10px 2px var(--bg_gray_medioClaro);
+							box-shadow: 0 -5px 10px 2px var(--bg_white_opacity100);
 							content: "";
 							width: 100%;
 							position: absolute;
 							height: 2px;
-							background: var(--bg_gray_medioClaro);
+							background: var(--bg_white_opacity100);
 							z-index: 50;
 							left: 0;
 							bottom: -11px;
