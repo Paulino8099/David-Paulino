@@ -19,7 +19,7 @@
 
   display: grid;
   grid-column: 1/9;
-  &.on {
+  &.active {
     opacity: 1;
     pointer-events: visible;
   }
@@ -29,7 +29,7 @@
     border-radius: 10px;
     place-self: center;
     justify-items: center;
-    background-color: var(--bg_white_opacity100);
+    background-color: #ffffff;
 
     display: grid;
     grid-template-columns: repeat(8, auto);
@@ -60,7 +60,7 @@
       background-color: var(--bg_black_opacity100);
       width: 85%;
       height: 2px;
-      background: var(--border_gray_claro);
+      background: #505050;
       border: none;
       margin-bottom: 5px;
 
@@ -80,7 +80,7 @@
       // content
       .content-descripcion {
         border-radius: 10px;
-        border: 1px solid var(--border_gray_claro);
+        border: 1px solid #505050;
         justify-self: center;
         width: 90%;
         margin-top: 5px;
@@ -88,18 +88,18 @@
 
         display: grid;
         .descripcion {
-          color: var(--text_gray_oscuro);
+          color: #222222;
           margin: 5px;
           font-size: 1rem;
         }
         .fechaHora-descripcion {
           border-top-left-radius: 10px;
-          border-left: 1px solid var(--border_gray_claro);
-          border-top: 1px solid var(--border_gray_claro);
+          border-left: 1px solid #505050;
+          border-top: 1px solid #505050;
           justify-self: end;
-          background: var(--border_gray_claro);
+          background: #505050;
           border-bottom-right-radius: 10px;
-          box-shadow: -1px -1px 5px var(--shadow_black_opacity25);
+          box-shadow: -1px -1px 5px #00000040;
 
           display: flex;
           h3 {
@@ -110,7 +110,7 @@
           }
           hr {
             text-align: center;
-            background-color: var(--border_gray_medioClaro);
+            background-color: #9E9E9E;
             width: 2px;
             height: 100%;
             border: none;
@@ -151,7 +151,7 @@
         border-radius: 10px;
         place-self: center;
         justify-items: center;
-        background-color: var(--bg_white_opacity100);
+        background-color: #ffffff;
     
         display: grid;
         grid-template-columns: repeat(8, auto);
@@ -168,7 +168,7 @@
         }
         h1 {
           text-align: center;
-          color: var(--text_black_opacity100);
+          color: #000000;
           font-size: 1.5rem;
     
           grid-column: 1/9;
@@ -198,7 +198,7 @@
           // content
           .content-descripcion {
             border-radius: 10px;
-            border: 1px solid var(--border_gray_claro);
+            border: 1px solid #505050;
             justify-self: center;
             width: 90%;
             margin-top: 5px;
@@ -206,18 +206,18 @@
     
             display: grid;
             .descripcion {
-              color: var(--text_gray_oscuro);
+              color: #222222;
               margin: 5px;
               font-size: 1rem;
             }
             .fechaHora-descripcion {
               border-top-left-radius: 10px;
-              border-left: 1px solid var(--border_gray_claro);
-              border-top: 1px solid var(--border_gray_claro);
+              border-left: 1px solid #505050;
+              border-top: 1px solid #505050;
               justify-self: end;
-              background: var(--border_gray_claro);
+              background: #505050;
               border-bottom-right-radius: 10px;
-              box-shadow: -1px -1px 5px var(--shadow_black_opacity25);
+              box-shadow: -1px -1px 5px #00000040;
     
               display: flex;
               h3 {
@@ -228,7 +228,7 @@
               }
               hr {
                 text-align: center;
-                background-color: var(--border_gray_medioClaro);
+                background-color: #9E9E9E;
                 width: 2px;
                 height: 100%;
                 border: none;

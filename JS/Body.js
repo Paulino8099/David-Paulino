@@ -44,7 +44,7 @@ function obser() {
     */
 //btn para ocultar la ventana de actualización
 document.querySelector(".btn_cancelar").addEventListener("click", () => {
-    document.querySelector('.actualización').classList.toggle('on');
+    document.querySelector('.actualización').classList.toggle('active');
 });
 
 
@@ -114,6 +114,7 @@ function allConfigComment() {
     commnentsFloat();
     function commnentsFloat() {
         document.addEventListener('mousemove', function (e) {
+            
             let y = e.clientY;
             let x = e.clientX;
 

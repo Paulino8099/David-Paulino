@@ -19,10 +19,11 @@
   background-color: var(--bg_aliceBlue);
   justify-self: center;
   place-items: center;
-  border: 2px solid var(--border_gray_claro);
   border-bottom: none;
-  -webkit-box-shadow: 0 -10px 10px var(--shadow_black_opacity50);
-          box-shadow: 0 -10px 10px var(--shadow_black_opacity50);
+  border: 2px solid #a5a6c7;
+  border-bottom: none;
+  -webkit-box-shadow: 0 0px 10px #00000030;
+          box-shadow: 0 0px 10px #00000030;
   padding: 5px;
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -30,8 +31,8 @@
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   z-index: 2;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -48,39 +49,39 @@
 
 .contacto .title-contact-container.darkMode {
   background-color: var(--bg_gray_oscuro);
-  -webkit-box-shadow: 0 -10px 10px var(--shadow_white_opacity50);
-          box-shadow: 0 -10px 10px var(--shadow_white_opacity50);
+  -webkit-box-shadow: 0 -10px 10px #ffffff80;
+          box-shadow: 0 -10px 10px #ffffff80;
 }
 
 .contacto .title-contact-container h3 {
   font-size: 1.5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-right: 10px;
-  color: var(--text_teal_opacity100);
+  color: #008080;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .contacto .title-contact-container h3.darkMode {
-  color: var(--text_gray_claro);
+  color: #cacaca;
 }
 
 .contacto .title-contact-container svg {
   width: 2rem;
-  fill: var(--iconSVG_teal_opacity100);
+  fill: #008080;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .contacto .title-contact-container svg.darkMode {
-  fill: var(--iconSVG_gray_claro);
+  fill: #cacaca;
 }
 
 .contacto .contact-content {
-  border: 2px solid var(--border_gray_claro);
+  border: 2px solid #a5a6c7;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 10px var(--shadow_black_opacity100);
-          box-shadow: 0 0 10px var(--shadow_black_opacity100);
+  -webkit-box-shadow: 0 0 10px #00000030;
+          box-shadow: 0 0 10px #00000030;
   background-color: var(--bg_aliceBlue);
   margin: 0 4% 75px 4%;
   padding: 4%;
@@ -105,7 +106,7 @@
 .contacto .contact-content hr {
   margin-left: 10px;
   margin-right: 10px;
-  background: var(--iconSVG_gray_medioOscuro);
+  background: #505050;
   width: 2px;
   border: none;
   border-radius: none;
@@ -138,7 +139,7 @@
   text-align: end;
   -webkit-text-decoration: underline 1px solid #000;
           text-decoration: underline 1px solid #000;
-  color: var(--text_black_opacity100);
+  color: #000000;
 }
 
 .contacto .contact-content .redesSociales-container {
@@ -213,7 +214,7 @@
   padding: 0px 4px;
   font-size: .8rem;
   margin-top: 5px;
-  color: var(--text_black_opacity100);
+  color: #000000;
 }
 
 .contacto .contact-content .redesSociales-container .redes-container div div a h3:hover {
@@ -289,8 +290,8 @@
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  -webkit-box-shadow: 0 5px 5px var(--shadow_black_opacity25);
-          box-shadow: 0 5px 5px var(--shadow_black_opacity25);
+  -webkit-box-shadow: 0 5px 5px #00000040;
+          box-shadow: 0 5px 5px #00000040;
   border-radius: 10px;
   width: 100%;
   padding: 0 5px;
@@ -302,7 +303,7 @@
 }
 
 .contacto .contact-content .infoContact-container div svg {
-  fill: var(--iconSVG_gray_medioOscuro);
+  fill: #505050;
   width: 3rem;
 }
 
@@ -442,7 +443,7 @@
 }
 
 .contacto .messageDirect-container .messageDirect-content .input-content span svg {
-  fill: var(--shadow_white_opacity100);
+  fill: #ffffff;
   width: 30px;
 }
 
@@ -456,28 +457,28 @@
 }
 
 .contacto .messageDirect-container .messageDirect-content .input-content span input::-webkit-input-placeholder {
-  color: var(--text_teal_opacity100);
+  color: #008080;
   opacity: .5;
 }
 
 .contacto .messageDirect-container .messageDirect-content .input-content span input:-ms-input-placeholder {
-  color: var(--text_teal_opacity100);
+  color: #008080;
   opacity: .5;
 }
 
 .contacto .messageDirect-container .messageDirect-content .input-content span input::-ms-input-placeholder {
-  color: var(--text_teal_opacity100);
+  color: #008080;
   opacity: .5;
 }
 
 .contacto .messageDirect-container .messageDirect-content .input-content span input::placeholder {
-  color: var(--text_teal_opacity100);
+  color: #008080;
   opacity: .5;
 }
 
 .contacto .messageDirect-container .messageDirect-content .input-content span input:focus {
-  -webkit-box-shadow: 0 0 10px var(--shadow_black_opacity50);
-          box-shadow: 0 0 10px var(--shadow_black_opacity50);
+  -webkit-box-shadow: 0 0 10px #00000086;
+          box-shadow: 0 0 10px #00000086;
 }
 
 .contacto .messageDirect-container .messageDirect-content textarea {
@@ -501,28 +502,28 @@
 .contacto .messageDirect-container .messageDirect-content textarea:focus {
   border: none;
   border-radius: none;
-  -webkit-box-shadow: 0 0 10px var(--shadow_black_opacity50);
-          box-shadow: 0 0 10px var(--shadow_black_opacity50);
+  -webkit-box-shadow: 0 0 10px #00000086;
+          box-shadow: 0 0 10px #00000086;
 }
 
 .contacto .messageDirect-container .messageDirect-content textarea::-webkit-input-placeholder {
   opacity: .5;
-  color: var(--text_teal_opacity100);
+  color: #008080;
 }
 
 .contacto .messageDirect-container .messageDirect-content textarea:-ms-input-placeholder {
   opacity: .5;
-  color: var(--text_teal_opacity100);
+  color: #008080;
 }
 
 .contacto .messageDirect-container .messageDirect-content textarea::-ms-input-placeholder {
   opacity: .5;
-  color: var(--text_teal_opacity100);
+  color: #008080;
 }
 
 .contacto .messageDirect-container .messageDirect-content textarea::placeholder {
   opacity: .5;
-  color: var(--text_teal_opacity100);
+  color: #008080;
 }
 
 .contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect {
@@ -557,14 +558,14 @@
 
 .contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect h3 {
   font-size: 1rem;
-  color: var(--text_white_opacity100);
+  color: #fff;
 }
 
 .contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect svg {
   width: 25px;
   -webkit-transition: .5s;
   transition: .5s;
-  fill: var(--iconSVG_white_opacity100);
+  fill: #ffffff;
 }
 
 @-webkit-keyframes identifier {
@@ -598,8 +599,8 @@
 }
 
 .contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect:hover {
-  -webkit-box-shadow: 0 0 10px var(--shadow_black_opacity50);
-          box-shadow: 0 0 10px var(--shadow_black_opacity50);
+  -webkit-box-shadow: 0 0 10px #00000086;
+          box-shadow: 0 0 10px #00000086;
 }
 
 .contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect:hover svg {
@@ -639,7 +640,7 @@
   }
   .contacto .contact-content div h1 {
     text-align: center;
-    color: var(--text_teal_opacity100);
+    color: #008080;
     font-size: 1.5rem;
   }
   .contacto .contact-content .redesSociales-container {
@@ -657,7 +658,7 @@
         grid-template-rows: repeat(12, auto);
   }
   .contacto .contact-content .redesSociales-container h1 {
-    color: var(--text_teal_opacity100);
+    color: #008080;
     font-size: 1.3rem;
     -ms-grid-column: 1;
     -ms-grid-column-span: 11;
@@ -687,8 +688,8 @@
     display: flex;
   }
   .contacto .contact-content .redesSociales-container .redes-container div div a {
-    -webkit-box-shadow: 0 0 5px var(--shadow_black_opacity25);
-            box-shadow: 0 0 5px var(--shadow_black_opacity25);
+    -webkit-box-shadow: 0 0 5px #00000040;
+            box-shadow: 0 0 5px #00000040;
     border-radius: 25px;
     place-items: center;
     width: 100%;
@@ -717,7 +718,7 @@
     padding: 0px 4px;
     font-size: .8rem;
     margin-top: 5px;
-    color: var(--text_black_opacity100);
+    color: #000000;
   }
   .contacto .contact-content .redesSociales-container .redes-container div div a h3:hover {
     background: none;
@@ -739,8 +740,8 @@
         grid-template-rows: repeat(8, auto);
   }
   .contacto .contact-content .infoContact-container div {
-    -webkit-box-shadow: 0 0 5px var(--shadow_black_opacity25);
-            box-shadow: 0 0 5px var(--shadow_black_opacity25);
+    -webkit-box-shadow: 0 0 5px #00000040;
+            box-shadow: 0 0 5px #00000040;
     border-radius: 10px;
     width: 100%;
     padding: 0 5px;
@@ -752,7 +753,7 @@
     text-align: start;
   }
   .contacto .contact-content .infoContact-container div svg {
-    fill: var(--iconSVG_gray_medioOscuro);
+    fill: #505050;
     width: 3rem;
     opacity: 0.7;
   }

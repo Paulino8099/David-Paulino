@@ -17,17 +17,17 @@
   background-color: var(--bg_aliceBlue);
   justify-self: center;
   place-items: center;
-  border-top: 2px solid var(--border_gray_claro);
-  border-left: 2px solid var(--border_gray_claro);
-  border-right: 2px solid var(--border_gray_claro);
-  -webkit-box-shadow: 0 -10px 10px var(--shadow_black_opacity50);
-          box-shadow: 0 -10px 10px var(--shadow_black_opacity50);
+  border-top: 2px solid #a5a6c7;
+  border-left: 2px solid #a5a6c7;
+  border-right: 2px solid #a5a6c7;
+  -webkit-box-shadow: 0 0px 10px #00000030;
+          box-shadow: 0 0px 10px #00000030;
   padding: 5px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   z-index: 10;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -41,8 +41,8 @@
 
 .sobreMi .title-sobreMi-container.darkMode {
   background-color: var(--bg_gris_oscuro);
-  -webkit-box-shadow: 0 -10px 10px var(--shadow_white_opacity50);
-          box-shadow: 0 -10px 10px var(--shadow_white_opacity50);
+  -webkit-box-shadow: 0 -10px 10px #ffffff80;
+          box-shadow: 0 -10px 10px #ffffff80;
 }
 
 .sobreMi .title-sobreMi-container .title-sobreMi {
@@ -50,30 +50,30 @@
   font-size: 1.5rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-right: 10px;
-  color: var(--text_teal_opacity100);
+  color: #008080;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .sobreMi .title-sobreMi-container .title-sobreMi.darkMode {
-  color: var(--text_gray_claro);
+  color: #cacaca;
 }
 
 .sobreMi .title-sobreMi-container svg {
   width: 2.5rem;
-  fill: var(--iconSVG_teal_opacity100);
+  fill: #008080;
 }
 
 .sobreMi .sobreMi-content {
   margin: 0 4% 25px 4%;
   padding: 4%;
-  border: 2px solid var(--border_gray_claro);
-  -webkit-box-shadow: 0 0 10px var(--shadow_black_opacity100);
-          box-shadow: 0 0 10px var(--shadow_black_opacity100);
+  border: 2px solid #a5a6c7;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0px 10px #00000030;
+          box-shadow: 0 0px 10px #00000030;
   background-color: var(--bg_aliceBlue);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border-radius: 10px;
   display: -ms-grid;
   display: grid;
   -ms-grid-column: 1;
@@ -89,10 +89,10 @@
 }
 
 .sobreMi .sobreMi-content.darkMode {
-  color: var(--text_gray_claro);
+  color: #cacaca;
   background-color: var(--bg_gris_oscuro);
-  -webkit-box-shadow: 0 0 10px var(--shadow_white_opacity100);
-          box-shadow: 0 0 10px var(--shadow_white_opacity100);
+  -webkit-box-shadow: 0 0 10px #ffffff;
+          box-shadow: 0 0 10px #ffffff;
 }
 
 .sobreMi .sobreMi-content .myHobbys-container {
@@ -126,8 +126,8 @@
 }
 
 .sobreMi .sobreMi-content .myHobbys-container div h1 {
-  color: var(--text_white_opacity100);
-  text-shadow: 0 0 5px var(--shadow_white_opacity100);
+  color: #fff;
+  text-shadow: 0 0 5px #ffffff;
   font-size: 1.5rem;
   -ms-grid-column-align: start;
       justify-self: start;
@@ -140,8 +140,8 @@
 }
 
 .sobreMi .sobreMi-content .myHobbys-container div b {
-  color: var(--text_white_opacity100);
-  text-shadow: 0 0 5px var(--shadow_white_opacity100);
+  color: #fff;
+  text-shadow: 0 0 5px #ffffff;
 }
 
 .sobreMi .sobreMi-content .myHobbys-container div p {
@@ -149,7 +149,7 @@
   font-size: 1rem;
   font-weight: 900;
   text-align: start;
-  color: var(--text_white_opacity75);
+  color: #ffffffbf;
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-column: 1/9;
@@ -159,7 +159,7 @@
 }
 
 .sobreMi .sobreMi-content .myHobbys-container div svg {
-  fill: var(--iconSVG_white_opacity100);
+  fill: #ffffff;
   margin: 0 0 5px 0;
   width: 25px;
   -ms-grid-column: 8;
@@ -172,7 +172,7 @@
 }
 
 .sobreMi .sobreMi-content .myHobbys-container div svg:active {
-  fill: var(--iconSVG_teal_opacity100);
+  fill: #008080;
 }
 
 .sobreMi .sobreMi-content .pasion-container {
@@ -204,8 +204,8 @@
 }
 
 .sobreMi .sobreMi-content .pasion-container div h1 {
-  color: var(--text_white_opacity100);
-  text-shadow: 0 0 5px var(--shadow_white_opacity100);
+  color: #fff;
+  text-shadow: 0 0 5px #ffffff;
   font-size: 1.5rem;
   -ms-grid-column-align: start;
       justify-self: start;
@@ -218,8 +218,8 @@
 }
 
 .sobreMi .sobreMi-content .pasion-container div b {
-  color: var(--text_white_opacity100);
-  text-shadow: 0 0 5px var(--shadow_white_opacity100);
+  color: #fff;
+  text-shadow: 0 0 5px #ffffff;
 }
 
 .sobreMi .sobreMi-content .pasion-container div p {
@@ -227,7 +227,7 @@
   font-size: 1rem;
   font-weight: 900;
   text-align: start;
-  color: var(--text_white_opacity75);
+  color: #ffffffbf;
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-column: 1/9;
@@ -237,7 +237,7 @@
 }
 
 .sobreMi .sobreMi-content .pasion-container div svg {
-  fill: var(--iconSVG_white_opacity100);
+  fill: #ffffff;
   width: 25px;
   -ms-grid-column: 8;
   -ms-grid-column-span: 1;
@@ -249,7 +249,7 @@
 }
 
 .sobreMi .sobreMi-content .pasion-container div svg:active {
-  fill: var(--iconSVG_teal_opacity100);
+  fill: #008080;
 }
 
 .sobreMi .sobreMi-content .pasion-container img {
@@ -260,8 +260,8 @@
 .sobreMi .sobreMi-content .myData-container {
   padding: 5px;
   margin-top: 25px;
-  -webkit-box-shadow: 0 5px 10px var(--shadow_black_opacity25);
-          box-shadow: 0 5px 10px var(--shadow_black_opacity25);
+  -webkit-box-shadow: 0 5px 10px #00000040;
+          box-shadow: 0 5px 10px #00000040;
   border-radius: 5px;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -276,11 +276,11 @@
 
 .sobreMi .sobreMi-content .myData-container h1 {
   margin-top: 0;
-  color: var(--text_teal_opacity100);
+  color: #008080;
 }
 
 .sobreMi .sobreMi-content .myData-container b {
-  color: var(--text_teal_opacity100);
+  color: #008080;
 }
 
 .sobreMi .sobreMi-content .myData-container p {
@@ -326,8 +326,8 @@
   }
   .sobreMi .sobreMi-content .myData-container {
     width: 100%;
-    -webkit-box-shadow: 0 0px 10px var(--shadow_black_opacity25);
-            box-shadow: 0 0px 10px var(--shadow_black_opacity25);
+    -webkit-box-shadow: 0 0px 10px #00000040;
+            box-shadow: 0 0px 10px #00000040;
   }
 }
 /*# sourceMappingURL=sobreMi.css.map */

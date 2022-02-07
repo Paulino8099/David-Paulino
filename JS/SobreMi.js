@@ -1,0 +1,4 @@
+
+document.addEventListener('mousemove', function (e) {
+    console.log(e.clientX, document.documentElement.scrollWidth);
+});
