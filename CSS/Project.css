@@ -43,7 +43,7 @@
 }
 
 .project .title-project-container.darkMode {
-  background-color: var(--bg_gray_oscuro);
+  background-color: #222222;
   -webkit-box-shadow: 0 -10px 10px #ffffff80;
           box-shadow: 0 -10px 10px #ffffff80;
 }
@@ -140,7 +140,7 @@
 .project .project-container .project-content div div h1 {
   text-align: center;
   font-size: 1rem;
-  color: var(--text_gray_medioOscuro);
+  color: #9E9E9E;
 }
 
 .project .project-container span {
@@ -155,7 +155,7 @@
   -ms-flex-item-align: end;
       align-self: flex-end;
   border-radius: 5px;
-  background: var(--bg_teal_opacity100);
+  background: #008080;
   -webkit-box-shadow: 0 -5px 10px #00808040;
           box-shadow: 0 -5px 10px #00808040;
   width: 25%;

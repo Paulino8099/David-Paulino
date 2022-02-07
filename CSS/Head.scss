@@ -114,7 +114,7 @@
 			}
 		}
 		&.fixedOn {
-			background-color: var(--bg_teal_opacity100);
+			background-color: #008080;
 			top: 0;
 			width: 100%;
 			box-shadow: 0 5px 5px #00000040;
@@ -194,7 +194,7 @@
 			align-self: center;
 
 			border-radius: 50%;
-			border: 5px solid var(--bg_teal_opacity100);
+			border: 5px solid #008080;
 			width: 260px;
 			height: 260px;
 			position: absolute;
@@ -214,7 +214,7 @@
 	}
 	// Datos Personales flotantes
 	.myData-float-container {
-		background: var(--bg_black_opacity75);
+		background: #000000bf;
 		width: 100%;
 		height: 100%;
 		backdrop-filter: blur(10px);
@@ -275,7 +275,7 @@
 			span {
 				width: 100%;
 				height: 100%;
-				background: var(--bg_teal_opacity50);
+				background: #00808080;
 				position: absolute;
 				overflow: hidden;
 				overflow-y: auto;
@@ -331,7 +331,7 @@
 			}
 		}
 	}
-	/* Botón darkMode  */
+	// btn darkMode 
 	.btn_modoMoche {
 		transition: .3s;
 		border: 1px solid #505050;
@@ -347,7 +347,7 @@
 		background-color: #ffffff;
 		gap: 10px;
 		overflow: hidden;
-		z-index: 1;
+		z-index: 100;
 
 		display: flex;
 		grid-column: 1/11;
@@ -358,7 +358,7 @@
 		.svg-luna {
 			transform: translateX(-30px);
 			transition: .1s;
-			fill: var(--bg_gray_medioClaro);
+			fill: #9E9E9E;
 		}
 		.svg-sol {
 			margin: 5px;
@@ -367,8 +367,8 @@
 		}
 		.txt-darkMode {
 			position: absolute;
-			background: var(--bg_teal_opacity100);
-			font-size: .7rem;
+			background: #008080;
+			font-size: 1rem;
 			width: 75px;
 			height: 30px;
 			color: #fff;
@@ -376,13 +376,13 @@
 			border-radius: 5px;
 			padding: 2px 5px;
 			text-align: center;
-			z-index: -1;
+			z-index: -3;
 			opacity: 0;
 			pointer-events: none;
 			transition: .3s cubic-bezier(0.100, 0.885, 0.32, 1.275);
 			&::before {
 				content: "";
-				background: var(--bg_teal_opacity100);
+				background: #008080;
 				width: 15px;
 				height: 15px;
 				transform: rotateZ(45deg);
@@ -407,7 +407,7 @@
 			display: block;
 			width: 32px;
 			height: 34px;
-			background-color: var(--bg_teal_opacity100);
+			background-color: #008080;
 			transition: .3s;
 			z-index: 10;
 		}
@@ -417,13 +417,13 @@
 			pointer-events: visible;
 		}
 		&.active {
-			background-color: var(--bg_gray_medioOscuro);
+			background-color: #505050;
 			border: 1px solid #ffffff;
 			&::before {
 				transform: translateX(42px);
 			}
 			.svg-luna {
-				transform: translateX(0);
+				transform: translateX(5px);
 			}
 			.svg-sol {
 				transform: translateX(35px);
@@ -561,7 +561,7 @@
 			width: 250px;
 			height: 250px;
 			border-radius: 50%;
-			box-shadow: 0 0 10px var(--bg_teal_opacity100);
+			box-shadow: 0 0 10px #008080;
 
 			grid-column: 1/11;
 			grid-row: 1/11;
@@ -621,7 +621,7 @@
 		}
 		// Datos Personales flotantes
 		.myData-float-container {
-			background: var(--bg_black_opacity75);
+			background: #000000bf;
 			width: 100%;
 			height: 100%;
 			backdrop-filter: blur(10px);
@@ -681,7 +681,7 @@
 				span {
 					width: 100%;
 					height: 100%;
-					background: var(--bg_teal_opacity50);
+					background: #00808080;
 					position: absolute;
 
 					display: grid;
@@ -721,7 +721,7 @@
 			.svg-luna {
 				transform: translateX(-30px);
 				transition: .1s;
-				fill: var(--bg_gray_medioClaro);
+				fill: #9E9E9E;
 			}
 			.svg-sol {
 				margin: 5px;
@@ -751,13 +751,13 @@
 				display: block;
 				width: 32px;
 				height: 34px;
-				background-color: var(--bg_teal_opacity100);
+				background-color: #008080;
 				transition: .3s;
 				z-index: 10;
 			}
 			.txt-darkMode {
 				position: absolute;
-				background: var(--bg_teal_opacity100);
+				background: #008080;
 				font-size: .7rem;
 				width: 75px;
 				color: #fff;
@@ -773,7 +773,7 @@
 				display: none;
 				&::before {
 					content: "";
-					background: var(--bg_teal_opacity100);
+					background: #008080;
 					width: 15px;
 					height: 15px;
 					transform: rotateZ(45deg);
@@ -842,7 +842,7 @@
 				}
 			}
 			&.opacityOn {
-				background: var(--bg_black_opacity75);
+				background: #000000bf;
 				backdrop-filter: blur(5px);
 			}
 			// main
@@ -852,7 +852,7 @@
 				.content-titleBoton {
 					width: 100%;
 					height: min-content;
-					background: var(--bg_teal_opacity100);
+					background: #008080;
 					justify-content: space-between;
 					box-shadow: 0 5px 5px #00000040;
 
@@ -917,7 +917,7 @@
 						h3 {
 							margin: 0 15px 0 0;
 							color: #fff;
-							background: var(--bg_teal_opacity100);
+							background: #008080;
 							border-radius: 5px;
 							padding: 5px 15px 5px 10px;
 							z-index: 10;
@@ -930,7 +930,7 @@
 							&::after {
 								content: "";
 								position: absolute;
-								background: var(--bg_teal_opacity100);
+								background: #008080;
 								margin: 5px 0 0 4px;
 								transform: rotateZ(45deg);
 								width: 18px;
@@ -943,7 +943,7 @@
 							margin-top: 0;
 							border-top-left-radius: 25px;
 							border-bottom-left-radius: 25px;
-							background: var(--bg_teal_opacity100);
+							background: #008080;
 							padding: 10px 05px;
 							fill: #ffffff;
 							width: 50px;

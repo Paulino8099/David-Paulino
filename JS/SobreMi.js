@@ -1,4 +1,4 @@
 
-document.addEventListener('mousemove', function (e) {
-    console.log(e.clientX, document.documentElement.scrollWidth);
-});
+// document.addEventListener('mousemove', function (e) {
+//     console.log(e.clientX, document.documentElement.scrollWidth);
+// });

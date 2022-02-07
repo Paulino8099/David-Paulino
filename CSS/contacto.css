@@ -48,7 +48,7 @@
 }
 
 .contacto .title-contact-container.darkMode {
-  background-color: var(--bg_gray_oscuro);
+  background-color: #222222;
   -webkit-box-shadow: 0 -10px 10px #ffffff80;
           box-shadow: 0 -10px 10px #ffffff80;
 }
@@ -131,7 +131,7 @@
   font-size: 1rem;
   border-radius: 5px;
   font-weight: 700;
-  color: var(--text_gray_medioOscuro);
+  color: #9E9E9E;
 }
 
 .contacto .contact-content .thought-container .autorWrite {
@@ -218,7 +218,7 @@
 }
 
 .contacto .contact-content .redesSociales-container .redes-container div div a h3:hover {
-  background: var(--bg_teal_opacity100);
+  background: #008080;
   border-radius: 5px;
   -webkit-transition: .5s;
   transition: .5s;
@@ -298,7 +298,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--text_gray_medioOscuro);
+  color: #9E9E9E;
   text-align: start;
 }
 
@@ -448,7 +448,7 @@
 }
 
 .contacto .messageDirect-container .messageDirect-content .input-content span input {
-  color: var(--text_gray_medioOscuro);
+  color: #9E9E9E;
   font-size: 1.2rem;
   width: 70%;
   padding-left: 10px;
@@ -490,7 +490,7 @@
   height: 80%;
   border: none;
   outline: none;
-  color: var(--text_gray_medioOscuro);
+  color: #9E9E9E;
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-column: 1/7;
@@ -528,7 +528,7 @@
 
 .contacto .messageDirect-container .messageDirect-content .btn-send-messageDirect {
   justify-self: end;
-  background: var(--bg_teal_opacity100);
+  background: #008080;
   border-radius: 5px;
   margin-top: 25px;
   text-align: center;
@@ -749,7 +749,7 @@
         -ms-flex-align: center;
             align-items: center;
     gap: 10px;
-    color: var(--text_gray_medioOscuro);
+    color: #9E9E9E;
     text-align: start;
   }
   .contacto .contact-content .infoContact-container div svg {

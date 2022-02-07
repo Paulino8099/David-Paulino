@@ -45,7 +45,7 @@
 }
 
 .estudios .title-study-container.darkMode {
-  background-color: var(--bg_gray_oscuro);
+  background-color: #222222;
   -webkit-box-shadow: 0 -10px 10px #ffffff80;
           box-shadow: 0 -10px 10px #ffffff80;
 }
@@ -104,7 +104,7 @@
 
 .estudios .study-content.darkMode {
   color: #cacaca;
-  background-color: var(--bg_gray_oscuro);
+  background-color: #222222;
   -webkit-box-shadow: 0 0 10px #ffffff;
           box-shadow: 0 0 10px #ffffff;
 }
@@ -245,7 +245,7 @@
 .estudios .study-content .adobe-card .front-face .title-auxiliarVentas.darkMode,
 .estudios .study-content .adobe-card .front-face .title-bachillerato.darkMode,
 .estudios .study-content .adobe-card .front-face .title-adobe.darkMode {
-  color: var(--text_gray_medioOscuro);
+  color: #9E9E9E;
   text-shadow: 0 0 10px #ffffff80;
 }
 
@@ -356,7 +356,7 @@
   color: #fff;
   font-size: .7rem;
   position: absolute;
-  background: var(--bg_teal_opacity100);
+  background: #008080;
   border-radius: 5px;
   text-align: center;
   padding: 0 5px;
@@ -387,7 +387,7 @@
   content: "";
   width: 15px;
   height: 15px;
-  background: var(--bg_teal_opacity100);
+  background: #008080;
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
   position: absolute;
@@ -468,7 +468,7 @@
   position: absolute;
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
-  background: var(--bg_teal_opacity100);
+  background: #008080;
   border-radius: 5px;
   color: #fff;
   padding: 0 5px;
@@ -486,7 +486,7 @@
 .estudios .study-content .bachillerato-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode,
 .estudios .study-content .adobe-card .front-face .masInfo-container .verMas .descripcion_btn_VerMas.darkMode {
   text-shadow: 0 0 10px #ffffff;
-  color: var(--bg_gray_oscuro);
+  color: #222222;
 }
 
 .estudios .study-content .dpw-container .front-face .masInfo-container .verMas .descripcion_btn_VerMas::before,
@@ -498,7 +498,7 @@
   content: "";
   width: 15px;
   height: 15px;
-  background: var(--bg_teal_opacity100);
+  background: #008080;
   position: absolute;
   bottom: -5px;
   right: 10px;

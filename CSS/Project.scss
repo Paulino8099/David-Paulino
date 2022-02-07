@@ -31,7 +31,7 @@
 		grid-column: 1/3;
 		grid-row: 1/2;
 		&.darkMode {
-			background-color: var(--bg_gray_oscuro);
+			background-color: #222222;
 			box-shadow: 0 -10px 10px #ffffff80;
 		}
 		.title-project {
@@ -94,7 +94,7 @@
 					h1 {
 						text-align: center;
 						font-size: 1rem;
-						color: var(--text_gray_medioOscuro);
+						color: #9E9E9E;
 					}
 				}
 			}
@@ -108,7 +108,7 @@
 				justify-self: center;
 				align-self: flex-end;
 				border-radius: 5px;
-				background: var(--bg_teal_opacity100);
+				background: #008080;
 				box-shadow: 0 -5px 10px #00808040;
 				width: 25%;
 				padding: 5px 0;

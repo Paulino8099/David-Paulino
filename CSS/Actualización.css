@@ -2,7 +2,7 @@
 .actualización {
   width: 100%;
   height: 100vh;
-  background: var(--bg_black_opacity50);
+  background: #00000080;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   z-index: 1000;
@@ -62,7 +62,7 @@
 .actualización .content-actualización h1 {
   margin: 0;
   text-align: center;
-  color: var(--text_gray_medioOscuro);
+  color: #9E9E9E;
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-column: 1/9;
@@ -108,7 +108,7 @@
       justify-self: center;
   width: 90%;
   margin-top: 5px;
-  background: var(--bg_teal_opacity25);
+  background: #00808040;
   display: -ms-grid;
   display: grid;
 }
@@ -154,13 +154,13 @@
 }
 
 .actualización .content-actualización .container-descripcion::-webkit-scrollbar {
-  background-color: var(--bg_teal_opacity25);
+  background-color: #00808040;
   border-radius: 25px;
   width: 10px;
 }
 
 .actualización .content-actualización .container-descripcion::-webkit-scrollbar-thumb {
-  background-color: var(--bg_teal_opacity100);
+  background-color: #008080;
   border-radius: 25px;
 }
 
@@ -240,7 +240,7 @@
         justify-self: center;
     width: 90%;
     margin-top: 5px;
-    background: var(--bg_teal_opacity25);
+    background: #00808040;
     display: -ms-grid;
     display: grid;
   }
@@ -280,12 +280,12 @@
     font-size: .8rem;
   }
   .actualización .content-actualización .container-descripcion::-webkit-scrollbar {
-    background-color: var(--bg_teal_opacity25);
+    background-color: #00808040;
     border-radius: 25px;
     width: 10px;
   }
   .actualización .content-actualización .container-descripcion::-webkit-scrollbar-thumb {
-    background-color: var(--bg_teal_opacity100);
+    background-color: #008080;
     border-radius: 25px;
   }
 }
