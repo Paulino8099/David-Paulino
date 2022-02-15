@@ -17,6 +17,9 @@
 	&::selection {
 		background: #00808080;
 	}
+	svg {
+		width: 50px;
+	}
 }
 body::-webkit-scrollbar {
 	width: 10px;
