@@ -129,7 +129,7 @@ window.addEventListener('scroll', () => {
                  */
                 if (entry.target.classList == 'head section') {
                     // Ancho y opacidad del indicador de los botones del menú de navegación.
-                    indicator.style.width = `${0 }px`;
+                    indicator.style.width = `${0}px`;
                     indicator.style.opacity = '0';
 
                     // Distancia a trasladar el indicador de los botones del menú de navegación.

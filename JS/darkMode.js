@@ -6,19 +6,21 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
-let btnDarkMode = document.getElementById('btn_modoMoche');
+let btnDarkMode = document.querySelector('.btn-darkMode');
 
-// FUNCION PARA GUARDAR LA CONFIGURACION DEL MODO OSCURO EN UNA BASE DE DATOS
+/**
+ * ?btn functions
+ */
 btnDarkMode.addEventListener('click', function () {
-    setData();
-    offOn();
+    setOnOff();
+    onOff();
 });
 
 /**
- * ?set data...
+ * ?set onOff
  */
-//enviando datos al localStorage para activar o desactivar el "darkMode" 
-function setData() {
+//enviando encendido y apagado al localStorage para activar o desactivar el "darkMode" 
+function setOnOff() {
     if (localStorage.getItem('darkMode') === null) {
         localStorage.setItem('darkMode', '1');
     }
@@ -31,19 +33,19 @@ function setData() {
 };
 
 /**
- * ?offOn...
+ * ?onOff darkMode
  */
 // activando el darkMode al dar click en btn
-offOn();
-function offOn() {
+onOff();
+function onOff() { 
     if (localStorage.getItem('darkMode') == '1') {
         btnDarkMode.classList.add('active'); //btn "darkMode"
-        document.querySelector('.head').style.background = 'url(../PNG/VerdesSuavesOpacity50.png)'; //bg head
-        document.documentElement.style.setProperty('--bgWhite', '#222222') //from white to darkGray
+        document.querySelector('.head').classList.add('darkMode'); //home bgImg
+        document.documentElement.style.setProperty('--bgLightGreen', '#222222'); //from white to darkGray
 
     } else {
-        btnDarkMode.classList.remove('active');
-        document.querySelector('.head').style.background = 'url(../PNG/VerdesSuavesOpacity100.png)'; //bg head
-        document.documentElement.style.setProperty('--bgWhite', '#ffffff') //from white to darkGray
+        btnDarkMode.classList.remove('active'); //btn "darkMode"
+        document.querySelector('.head').classList.remove('darkMode') //home bgImg
+        document.documentElement.style.setProperty('--bgLightGreen', '#ffffff') //from white to darkGray
     };
 };

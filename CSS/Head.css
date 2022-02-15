@@ -24,6 +24,10 @@
   grid-row: 1/2;
 }
 
+.head.darkMode {
+  background: url(../PNG/VerdesSuavesOpacity50.png);
+}
+
 .head.off {
   width: 0vw;
   -webkit-transition: 1s;
@@ -429,7 +433,7 @@
   opacity: 0;
 }
 
-.head .btn_modoMoche {
+.head .btn-darkMode {
   -webkit-transition: .3s;
   transition: .3s;
   border: 1px solid #505050;
@@ -460,26 +464,26 @@
   grid-row: 1/11;
 }
 
-.head .btn_modoMoche svg {
+.head .btn-darkMode svg {
   width: 50%;
 }
 
-.head .btn_modoMoche .svg-luna {
+.head .btn-darkMode .svg-luna {
   -webkit-transform: translateX(-30px);
           transform: translateX(-30px);
   -webkit-transition: .1s;
   transition: .1s;
-  fill: #9E9E9E;
+  fill: #9e9e9e;
 }
 
-.head .btn_modoMoche .svg-sol {
+.head .btn-darkMode .svg-sol {
   margin: 5px;
   -webkit-transition: .1s;
   transition: .1s;
   fill: #000000;
 }
 
-.head .btn_modoMoche .txt-darkMode {
+.head .btn-darkMode .txt-darkMode {
   position: absolute;
   background: #008080;
   font-size: 1rem;
@@ -497,7 +501,7 @@
   transition: 0.3s cubic-bezier(0.1, 0.885, 0.32, 1.275);
 }
 
-.head .btn_modoMoche .txt-darkMode::before {
+.head .btn-darkMode .txt-darkMode::before {
   content: "";
   background: #008080;
   width: 15px;
@@ -510,13 +514,13 @@
   right: 35px;
 }
 
-.head .btn_modoMoche .txt-darkMode:hover {
+.head .btn-darkMode .txt-darkMode:hover {
   margin: 0 0 100px -5px;
   opacity: 10;
   pointer-events: visible;
 }
 
-.head .btn_modoMoche::before {
+.head .btn-darkMode::before {
   content: "";
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -535,28 +539,28 @@
   z-index: 10;
 }
 
-.head .btn_modoMoche:hover .txt-darkMode {
+.head .btn-darkMode:hover .txt-darkMode {
   margin: 0 0 100px -5px;
   opacity: 10;
   pointer-events: visible;
 }
 
-.head .btn_modoMoche.active {
+.head .btn-darkMode.active {
   background-color: #505050;
   border: 1px solid #ffffff;
 }
 
-.head .btn_modoMoche.active::before {
+.head .btn-darkMode.active::before {
   -webkit-transform: translateX(42px);
           transform: translateX(42px);
 }
 
-.head .btn_modoMoche.active .svg-luna {
+.head .btn-darkMode.active .svg-luna {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
 }
 
-.head .btn_modoMoche.active .svg-sol {
+.head .btn-darkMode.active .svg-sol {
   -webkit-transform: translateX(35px);
           transform: translateX(35px);
 }
@@ -576,8 +580,8 @@
   height: 10px;
   position: absolute;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#fff));
-  background: linear-gradient(180deg, transparent 0%, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(var(--bgLightGreen)));
+  background: linear-gradient(180deg, transparent 0%, var(--bgLightGreen) 100%);
 }
 
 @media screen and (max-width: 650px) {
@@ -869,7 +873,7 @@
     place-self: center;
     color: #fff;
   }
-  .head .btn_modoMoche {
+  .head .btn-darkMode {
     -webkit-transition: .3s;
     transition: .3s;
     border: 1px solid #505050;
@@ -899,39 +903,39 @@
     -ms-grid-row-span: 10;
     grid-row: 1/11;
   }
-  .head .btn_modoMoche svg {
+  .head .btn-darkMode svg {
     width: 50%;
   }
-  .head .btn_modoMoche .svg-luna {
+  .head .btn-darkMode .svg-luna {
     -webkit-transform: translateX(-30px);
             transform: translateX(-30px);
     -webkit-transition: .1s;
     transition: .1s;
-    fill: #9E9E9E;
+    fill: #9e9e9e;
   }
-  .head .btn_modoMoche .svg-sol {
+  .head .btn-darkMode .svg-sol {
     margin: 5px;
     -webkit-transition: .1s;
     transition: .1s;
     fill: #000000;
   }
-  .head .btn_modoMoche.darkMode {
+  .head .btn-darkMode.darkMode {
     background-color: #505050;
-    border: 1px solid #9E9E9E;
+    border: 1px solid #9e9e9e;
   }
-  .head .btn_modoMoche.darkMode::before {
+  .head .btn-darkMode.darkMode::before {
     -webkit-transform: translateX(42px);
             transform: translateX(42px);
   }
-  .head .btn_modoMoche.darkMode .svg-luna {
+  .head .btn-darkMode.darkMode .svg-luna {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  .head .btn_modoMoche.darkMode .svg-sol {
+  .head .btn-darkMode.darkMode .svg-sol {
     -webkit-transform: translateX(35px);
             transform: translateX(35px);
   }
-  .head .btn_modoMoche::before {
+  .head .btn-darkMode::before {
     content: "";
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -949,7 +953,7 @@
     transition: .3s;
     z-index: 10;
   }
-  .head .btn_modoMoche .txt-darkMode {
+  .head .btn-darkMode .txt-darkMode {
     position: absolute;
     background: #008080;
     font-size: .7rem;
@@ -966,7 +970,7 @@
     transition: 0.3s cubic-bezier(0.1, 0.885, 0.32, 1.275);
     display: none;
   }
-  .head .btn_modoMoche .txt-darkMode::before {
+  .head .btn-darkMode .txt-darkMode::before {
     content: "";
     background: #008080;
     width: 15px;
@@ -978,7 +982,7 @@
     top: 25px;
     right: 35px;
   }
-  .head .btn_modoMoche:hover .txt-darkMode {
+  .head .btn-darkMode:hover .txt-darkMode {
     margin: 0 0 100px -5px;
     opacity: 10;
     pointer-events: visible;

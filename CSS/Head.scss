@@ -21,7 +21,9 @@
 	grid-template-rows: repeat(10, auto);
 	grid-column: 1/9;
 	grid-row: 1/2;
-
+	&.darkMode {
+		background: url(../PNG/VerdesSuavesOpacity50.png);
+	}
 	&.off {
 		width: 0vw;
 		transition: 1s;
@@ -331,8 +333,8 @@
 			}
 		}
 	}
-	// btn darkMode 
-	.btn_modoMoche {
+	// btn darkMode
+	.btn-darkMode {
 		transition: .3s;
 		border: 1px solid #505050;
 		cursor: pointer;
@@ -358,7 +360,7 @@
 		.svg-luna {
 			transform: translateX(-30px);
 			transition: .1s;
-			fill: #9E9E9E;
+			fill: #9e9e9e;
 		}
 		.svg-sol {
 			margin: 5px;
@@ -444,7 +446,7 @@
 		height: 10px;
 		position: absolute;
 		bottom: 0;
-		background: linear-gradient(180deg, transparent 0%, #fff 100%);
+		background: linear-gradient(180deg, transparent 0%, var(--bgLightGreen) 100%);
 	}
 }
 
@@ -695,7 +697,7 @@
 			}
 		}
 		/* Modo noche */
-		.btn_modoMoche {
+		.btn-darkMode {
 			transition: .3s;
 			border: 1px solid #505050;
 			cursor: pointer;
@@ -721,7 +723,7 @@
 			.svg-luna {
 				transform: translateX(-30px);
 				transition: .1s;
-				fill: #9E9E9E;
+				fill: #9e9e9e;
 			}
 			.svg-sol {
 				margin: 5px;
@@ -730,7 +732,7 @@
 			}
 			&.darkMode {
 				background-color: #505050;
-				border: 1px solid #9E9E9E;
+				border: 1px solid #9e9e9e;
 				&::before {
 					transform: translateX(42px);
 				}

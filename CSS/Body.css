@@ -43,10 +43,13 @@ html {
 :root {
   --bgBlack: #000000;
   --bgWhite: #ffffff;
+  --bgLightGreen: #e4f5ef;
+  --shWhite: #ffffff;
+  --shBlack: #000000;
 }
 
 body {
-  background: var(--bgWhite);
+  background: var(--bgLightGreen);
   -webkit-transition: .5s;
   transition: .5s;
   display: -ms-grid;
