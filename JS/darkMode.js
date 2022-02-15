@@ -41,7 +41,7 @@ function onOff() {
     if (localStorage.getItem('darkMode') == '1') {
         btnDarkMode.classList.add('active'); //btn "darkMode"
         document.querySelector('.head').classList.add('darkMode'); //home bgImg
-        document.documentElement.style.setProperty('--bgLightGreen', '#222222'); //from white to darkGray
+        document.documentElement.style.setProperty('--bgLightGreen', '#444444'); //from white to darkGray
 
     } else {
         btnDarkMode.classList.remove('active'); //btn "darkMode"
