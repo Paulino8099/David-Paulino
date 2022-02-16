@@ -8,8 +8,9 @@
 .head {
 	margin: 0;
 	justify-self: center;
-	background: url(../PNG/VerdesSuavesOpacity100.png);
-	background-repeat: round;
+	background: url(../PNG/figure.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 100%;
 	margin-bottom: 25px;
 	height: calc(100vh + 10px);
@@ -21,9 +22,6 @@
 	grid-template-rows: repeat(10, auto);
 	grid-column: 1/9;
 	grid-row: 1/2;
-	&.darkMode {
-		background: url(../PNG/VerdesSuavesOpacity50.png);
-	}
 	&.off {
 		width: 0vw;
 		transition: 1s;

@@ -14,13 +14,14 @@
 }
 
 .project .title-project-container {
-  background-color: var(--bg_aliceBlue);
-  justify-self: center;
-  place-items: center;
-  border: 2px solid #a5a6c7;
-  border-bottom: none;
+  color: #008080;
   -webkit-box-shadow: 0 0px 10px #00000030;
           box-shadow: 0 0px 10px #00000030;
+  border: 2px solid #a5a6c7;
+  border-bottom: none;
+  justify-self: center;
+  place-items: center;
+  border-bottom: none;
   padding: 0 5px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -31,6 +32,7 @@
   z-index: 10;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,28 +44,16 @@
   grid-row: 1/2;
 }
 
-.project .title-project-container.darkMode {
-  background-color: #222222;
-  -webkit-box-shadow: 0 -10px 10px #ffffff80;
-          box-shadow: 0 -10px 10px #ffffff80;
-}
-
-.project .title-project-container .title-project {
-  font-size: 1.5rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.project .title-project-container h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-right: 10px;
-  color: #008080;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.project .title-project-container .title-project.darkMode {
-  color: #cacaca;
-}
-
-.project .title-project-container svg {
-  width: 2.5rem;
-  fill: #008080;
+.project .title-project-container i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .project .project-container {
@@ -135,12 +125,14 @@
   border-radius: 15px;
   width: 100%;
   cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 5px #000);
+          filter: drop-shadow(0 0 5px #000);
 }
 
 .project .project-container .project-content div div h1 {
   text-align: center;
   font-size: 1rem;
-  color: #9E9E9E;
+  color: #777777;
 }
 
 .project .project-container span {

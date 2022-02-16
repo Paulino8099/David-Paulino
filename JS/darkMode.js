@@ -12,8 +12,8 @@ let btnDarkMode = document.querySelector('.btn-darkMode');
  * ?btn functions
  */
 btnDarkMode.addEventListener('click', function () {
-    setOnOff();
-    onOff();
+    // setOnOff();
+    // onOff();
 });
 
 /**

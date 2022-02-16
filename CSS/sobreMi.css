@@ -14,14 +14,14 @@
 }
 
 .sobreMi .title-sobreMi-container {
-  background-color: var(--bg_aliceBlue);
-  justify-self: center;
-  place-items: center;
+  color: #008080;
   border-top: 2px solid #a5a6c7;
   border-left: 2px solid #a5a6c7;
   border-right: 2px solid #a5a6c7;
   -webkit-box-shadow: 0 0px 10px #00000030;
           box-shadow: 0 0px 10px #00000030;
+  justify-self: center;
+  place-items: center;
   padding: 5px;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -31,6 +31,7 @@
   z-index: 10;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,29 +40,16 @@
   grid-column: 1/3;
 }
 
-.sobreMi .title-sobreMi-container.darkMode {
-  background-color: var(--bg_gris_oscuro);
-  -webkit-box-shadow: 0 -10px 10px #ffffff80;
-          box-shadow: 0 -10px 10px #ffffff80;
-}
-
-.sobreMi .title-sobreMi-container .title-sobreMi {
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.sobreMi .title-sobreMi-container h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-right: 10px;
-  color: #008080;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.sobreMi .title-sobreMi-container .title-sobreMi.darkMode {
-  color: #cacaca;
-}
-
-.sobreMi .title-sobreMi-container svg {
-  width: 2.5rem;
-  fill: #008080;
+.sobreMi .title-sobreMi-container i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sobreMi .sobreMi-content {
