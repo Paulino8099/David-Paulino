@@ -5,8 +5,11 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
-.contacto {
+.contact {
 	justify-self: center;
+	padding-top: 50px;
+	margin-bottom: 75px;
+
 	display: grid;
 	grid-column: 1/9;
 	grid-row: 5/6;
@@ -55,7 +58,7 @@
 		overflow: hidden;
 		box-shadow: 0 0 10px #00000030;
 		background-color: var(--bg_aliceBlue);
-		margin: 0 4% 75px 4%;
+		margin: 0 4%;
 		padding: 4%;
 		padding-top: 0;
 		border-radius: 10px;
@@ -204,7 +207,7 @@
 			}
 		}
 
-		// información de contacto
+		// información de contact
 		.infoContact-container {
 			display: grid;
 			grid-template-columns: repeat(8, auto);
@@ -260,7 +263,8 @@
 	// message direct (container)
 	.messageDirect-container {
 		overflow: hidden;
-		margin: 0 4% 75px 4%;
+		margin: 0 4%;
+		margin-top: 25px;
 		border-radius: 10px;
 		position: relative;
 		height: 300px;
@@ -424,7 +428,7 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 @media screen and (max-width: 800px) {
-	.contacto {
+	.contact {
 		// content
 		.contact-content {
 			gap: 50px; //edit (add: gap)
@@ -524,7 +528,7 @@
 					display: none; //edit (delete: grid, add: none)
 				}
 			}
-			// información de contacto
+			// información de contact
 			.infoContact-container {
 				gap: 10px;
 

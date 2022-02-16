@@ -6,6 +6,8 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 .project {
+	padding-top: 50px;
+	
 	display: grid;
 	grid-column: 1/9;
 	grid-row: 4/5;
@@ -60,6 +62,7 @@
 			gap: 25px;
 			transition: 0.5s;
 			padding: 10px;
+			justify-content: space-between;
 
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(auto, 150px));

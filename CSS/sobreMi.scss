@@ -6,6 +6,8 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 .sobreMi {
+	padding-top: 50px;
+
 	display: grid;
 	grid-column: 1/9;
 	grid-row: 3/4;
@@ -48,7 +50,6 @@
 		border: 2px solid #a5a6c7;
 		border-radius: 10px;
 		box-shadow: 0 0px 10px #00000030;
-		background-color: var(--bg_aliceBlue);
 		transition: 0.5s;
 
 		display: grid;
@@ -58,7 +59,6 @@
 		grid-template-rows: repeat(8, auto);
 		&.darkMode {
 			color: #cacaca;
-			background-color: var(--bg_gris_oscuro);
 			box-shadow: 0 0 10px #ffffff;
 		}
 		// my hobbys

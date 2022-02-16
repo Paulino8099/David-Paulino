@@ -2,6 +2,7 @@
   width: 100%;
   justify-items: center;
   gap: 25px;
+  padding-top: 50px;
   display: -ms-grid;
   display: grid;
   -ms-grid-column: 1;
@@ -50,8 +51,8 @@
           column-gap: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(auto, 200px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+  -ms-grid-columns: (minmax(100px, 175px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 175px));
 }
 
 .studies .study-content .card-studies {
@@ -83,6 +84,7 @@
 }
 
 .studies .study-content .card-studies div span h3 {
+  text-align: center;
   margin: 0 5px;
   color: #4a4c7e;
   -ms-grid-column-align: center;
