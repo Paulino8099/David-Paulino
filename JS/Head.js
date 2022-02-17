@@ -21,18 +21,22 @@ function navBarAll() {
         let navBar = document.querySelector('.navBar');
         let body = document.querySelector('body');
 
-        // event click navBar
+        /**
+         * ?event click (btn onOff)
+         */
         btnNavBar.addEventListener('click', function () {
             // la palanca de encendido y apagado solo va a funcionar si el scroll es inferior a 200px para así evitar interferencia o margen de errores. Esto para que al activar el navBar con movimiento de scroll no haga ninguna interferencias
             if (window.scrollY < 200) {
                 navBar.classList.toggle('active');
             };
             backface.classList.toggle('active');
+            body.classList.toggle('backfaceOn');
             mainHead.classList.toggle('active');
             navBar.classList.toggle('backfaceOn');
-            body.classList.toggle('backfaceOn');
         });
-        //event click backface
+        /**
+         * ?event click (backface)
+         */
         backface.addEventListener('click', function () {
             // solo se va a remover la clase de la lista de clases si el scroll es inferior a 200px para así evitar interferencia o margen de errores. Esto para que al activar el navBar con movimiento de scroll no haga ninguna interferencias
             if (window.scrollY < 200) {
@@ -43,7 +47,9 @@ function navBarAll() {
             navBar.classList.remove('backfaceOn');
             body.classList.remove('backfaceOn');
         });
-        // event scroll
+        /**
+         * ?event scroll
+         */
         window.addEventListener('scroll', function () {
             if (window.scrollY > 200) {
                 navBar.classList.add('active');

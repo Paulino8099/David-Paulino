@@ -500,13 +500,17 @@
 			}
 			// main
 			ul {
+				box-shadow: 0 0 5px #ffffff80, inset 0 0 5px #00000080;
+				background: #ffffff;
 				position: absolute;
 				top: 60px;
 				right: -4%;
 				margin-right: -4%;
+				border-radius: 5px;
+				padding: 0 15px;
+				gap: 50px;
 				opacity: 0;
 				pointer-events: none;
-				box-shadow: 0 0 5px #ffffff80, inset 0 0 5px #00000080;
 
 				display: grid;
 				&::after {
@@ -526,11 +530,6 @@
 				}
 				&.active {
 					z-index: 210000;
-					gap: 50px;
-					background: #ffffff;
-					border-radius: 5px;
-					padding: 0 15px;
-					height: min-content;
 					opacity: 1;
 					pointer-events: visible;
 					&::after {
@@ -539,13 +538,13 @@
 						pointer-events: visible;
 					}
 					a {
-						z-index: 110;
-						justify-self: flex-end;
-						color: #008080;
 						font-size: 1.5rem;
+						color: #4a4c7e;
 					}
 				}
 				a {
+					z-index: 110;
+					justify-self: flex-end;
 					font-size: 0;
 					&:hover {
 						&::after {
