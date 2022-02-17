@@ -1,4 +1,7 @@
 .sobreMi {
+  width: 100%;
+  justify-items: center;
+  gap: 25px;
   padding-top: 50px;
   display: -ms-grid;
   display: grid;
@@ -8,101 +11,67 @@
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
-  grid-auto-rows: -webkit-min-content;
-  grid-auto-rows: min-content;
 }
 
-.sobreMi .title-sobreMi-container {
+.sobreMi .title-sobreMi {
   color: #008080;
-  border-top: 2px solid #a5a6c7;
-  border-left: 2px solid #a5a6c7;
-  border-right: 2px solid #a5a6c7;
-  -webkit-box-shadow: 0 0px 10px #00000030;
-          box-shadow: 0 0px 10px #00000030;
-  justify-self: center;
-  place-items: center;
-  padding: 5px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   z-index: 10;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
 }
 
-.sobreMi .title-sobreMi-container h3 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.sobreMi .title-sobreMi h3 {
   margin-right: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.sobreMi .title-sobreMi-container i {
+.sobreMi .title-sobreMi i {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .sobreMi .sobreMi-content {
-  margin: 0 4% 25px 4%;
-  padding: 4%;
-  border: 2px solid #a5a6c7;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0px 10px #00000030;
-          box-shadow: 0 0px 10px #00000030;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  width: 90%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 30px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-columns: (auto)[8];
-      grid-template-columns: repeat(8, auto);
-  -ms-grid-rows: (auto)[8];
-      grid-template-rows: repeat(8, auto);
 }
 
-.sobreMi .sobreMi-content.darkMode {
-  color: #cacaca;
-  -webkit-box-shadow: 0 0 10px #ffffff;
-          box-shadow: 0 0 10px #ffffff;
-}
-
-.sobreMi .sobreMi-content .myHobbys-container {
-  padding: 0 10px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 8;
-  grid-column: 1/9;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  border-radius: 3px;
-  background: -webkit-gradient(linear, left top, right top, from(#a5a6c7), color-stop(50%, #a5a6c7), color-stop(50%, #4a4c7e), to(#4a4c7e));
-  background: linear-gradient(90deg, #a5a6c7 0%, #a5a6c7 50%, #4a4c7e 50%, #4a4c7e 100%);
+.sobreMi .sobreMi-content .my-hobbies,
+.sobreMi .sobreMi-content .my-personal-data,
+.sobreMi .sobreMi-content .my-passions {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.sobreMi .sobreMi-content .myHobbys-container img {
-  width: 50%;
+.sobreMi .sobreMi-content .my-hobbies img,
+.sobreMi .sobreMi-content .my-personal-data img,
+.sobreMi .sobreMi-content .my-passions img {
+  width: 40%;
+  height: 70%;
 }
 
-.sobreMi .sobreMi-content .myHobbys-container div {
+.sobreMi .sobreMi-content .my-hobbies div,
+.sobreMi .sobreMi-content .my-personal-data div,
+.sobreMi .sobreMi-content .my-passions div {
   margin-left: 10px;
   display: -ms-grid;
   display: grid;
@@ -112,9 +81,11 @@
       grid-template-rows: repeat(8, auto);
 }
 
-.sobreMi .sobreMi-content .myHobbys-container div h1 {
-  color: #fff;
-  text-shadow: 0 0 5px #ffffff;
+.sobreMi .sobreMi-content .my-hobbies div h1,
+.sobreMi .sobreMi-content .my-personal-data div h1,
+.sobreMi .sobreMi-content .my-passions div h1 {
+  color: #4a4c7e;
+  text-shadow: 0 0 5px #4a4c7e;
   font-size: 1.5rem;
   -ms-grid-column-align: start;
       justify-self: start;
@@ -126,17 +97,22 @@
   grid-row: 1/2;
 }
 
-.sobreMi .sobreMi-content .myHobbys-container div b {
-  color: #fff;
-  text-shadow: 0 0 5px #ffffff;
+.sobreMi .sobreMi-content .my-hobbies div b,
+.sobreMi .sobreMi-content .my-personal-data div b,
+.sobreMi .sobreMi-content .my-passions div b {
+  color: #4a4c7e;
+  text-shadow: 0 0 5px #4a4c7e;
 }
 
-.sobreMi .sobreMi-content .myHobbys-container div p {
+.sobreMi .sobreMi-content .my-hobbies div p,
+.sobreMi .sobreMi-content .my-personal-data div p,
+.sobreMi .sobreMi-content .my-passions div p {
+  margin-top: 10px;
   font-family: monospace;
   font-size: 1rem;
   font-weight: 900;
   text-align: start;
-  color: #ffffffbf;
+  color: #444444;
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-column: 1/9;
@@ -145,176 +121,92 @@
   grid-row: 3/4;
 }
 
-.sobreMi .sobreMi-content .myHobbys-container div svg {
-  fill: #ffffff;
-  margin: 0 0 5px 0;
-  width: 25px;
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 1;
-  grid-column: 8/9;
-  -ms-grid-row: 8;
-  -ms-grid-row-span: 1;
-  grid-row: 8/9;
-  cursor: pointer;
+.sobreMi .sobreMi-content .my-hobbies img {
+  -webkit-animation: animatemisHobbies 5s linear infinite;
+          animation: animatemisHobbies 5s linear infinite;
 }
 
-.sobreMi .sobreMi-content .myHobbys-container div svg:active {
-  fill: #008080;
+@-webkit-keyframes animatemisHobbies {
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
-.sobreMi .sobreMi-content .pasion-container {
-  border-radius: 3px;
-  padding: 0 10px;
-  margin-top: 25px;
-  background: -webkit-gradient(linear, left top, right top, from(#4a4c7e), color-stop(50%, #4a4c7e), color-stop(50%, #a5a6c7), to(#a5a6c7));
-  background: linear-gradient(90deg, #4a4c7e 0%, #4a4c7e 50%, #a5a6c7 50%, #a5a6c7 100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 8;
-  grid-column: 1/9;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+@keyframes animatemisHobbies {
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
-.sobreMi .sobreMi-content .pasion-container div {
-  margin: 0 10px 5px 0;
-  width: 50%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[8];
-      grid-template-columns: repeat(8, auto);
-  -ms-grid-rows: (auto)[8];
-      grid-template-rows: repeat(8, auto);
+.sobreMi .sobreMi-content .my-passions img {
+  -webkit-animation: animatemisHobbies 1s linear infinite;
+          animation: animatemisHobbies 1s linear infinite;
 }
 
-.sobreMi .sobreMi-content .pasion-container div h1 {
-  color: #fff;
-  text-shadow: 0 0 5px #ffffff;
-  font-size: 1.5rem;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 8;
-  grid-column: 1/9;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+@keyframes animatemisHobbies {
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
-.sobreMi .sobreMi-content .pasion-container div b {
-  color: #fff;
-  text-shadow: 0 0 5px #ffffff;
+.sobreMi .sobreMi-content .my-personal-data img {
+  -webkit-animation: animatemisHobbies 5s linear infinite;
+          animation: animatemisHobbies 5s linear infinite;
 }
 
-.sobreMi .sobreMi-content .pasion-container div p {
-  font-family: monospace;
-  font-size: 1rem;
-  font-weight: 900;
-  text-align: start;
-  color: #ffffffbf;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 8;
-  grid-column: 1/9;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-}
-
-.sobreMi .sobreMi-content .pasion-container div svg {
-  fill: #ffffff;
-  width: 25px;
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 1;
-  grid-column: 8/9;
-  -ms-grid-row: 8;
-  -ms-grid-row-span: 1;
-  grid-row: 8/9;
-  cursor: pointer;
-}
-
-.sobreMi .sobreMi-content .pasion-container div svg:active {
-  fill: #008080;
-}
-
-.sobreMi .sobreMi-content .pasion-container img {
-  padding: 0 0 0 10px;
-  width: 50%;
-}
-
-.sobreMi .sobreMi-content .myData-container {
-  padding: 5px;
-  margin-top: 25px;
-  -webkit-box-shadow: 0 5px 10px #00000040;
-          box-shadow: 0 5px 10px #00000040;
-  border-radius: 5px;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  width: 90%;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 8;
-  grid-column: 1/9;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-}
-
-.sobreMi .sobreMi-content .myData-container h1 {
-  margin-top: 0;
-  color: #008080;
-}
-
-.sobreMi .sobreMi-content .myData-container b {
-  color: #008080;
-}
-
-.sobreMi .sobreMi-content .myData-container p {
-  font-size: 1rem;
-  font-weight: 900;
-  font-family: monospace;
+@keyframes animatemisHobbies {
+  50% {
+    -webkit-transform: translateY(10px) scale(1.05);
+            transform: translateY(10px) scale(1.05);
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
 }
 
 @media screen and (max-width: 800px) {
-  .sobreMi .sobreMi-content .myHobbys-container {
-    height: 750px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#a5a6c7), color-stop(50%, #a5a6c7), color-stop(50%, #4a4c7e), to(#4a4c7e));
-    background: linear-gradient(180deg, #a5a6c7 0%, #a5a6c7 50%, #4a4c7e 50%, #4a4c7e 100%);
+  .sobreMi .sobreMi-content {
+    gap: 100px;
+  }
+  .sobreMi .sobreMi-content .my-hobbies,
+  .sobreMi .sobreMi-content .my-passions,
+  .sobreMi .sobreMi-content .my-personal-data {
+    width: 95%;
+    -ms-grid-column-align: center;
+        justify-self: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .sobreMi .sobreMi-content .myHobbys-container img {
+  .sobreMi .sobreMi-content .my-hobbies img,
+  .sobreMi .sobreMi-content .my-passions img,
+  .sobreMi .sobreMi-content .my-personal-data img {
+    margin-bottom: 15px;
+    height: 100%;
     width: 100%;
-    height: 50%;
   }
-  .sobreMi .sobreMi-content .myHobbys-container div {
-    margin: 0;
-    height: 50%;
-  }
-  .sobreMi .sobreMi-content .pasion-container {
-    height: 500px;
-    background: -webkit-gradient(linear, left bottom, left top, from(#4a4c7e), color-stop(50%, #4a4c7e), color-stop(50%, #a5a6c7), to(#a5a6c7));
-    background: linear-gradient(0deg, #4a4c7e 0%, #4a4c7e 50%, #a5a6c7 50%, #a5a6c7 100%);
+  .sobreMi .sobreMi-content .my-passions {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-  .sobreMi .sobreMi-content .pasion-container div {
-    width: 100%;
-    height: 50%;
-  }
-  .sobreMi .sobreMi-content .pasion-container img {
-    width: 100%;
-    height: 50%;
-  }
-  .sobreMi .sobreMi-content .myData-container {
-    width: 100%;
-    -webkit-box-shadow: 0 0px 10px #00000040;
-            box-shadow: 0 0px 10px #00000040;
   }
 }
 /*# sourceMappingURL=sobreMi.css.map */

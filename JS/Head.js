@@ -70,53 +70,6 @@ function backStart() {
 }
 
 /**
- * ?indicador de sesiones (click)...
- */
-// agregando eventos a los botones del menú de navegación y creando condicionales para que el indicador se mueva a la posición del botón donde se escuchó el click.
-let btnNav = document.querySelector('.main-head').children;
-for (let i = 0; i < btnNav.length; i++) {
-    btnNav[i].addEventListener('click', () => {
-        // indicador de la barra de navegación al dar click en cada botón. 
-        indicatorSection();
-        function indicatorSection() {
-            let head = document.querySelector('.head');
-            let estudios = document.querySelector('.estudios');
-            let sobreMi = document.querySelector('.sobreMi');
-            let project = document.querySelector('.project');
-            // Contenedor del titulo y el boton del menú.
-            let barraTitleBtn = document.querySelector('.content-titleBoton');
-            // Botón Estudios
-            if (btnNav[i].childNodes[0].nodeValue == 'Estudios') {
-                // navegando por las secciones al dar click en el botón "estudios". 
-                document.documentElement.scrollTop = head.offsetHeight - barraTitleBtn.offsetHeight - 25;
-            }
-            /**
-             * !Botón Sobre Mi
-             */
-            else if (btnNav[i].childNodes[0].nodeValue == 'Sobre Mi') {
-                // navegando entre las secciones al dar click en el botón "Sobre Mi". 
-                document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight - 25;
-            }
-            /**
-             * !Botón project
-             */
-            else if (btnNav[i].childNodes[0].nodeValue == 'Proyectos') {
-
-                // navegando entre las secciones al dar click en el botón "project". 
-                document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight - 25;
-            }
-            /**
-             * !Botón Contacto
-             */
-            else if (btnNav[i].childNodes[0].nodeValue == 'Contacto') {
-                // navegando entre las secciones al dar click en el botón "Contacto". 
-                document.documentElement.scrollTop = head.offsetHeight + estudios.offsetHeight + sobreMi.offsetHeight + project.offsetHeight - 25;
-            }
-        }
-    });
-};
-
-/**
  * ?indicador de sesiones (IntersectionObserver)...
  */
 // activar indicador y posicionarlo en su repectivo botón del navBar al detectar scroll en las diferentes secciones de todo el documento.
@@ -155,44 +108,44 @@ window.addEventListener('scroll', () => {
                  */
                 else if (entry.target.classList == 'studies section') {
                     // ancho y opacidad  del indicador del menú de navegación.
-                    indicator.style.width = `${widthBtnEstudios - 6}px`;
+                    indicator.style.width = `${widthBtnEstudios}px`;
                     indicator.style.opacity = '1';
 
                     // distancia a trasladar el indicador en el menú de navegación. 
-                    indicator.style.transform = `translateX(${3}px)`;
+                    indicator.style.transform = `translateX(0px)`;
                 }
                 /**
                  * ?about me...
                  */
                 else if (entry.target.classList == 'sobreMi section') {
                     // Ancho y opacidad  del indicador de los botones del menú de navegación.
-                    indicator.style.width = `${widthBtnSobreMi - 7}px`;
+                    indicator.style.width = `${widthBtnSobreMi}px`;
                     indicator.style.opacity = '1';
 
                     // Distancia a trasladar el indicador de los botones del menú de navegación.
-                    indicator.style.transform = `translateX(${widthBtnEstudios + 6}px)`;
+                    indicator.style.transform = `translateX(${widthBtnEstudios + 3}px)`;
                 }
                 /**
                  * ?project...
                  */
                 else if (entry.target.classList == 'project section') {
                     // Ancho y opacidad  del indicador de los botones del menú de navegación.
-                    indicator.style.width = `${widthBtnproject - 6}px`;
+                    indicator.style.width = `${widthBtnproject}px`;
                     indicator.style.opacity = '1';
 
                     // Distancia a trasladar el indicador de los botones del menú de navegación.
-                    indicator.style.transform = `translateX(${widthBtnEstudios + widthBtnSobreMi + 11}px)`;
+                    indicator.style.transform = `translateX(${widthBtnEstudios + widthBtnSobreMi + 7}px)`;
                 }
                 /**
                  * ?contact...
                  */
                 else if (entry.target.classList == 'contact section') {
                     // Ancho y opacidad  del indicador de los botones del menú de navegación.
-                    indicator.style.width = `${widthBtnContacto - 6}px`;
+                    indicator.style.width = `${widthBtnContacto}px`;
                     indicator.style.opacity = '1';
 
                     // Distancia a trasladar el indicador de los botones del menú de navegación.
-                    indicator.style.transform = `translateX(${widthBtnEstudios + widthBtnSobreMi + widthBtnproject + 15}px)`;
+                    indicator.style.transform = `translateX(${widthBtnEstudios + widthBtnSobreMi + widthBtnproject + 10}px)`;
                 }
             }
         });
@@ -210,27 +163,33 @@ window.addEventListener('scroll', () => {
 });
 
 /**
- * ?onOff información personal (click)...
+ * ?onOff información personal
  */
-// Activar/Desactivar información personal
-document.querySelector('.imgNavigate').addEventListener('click', () => {
-    document.querySelector('.myData-float-container').classList.add('on')
+onOffDataPerson();
+function onOffDataPerson() {
+    let dataFloat = document.querySelector('.myData-float');
+    let btncancel = document.querySelector('.btn-back-datosPersonales');
 
-    // Desactivar contenedor información personal 
-    document.querySelector('.btn-back-datosPersonales').addEventListener('click', () => {
-        // Botón para desactivar
-        document.querySelector('.myData-float-container').classList.remove('on');
-    })
-});
-
-/**
- * ?desactivando información personal (scroll)...
- */
-// Desactivar información personal al scrollear
-window.addEventListener('scroll', () => {
-    let heightHead = document.querySelector('.head').offsetWidth;
-    if (scrollY >= heightHead) {
-        // Botón para desactivar
-        document.querySelector('.myData-float-container').classList.remove('on');
-    };
-});
+    /**
+     * ?onOff información personal (click img)
+     */
+    let imgNvagate = document.querySelector('.imgNavigate');
+    imgNvagate.addEventListener('click', () => {
+        dataFloat.classList.add('active');
+        backface.classList.toggle('active');
+    });
+    /**
+     * ?off información personal (click btn cancel)
+     */
+    btncancel.addEventListener('click', () => {
+        dataFloat.classList.remove('active');
+        backface.classList.remove('active');
+    });
+    /**
+     * ?off información personal (click backface)
+     */
+    backface.addEventListener('click', () => {
+        dataFloat.classList.remove('active');
+        backface.classList.remove('active');
+    });
+};

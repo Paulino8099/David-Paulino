@@ -311,12 +311,9 @@
   transition: 0.3s;
 }
 
-.head .myData-float-container {
-  background: #000000bf;
+.head .myData-float {
   width: 100%;
   height: 100%;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   -webkit-transition: .3s;
   transition: .3s;
   opacity: 0;
@@ -332,17 +329,18 @@
   grid-row: 1/11;
 }
 
-.head .myData-float-container.on {
+.head .myData-float.active {
+  z-index: 21000;
   opacity: 1;
-  pointer-events: visible;
 }
 
-.head .myData-float-container.on .datosPersonales-content {
+.head .myData-float.active .datosPersonales-content {
+  pointer-events: visible;
   width: 30%;
   height: 80%;
 }
 
-.head .myData-float-container .datosPersonales-content {
+.head .myData-float .datosPersonales-content {
   border-radius: 10px;
   place-self: center;
   width: 0%;
@@ -356,7 +354,7 @@
   display: grid;
 }
 
-.head .myData-float-container .datosPersonales-content svg {
+.head .myData-float .datosPersonales-content svg {
   -ms-grid-column-align: end;
       justify-self: end;
   margin: 10px;
@@ -367,18 +365,18 @@
   border: 3px solid #ffffff;
 }
 
-.head .myData-float-container .datosPersonales-content svg:hover {
+.head .myData-float .datosPersonales-content svg:hover {
   cursor: pointer;
   fill: #ffffffbf;
   border: 3px solid #ffffffbf;
 }
 
-.head .myData-float-container .datosPersonales-content svg:active {
+.head .myData-float .datosPersonales-content svg:active {
   fill: #ffffff80;
   border: 3px solid #ffffff80;
 }
 
-.head .myData-float-container .datosPersonales-content img {
+.head .myData-float .datosPersonales-content img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -386,10 +384,10 @@
           filter: blur(5px);
 }
 
-.head .myData-float-container .datosPersonales-content span {
+.head .myData-float .datosPersonales-content span {
   width: 100%;
   height: 100%;
-  background: #00808080;
+  background: #13424280;
   position: absolute;
   overflow: hidden;
   overflow-y: auto;
@@ -397,20 +395,26 @@
   display: grid;
 }
 
-.head .myData-float-container .datosPersonales-content span h3 {
+.head .myData-float .datosPersonales-content span h3 {
   font-size: 1.2rem;
-  text-align: center;
+  text-align: start;
   place-self: center;
   color: #fff;
+  text-shadow: 0 0 5px #fff;
 }
 
-.head .myData-float-container .datosPersonales-content span::-webkit-scrollbar {
+.head .myData-float .datosPersonales-content span h3 b {
+  color: #00ff00;
+  text-shadow: none;
+}
+
+.head .myData-float .datosPersonales-content span::-webkit-scrollbar {
   width: 5px;
   background: #ffffff80;
   border-radius: 50px;
 }
 
-.head .myData-float-container .datosPersonales-content span::-webkit-scrollbar-thumb {
+.head .myData-float .datosPersonales-content span::-webkit-scrollbar-thumb {
   background: #ffffff;
   border-radius: 50px;
 }
@@ -593,10 +597,6 @@
           transform: translateX(35px);
 }
 
-.head .btn-open-mainMovil {
-  display: none;
-}
-
 .head .padding-bottom {
   width: 100%;
   -ms-grid-column-align: center;
@@ -609,6 +609,15 @@
 }
 
 @media screen and (max-width: 650px) {
+  .head .myData-float.active {
+    z-index: 21000;
+    opacity: 1;
+    pointer-events: visible;
+  }
+  .head .myData-float.active .datosPersonales-content {
+    width: 80%;
+    height: 50%;
+  }
   .head .navBar.backfaceOn {
     z-index: 21000;
   }
@@ -675,6 +684,9 @@
   }
   .head .navBar ul a {
     font-size: 0;
+  }
+  .head .navBar ul a:hover::after {
+    display: none;
   }
   .head .navBar ul .indicador {
     display: none;

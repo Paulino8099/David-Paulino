@@ -58,6 +58,7 @@ html {
 
 body {
   background: var(--bgLightGreen);
+  background: #e4f5ef;
   -webkit-transition: .5s;
   transition: .5s;
   display: -ms-grid;

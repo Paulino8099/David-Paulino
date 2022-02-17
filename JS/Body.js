@@ -10,7 +10,6 @@ function obser() {
     const imagen1 = document.querySelector('.messageDirect-container');
 
     const cargarImagen = (entry, salida) => {
-        console.log(entry);
 
         entry.forEach((entrada) => {
             if (entrada.isIntersecting) {
@@ -29,24 +28,6 @@ function obser() {
 
     observador.observe(imagen1);
 };
-/**
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Actualización¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
-*/
-
-/**
- *? ocultar ventana de actualización...
-    */
-//btn para ocultar la ventana de actualización
-document.querySelector(".btn_cancelar").addEventListener("click", () => {
-    document.querySelector('.actualización').classList.toggle('active');
-});
-
 
 /**
  *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
@@ -86,142 +67,6 @@ window.addEventListener("scroll", function () {
     }
 });
 
-
-/**
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Comentarios¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
- *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
-*/
-// todas las configuraciones de los comentarios flotantes para cada elemento (Solo para dispositivos pc)
-// wath information navigator
-
-// identificando qué dispositivo es. El cógido solo se va a ejecutar si el dispositivo es una pc
-let identificator = navigator.userAgent.toLocaleLowerCase();
-if (identificator.search('windows') !== -1 || identificator.search('win') !== -1) { allConfigComment() }
-
-function allConfigComment() {
-    let commentsContainer = document.querySelector('.comments-container');
-    let commentsContent = document.querySelector('.comments-content');
-
-    /**
-     * ?ventana  de mensajes...
-     */
-    // programando posición de la ventana flotante para mostrar mensajes al pasar cursor por "X" elementos
-    commnentsFloat();
-    function commnentsFloat() {
-        document.addEventListener('mousemove', function (e) {
-            
-            let y = e.clientY;
-            let x = e.clientX;
-
-            commentsContainer.style.top = y + 10 + 'px';
-            commentsContainer.style.left = x + 10 + 'px';
-        });
-    };
-
-    /**
-     * ?onOff 
-     */
-    //activando y desactivando ventana que describe la function para algunos de los elementos al pasar cursor
-    onOff();
-    function onOff() {
-
-        /***
-         * ?logo personal (title)...
-         */
-        // al pasar cursor por el "logo personal" de la página se mostrará la functión de dicho elemento
-        logoPersonal();
-        function logoPersonal() {
-            let logoPersonal = document.querySelector('.logo-personal');
-
-            // activando mensaje al posicionar el cursor encima del "logo personal" 
-            logoPersonal.addEventListener('mouseover', function () {
-                // solo se va a ejecutar este código si se ha hecho scroll hasta 100
-                if (document.documentElement.scrollTop > 400) {
-                    commentsContent.innerHTML = `
-                                <div class="imgTitle-comments-area">
-                                    <h3 class="title-comments"> 
-                                    Inicio:
-                                    </h3>
-                                    <img src="PNG/homePortafolioDavidPaulino.png" alt="auto">
-                                </div>
-                                <p class="paragraph-comments">
-                                    Volver al inicio de la página
-                                </p>
-                                `;
-                    commentsContent.classList.add('active');
-                };
-            });
-
-            // desactivando comentario del "logo personal" al sacar el cursor de este
-            logoPersonal.addEventListener('mouseout', function () {
-                commentsContent.classList.remove('active');
-            });
-        };
-
-        /**
-         * ?logo copyRight (title)...
-         */
-        // al pasar cursor por el "logo copyRight" (al lado del título principal) de la página se mostrará la functión de dichos elementos
-        CopyRight();
-        function CopyRight() {
-            let logoCopyRight = document.querySelector('.copyRight-secundary');
-
-            logoCopyRight.addEventListener('mouseover', function () {
-                commentsContent.innerHTML = `
-                    <div class="imgTitle-comments-area">
-                        <h3 class="title-comments"> 
-                            CopyRight:
-                        </h3>
-                        <img src="PNG/pie_pagina.png" alt="copyRigth pie de página">
-                    </div>
-                    <p class="paragraph-comments">
-                        Ir al pie de la página donde se encuentra la información de derecho de autor
-                    </p>
-                    `;
-                commentsContent.classList.add('active');
-            });
-
-            logoCopyRight.addEventListener('mouseout', function () {
-                commentsContent.classList.remove('active');
-            });
-        };
-
-        /**
-         * ?btn start...
-         */
-        btnStart();
-        function btnStart() {
-            let btnStart = document.querySelector('.btn-start');
-
-            // activando mensaje al posicionar el cursor encima del "btn start" 
-            btnStart.addEventListener('mouseover', function () {
-                commentsContent.innerHTML = `
-                            <div class="imgTitle-comments-area">
-                                <h3 class="title-comments"> 
-                                Inicio:
-                                </h3>
-                                <img src="IMG/homePortafolioDavidPaulino.png" alt="auto">
-                            </div>
-                            <p class="paragraph-comments">
-                                Volver al inicio de la página
-                            </p>
-                            `;
-                commentsContent.classList.add('active');
-            });
-
-            // desactivando comentario del "btn start" al sacar el cursor de este
-            btnStart.addEventListener('mouseout', function () {
-                commentsContent.innerHTML = ``;
-                commentsContent.classList.remove('active');
-            });
-        }
-    };
-};
 
 /**
  *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
