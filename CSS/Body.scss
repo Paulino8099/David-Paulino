@@ -41,7 +41,7 @@ html {
 	// background
 	--bgBlack: #000000;
 	--bgWhite: #ffffff;
-	--bgLightGreen: #e4f5ef;
+	--bgdarkMode: #e4f5ef;
 	// shadow
 	--shWhite: #ffffff;
 	--shBlack: #000000;
@@ -55,8 +55,7 @@ html {
 //  |||||||||||||||||||||||||||||||||||||||Desktop|||||||||||||||||||||||||||||||||||||||||
 //  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 body {
-	background: var(--bgLightGreen);
-	background: #e4f5ef;
+	background: var(--bgdarkMode);
 	transition: .5s;
 
 	display: grid;

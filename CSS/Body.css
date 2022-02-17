@@ -51,14 +51,13 @@ html {
 :root {
   --bgBlack: #000000;
   --bgWhite: #ffffff;
-  --bgLightGreen: #e4f5ef;
+  --bgdarkMode: #e4f5ef;
   --shWhite: #ffffff;
   --shBlack: #000000;
 }
 
 body {
-  background: var(--bgLightGreen);
-  background: #e4f5ef;
+  background: var(--bgdarkMode);
   -webkit-transition: .5s;
   transition: .5s;
   display: -ms-grid;

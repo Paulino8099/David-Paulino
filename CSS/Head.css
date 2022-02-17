@@ -598,14 +598,21 @@
 }
 
 .head .padding-bottom {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#e4f5ef));
+  background: linear-gradient(180deg, transparent 0%, #e4f5ef 100%);
   width: 100%;
   -ms-grid-column-align: center;
       justify-self: center;
   height: 10px;
   position: absolute;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(var(--bgLightGreen)));
-  background: linear-gradient(180deg, transparent 0%, var(--bgLightGreen) 100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.head .padding-bottom.darkMode {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#1a2c2c));
+  background: linear-gradient(180deg, transparent 0%, #1a2c2c 100%);
 }
 
 @media screen and (max-width: 650px) {

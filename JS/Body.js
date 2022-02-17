@@ -116,3 +116,58 @@ window.addEventListener("scroll", function () {
     }
 });
 
+
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦darkMode¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦darkMode¦¦¦¦¦¦¦¦¦¦darkMode¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦darkMode¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦darkMode¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦darkMode¦¦¦¦¦¦¦¦¦¦darkMode¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦darkMode¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+//  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+darkModeBody();
+function darkModeBody() {
+    let btnDarkMode = document.querySelector('.btn-darkMode');
+
+    /**
+     * ?btn functions
+     */
+    btnDarkMode.addEventListener('click', function () {
+        setOnOff();
+        onOff();
+    });
+    /**
+     * ?set onOff
+     */
+    //enviando encendido y apagado al localStorage para activar o desactivar el "darkMode" 
+    function setOnOff() {
+        if (localStorage.getItem('darkMode') === null) {
+            localStorage.setItem('darkMode', '1');
+        }
+        if (localStorage.getItem('darkMode') == '1') {
+            localStorage.setItem('darkMode', '0')
+        }
+        else if (localStorage.getItem('darkMode') == '0') {
+            localStorage.setItem('darkMode', '1')
+        }
+    };
+
+    /**
+     * ?onOff darkMode
+     */
+    // activando el darkMode al dar click en btn "darkMode"
+    onOff();
+    function onOff() {
+        if (localStorage.getItem('darkMode') == '1') {
+            document.documentElement.style.setProperty('--bgdarkMode', '#1a2c2c'); //from white to darkGray
+            btnDarkMode.classList.add('active'); //btn "darkMode"
+            document.querySelector('.head').classList.toggle('darkMode'); //home bgImg
+            document.querySelector('.padding-bottom').classList.toggle('darkMode');
+
+        } else {
+            document.documentElement.style.setProperty('--bgdarkMode', '#e4f5ef'); //from white to darkGray
+            btnDarkMode.classList.remove('active'); //btn "darkMode"
+            document.querySelector('.head').classList.toggle('darkMode'); //home bgImg
+            document.querySelector('.padding-bottom').classList.toggle('darkMode');
+        };
+    };
+};
