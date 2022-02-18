@@ -3,6 +3,7 @@
   justify-items: center;
   gap: 25px;
   padding-top: 50px;
+  margin-bottom: 150px;
   display: -ms-grid;
   display: grid;
   -ms-grid-column: 1;

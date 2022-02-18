@@ -8,23 +8,26 @@
 .head {
 	margin: 0;
 	justify-self: center;
-	background: url(../PNG/VerdesSuavesOpacity100.png);
+	background: url(../PNG/lineas-verdes-100.png);
 	background-repeat: round;
 	background-size: cover;
+	// background-position: center;
 	width: 100%;
-	margin-bottom: 50px;
 	height: calc(100vh + 10px);
 	transition: 0.5s;
 	position: relative;
 	overflow: hidden;
+	margin-bottom: 150px;
 
 	display: grid;
 	grid-template-columns: repeat(10, auto);
 	grid-template-rows: repeat(10, auto);
 	grid-column: 1/9;
 	grid-row: 1/2;
-	.darkMode {
-		background: url(../PNG/VerdesSuavesOpacity50.png);
+	&.darkMode {
+		background: url(../PNG/lineas-verdes-50.png);
+		background-repeat: round;
+		background-size: cover;
 	}
 	// main and title
 	.navBar {
@@ -378,6 +381,20 @@
 		display: flex;
 		grid-column: 1/11;
 		grid-row: 1/11;
+		&::before {
+			content: "";
+			align-self: center;
+			border: 1px solid #505050;
+			border-radius: 100px;
+			position: absolute;
+			box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+			display: block;
+			width: 32px;
+			height: 34px;
+			background-color: #008080;
+			transition: .3s;
+			z-index: 10;
+		}
 		svg {
 			width: 50%;
 		}
@@ -423,20 +440,6 @@
 				pointer-events: visible;
 			}
 		}
-		&::before {
-			content: "";
-			align-self: center;
-			border: 1px solid #505050;
-			border-radius: 100px;
-			position: absolute;
-			box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-			display: block;
-			width: 32px;
-			height: 34px;
-			background-color: #008080;
-			transition: .3s;
-			z-index: 10;
-		}
 		&:hover .txt-darkMode {
 			margin: 0 0 100px -5px;
 			opacity: 10;
@@ -479,6 +482,11 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 @media screen and(max-width:650px) {
 	.head {
+		.btn-darkMode {
+			.txt-darkMode {
+				display: none;
+			}
+		}
 		.myData-float {
 			&.active {
 				z-index: 21000;

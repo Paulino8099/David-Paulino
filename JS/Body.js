@@ -160,14 +160,14 @@ function darkModeBody() {
         if (localStorage.getItem('darkMode') == '1') {
             document.documentElement.style.setProperty('--bgdarkMode', '#1a2c2c'); //from white to darkGray
             btnDarkMode.classList.add('active'); //btn "darkMode"
-            document.querySelector('.head').classList.toggle('darkMode'); //home bgImg
-            document.querySelector('.padding-bottom').classList.toggle('darkMode');
+            document.querySelector('.head').classList.add('darkMode'); //home bg-img
+            document.querySelector('.padding-bottom').classList.add('darkMode');
 
         } else {
             document.documentElement.style.setProperty('--bgdarkMode', '#e4f5ef'); //from white to darkGray
             btnDarkMode.classList.remove('active'); //btn "darkMode"
-            document.querySelector('.head').classList.toggle('darkMode'); //home bgImg
-            document.querySelector('.padding-bottom').classList.toggle('darkMode');
+            document.querySelector('.head').classList.remove('darkMode'); //home bg-img
+            document.querySelector('.padding-bottom').classList.remove('darkMode');
         };
     };
 };
