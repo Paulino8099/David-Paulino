@@ -76,13 +76,14 @@
 				// paragraph
 				p {
 					margin-top: 10px;
+					transition: .5s;
 					font: {
 						family: monospace;
 						size: 1rem;
 						weight: 900;
 					}
 					text-align: start;
-					color: #444444;
+					color: var(--textGray2);
 
 					grid-column: 1/9;
 					grid-row: 3/4;

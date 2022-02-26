@@ -40,11 +40,19 @@ html {
 :root {
 	// background
 	--bgBlack: #000000;
+	--bgBlack50: #00000050;
 	--bgWhite: #ffffff;
 	--bgdarkMode: #e4f5ef;
+
 	// shadow
 	--shWhite: #ffffff;
 	--shBlack: #000000;
+
+	// text
+	--textPurple: #4a4c7e;
+	--textWhite: #000000;
+	--textGray1: #777777;
+	--textGray2: #444444;
 }
 
 //  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -112,7 +120,7 @@ body {
 		height: 100vh;
 		background: #000000f0;
 		z-index: 100;
-		transition: .3s;
+		transition: 1s;
 		opacity: 0;
 		pointer-events: none;
 		&.active {

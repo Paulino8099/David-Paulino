@@ -109,11 +109,13 @@
 .sobreMi .sobreMi-content .my-personal-data div p,
 .sobreMi .sobreMi-content .my-passions div p {
   margin-top: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
   font-family: monospace;
   font-size: 1rem;
   font-weight: 900;
   text-align: start;
-  color: #444444;
+  color: var(--textGray2);
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-column: 1/9;

@@ -183,7 +183,7 @@
 .project .project-container .project-content div div h1 {
   text-align: center;
   font-size: 1rem;
-  color: #777777;
+  color: var(--textGray1);
 }
 
 .project .project-container span {

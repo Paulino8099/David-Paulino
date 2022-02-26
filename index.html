@@ -68,23 +68,10 @@
     <header class="head section" id="btn-start">
         <!-- btn darkMode -->
         <div class="btn-darkMode">
-            <!-- Luna -->
-            <svg class="svg-luna" width="30" height="30" viewBox="0 0 24 24">
-                <path
-                    d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z">
-                </path>
-            </svg>
-            <!-- Sol -->
-            <svg class="svg-sol" viewBox="0 0 60 59.73">
-                <defs>
-                </defs>
-                <g id="Capa_2" data-name="Capa 2">
-                    <g id="Capa_1-2" data-name="Capa 1">
-                        <path class="cls-1"
-                            d="M15.71,11.7,10.8,6.82,7,10.66l4.89,4.89ZM0,27.14H8.18v5.45H0ZM27.27,0h5.46V8.05H27.27ZM49.2,6.8,53,10.64l-4.88,4.88-3.84-3.84ZM44.29,48l4.88,4.91L53,49.09l-4.91-4.88Zm7.53-20.89H60v5.45H51.82ZM30,13.5A16.37,16.37,0,1,0,46.36,29.86,16.37,16.37,0,0,0,30,13.5Zm0,27.27A10.91,10.91,0,1,1,40.91,29.86,10.9,10.9,0,0,1,30,40.77ZM27.27,51.68h5.46v8H27.27ZM7,49.06l3.85,3.85L15.68,48l-3.84-3.85Z" />
-                    </g>
-                </g>
-            </svg>
+            <!-- moon -->
+            <i class="svg-luna fa-solid fa-moon"></i>
+            <!-- sun -->
+            <i class="svg-sol fa-solid fa-sun"></i>
 
             <div class="txt-darkMode">
                 <h5>Modo Claro/Oscuro</h5>
@@ -96,7 +83,12 @@
             <div class="title-head">
                 <img class="logo-personal" src="PNG/logo_personal.png" alt="">
                 <h3>Portafolio</h3>
-                <i class="fa-solid fa-copyright"></i>
+                <div class="btn-darkMode-logo">
+                    <!-- moon -->
+                    <i class=" icon-moon fa-solid fa-moon"></i>
+                    <!-- sun -->
+                    <i class="icon-sun fa-solid fa-sun"></i>
+                </div>
             </div>
             <!-- btn -->
             <i class="btn-navBar-head fa-solid fa-bars"></i>
@@ -116,17 +108,6 @@
             <span style="--i:2"></span>
             <span style="--i:3"></span>
             <span style="--i:4"></span>
-            <!-- <span style="--i:5"></span>
-            <span style="--i:6"></span>
-            <span style="--i:7"></span>
-            <span style="--i:8"></span>
-            <span style="--i:9"></span>
-            <span style="--i:10"></span>
-            <span style="--i:11"></span>
-            <span style="--i:12"></span>
-            <span style="--i:13"></span>
-            <span style="--i:14"></span>
-            <span style="--i:15"></span> -->
         </div>
         <!-- datos personales -->
         <div class="myData-float">
@@ -180,7 +161,7 @@
             <i class="fa-solid fa-graduation-cap"></i>
         </div>
         <!-- content -->
-        <div class="study-content">
+        <div class="studies-content">
             <!-- diseño de páginas web -->
             <div class="dpw card-studies">
                 <div class="dpw-content">
@@ -294,6 +275,18 @@
                 </div>
             </div>
         </div>
+        <!-- aside -->
+        <aside class="aside-studies">
+            <div class="aside-studies-content">
+                <i class="btn-close-aside-studies fa-solid fa-xmark"></i>
+                <span class="title-aside-studies">
+                    <h3>Titulo de paquete office</h3>
+                </span>
+                <div class="media-aside-studies">
+                    <img src="./IMG/CertificadoDiseñoWeb.jpg" alt="">
+                </div>
+            </div>
+        </aside>
     </section>
     <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- ||||||||||||||||||||||||||||||||||||||||||Sobre Mí||||||||||||||||||||||||||||||||||||||||| -->
@@ -421,11 +414,11 @@
         </div>
     </section>
     <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-    <!-- |||||||||||||||||||||||||||||||||||||||||Contacto|||||||||||||||||||||||||||||||||||||||||| -->
-    <!-- ||||||||||||||||||||||||||||||||Contacto|||||||||Contacto|||||||||||||||||||||||||||||||||| -->
-    <!-- |||||||||||||||||||||||Contacto||||||||||||||||||||||||||||||Contacto|||||||||||||||||||||| -->
-    <!-- ||||||||||||||||||||||||||||||||Contacto|||||||||Contacto|||||||||||||||||||||||||||||||||| -->
-    <!-- |||||||||||||||||||||||||||||||||||||||||Contacto|||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- |||||||||||||||||||||||||||||||||||||||||Contact|||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- ||||||||||||||||||||||||||||||||Contact|||||||||Contact|||||||||||||||||||||||||||||||||| -->
+    <!-- |||||||||||||||||||||||Contact||||||||||||||||||||||||||||||Contact|||||||||||||||||||||| -->
+    <!-- ||||||||||||||||||||||||||||||||Contact|||||||||Contact|||||||||||||||||||||||||||||||||| -->
+    <!-- |||||||||||||||||||||||||||||||||||||||||Contact|||||||||||||||||||||||||||||||||||||||||| -->
     <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <div class="contact section" id="contact">
         <!-- title -->
@@ -605,7 +598,7 @@
     <!-- |||||||||||||||||||||||||||||||||||||||||footer|||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <footer class="footer section">
-        <h3 class="version-website">V16.2</h3>
+        <h3 class="version-website">V16.3</h3>
         <div class="copyRight-content">
             <i class="fa-solid fa-copyright"></i>
             <h3>Todos los derechos reservados 2021-2025</h3>

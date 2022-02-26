@@ -11,11 +11,12 @@
 	gap: 25px;
 	padding-top: 50px;
 	margin-bottom: 150px;
+	position: relative;
 
 	display: grid;
 	grid-column: 1/9;
 	grid-row: 2/3;
-	// titulo
+	// title
 	.title-studies {
 		color: #008080;
 		width: fit-content;
@@ -35,7 +36,8 @@
 			transition: 0.5s;
 		}
 	}
-	.study-content {
+	// content
+	.studies-content {
 		width: 90%;
 		justify-content: space-evenly;
 		row-gap: 20px;
@@ -115,6 +117,74 @@
 					img {
 						opacity: .6;
 					}
+				}
+			}
+		}
+	}
+	// aside
+	.aside-studies {
+		position: absolute;
+		width: 0;
+		height: 0;
+		transition: .3s;
+		opacity: 0;
+		pointer-events: none;
+		
+		display: grid;
+		&.active {
+			width: 30%;
+			height: min-content;
+			z-index: 21000;
+			opacity: 1;
+			pointer-events: visible;
+		}
+		.aside-studies-content {
+			width: 100%;
+			background: #4a4c7e;
+			border-radius: 5px;
+			place-self: center;
+			place-content: center;
+			padding: 10px 0;
+			overflow: hidden;
+			position: relative;
+
+			display: grid;
+			// btn close
+			.btn-close-aside-studies {
+				color: #ffffff;
+				font-size: 15px;
+				top: 0;
+				right: 0;
+				margin: 5px;
+				position: absolute;
+				cursor: pointer;
+				&:active {
+					color: #ff0000;
+				}
+			}
+			// title
+			.title-aside-studies {
+				width: 100%;
+				color: #ffffff;
+				margin-bottom: 10px;
+
+				display: grid;
+				h3 {
+					justify-self: center;
+					text-align: center;
+					font-size: 1rem;
+				}
+			}
+			// media
+			.media-aside-studies {
+				width: 100%;
+
+				display: grid;
+				img {
+					outline: 2px dashed #ffffff;
+					width: 90%;
+					border-radius: 3px;
+					place-self: center;
 				}
 			}
 		}

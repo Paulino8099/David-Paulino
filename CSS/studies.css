@@ -4,6 +4,7 @@
   gap: 25px;
   padding-top: 50px;
   margin-bottom: 150px;
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-column: 1;
@@ -42,7 +43,7 @@
   transition: 0.5s;
 }
 
-.studies .study-content {
+.studies .studies-content {
   width: 90%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -56,14 +57,14 @@
       grid-template-columns: repeat(auto-fit, minmax(100px, 175px));
 }
 
-.studies .study-content .card-studies {
+.studies .studies-content .card-studies {
   -webkit-box-shadow: inset 0 0 5px #00000080, 0 0 5px #00000040;
           box-shadow: inset 0 0 5px #00000080, 0 0 5px #00000040;
   border-radius: 10px;
   display: block;
 }
 
-.studies .study-content .card-studies div {
+.studies .studies-content .card-studies div {
   height: 100%;
   display: -ms-grid;
   display: grid;
@@ -73,7 +74,7 @@
       grid-template-rows: repeat(6, auto);
 }
 
-.studies .study-content .card-studies div span {
+.studies .studies-content .card-studies div span {
   display: -ms-grid;
   display: grid;
   -ms-grid-column: 1;
@@ -84,7 +85,7 @@
   grid-row: 1/2;
 }
 
-.studies .study-content .card-studies div span h3 {
+.studies .studies-content .card-studies div span h3 {
   text-align: center;
   margin: 0 5px;
   color: #4a4c7e;
@@ -92,7 +93,7 @@
       justify-self: center;
 }
 
-.studies .study-content .card-studies div div {
+.studies .studies-content .card-studies div div {
   width: 100%;
   margin-top: 10px;
   display: -ms-grid;
@@ -105,7 +106,7 @@
   grid-row: 2/6;
 }
 
-.studies .study-content .card-studies div div img {
+.studies .studies-content .card-studies div div img {
   background: #4a4c7e40;
   border-radius: 10px;
   -o-object-fit: cover;
@@ -114,7 +115,7 @@
   width: 90%;
 }
 
-.studies .study-content .card-studies div aside {
+.studies .studies-content .card-studies div aside {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -135,7 +136,7 @@
   grid-row: 6/7;
 }
 
-.studies .study-content .card-studies div aside i {
+.studies .studies-content .card-studies div aside i {
   color: #4a4c7e;
   font-size: 1.5rem;
   margin-bottom: 5px;
@@ -144,13 +145,90 @@
   cursor: pointer;
 }
 
-.studies .study-content .card-studies div aside i:hover {
+.studies .studies-content .card-studies div aside i:hover {
   color: #4a4c7ebf;
   -webkit-filter: drop-shadow(0 0 5px #00000080);
           filter: drop-shadow(0 0 5px #00000080);
 }
 
-.studies .study-content .card-studies:nth-child(3) div div img {
+.studies .studies-content .card-studies:nth-child(3) div div img {
   opacity: .6;
+}
+
+.studies .aside-studies {
+  position: absolute;
+  width: 0;
+  height: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+  pointer-events: none;
+  display: -ms-grid;
+  display: grid;
+}
+
+.studies .aside-studies.active {
+  width: 30%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  z-index: 21000;
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.studies .aside-studies .aside-studies-content {
+  width: 100%;
+  background: #4a4c7e;
+  border-radius: 5px;
+  place-self: center;
+  place-content: center;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+
+.studies .aside-studies .aside-studies-content .btn-close-aside-studies {
+  color: #ffffff;
+  font-size: 15px;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.studies .aside-studies .aside-studies-content .btn-close-aside-studies:active {
+  color: #ff0000;
+}
+
+.studies .aside-studies .aside-studies-content .title-aside-studies {
+  width: 100%;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.studies .aside-studies .aside-studies-content .title-aside-studies h3 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.studies .aside-studies .aside-studies-content .media-aside-studies {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+
+.studies .aside-studies .aside-studies-content .media-aside-studies img {
+  outline: 2px dashed #ffffff;
+  width: 90%;
+  border-radius: 3px;
+  place-self: center;
 }
 /*# sourceMappingURL=studies.css.map */

@@ -127,14 +127,35 @@ window.addEventListener("scroll", function () {
 darkModeBody();
 function darkModeBody() {
     let btnDarkMode = document.querySelector('.btn-darkMode');
+    let btnDarkModeLogo = document.querySelector('.btn-darkMode-logo');
 
     /**
-     * ?btn functions
+     * ?btn darkMode
      */
     btnDarkMode.addEventListener('click', function () {
         setOnOff();
         onOff();
     });
+    /**
+     * ? btn darkMode (Logo)
+     */
+    btnDarkModeL();
+    function btnDarkModeL() {
+        btnDarkModeLogo.addEventListener('click', function () {
+            setOnOff();
+            onOff();
+        });
+        //el btn solo va a aparecer cuando el usario haya hecho X cantidad de scroll
+        window.addEventListener('scroll', function () {
+            let head = document.querySelector('.head');
+
+            if (document.documentElement.scrollTop > head.offsetHeight) {
+                btnDarkModeLogo.style.opacity = '1';
+            } else {
+                btnDarkModeLogo.style.opacity = '0';
+            }
+        });
+    };
     /**
      * ?set onOff
      */
@@ -158,15 +179,42 @@ function darkModeBody() {
     onOff();
     function onOff() {
         if (localStorage.getItem('darkMode') == '1') {
-            document.documentElement.style.setProperty('--bgdarkMode', '#1a2c2c'); //from white to darkGray
-            btnDarkMode.classList.add('active'); //btn "darkMode"
+            //bg de las secciones {"body",}
+            document.documentElement.style.setProperty('--bgdarkMode', '#1a2c2c');
+            //bg de {"codigos QR"}
+            document.documentElement.style.setProperty('--bgWhite', '#ffffff40');
+            //bg de {"codigos QR"}
+            document.documentElement.style.setProperty('--bgBlack50', '#ffffff40');
+
+            //textos de {"mis Hobbys", "Qué me apasiona", "Datos Cualidades y Características"}
+            document.documentElement.style.setProperty('--textGray2', '#ffffff');
+            //textos de {"pensamiento", "redes sociales", "direcciones"}
+            document.documentElement.style.setProperty('--textGray1', '#ffffffbf');
+            //textos de {"pensamiento (author)"}
+            document.documentElement.style.setProperty('--textBlack', '#ffffff');
+
+            btnDarkMode.classList.add('active');
+            btnDarkModeLogo.classList.add('active');
             document.querySelector('.head').style.background = "url(../PNG/lineas-verdes-50.png)";
             document.querySelector('.padding-bottom').classList.add('darkMode');
-
         } else {
-            document.documentElement.style.setProperty('--bgdarkMode', '#e4f5ef'); //from white to darkGray
+            //bg de las secciones {"body",}
+            document.documentElement.style.setProperty('--bgdarkMode', '#e4f5ef');
+            //bg de {"codigos QR"}
+            document.documentElement.style.setProperty('--bgWhite', '#ffffff');
+            //bg de {"codigos QR"}
+            document.documentElement.style.setProperty('--bgBlack50', '#00000040');
+
+            //textos de {"mis Hobbys", "Qué me apasiona", "Datos Cualidades y Características"}
+            document.documentElement.style.setProperty('--textGray2', '#444444');
+            //textos de {"pensamiento", "redes sociales", "direcciones"}
+            document.documentElement.style.setProperty('--textGray1', '#777777');
+            //textos de {"pensamiento (author)"}
+            document.documentElement.style.setProperty('--textBlack', '#000000');
+
             btnDarkMode.classList.remove('active'); //btn "darkMode"
-            document.querySelector('.head').style.background = "url(../PNG/lineas-verdes-100.png)"; 
+            btnDarkModeLogo.classList.remove('active'); //btn darkMode del logo 
+            document.querySelector('.head').style.background = "url(../PNG/lineas-verdes-100.png)";
             document.querySelector('.padding-bottom').classList.remove('darkMode');
         };
     };
