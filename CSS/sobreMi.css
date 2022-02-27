@@ -213,6 +213,16 @@
     height: 100%;
     width: 100%;
   }
+  .sobreMi .sobreMi-content .my-hobbies div h1,
+  .sobreMi .sobreMi-content .my-passions div h1,
+  .sobreMi .sobreMi-content .my-personal-data div h1 {
+    text-shadow: 0 0 2px #fff;
+  }
+  .sobreMi .sobreMi-content .my-hobbies div b,
+  .sobreMi .sobreMi-content .my-passions div b,
+  .sobreMi .sobreMi-content .my-personal-data div b {
+    text-shadow: 0 0 2px #fff;
+  }
   .sobreMi .sobreMi-content .my-passions {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

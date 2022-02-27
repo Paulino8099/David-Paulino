@@ -91,7 +91,7 @@ window.addEventListener("scroll", function () {
         // Dividiendo el alto de todo el documento entre 4 para así extraer solo el 25% del documento.
         let btnAutomatic = document.documentElement.scrollHeight / 4;
         // Cuando la barra vertical se haya movido un 25% de todo el documento el botón de inicio se va a mostrar. 
-        document.querySelector('.btn-start').classList.toggle('on', scrollY >= btnAutomatic);
+        document.querySelector('.btn-start').classList.toggle('active', scrollY >= btnAutomatic);
     };
 
     /**
@@ -196,7 +196,6 @@ function darkModeConfig() {
             btnDarkMode.classList.add('active');
             btnDarkModeLogo.classList.add('active');
             document.querySelector('.head').classList.add('darkMode');
-            document.querySelector('.padding-bottom').classList.add('darkMode');
         } else {
             //bg de las secciones {"body",}
             document.documentElement.style.setProperty('--bgdarkMode', '#e4f5ef');
@@ -217,4 +216,43 @@ function darkModeConfig() {
             document.querySelector('.head').classList.remove('darkMode');
         };
     };
+};
+
+
+/**
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦btns ripples¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦btns ripples¦¦¦¦¦¦¦¦¦btns ripples¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦btns ripples¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦btns ripples¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦btns ripples¦¦¦¦¦¦¦¦¦btns ripples¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦btns ripples¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+ *todo¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+*/
+btnsRipples();
+function btnsRipples() {
+    let btns = document.querySelector('.btns');
+
+    window.addEventListener('mousemove', function (e) {
+        let x = e.clientX;
+        let y = e.clientY;
+
+        btns.style.left = x + 'px';
+        btns.style.top = y + 'px';
+    });
+    onOff();
+    function onOff() {
+        let btnsRipples = document.querySelectorAll('.btnRipples');
+
+        btnsRipples.forEach((e) => {
+            e.addEventListener('click', function () {
+                let ripples = document.createElement('span');
+
+                btns.appendChild(ripples);
+
+                setTimeout(() => {
+                    ripples.remove();
+                }, 300);
+            });
+        })
+    }
 };

@@ -27,7 +27,6 @@
 		display: flex;
 		// text title
 		h3 {
-			font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 			margin-right: 10px;
 			transition: 0.5s;
 		}
@@ -584,9 +583,9 @@
 				.input-content {
 					span {
 						background: #ffffff; // edit (add: background)
-						border-radius: 10px;
-						// edit (add: border-radius)
+						border-radius: 10px; // edit (add: border-radius)
 						width: 90%; // edit (remove: 100%, add: 90%)
+						align-items: center;
 						i {
 							margin-left: 5px; // edit (add: margin-left)
 							color: #4a4c7e; // edit (remove: #ffffff, add: #4a4c7e)

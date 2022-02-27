@@ -120,74 +120,6 @@
 			}
 		}
 	}
-	// aside
-	.aside-studies {
-		position: absolute;
-		width: 0;
-		height: 0;
-		transition: .3s;
-		opacity: 0;
-		pointer-events: none;
-
-		display: grid;
-		&.active {
-			width: 30%;
-			height: min-content;
-			z-index: 21000;
-			opacity: 1;
-			pointer-events: visible;
-		}
-		.aside-studies-content {
-			width: 100%;
-			background: #4a4c7e;
-			border-radius: 5px;
-			place-self: center;
-			place-content: center;
-			padding: 10px 0;
-			overflow: hidden;
-			position: relative;
-
-			display: grid;
-			// btn close
-			.btn-close-aside-studies {
-				color: #ffffff;
-				font-size: 15px;
-				top: 0;
-				right: 0;
-				margin: 5px;
-				position: absolute;
-				cursor: pointer;
-				&:active {
-					color: #ff0000;
-				}
-			}
-			// title
-			.title-aside-studies {
-				width: 100%;
-				color: #ffffff;
-				margin-bottom: 10px;
-
-				display: grid;
-				h3 {
-					justify-self: center;
-					text-align: center;
-					font-size: 1rem;
-				}
-			}
-			// media
-			.media-aside-studies {
-				width: 100%;
-
-				display: grid;
-				img {
-					outline: 2px dashed #ffffff;
-					width: 90%;
-					border-radius: 3px;
-					place-self: center;
-				}
-			}
-		}
-	}
 	// padding-box
 	.padding-box {
 		margin: 75px;
@@ -208,8 +140,29 @@
 				#a5a6c7 100%
 			);
 		box-shadow: inset 0 0 5px #000, inset 0 0 5px #fff, 0 0 5px #000;
+		.click-ball {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			.toggle {
+				background: #000;
+				animation: animate-span 1s linear infinite;
+				position: absolute;
+				@keyframes animate-span {
+					0% {
+						width: 0;
+						height: 0;
+					}
+					100% {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
 	}
 }
+
 
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Mobile¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦

@@ -12,11 +12,10 @@ function asideFunctions() {
     let mediaAside = document.querySelector('.media-aside-studies');
     let btnClose = document.querySelector('.btn-close-aside-studies');
     let backface = document.querySelector('.backface');
+    let body = document.querySelector('body');
 
     cards.forEach((e) => {
         e.addEventListener('click', function (e) {
-            console.log(e.target.parentNode.parentNode.parentNode.classList.value)
-
             /**
              * ?onOff aside float
              */
@@ -24,15 +23,18 @@ function asideFunctions() {
                 // open aside (click btns)
                 asideStudies.classList.add('active'); //aside studies (container)
                 backface.classList.add('active'); //aside studies (container)
+                body.classList.add('backfaceOn');
                 // close aside (click btn)
                 btnClose.addEventListener('click', function () {
                     asideStudies.classList.remove('active'); //aside studies (container)
                     backface.classList.remove('active'); //aside studies (container)
+                    body.classList.remove('backfaceOn');
                 });
                 // close aside (click backface)
                 backface.addEventListener('click', function () {
                     asideStudies.classList.remove('active'); //aside studies (container)
                     backface.classList.remove('active'); //aside studies (container)
+                    body.classList.remove('backfaceOn');
                 });
             }
             /**
@@ -80,7 +82,7 @@ function asideFunctions() {
             /**
              * ?card secundaria
              */
-            if ((e.target.parentNode.parentNode.parentNode.classList.value == 'bachillerato card-studies')) {
+            if ((e.target.parentNode.parentNode.parentNode.classList.value == 'secundary card-studies')) {
                 console.log(e.target.classList.value);
                 // title aside
                 titleAside.innerHTML = `

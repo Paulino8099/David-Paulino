@@ -23,15 +23,6 @@
 		width: 50px;
 	}
 }
-body::-webkit-scrollbar {
-	width: 10px;
-	background-color: #00808080; //FONDO DE LA BARRA DE NAVEGACION
-	border-radius: 15px;
-}
-body::-webkit-scrollbar-thumb {
-	background-color: #008080; //BARRA DE NAVEGACION
-	border-radius: 15px;
-}
 
 html {
 	scroll-behavior: smooth;
@@ -65,12 +56,22 @@ html {
 body {
 	background: var(--bgdarkMode);
 	transition: .5s;
+	position: relative;
 
 	display: grid;
 	grid-template-columns: repeat(8, auto);
 	grid-template-rows: repeat(12, auto);
 	&.backfaceOn {
 		overflow: hidden;
+	}
+	&::-webkit-scrollbar {
+		width: 10px;
+		background-color: #00808080; //FONDO DE LA BARRA DE NAVEGACION
+		border-radius: 15px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #008080; //BARRA DE NAVEGACION
+		border-radius: 15px;
 	}
 	// indicator scroll
 	.indicatorScroll {
@@ -171,26 +172,137 @@ body {
 	}
 	// btn start
 	.btn-start {
-		position: fixed;
-		bottom: 10px;
-		right: 10px;
-		margin: 10px;
+		width: 50px;
+		height: 50px;
+		bottom: 0;
+		right: 0;
+		margin: 20px;
 		padding: 0;
 		border: 3px solid #008080;
 		background: #00808040;
 		border-radius: 50px;
-		padding: 0;
-		margin: 0;
-		width: 50px;
-		height: 50px;
-		fill: #008080;
-		opacity: 0;
 		pointer-events: none;
-		transition: 0.3s;
+		transition: 0.5s;
+		text-decoration: none;
+		opacity: 0;
 		z-index: 20;
-		&.on {
+		position: fixed;
+		place-items: center;
+
+		display: grid;
+		&.active {
 			opacity: 1;
 			pointer-events: visible;
+		}
+		i {
+			font-size: 2rem;
+			color: #008080;
+		}
+	}
+	// ripples btns
+	.btns {
+		position: fixed;
+		pointer-events: none;
+		place-items: center;
+		width: 50px;
+		height: 50px;
+		z-index: 50000;
+		transform: translate(-25px, -25px);
+
+		display: grid;
+		span {
+			background: #ffffff40;
+			border-radius: 50%;
+			width: 100%;
+			height: 100%;
+			animation: animate-span .2s linear infinite;
+			@keyframes animate-span {
+				0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+				}
+				50% {
+					width: 100%;
+					height: 100%;
+					opacity: 1;
+				}
+				100% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+				}
+			}
+		}
+	}
+	// asides
+	.aside-studies {
+		position: fixed;
+		width: 0;
+		height: 0;
+		transition: .3s;
+		opacity: 0;
+		pointer-events: none;
+		top: 5%;
+		left: calc(50% - 15%);
+
+		display: grid;
+		&.active {
+			width: 30%;
+			height: min-content;
+			z-index: 21000;
+			opacity: 1;
+			pointer-events: visible;
+		}
+		.aside-studies-content {
+			width: 100%;
+			background: #4a4c7e;
+			border-radius: 5px;
+			place-self: center;
+			place-content: center;
+			padding: 10px 0;
+			overflow: hidden;
+			position: relative;
+
+			display: grid;
+			// btn close
+			.btn-close-aside-studies {
+				color: #ffffff;
+				font-size: 15px;
+				top: 0;
+				right: 0;
+				margin: 5px;
+				position: absolute;
+				cursor: pointer;
+				&:active {
+					color: #ff0000;
+				}
+			}
+			// title
+			.title-aside-studies {
+				width: 100%;
+				color: #ffffff;
+				margin-bottom: 10px;
+
+				display: grid;
+				h3 {
+					justify-self: center;
+					text-align: center;
+					font-size: 1rem;
+				}
+			}
+			// media
+			.media-aside-studies {
+				width: 100%;
+
+				display: grid;
+				img {
+					outline: 2px dashed #ffffff;
+					width: 90%;
+					border-radius: 3px;
+					place-self: center;
+				}
+			}
 		}
 	}
 }
