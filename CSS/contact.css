@@ -109,9 +109,9 @@
 .contact .contact-content .redes .logos-redes {
   width: 100%;
   place-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   row-gap: 15px;
   display: -ms-grid;
   display: grid;
@@ -130,6 +130,14 @@
   display: grid;
 }
 
+.contact .contact-content .redes .logos-redes a i {
+  -webkit-transition: .3s;
+  transition: .3s;
+  pointer-events: none;
+  font-size: calc(1rem + 3vw);
+  z-index: 50;
+}
+
 .contact .contact-content .redes .logos-redes a h3 {
   background: none;
   pointer-events: none;
@@ -142,9 +150,52 @@
           transform: scale(1.5);
 }
 
-.contact .contact-content .redes .logos-redes a img {
-  pointer-events: none;
-  width: 60%;
+.contact .contact-content .redes .logos-redes a:nth-child(1):hover i {
+  color: #4867aa;
+}
+
+.contact .contact-content .redes .logos-redes a:nth-child(1) h3 {
+  color: #4867aa;
+}
+
+.contact .contact-content .redes .logos-redes a:nth-child(2):hover i {
+  color: #1d9bf0;
+}
+
+.contact .contact-content .redes .logos-redes a:nth-child(2) h3 {
+  color: #1d9bf0;
+}
+
+.contact .contact-content .redes .logos-redes a:nth-child(3):hover i {
+  color: #60fb7d;
+}
+
+.contact .contact-content .redes .logos-redes a:nth-child(3) h3 {
+  color: #60fb7d;
+}
+
+.contact .contact-content .redes .logos-redes a:nth-child(4):hover i {
+  color: #ca3081;
+}
+
+.contact .contact-content .redes .logos-redes a:nth-child(4) h3 {
+  color: #ca3081;
+}
+
+.contact .contact-content .redes .logos-redes a:nth-child(5):hover i {
+  color: #2867b2;
+}
+
+.contact .contact-content .redes .logos-redes a:nth-child(5) h3 {
+  color: #2867b2;
+}
+
+.contact .contact-content .redes .logos-redes a:nth-child(6):hover i {
+  color: #000000;
+}
+
+.contact .contact-content .redes .logos-redes a:nth-child(6) h3 {
+  color: #000000;
 }
 
 .contact .contact-content .redes .codigosQR-redes {
@@ -503,8 +554,50 @@
   .contact .contact-content div h1 {
     margin-bottom: 25px;
   }
+  .contact .contact-content .redes .logos-redes a i {
+    font-size: 5rem;
+  }
+  .contact .contact-content .redes .logos-redes a:nth-child(1):hover i {
+    color: var(--textGray1);
+  }
+  .contact .contact-content .redes .logos-redes a:nth-child(1):active i {
+    color: #4867aa;
+  }
+  .contact .contact-content .redes .logos-redes a:nth-child(2):hover i {
+    color: var(--textGray1);
+  }
+  .contact .contact-content .redes .logos-redes a:nth-child(2):active i {
+    color: #1d9bf0;
+  }
+  .contact .contact-content .redes .logos-redes a:nth-child(3):hover i {
+    color: var(--textGray1);
+  }
+  .contact .contact-content .redes .logos-redes a:nth-child(3):active i {
+    color: #60fb7d;
+  }
+  .contact .contact-content .redes .logos-redes a:nth-child(4):hover i {
+    color: var(--textGray1);
+  }
+  .contact .contact-content .redes .logos-redes a:nth-child(4):active i {
+    color: #ca3081;
+  }
+  .contact .contact-content .redes .logos-redes a:nth-child(5):hover i {
+    color: var(--textGray1);
+  }
+  .contact .contact-content .redes .logos-redes a:nth-child(5):active i {
+    color: #2867b2;
+  }
+  .contact .contact-content .redes .logos-redes a:nth-child(6):hover i {
+    color: var(--textGray1);
+  }
+  .contact .contact-content .redes .logos-redes a:nth-child(6):active i {
+    color: #000000;
+  }
   .contact .contact-content .redes .codigosQR-redes {
     display: none;
+  }
+  .contact .contact-content .addresses {
+    height: 325px;
   }
   .contact .messageDirect-container {
     min-height: 600px;
