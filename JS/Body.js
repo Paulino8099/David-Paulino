@@ -195,7 +195,7 @@ function darkModeBody() {
 
             btnDarkMode.classList.add('active');
             btnDarkModeLogo.classList.add('active');
-            document.querySelector('.head').style.background = "url(../PNG/lineas-verdes-50.png)";
+            document.querySelector('.head').classList.add('darkMode');
             document.querySelector('.padding-bottom').classList.add('darkMode');
         } else {
             //bg de las secciones {"body",}
@@ -214,7 +214,7 @@ function darkModeBody() {
 
             btnDarkMode.classList.remove('active'); //btn "darkMode"
             btnDarkModeLogo.classList.remove('active'); //btn darkMode del logo 
-            document.querySelector('.head').style.background = "url(../PNG/lineas-verdes-100.png)";
+            document.querySelector('.head').classList.remove('darkMode');
             document.querySelector('.padding-bottom').classList.remove('darkMode');
         };
     };
