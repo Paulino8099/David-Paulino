@@ -145,7 +145,6 @@
             <h1 class="name">David Paulino</h1>
             <h4 class="descripcion">Diseñador Web/Programador</h4>
         </div>
-        <span class="padding-bottom"></span>
     </header>
     <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- |||||||||||||||||||||||||||||||||||||||Studies||||||||||||||||||||||||||||||||||||||||||||| -->
@@ -287,6 +286,9 @@
                 </div>
             </div>
         </aside>
+        <!-- padding-box -->
+        <div class="padding-box">
+        </div>
     </section>
     <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- ||||||||||||||||||||||||||||||||||||||||||Sobre Mí||||||||||||||||||||||||||||||||||||||||| -->
@@ -357,11 +359,9 @@
                 </div>
             </div>
         </div>
-        <!-- padding img -->
-        <!-- <div class="padding-img-sobreMi">
-            <img src="./SVG/Work.svg" alt="">
-            <img src="./SVG/Work.svg" alt="">
-        </div> -->
+        <!-- padding-box -->
+        <div class="padding-box">
+        </div>
     </section>
     <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- |||||||||||||||||||||||||||||||||||||||||||project||||||||||||||||||||||||||||||||||||||||| -->
@@ -411,6 +411,9 @@
             <span>
                 <button class="btn-verMas-project">Ver Mas</button>
             </span>
+        </div>
+        <!-- padding-box -->
+        <div class="padding-box">
         </div>
     </section>
     <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
@@ -551,7 +554,8 @@
             <span>
                 <img src="SVG/message.svg" alt="">
             </span>
-            <form class="messageDirect-content">
+            <!-- form -->
+            <form class="form">
                 <div class="input-content">
                     <!-- input name -->
                     <span>
@@ -564,16 +568,12 @@
                         <input class="inputEmail-messageDirect" type="email" placeholder="Dirección Email">
                     </span>
                 </div>
-                <textarea class="inputMessage-messageDirect" name="" id="" cols="30" rows="10" placeholder="Mensaje" resi></textarea>
+                <textarea class="inputMessage-messageDirect" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
 
-                <span class="btn-send-messageDirect">
+                <a class="btn-send-messageDirect">
                     <h3>Enviar</h3>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0V0z" fill="none" />
-                        <path
-                            d="M4.01 6.03l7.51 3.22-7.52-1 .01-2.22m7.5 8.72L4 17.97v-2.22l7.51-1M2.01 3L2 10l15 2-15 2 .01 7L23 12 2.01 3z" />
-                    </svg>
-                </span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </a>
             </form>
         </div>
     </div>
@@ -617,6 +617,7 @@
     <script src="JS/studies.js"></script>
     <script src="JS/SobreMi.js"></script>
     <script src="JS/project.js"></script>
+    <script src="JS/contact.js"></script>
     <script src="JS/footer.js"></script>
 </body>
 

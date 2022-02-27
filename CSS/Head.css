@@ -1,8 +1,9 @@
 .head {
+  background: url(../PNG/lineas-verdes-100.png);
   margin: 0;
+  margin-bottom: 50px;
   -ms-grid-column-align: center;
       justify-self: center;
-  background: url(../PNG/lineas-verdes-100.png);
   background-repeat: round;
   background-size: cover;
   width: 100%;
@@ -11,7 +12,6 @@
   transition: 0.5s;
   position: relative;
   overflow: hidden;
-  margin-bottom: 150px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[10];

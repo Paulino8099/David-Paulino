@@ -124,8 +124,8 @@ window.addEventListener("scroll", function () {
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦darkMode¦¦¦¦¦¦¦¦¦¦darkMode¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦darkMode¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
-darkModeBody();
-function darkModeBody() {
+darkModeConfig();
+function darkModeConfig() {
     let btnDarkMode = document.querySelector('.btn-darkMode');
     let btnDarkModeLogo = document.querySelector('.btn-darkMode-logo');
 
@@ -215,7 +215,6 @@ function darkModeBody() {
             btnDarkMode.classList.remove('active'); //btn "darkMode"
             btnDarkModeLogo.classList.remove('active'); //btn darkMode del logo 
             document.querySelector('.head').classList.remove('darkMode');
-            document.querySelector('.padding-bottom').classList.remove('darkMode');
         };
     };
 };

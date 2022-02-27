@@ -6,18 +6,18 @@
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦Desktop¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 .head {
-	margin: 0;
-	justify-self: center;
 	background: url(../PNG/lineas-verdes-100.png);
+	margin: 0;
+	margin-bottom: 50px;
+	justify-self: center;
 	background-repeat: round;
 	background-size: cover;
-	// background-position: center;
 	width: 100%;
 	height: calc(100vh + 10px);
 	transition: 0.5s;
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 150px;
+	
 
 	display: grid;
 	grid-template-columns: repeat(10, auto);
