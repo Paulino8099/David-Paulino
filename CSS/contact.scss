@@ -434,7 +434,10 @@
 				.logos-redes {
 					a {
 						i {
-							font-size: 5rem; //edit (remove: calc(1rem + 3vw), add: 5rem) 
+							font-size: 3rem; //edit (remove: calc(1rem + 3vw), add: 5rem) 
+						}
+						h3 {
+							font-size: 1rem; //edit (remove: .8rem, add: 1rem) 
 						}
 					}
 					a:nth-child(1) {
@@ -521,6 +524,7 @@
 		}
 		// message direct
 		.messageDirect-container {
+			width: 90%; //edit (add: width)
 			min-height: 600px; //edit (delete: 300px, add: min-content)
 			justify-items: center; //edit (add: justify-items)
 			background: linear-gradient(
@@ -564,8 +568,7 @@
 			}
 			// formulario de envío
 			.messageDirect-content {
-				margin: 0;
-				// edit (delete: 25px, add: 0)
+				margin: 0; // edit (delete: 25px, add: 0)
 				width: 90%; // edit (delete: 50%, add: 90%)
 				height: 60%; // edit (add: 60%)
 				.input-content {
