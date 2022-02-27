@@ -107,7 +107,8 @@
 
 .studies .studies-content .card-studies div div img {
   background: #4a4c7e40;
-  border-radius: 10px;
+  border-radius: 5px;
+  padding: 5px;
   -o-object-fit: cover;
      object-fit: cover;
   place-self: center;
