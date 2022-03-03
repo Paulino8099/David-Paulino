@@ -82,16 +82,17 @@ window.addEventListener("scroll", function () {
 */
 // todas las configuraciones del botón para volver al inicio de la página
 window.addEventListener("scroll", function () {
+    let btnStart = document.querySelector('.btn-start');
     /**
     *?mostrar "btnStart"...
     */
     //función para calcular cuando debe de aparecer el botón para regresar al inicio de la página.
-    btnStart();
-    function btnStart() {
+    btnStart1();
+    function btnStart1() {
         // Dividiendo el alto de todo el documento entre 4 para así extraer solo el 25% del documento.
         let btnAutomatic = document.documentElement.scrollHeight / 4;
         // Cuando la barra vertical se haya movido un 25% de todo el documento el botón de inicio se va a mostrar. 
-        document.querySelector('.btn-start').classList.toggle('active', scrollY >= btnAutomatic);
+        btnStart.classList.toggle('active', scrollY >= btnAutomatic);
     };
 
     /**
@@ -105,17 +106,20 @@ window.addEventListener("scroll", function () {
 
         // variables para detectar las diferentes alturas de la barra de escroleo vertical
         let scroll486 = (docElem.scrollTop >= docElem.scrollHeight - (footer.offsetHeight) - 486);
-        let scroll780 = (docElem.scrollTop >= docElem.scrollHeight - (footer.offsetHeight) - 780);
+        let scroll700 = (docElem.scrollTop >= docElem.scrollHeight - (footer.offsetHeight) - 700);
 
-        // si la barra de navegación vertical se ubica justamente en la posición donde se encuentra el footer, el btn de "home" se eleverá un poco hacia arriba (los "486" o los "780" es porque  estos se le agregan a la barra de escroleo de forma que desconozco, no sé porqué). Si el ancho del documento es menor que 650px, la función va a ler la segunda opción para ejecutar la función escrita (el btn se moverá hacia arriba)
-        if (scroll486 || (docElem.scrollWidth < 650 && scroll780)) {
-            document.querySelector('.btn-start').style.bottom = `${footer.offsetHeight + 10}px`;
+        // si la barra de navegación vertical se ubica justamente en la posición donde se encuentra el footer, el btn de "home" se eleverá un poco hacia arriba (los "486" o los "700" es porque  estos se le agregan a la barra de escroleo de forma que desconozco, no sé porqué). Si el ancho del documento es menor que 650px, la función va a leer la segunda opción para ejecutar la función escrita (el btn se moverá hacia arriba)
+        if (scroll486 || ((docElem.scrollWidth <= 650) && (scroll700))) {
+            btnStart.style.bottom = `${footer.offsetHeight}px`;
         } else {
-            document.querySelector('.btn-start').style.bottom = `10px`;
+            btnStart.style.bottom = `10px`;
         };
+
+        // if (docElem.scrollWidth > 200) {
+        //     console.log(docElem.scrollWidth)
+        // }
     }
 });
-
 
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 //  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦darkMode¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
