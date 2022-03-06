@@ -293,7 +293,7 @@ body .aside-studies {
   transition: .3s;
   opacity: 0;
   pointer-events: none;
-  top: 5%;
+  top: calc(.5%);
   left: calc(50% - 15%);
   display: -ms-grid;
   display: grid;
@@ -301,9 +301,7 @@ body .aside-studies {
 
 body .aside-studies.active {
   width: 30%;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  height: 99%;
   z-index: 21000;
   opacity: 1;
   pointer-events: visible;
@@ -330,6 +328,28 @@ body .aside-studies .aside-studies-content .btn-download-aside-studies {
   margin: 5px;
   position: absolute;
   cursor: pointer;
+  stroke: #00ff00;
+  stroke-width: 10px;
+  -webkit-animation: animate 1s linear infinite;
+          animation: animate 1s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 2560;
+  }
+}
+
+@keyframes animate {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 2560;
+  }
 }
 
 body .aside-studies .aside-studies-content .btn-download-aside-studies:active {

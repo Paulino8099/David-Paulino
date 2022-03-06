@@ -243,17 +243,18 @@ body {
 		transition: .3s;
 		opacity: 0;
 		pointer-events: none;
-		top: 5%;
+		top: calc(.5%);
 		left: calc(50% - 15%);
 
 		display: grid;
 		&.active {
 			width: 30%;
-			height: min-content;
+			height: 99%;
 			z-index: 21000;
 			opacity: 1;
 			pointer-events: visible;
 		}
+		// aside studies
 		.aside-studies-content {
 			width: 100%;
 			background: #4a4c7e;
@@ -274,6 +275,17 @@ body {
 				margin: 5px;
 				position: absolute;
 				cursor: pointer;
+				stroke: #00ff00;
+				stroke-width: 10px;
+				animation: animate 1s linear infinite;
+				@keyframes animate {
+					0% {
+						stroke-dashoffset: 0;
+					}
+					100% {
+						stroke-dashoffset: 2560;
+					}
+				}
 				&:active {
 					color: #00ff00;
 				}

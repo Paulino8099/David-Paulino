@@ -17,13 +17,24 @@ function asideFunctions() {
 
     cards.forEach((e) => {
         e.addEventListener('click', function (e) {
-            let titleCard = e.target.parentNode.parentNode.children[0].children[0].childNodes[0].nodeValue;
+            let titleCard = e.target.parentNode.parentNode.children[0].children[0].innerText;
+            let imgCard = e.target.parentNode.parentNode.children[2].children[2].children[0].src;
+            let pdfCard = e.target.parentNode.parentNode.children[2].children[2].children[1].href;
+            let descriptionCard = e.target.parentNode.parentNode.children[2].children[2].children[2].innerText;
 
-            console.log(e.target.parentNode.parentNode.parentNode.classList.value);
+            //title cards
+            console.log(titleCard);
+            // img cards
+            console.log(`imagen card: ${imgCard}` );
+            // pdf cards
+            console.log(`pdf card: ${pdfCard}`);
+            // description cards
+            console.log(`description card: ${descriptionCard}`);
 
             /**
              * ?onOff aside float
              */
+            // cerrar ventana al dar click en btn close
             if (e.target.classList.value == 'fa-solid fa-square-up-right btnRipples') {
                 // open aside (click btns)
                 asideStudies.classList.add('active'); //aside studies (container)
@@ -43,84 +54,124 @@ function asideFunctions() {
                 });
             }
             /**
-             * ?card dpw
+             * ?card dpw 
              */
-            if ((e.target.parentNode.parentNode.parentNode.classList.value == 'dpw card-studies')) {
+            dpw();
+            function dpw() {
                 // title aside
                 titleAside.innerHTML = `
                                         <h3>${ titleCard }</h3>
                                         `;
                 // media aside
                 mediaAside.innerHTML = `
-                                        <img src="./IMG/CertificadoDiseñoWeb.jpg" alt="">
+                                        <img src="${imgCard}" alt="">
                                         `;
                 // download
-                btnDownload.setAttribute('href', './PDF/dpw-certificado(David Paulino).pdf')
-                btnDownload.setAttribute('download', 'Certificado Diseñador de Páginas Web (David paulino)')
+                btnDownload.setAttribute('href', `${pdfCard}`);
+                btnDownload.setAttribute('download', `${descriptionCard}`);
             }
             /**
              * ?card pack office
              */
-            if ((e.target.parentNode.parentNode.parentNode.classList.value == 'microsoftOffice card-studies')) {
+            officePack();
+            function officePack() {
                 // title aside
                 titleAside.innerHTML = `
                                         <h3>${ titleCard }</h3>
                                         `;
                 // media aside
                 mediaAside.innerHTML = `
-                                        <img src="./IMG/CertificadoPaqueteOffice.jpg" alt="">
+                                        <img src="${imgCard}" alt="">
                                         `;
                 // download
-                btnDownload.setAttribute('href', './PDF/mpoi-certificado(David Paulino).pdf')
-                btnDownload.setAttribute('download', 'Certificado Paquete de Oficina (David paulino)')
+                btnDownload.setAttribute('href', `${pdfCard}`);
+                btnDownload.setAttribute('download', `${descriptionCard}`);
             }
+            
             /**
              * ?card representante teléfonico
              */
-            if ((e.target.parentNode.parentNode.parentNode.classList.value == 'representTel card-studies')) {
+            telephoneRepresentative();
+            function telephoneRepresentative() {
                 // title aside
                 titleAside.innerHTML = `
                                         <h3>${ titleCard }</h3>
                                         `;
                 // media aside
                 mediaAside.innerHTML = `
-                                        <img src="./PNG/certificado-representante-telefonico(DavidPaulino)-8.png" alt="">
+                                        <img src="${imgCard}" alt="">
                                         `;
                 // download
-                btnDownload.setAttribute('href', './PDF/Representante-telefónico-certificado-(David Paulino).pdf')
-                btnDownload.setAttribute('download', 'Certificado Representante Teléfonico (David paulino)')
+                btnDownload.setAttribute('href', `${pdfCard}`);
+                btnDownload.setAttribute('download', `${descriptionCard}`);
             }
             /**
+             * ?card prevención de lavado de dinero
+             */
+            moneyLaundering();
+            function moneyLaundering() {
+                // title aside
+                titleAside.innerHTML = `
+                                        <h3>${titleCard}</h3>
+                                        `;
+                // media aside
+                mediaAside.innerHTML = `
+                                        <img src="${imgCard}" alt="">
+                                        `;
+                // download
+                btnDownload.setAttribute('href', `${pdfCard}`);
+                btnDownload.setAttribute('download', `${descriptionCard}`);
+            }
+            /**
+             * ?card teamWork
+             */
+            teamWork();
+            function teamWork() {
+                // title aside
+                titleAside.innerHTML = `
+                                        <h3>${titleCard}</h3>
+                                        `;
+                // media aside
+                mediaAside.innerHTML = `
+                                        <img src="${imgCard}" alt="">
+                                        `;
+                // download
+                btnDownload.setAttribute('href', `${pdfCard}`);
+                btnDownload.setAttribute('download', `${descriptionCard}`);
+            }
+                /**
              * ?card window NT
              */
-            if ((e.target.parentNode.parentNode.parentNode.classList.value == 'windowNT card-studies')) {
+            windowNT();
+            function windowNT() {
                 // title aside
                 titleAside.innerHTML = `
                                         <h3>${ titleCard }</h3>
                                         `;
                 // media aside
                 mediaAside.innerHTML = `
-                                        <img src="./IMG/CertificadoWindowNT.jpg" alt="">
+                                        <img src="${imgCard}" alt="">
                                         `;
                 // download
-                btnDownload.setAttribute('href', './PDF/window-nt(David Paulino).pdf')
-                btnDownload.setAttribute('download', 'Certificado de Window NT (David paulino)')
+                btnDownload.setAttribute('href', `${pdfCard}`);
+                btnDownload.setAttribute('download', `${descriptionCard}`);
             }
             /**
              * ?card secundaria
              */
-            if ((e.target.parentNode.parentNode.parentNode.classList.value == 'secundary card-studies')) {
+            secundaria();
+            function secundaria() {
                 // title aside
                 titleAside.innerHTML = `
                                         <h3>${ titleCard }</h3>
                                         `;
                 // media aside
                 mediaAside.innerHTML = `
-                                        <img src="./IMG/CertificadoBachiller.jpg" alt="">
+                                        <img src="${imgCard}" alt="">
                                         `;
                 // download
-                btnDownload.setAttribute('href', './PDF/secundaria-certificado(David Paulino).pdf')
-                btnDownload.setAttribute('download', 'Certificado de Conclusión de Estudios Medios (David paulino)')
+                btnDownload.setAttribute('href', `${pdfCard}`);
+                btnDownload.setAttribute('download', `${descriptionCard}`);
             }
         });
     });
