@@ -296,13 +296,11 @@
   opacity: calc(.5 * var(--i));
   -webkit-animation-delay: calc(.1s * var(--i));
           animation-delay: calc(.1s * var(--i));
-  -webkit-animation: animate-image 2s linear infinite;
-          animation: animate-image 2s linear infinite;
+  -webkit-animation: animate-image 2s ease-in-out infinite;
+          animation: animate-image 2s ease-in-out infinite;
 }
 
 @-webkit-keyframes animate-image {
-  0% {
-  }
   50% {
     -webkit-transform: scale(calc(1 * var(--i)));
             transform: scale(calc(1 * var(--i)));
@@ -316,8 +314,6 @@
 }
 
 @keyframes animate-image {
-  0% {
-  }
   50% {
     -webkit-transform: scale(calc(1 * var(--i)));
             transform: scale(calc(1 * var(--i)));

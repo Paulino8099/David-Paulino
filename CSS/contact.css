@@ -15,7 +15,11 @@
 }
 
 .contact .title-contact-container {
-  color: #008080;
+  color: #e4f5ef;
+  background: -webkit-gradient(linear, left top, right top, from(#4a4c7e), color-stop(75%, #4a4c7e), color-stop(75%, #A5A6C7), to(#A5A6C7));
+  background: linear-gradient(90deg, #4a4c7e 0%, #4a4c7e 75%, #A5A6C7 75%, #A5A6C7 100%);
+  border-radius: 10px;
+  padding: 0 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -38,6 +42,7 @@
 }
 
 .contact .title-contact-container i {
+  color: #008080;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -68,6 +73,9 @@
 }
 
 .contact .contact-content .thought-container {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   display: -ms-grid;
   display: grid;
 }
@@ -236,6 +244,9 @@
   justify-items: center;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   display: -ms-grid;
   display: grid;
 }
@@ -258,6 +269,7 @@
   color: var(--textGray1);
   -webkit-transition: .5s;
   transition: .5s;
+  margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,9 +631,6 @@
   }
   .contact .contact-content .redes .codigosQR-redes {
     display: none;
-  }
-  .contact .contact-content .addresses {
-    height: 325px;
   }
   .contact .messageDirect-container {
     width: 90%;

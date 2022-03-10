@@ -16,7 +16,10 @@
 	grid-row: 3/4;
 	// title
 	.title-sobreMi {
-		color: #008080;
+		color: #e4f5ef;
+		background: linear-gradient(90deg, #4a4c7e 0%, #4a4c7e 78%, #A5A6C7 78%, #A5A6C7 100%);
+		border-radius: 10px;
+		padding: 0 10px;
 		width: fit-content;
 		z-index: 10;
 		transition: 0.5s;
@@ -31,6 +34,8 @@
 		}
 		// icon
 		i {
+			color: #008080;
+			margin-left: 10px;
 			transition: 0.5s;
 		}
 	}
@@ -64,9 +69,24 @@
 					text-shadow: 0 0 5px #4a4c7e;
 					font-size: 1.5rem;
 					justify-self: start;
+					align-items: center;
 
+					display: flex;
 					grid-column: 1/9;
 					grid-row: 1/2;
+					b {
+						color: #008080;
+						width: 25px;
+						height: 25px;
+						margin-right: 10px;
+						text-align: center;
+						text-justify: newspaper;
+						border-radius: 50px;
+						background: #A5A6C7;
+						padding: 5px;
+						text-shadow: none;
+						font-size: 1.2rem;
+					}
 				}
 				b {
 					color: #4a4c7e;
@@ -86,45 +106,6 @@
 
 					grid-column: 1/9;
 					grid-row: 3/4;
-				}
-			}
-		}
-		.my-hobbies {
-			img {
-				animation: animatemisHobbies 5s linear infinite;
-				@keyframes animatemisHobbies {
-					50% {
-						transform: translateX(10px);
-					}
-					100% {
-						transform: translateX(0);
-					}
-				}
-			}
-		}
-		.my-passions {
-			img {
-				animation: animatemisHobbies 1s linear infinite;
-				@keyframes animatemisHobbies {
-					50% {
-						transform: scale(1.5);
-					}
-					100% {
-						transform: scale(1);
-					}
-				}
-			}
-		}
-		.my-personal-data {
-			img {
-				animation: animatemisHobbies 5s linear infinite;
-				@keyframes animatemisHobbies {
-					50% {
-						transform: translateY(10px) scale(1.05);
-					}
-					100% {
-						transform: translateY(0) scale(1);
-					}
 				}
 			}
 		}

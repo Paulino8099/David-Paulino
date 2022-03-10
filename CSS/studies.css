@@ -15,7 +15,11 @@
 }
 
 .studies .title-studies {
-  color: #008080;
+  color: #e4f5ef;
+  background: -webkit-gradient(linear, left top, right top, from(#4a4c7e), color-stop(75%, #4a4c7e), color-stop(75%, #A5A6C7), to(#A5A6C7));
+  background: linear-gradient(90deg, #4a4c7e 0%, #4a4c7e 75%, #A5A6C7 75%, #A5A6C7 100%);
+  border-radius: 10px;
+  padding: 0 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -38,6 +42,7 @@
 }
 
 .studies .title-studies i {
+  color: #008080;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -214,8 +219,6 @@
   height: 200px;
   width: 100%;
   background: linear-gradient(-45deg, #4a4c7e 0%, #4a4c7e 20%, #e4f5ef 20%, #e4f5ef 40%, #008080 40%, #008080 60%, #e4f5ef 60%, #e4f5ef 80%, #a5a6c7 80%, #a5a6c7 100%);
-  -webkit-box-shadow: inset 0 0 5px #000, inset 0 0 5px #fff, 0 0 5px #000;
-          box-shadow: inset 0 0 5px #000, inset 0 0 5px #fff, 0 0 5px #000;
 }
 
 .studies .padding-box .click-ball {

@@ -14,7 +14,11 @@
 }
 
 .project .title-project-container {
-  color: #008080;
+  color: #e4f5ef;
+  background: -webkit-gradient(linear, left top, right top, from(#4a4c7e), color-stop(78%, #4a4c7e), color-stop(78%, #A5A6C7), to(#A5A6C7));
+  background: linear-gradient(90deg, #4a4c7e 0%, #4a4c7e 78%, #A5A6C7 78%, #A5A6C7 100%);
+  border-radius: 10px;
+  padding: 0 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -38,76 +42,11 @@
 }
 
 .project .title-project-container i {
+  color: #008080;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-animation: animateTitle 1.5s linear infinite;
           animation: animateTitle 1.5s linear infinite;
-}
-
-@-webkit-keyframes animateTitle {
-  50% {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-  }
-  60% {
-    -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-  }
-  70% {
-    -webkit-transform: rotate(50deg);
-            transform: rotate(50deg);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-  }
-  80% {
-    -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-  }
-  100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-  }
-}
-
-@keyframes animateTitle {
-  50% {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-  }
-  60% {
-    -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-  }
-  70% {
-    -webkit-transform: rotate(50deg);
-            transform: rotate(50deg);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-  }
-  80% {
-    -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-  }
-  100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-  }
 }
 
 .project .project-container {

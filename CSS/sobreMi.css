@@ -14,7 +14,11 @@
 }
 
 .sobreMi .title-sobreMi {
-  color: #008080;
+  color: #e4f5ef;
+  background: -webkit-gradient(linear, left top, right top, from(#4a4c7e), color-stop(78%, #4a4c7e), color-stop(78%, #A5A6C7), to(#A5A6C7));
+  background: linear-gradient(90deg, #4a4c7e 0%, #4a4c7e 78%, #A5A6C7 78%, #A5A6C7 100%);
+  border-radius: 10px;
+  padding: 0 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -37,6 +41,8 @@
 }
 
 .sobreMi .title-sobreMi i {
+  color: #008080;
+  margin-left: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -87,14 +93,35 @@
   color: #4a4c7e;
   text-shadow: 0 0 5px #4a4c7e;
   font-size: 1.5rem;
-  -ms-grid-column-align: start;
-      justify-self: start;
+  justify-self: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-column: 1/9;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+}
+
+.sobreMi .sobreMi-content .my-hobbies div h1 b,
+.sobreMi .sobreMi-content .my-personal-data div h1 b,
+.sobreMi .sobreMi-content .my-passions div h1 b {
+  color: #008080;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  text-align: center;
+  text-justify: newspaper;
+  border-radius: 50px;
+  background: #A5A6C7;
+  padding: 5px;
+  text-shadow: none;
+  font-size: 1.2rem;
 }
 
 .sobreMi .sobreMi-content .my-hobbies div b,
@@ -121,65 +148,6 @@
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-}
-
-.sobreMi .sobreMi-content .my-hobbies img {
-  -webkit-animation: animatemisHobbies 5s linear infinite;
-          animation: animatemisHobbies 5s linear infinite;
-}
-
-@-webkit-keyframes animatemisHobbies {
-  50% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes animatemisHobbies {
-  50% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-.sobreMi .sobreMi-content .my-passions img {
-  -webkit-animation: animatemisHobbies 1s linear infinite;
-          animation: animatemisHobbies 1s linear infinite;
-}
-
-@keyframes animatemisHobbies {
-  50% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-.sobreMi .sobreMi-content .my-personal-data img {
-  -webkit-animation: animatemisHobbies 5s linear infinite;
-          animation: animatemisHobbies 5s linear infinite;
-}
-
-@keyframes animatemisHobbies {
-  50% {
-    -webkit-transform: translateY(10px) scale(1.05);
-            transform: translateY(10px) scale(1.05);
-  }
-  100% {
-    -webkit-transform: translateY(0) scale(1);
-            transform: translateY(0) scale(1);
-  }
 }
 
 .sobreMi .padding-box {

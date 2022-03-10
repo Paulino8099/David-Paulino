@@ -16,7 +16,10 @@
 	grid-row: 4/5;
 	// title
 	.title-project-container {
-		color: #008080;
+		color: #e4f5ef;
+		background: linear-gradient(90deg, #4a4c7e 0%, #4a4c7e 78%, #A5A6C7 78%, #A5A6C7 100%);
+		border-radius: 10px;
+		padding: 0 10px;
 		width: fit-content;
 		z-index: 10;
 		transition: 0.5s;
@@ -32,30 +35,9 @@
 		}
 		// icon
 		i {
+			color: #008080;
 			transition: 0.5s;
 			animation: animateTitle 1.5s linear infinite;
-			@keyframes animateTitle {
-				50% {
-					transform: rotate(45deg);
-					transform-origin: left;
-				}
-				60% {
-					transform: rotate(30deg);
-					transform-origin: left;
-				}
-				70% {
-					transform: rotate(50deg);
-					transform-origin: left;
-				}
-				80% {
-					transform: rotate(40deg);
-					transform-origin: left;
-				}
-				100% {
-					transform: rotate(0);
-					transform-origin: left;
-				}
-			}
 		}
 	}
 	// content

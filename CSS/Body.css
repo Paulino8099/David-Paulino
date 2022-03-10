@@ -407,4 +407,10 @@ body .aside-studies .aside-studies-content .media-aside-studies img {
     width: 90%;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #ff0000;
+  }
+}
 /*# sourceMappingURL=Body.css.map */

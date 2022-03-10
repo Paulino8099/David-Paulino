@@ -234,10 +234,8 @@
 			transition: .5s;
 			opacity: calc(.5 * var(--i));
 			animation-delay: calc(.1s * var(--i));
-			animation: animate-image 2s linear infinite;
+			animation: animate-image 2s ease-in-out infinite;
 			@keyframes animate-image {
-				0% {
-				}
 				50% {
 					transform: scale(calc(1 * var(--i)));
 					opacity: 0;
@@ -479,6 +477,7 @@
 			}
 		}
 	}
+	// padding bottom
 	.padding-bottom {
 		background: linear-gradient(180deg, transparent 0%, #e4f5ef 100%);
 		width: 100%;

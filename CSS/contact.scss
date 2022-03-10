@@ -17,7 +17,10 @@
 	grid-row: 5/6;
 	// title
 	.title-contact-container {
-		color: #008080;
+		color: #e4f5ef;
+		background: linear-gradient(90deg, #4a4c7e 0%, #4a4c7e 75%, #A5A6C7 75%, #A5A6C7 100%);
+		border-radius: 10px;
+		padding: 0 10px;
 		width: fit-content;
 		z-index: 10;
 		transition: 0.5s;
@@ -32,6 +35,7 @@
 		}
 		// icon
 		i {
+			color: #008080;
 			transition: 0.5s;
 		}
 	}
@@ -59,6 +63,8 @@
 		}
 		// pensamiento content
 		.thought-container {
+			height: min-content;
+
 			display: grid;
 			p {
 				text-align: left;
@@ -214,6 +220,7 @@
 		.addresses {
 			justify-items: center;
 			align-content: space-between;
+			height: min-content;
 
 			display: grid;
 			// title primary
@@ -230,6 +237,7 @@
 				align-items: center;
 				color: var(--textGray1);
 				transition: .5s;
+				margin-bottom: 25px;
 
 				display: flex;
 				i {
@@ -526,11 +534,6 @@
 					display: none;
 					// edit (remove: grid, add: none)
 				}
-			}
-			// direcciones
-			.addresses {
-				height: 325px;
-				// edit (add: height)
 			}
 		}
 		// message direct
