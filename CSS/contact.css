@@ -16,8 +16,8 @@
 
 .contact .title-contact-container {
   color: #e4f5ef;
-  background: -webkit-gradient(linear, left top, right top, from(#4a4c7e), color-stop(75%, #4a4c7e), color-stop(75%, #A5A6C7), to(#A5A6C7));
-  background: linear-gradient(90deg, #4a4c7e 0%, #4a4c7e 75%, #A5A6C7 75%, #A5A6C7 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#4a4c7e), color-stop(75%, #4a4c7e), color-stop(75%, #a5a6c7), to(#a5a6c7));
+  background: linear-gradient(90deg, #4a4c7e 0%, #4a4c7e 75%, #a5a6c7 75%, #a5a6c7 100%);
   border-radius: 10px;
   padding: 0 10px;
   width: -webkit-fit-content;
@@ -137,6 +137,10 @@
   display: grid;
 }
 
+.contact .contact-content .redes .logos-redes a:hover i {
+  color: var(--c);
+}
+
 .contact .contact-content .redes .logos-redes a i {
   -webkit-transition: .3s;
   transition: .3s;
@@ -150,59 +154,12 @@
   pointer-events: none;
   font-size: .8rem;
   z-index: 1;
+  color: var(--c);
 }
 
 .contact .contact-content .redes .logos-redes a h3:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-}
-
-.contact .contact-content .redes .logos-redes a:nth-child(1):hover i {
-  color: #4867aa;
-}
-
-.contact .contact-content .redes .logos-redes a:nth-child(1) h3 {
-  color: #4867aa;
-}
-
-.contact .contact-content .redes .logos-redes a:nth-child(2):hover i {
-  color: #1d9bf0;
-}
-
-.contact .contact-content .redes .logos-redes a:nth-child(2) h3 {
-  color: #1d9bf0;
-}
-
-.contact .contact-content .redes .logos-redes a:nth-child(3):hover i {
-  color: #60fb7d;
-}
-
-.contact .contact-content .redes .logos-redes a:nth-child(3) h3 {
-  color: #60fb7d;
-}
-
-.contact .contact-content .redes .logos-redes a:nth-child(4):hover i {
-  color: #ca3081;
-}
-
-.contact .contact-content .redes .logos-redes a:nth-child(4) h3 {
-  color: #ca3081;
-}
-
-.contact .contact-content .redes .logos-redes a:nth-child(5):hover i {
-  color: #2867b2;
-}
-
-.contact .contact-content .redes .logos-redes a:nth-child(5) h3 {
-  color: #2867b2;
-}
-
-.contact .contact-content .redes .logos-redes a:nth-child(6):hover i {
-  color: #000000;
-}
-
-.contact .contact-content .redes .logos-redes a:nth-child(6) h3 {
-  color: #000000;
 }
 
 .contact .contact-content .redes .codigosQR-redes {
@@ -385,93 +342,54 @@
   border-radius: 10px;
 }
 
+.contact .messageDirect-container form .input-content span input.active::-webkit-input-placeholder {
+  color: #ff0000;
+  font-size: 1.5rem;
+}
+
+.contact .messageDirect-container form .input-content span input.active:-ms-input-placeholder {
+  color: #ff0000;
+  font-size: 1.5rem;
+}
+
+.contact .messageDirect-container form .input-content span input.active::-ms-input-placeholder {
+  color: #ff0000;
+  font-size: 1.5rem;
+}
+
+.contact .messageDirect-container form .input-content span input.active::placeholder {
+  color: #ff0000;
+  font-size: 1.5rem;
+}
+
 .contact .messageDirect-container form .input-content span input::-webkit-input-placeholder {
   color: #008080;
   opacity: .5;
+  font-size: 1.2rem;
 }
 
 .contact .messageDirect-container form .input-content span input:-ms-input-placeholder {
   color: #008080;
   opacity: .5;
+  font-size: 1.2rem;
 }
 
 .contact .messageDirect-container form .input-content span input::-ms-input-placeholder {
   color: #008080;
   opacity: .5;
+  font-size: 1.2rem;
 }
 
 .contact .messageDirect-container form .input-content span input::placeholder {
   color: #008080;
   opacity: .5;
+  font-size: 1.2rem;
 }
 
 .contact .messageDirect-container form .input-content span input:focus {
-  -webkit-box-shadow: 0 0 10px #00000086;
-          box-shadow: 0 0 10px #00000086;
-}
-
-.contact .messageDirect-container form .input-content span .inputName-messageDirect.active::-webkit-input-placeholder {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.contact .messageDirect-container form .input-content span .inputName-messageDirect.active:-ms-input-placeholder {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.contact .messageDirect-container form .input-content span .inputName-messageDirect.active::-ms-input-placeholder {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.contact .messageDirect-container form .input-content span .inputName-messageDirect.active::placeholder {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.contact .messageDirect-container form .input-content span .inputEmail-messageDirect.active::-webkit-input-placeholder {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.contact .messageDirect-container form .input-content span .inputEmail-messageDirect.active:-ms-input-placeholder {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.contact .messageDirect-container form .input-content span .inputEmail-messageDirect.active::-ms-input-placeholder {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.contact .messageDirect-container form .input-content span .inputEmail-messageDirect.active::placeholder {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.contact .messageDirect-container form .input-content span .inputMessage-messageDirect.active::-webkit-input-placeholder {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.contact .messageDirect-container form .input-content span .inputMessage-messageDirect.active:-ms-input-placeholder {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.contact .messageDirect-container form .input-content span .inputMessage-messageDirect.active::-ms-input-placeholder {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.contact .messageDirect-container form .input-content span .inputMessage-messageDirect.active::placeholder {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.contact .messageDirect-container form .input-content span:nth-child(1) i {
-  margin-right: 4px;
+  -webkit-box-shadow: 0 0 10px #000000bf;
+          box-shadow: 0 0 10px #000000bf;
+  outline: 2px solid #008080;
 }
 
 .contact .messageDirect-container form textarea {
@@ -490,6 +408,26 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+}
+
+.contact .messageDirect-container form textarea.active::-webkit-input-placeholder {
+  color: #ff0000;
+  font-size: 1.5rem;
+}
+
+.contact .messageDirect-container form textarea.active:-ms-input-placeholder {
+  color: #ff0000;
+  font-size: 1.5rem;
+}
+
+.contact .messageDirect-container form textarea.active::-ms-input-placeholder {
+  color: #ff0000;
+  font-size: 1.5rem;
+}
+
+.contact .messageDirect-container form textarea.active::placeholder {
+  color: #ff0000;
+  font-size: 1.5rem;
 }
 
 .contact .messageDirect-container form textarea::-webkit-input-placeholder {
@@ -513,15 +451,15 @@
 }
 
 .contact .messageDirect-container form textarea:focus {
-  border: none;
+  outline: 2px solid #008080;
   border-radius: none;
-  -webkit-box-shadow: 0 0 10px #00000086;
-          box-shadow: 0 0 10px #00000086;
+  -webkit-box-shadow: 0 0 10px #000000bf;
+          box-shadow: 0 0 10px #000000bf;
 }
 
 .contact .messageDirect-container form .btn-send-messageDirect {
   justify-self: end;
-  background: #008080;
+  background: #1c003b;
   border-radius: 5px;
   margin-top: 25px;
   width: 100px;
@@ -587,47 +525,17 @@
   .contact .contact-content div h1 {
     margin-bottom: 25px;
   }
+  .contact .contact-content .redes .logos-redes a:hover i {
+    color: var(--textGray1);
+  }
+  .contact .contact-content .redes .logos-redes a:active i {
+    color: var(--c);
+  }
   .contact .contact-content .redes .logos-redes a i {
     font-size: 3rem;
   }
   .contact .contact-content .redes .logos-redes a h3 {
     font-size: 1rem;
-  }
-  .contact .contact-content .redes .logos-redes a:nth-child(1):hover i {
-    color: var(--textGray1);
-  }
-  .contact .contact-content .redes .logos-redes a:nth-child(1):active i {
-    color: #4867aa;
-  }
-  .contact .contact-content .redes .logos-redes a:nth-child(2):hover i {
-    color: var(--textGray1);
-  }
-  .contact .contact-content .redes .logos-redes a:nth-child(2):active i {
-    color: #1d9bf0;
-  }
-  .contact .contact-content .redes .logos-redes a:nth-child(3):hover i {
-    color: var(--textGray1);
-  }
-  .contact .contact-content .redes .logos-redes a:nth-child(3):active i {
-    color: #60fb7d;
-  }
-  .contact .contact-content .redes .logos-redes a:nth-child(4):hover i {
-    color: var(--textGray1);
-  }
-  .contact .contact-content .redes .logos-redes a:nth-child(4):active i {
-    color: #ca3081;
-  }
-  .contact .contact-content .redes .logos-redes a:nth-child(5):hover i {
-    color: var(--textGray1);
-  }
-  .contact .contact-content .redes .logos-redes a:nth-child(5):active i {
-    color: #2867b2;
-  }
-  .contact .contact-content .redes .logos-redes a:nth-child(6):hover i {
-    color: var(--textGray1);
-  }
-  .contact .contact-content .redes .logos-redes a:nth-child(6):active i {
-    color: #000000;
   }
   .contact .contact-content .redes .codigosQR-redes {
     display: none;
@@ -674,18 +582,30 @@
     background: #ffffff;
     border-radius: 10px;
     width: 90%;
+    padding: 5px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+  .contact .messageDirect-container form .input-content span:hover {
+    outline: 2px solid #008080;
+    border-radius: none;
+    -webkit-box-shadow: 0 0 10px #000000bf;
+            box-shadow: 0 0 10px #000000bf;
+  }
   .contact .messageDirect-container form .input-content span i {
-    margin-left: 5px;
     color: #4a4c7e;
+    border-right: 2px solid #44444480;
+    padding-right: 5px;
   }
   .contact .messageDirect-container form .input-content span input {
     width: 100%;
-    padding: 10px;
     margin-left: 0;
+  }
+  .contact .messageDirect-container form .input-content span input:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .contact .messageDirect-container form textarea {
     width: 85%;
@@ -693,7 +613,7 @@
   .contact .messageDirect-container form .btn-send-messageDirect {
     width: 115px;
     height: 40px;
-    margin: 15px;
+    margin: 0 -5px 25px 0;
   }
   .contact .messageDirect-container form .btn-send-messageDirect h3 {
     font-size: 1.2rem;

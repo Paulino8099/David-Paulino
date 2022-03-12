@@ -406,6 +406,14 @@ body .aside-studies .aside-studies-content .media-aside-studies img {
   body .aside-studies.active {
     width: 90%;
   }
+  body .btn-start {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  body .btn-start i {
+    font-size: 1.5rem;
+  }
 }
 
 @media (prefers-color-scheme: light) {

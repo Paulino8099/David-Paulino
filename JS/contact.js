@@ -5,13 +5,18 @@ let inputEmail = document.querySelector('.inputEmail-messageDirect');
 let InputMessage = document.querySelector('.inputMessage-messageDirect');
 
 btnSend.addEventListener('click', function () {
-
     inputNameConfig();
     inputEmailConfig();
     inputMessageConfig();
 
     if (inputName.value != '' && inputEmail.value != '' && InputMessage.value != '') {
+        // datos a enviar por parte del usuario al dar click en "btn send" siempre y cuando no haya ningún campo vacío
         btnSend.setAttribute('href', `mailto:dapa7928@gmail.com?subject=Mi nombre es ${inputName.value}. Mi correo electrónico es ${inputEmail.value}&body=${InputMessage.value}`);
+        
+        // borrando valores de los inputs al hacer click en "btn send" siempre y cuando no haya nigún campo vacío
+        inputName.value = "";
+        inputEmail.value = "";
+        InputMessage.value = "";
     } else if (inputName.value == '' || inputEmail.value == '' || InputMessage.value == '') {
         btnSend.removeAttribute('href');
     }
@@ -22,7 +27,7 @@ btnSend.addEventListener('click', function () {
  */
 function inputNameConfig() {
     if (inputName.value == '') {
-        inputName.setAttribute('placeholder', '¡Debe de insertar un nombre!');
+        inputName.setAttribute('placeholder', '¡Inserte un nombre!');
         inputName.classList.add('active');
     }
     inputName.addEventListener('click', function () {
@@ -35,7 +40,7 @@ function inputNameConfig() {
  */
 function inputEmailConfig() {
     if (inputEmail.value == '') {
-        inputEmail.setAttribute('placeholder', '¡Debe de insertar una dirección email!')
+        inputEmail.setAttribute('placeholder', '¡inserte una dirección email!')
         inputEmail.classList.add('active');
     }
     inputEmail.addEventListener('click', function () {

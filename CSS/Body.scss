@@ -341,11 +341,21 @@ body {
 //  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 @media (max-width: 800px) {
 	body {
+		// aside studies
 		.aside-studies {
 			top: 15%;
 			left: calc(50% - 45%);
 			&.active {
 				width: 90%;
+			}
+		}
+		// btn start
+		.btn-start {
+			width: 40px; //edit (remove: 50px, add: 40px)
+			height: 40px; //edit (remove: 50px, add: 40px)
+			margin: 10px; //edit (remove: 20px, add: 10px)
+			i {
+				font-size: 1.5rem; //edit (remove: 2rem, add: 1.5rem)
 			}
 		}
 	}
