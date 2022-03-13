@@ -91,10 +91,6 @@
 					}
 				}
 			}
-			.btn-darkMode-logo {
-				background: none;
-				box-shadow: none;
-			}
 		}
 		// title
 		div {
@@ -170,7 +166,6 @@
 		ul {
 			gap: 10px;
 			color: #fff;
-			border-radius: 25px;
 			transition: .5s;
 			a {
 				text-decoration: none;
@@ -178,7 +173,6 @@
 				text-align: center;
 				justify-self: center;
 				padding: 0 5px;
-				border-radius: 25px;
 				font-size: 1.2rem;
 				transition: 0.5s;
 				position: relative;
@@ -519,7 +513,7 @@
 			&.backfaceOn {
 				z-index: 21000;
 			}
-			// btn navBar
+			// btn "navBar"
 			i {
 				margin-right: 10px;
 				color: #008080;
@@ -528,34 +522,18 @@
 			}
 			// main
 			ul {
-				box-shadow: 0 0 5px #ffffff80, inset 0 0 5px #00000080;
-				background: #ffffff;
+				background: #008080;
 				position: absolute;
-				top: 60px;
+				top: 48px;
 				right: -4%;
 				margin-right: -4%;
-				border-radius: 5px;
+				border-bottom-left-radius: 5px;
 				padding: 0 15px;
 				gap: 50px;
 				opacity: 0;
 				pointer-events: none;
 
 				display: grid;
-				&::after {
-					content: "";
-					width: 25px;
-					height: 25px;
-					background: linear-gradient(45deg, transparent 0%, transparent 50%, #fff 50%, #fff 100%);
-					box-shadow: 2px -4px 5px #00000080;
-					position: absolute;
-					border-top-right-radius: 5px;
-					top: -12px;
-					right: 12px;
-					transform: rotate(-45deg);
-					transition: 0;
-					opacity: 0;
-					pointer-events: none;
-				}
 				&.active {
 					z-index: 210000;
 					opacity: 1;
@@ -567,7 +545,7 @@
 					}
 					a {
 						font-size: 1.5rem;
-						color: #4a4c7e;
+						color: #ffffff;
 					}
 				}
 				a {

@@ -94,7 +94,8 @@
   text-align: center;
   place-self: center;
   margin: 0 5px;
-  color: #4a4c7e;
+  color: #008080;
+  line-height: 18px;
 }
 
 .studies .studies-content .card-studies div div {
@@ -110,9 +111,8 @@
 }
 
 .studies .studies-content .card-studies div div img {
-  background: #4a4c7e40;
+  background: #00808040;
   border-radius: 5px;
-  margin-top: 0;
   margin: 5px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -183,8 +183,8 @@
 
 .studies .padding-box img {
   width: 10%;
-  -webkit-animation: animate 2s linear infinite;
-          animation: animate 2s linear infinite;
+  -webkit-animation: animate 3s linear infinite;
+          animation: animate 3s linear infinite;
 }
 
 @-webkit-keyframes animate {
@@ -192,9 +192,21 @@
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
+  25% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 
@@ -203,9 +215,21 @@
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
+  25% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 

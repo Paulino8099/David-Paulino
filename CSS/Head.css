@@ -121,12 +121,6 @@
   background: #ffffff;
 }
 
-.head .navBar.active .btn-darkMode-logo {
-  background: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 .head .navBar div {
   padding: 2px 5px;
   border-radius: 25px;
@@ -217,7 +211,6 @@
 .head .navBar ul {
   gap: 10px;
   color: #fff;
-  border-radius: 25px;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -229,7 +222,6 @@
   -ms-grid-column-align: center;
       justify-self: center;
   padding: 0 5px;
-  border-radius: 25px;
   font-size: 1.2rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -660,38 +652,18 @@
     display: grid;
   }
   .head .navBar ul {
-    -webkit-box-shadow: 0 0 5px #ffffff80, inset 0 0 5px #00000080;
-            box-shadow: 0 0 5px #ffffff80, inset 0 0 5px #00000080;
-    background: #ffffff;
+    background: #008080;
     position: absolute;
-    top: 60px;
+    top: 48px;
     right: -4%;
     margin-right: -4%;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
     padding: 0 15px;
     gap: 50px;
     opacity: 0;
     pointer-events: none;
     display: -ms-grid;
     display: grid;
-  }
-  .head .navBar ul::after {
-    content: "";
-    width: 25px;
-    height: 25px;
-    background: linear-gradient(45deg, transparent 0%, transparent 50%, #fff 50%, #fff 100%);
-    -webkit-box-shadow: 2px -4px 5px #00000080;
-            box-shadow: 2px -4px 5px #00000080;
-    position: absolute;
-    border-top-right-radius: 5px;
-    top: -12px;
-    right: 12px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    -webkit-transition: 0;
-    transition: 0;
-    opacity: 0;
-    pointer-events: none;
   }
   .head .navBar ul.active {
     z-index: 210000;
@@ -706,7 +678,7 @@
   }
   .head .navBar ul.active a {
     font-size: 1.5rem;
-    color: #4a4c7e;
+    color: #ffffff;
   }
   .head .navBar ul a {
     z-index: 110;

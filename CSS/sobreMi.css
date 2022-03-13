@@ -73,6 +73,8 @@
 .sobreMi .sobreMi-content .my-passions img {
   width: 40%;
   height: 70%;
+  -webkit-filter: drop-shadow(0 0 5px #00000080);
+          filter: drop-shadow(0 0 5px #00000080);
 }
 
 .sobreMi .sobreMi-content .my-hobbies div,
@@ -90,8 +92,8 @@
 .sobreMi .sobreMi-content .my-hobbies div h1,
 .sobreMi .sobreMi-content .my-personal-data div h1,
 .sobreMi .sobreMi-content .my-passions div h1 {
-  color: #4a4c7e;
-  text-shadow: 0 0 5px #4a4c7e;
+  color: #008080;
+  text-shadow: 0 0 5px #008080;
   font-size: 1.5rem;
   justify-self: start;
   -webkit-box-align: center;
@@ -112,23 +114,16 @@
 .sobreMi .sobreMi-content .my-personal-data div h1 b,
 .sobreMi .sobreMi-content .my-passions div h1 b {
   color: #008080;
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   margin-right: 10px;
   text-align: center;
-  text-justify: newspaper;
+  text-justify: center;
   border-radius: 50px;
   background: #A5A6C7;
   padding: 5px;
   text-shadow: none;
   font-size: 1.2rem;
-}
-
-.sobreMi .sobreMi-content .my-hobbies div b,
-.sobreMi .sobreMi-content .my-personal-data div b,
-.sobreMi .sobreMi-content .my-passions div b {
-  color: #4a4c7e;
-  text-shadow: 0 0 5px #4a4c7e;
 }
 
 .sobreMi .sobreMi-content .my-hobbies div p,
@@ -150,6 +145,13 @@
   grid-row: 3/4;
 }
 
+.sobreMi .sobreMi-content .my-hobbies div p b,
+.sobreMi .sobreMi-content .my-personal-data div p b,
+.sobreMi .sobreMi-content .my-passions div p b {
+  color: #008080;
+  text-shadow: 0 0 5px #008080;
+}
+
 .sobreMi .padding-box {
   width: 100%;
   background: #4A4C7E;
@@ -165,8 +167,8 @@
 
 .sobreMi .padding-box img {
   width: 10%;
-  -webkit-animation: animate 2s linear infinite;
-          animation: animate 2s linear infinite;
+  -webkit-animation: animate 3s linear infinite;
+          animation: animate 3s linear infinite;
 }
 
 @-webkit-keyframes animate {
@@ -174,9 +176,21 @@
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
+  25% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 
@@ -185,9 +199,21 @@
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
+  25% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 

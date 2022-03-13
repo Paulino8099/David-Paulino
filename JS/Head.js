@@ -10,34 +10,60 @@
 let backface = document.querySelector('.backface');
 
 navBarAll();
+//todas las funciones del menú de navegación
 function navBarAll() {
-    /**
-     * ?onOff main (mobile)
-     */
-    onOffMain();
-    function onOffMain() {
-        let btnNavBar = document.querySelector('.btn-navBar-head');
-        let mainHead = document.querySelector('.main-head');
-        let navBar = document.querySelector('.navBar');
-        let body = document.querySelector('body');
+    let btnNavBar = document.querySelector('.btn-navBar-head');
+    let mainHead = document.querySelector('.main-head');
+    let subMenu = document.querySelectorAll('.subMenu');
+    let navBar = document.querySelector('.navBar');
+    let body = document.querySelector('body');
 
-        /**
-         * ?event click (btn onOff)
-         */
-        btnNavBar.addEventListener('click', function () {
-            // la palanca de encendido y apagado solo va a funcionar si el scroll es inferior a 200px para así evitar interferencia o margen de errores. Esto para que al activar el navBar con movimiento de scroll no haga ninguna interferencias
-            if (window.scrollY < 200) {
-                navBar.classList.toggle('active');
-            };
-            backface.classList.toggle('active');
-            body.classList.toggle('backfaceOn');
-            mainHead.classList.toggle('active');
-            navBar.classList.toggle('backfaceOn');
-        });
-        /**
-         * ?event click (backface)
-         */
-        backface.addEventListener('click', function () {
+    /**
+     * ?navBar
+     */
+    //evento para activar/desactivar la barra de navegación (al escuchar scroll)
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 200) {
+            navBar.classList.add('active');
+        } else if (window.scrollY < 25) {
+            // barra de navegación
+            navBar.classList.remove('active');
+        }
+    });
+    /**
+     * ?open main (btn onOff)
+     */
+    //evento para activar el menú de navegación (al dar click en btn)
+    btnNavBar.addEventListener('click', function () {
+        // la palanca de encendido y apagado solo va a funcionar si el scroll es inferior a 200px para así evitar interferencia o margen de errores. Esto para que al activar el navBar con movimiento de scroll no haga ninguna interferencias
+        if (window.scrollY < 200) {
+            navBar.classList.toggle('active');
+        };
+        backface.classList.toggle('active');
+        body.classList.toggle('backfaceOn');
+        mainHead.classList.toggle('active');
+        navBar.classList.toggle('backfaceOn');
+    });
+    /**
+     * ?close main (backface)
+     */
+    //evento para desactivar el menú de navegación (al dar click en backface)
+    backface.addEventListener('click', function () {
+        // solo se va a remover la clase de la lista de clases si el scroll es inferior a 200px para así evitar interferencia o margen de errores. Esto para que al activar el navBar con movimiento de scroll no haga ninguna interferencias
+        if (window.scrollY < 200) {
+            navBar.classList.remove('active');
+        }
+        backface.classList.remove('active');
+        mainHead.classList.remove('active');
+        navBar.classList.remove('backfaceOn');
+        body.classList.remove('backfaceOn');
+    });
+    /**
+     * ?close main (subMenu)
+     */
+    //evento para desactivar el menú de navegación (al dar click en las opciones del menú)
+    subMenu.forEach((e) => {
+        e.addEventListener('click', function () {
             // solo se va a remover la clase de la lista de clases si el scroll es inferior a 200px para así evitar interferencia o margen de errores. Esto para que al activar el navBar con movimiento de scroll no haga ninguna interferencias
             if (window.scrollY < 200) {
                 navBar.classList.remove('active');
@@ -47,22 +73,11 @@ function navBarAll() {
             navBar.classList.remove('backfaceOn');
             body.classList.remove('backfaceOn');
         });
-        /**
-         * ?event scroll
-         */
-        window.addEventListener('scroll', function () {
-            if (window.scrollY > 200) {
-                navBar.classList.add('active');
-            } else if (window.scrollY < 25) {
-                // barra de navegación
-                navBar.classList.remove('active');
-            }
-        });
-    };
+    });
 };
 
 /**
- * ?volviendo a inicio
+ * *volviendo a inicio
  */
 // volver a inicio al hacer click el logo del título principal
 backStart();
@@ -76,7 +91,7 @@ function backStart() {
 }
 
 /**
- * ?indicador de sesiones (IntersectionObserver)...
+ * *indicador de sesiones (IntersectionObserver)...
  */
 // activar indicador y posicionarlo en su repectivo botón del navBar al detectar scroll en las diferentes secciones de todo el documento.
 window.addEventListener('scroll', () => {
@@ -169,7 +184,7 @@ window.addEventListener('scroll', () => {
 });
 
 /**
- * ?onOff información personal
+ * *onOff información personal
  */
 onOffDataPerson();
 function onOffDataPerson() {

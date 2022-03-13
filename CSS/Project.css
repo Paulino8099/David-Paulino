@@ -118,38 +118,15 @@
   color: var(--textGray1);
 }
 
-.project .project-container span {
+.project .project-container button {
   place-self: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 25%;
   height: 40px;
-  position: relative;
-  overflow: hidden;
   border-radius: 5px;
-  display: -ms-grid;
-  display: grid;
-}
-
-.project .project-container span:hover button .door-lock .left {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.project .project-container span:hover button .door-lock .right {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.project .project-container span:hover span {
-  -webkit-animation: animate-span 3s linear infinite;
-          animation: animate-span 3s linear infinite;
-}
-
-.project .project-container span button {
-  place-self: center;
   background: #1c003b;
-  border-radius: 5px;
-  width: 99%;
-  height: 93%;
   padding: 5px 0;
   color: #fff;
   font-size: 1.1rem;
@@ -160,20 +137,37 @@
   display: grid;
 }
 
-.project .project-container span button:hover {
-  background: #16022e;
+.project .project-container button:hover {
+  -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
 }
 
-.project .project-container span button:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.project .project-container button:hover .door-lock .left {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
-.project .project-container span button h3 {
+.project .project-container button:hover .door-lock .right {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.project .project-container button::after {
+  content: "";
+  background: #1c003b;
+  width: 98%;
+  height: 92%;
+  border-radius: 5px;
+  left: 2px;
+  top: 2px;
+  position: absolute;
+}
+
+.project .project-container button h3 {
   z-index: 200;
 }
 
-.project .project-container span button .door-lock {
+.project .project-container button .door-lock {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -184,34 +178,34 @@
   display: flex;
 }
 
-.project .project-container span button .door-lock dir {
+.project .project-container button .door-lock dir {
   width: 50%;
   height: 100%;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-.project .project-container span button .door-lock .left {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+.project .project-container button .door-lock .left {
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
   background: #008080;
 }
 
-.project .project-container span button .door-lock .right {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+.project .project-container button .door-lock .right {
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
   background: #a5a6c7;
 }
 
-.project .project-container span span {
-  background: -webkit-gradient(linear, left bottom, left top, from(#008080), color-stop(50%, #008080), color-stop(50%, transparent), to(transparent));
-  background: linear-gradient(0deg, #008080 0%, #008080 50%, transparent 50%, transparent 100%);
-  width: 300px;
-  height: 300px;
+.project .project-container button .animate-lines {
+  background: #008080;
+  width: 150%;
+  height: 25px;
   position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 75%);
   -webkit-animation: animate-span 10s linear infinite;
           animation: animate-span 10s linear infinite;
-  place-self: center;
 }
 
 @-webkit-keyframes animate-span {
@@ -251,8 +245,8 @@
 
 .project .padding-box img {
   width: 10%;
-  -webkit-animation: animate 2s linear infinite;
-          animation: animate 2s linear infinite;
+  -webkit-animation: animate 3s linear infinite;
+          animation: animate 3s linear infinite;
 }
 
 @-webkit-keyframes animate {
@@ -260,9 +254,21 @@
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
+  25% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 
@@ -271,9 +277,21 @@
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
+  25% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 
@@ -281,6 +299,14 @@
   .project .project-container .project-content {
     -ms-grid-columns: (minmax(auto, 100px))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(auto, 100px));
+  }
+  .project .project-container .project-content button:hove {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .project .project-container .project-content button:active {
+    -webkit-box-shadow: 0 0 10px #000000;
+            box-shadow: 0 0 10px #000000;
   }
 }
 /*# sourceMappingURL=Project.css.map */

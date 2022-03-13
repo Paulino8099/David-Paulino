@@ -199,42 +199,6 @@ body {
 			color: #008080;
 		}
 	}
-	// ripples btns
-	.btns {
-		position: fixed;
-		pointer-events: none;
-		place-items: center;
-		width: 50px;
-		height: 50px;
-		z-index: 50000;
-		transform: translate(-25px, -25px);
-
-		display: grid;
-		span {
-			background: #ffffff40;
-			border-radius: 50%;
-			width: 100%;
-			height: 100%;
-			animation: animate-span .2s linear infinite;
-			@keyframes animate-span {
-				0% {
-					width: 0;
-					height: 0;
-					opacity: 0;
-				}
-				50% {
-					width: 100%;
-					height: 100%;
-					opacity: 1;
-				}
-				100% {
-					width: 0;
-					height: 0;
-					opacity: 0;
-				}
-			}
-		}
-	}
 	// asides
 	.aside-studies {
 		position: fixed;
