@@ -288,30 +288,20 @@
 
 			display: grid;
 			// btn cancel (salir)
-			svg {
-				justify-self: end;
+			i {
+				justify-self: flex-end;
 				margin: 10px;
-				width: 25px;
+				font-size: 2rem;
 				z-index: 50;
 				border-radius: 50px;
-				fill: #ffffff;
-				border: 3px solid #ffffff;
+				color: #ffffff;
 				&:hover {
 					cursor: pointer;
-					fill: #ffffffbf;
-					border: 3px solid #ffffffbf;
+					color: #ffffffbf;
 				}
 				&:active {
-					fill: #ffffff80;
-					border: 3px solid #ffffff80;
+					color: #ffffff80;
 				}
-			}
-			// img background
-			img {
-				width: 100%;
-				height: 100%;
-				position: absolute;
-				filter: blur(5px);
 			}
 			// text
 			span {
@@ -330,7 +320,7 @@
 					color: #fff;
 					text-shadow: 0 0 5px #fff;
 					b {
-						color: #ffffff;
+						color: #0E6251;
 						text-shadow: none;                                                
 					}
 				}
@@ -343,6 +333,13 @@
 					background: #ffffff;
 					border-radius: 50px;
 				}
+			}
+			// img background
+			img {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				filter: blur(5px);
 			}
 		}
 	}

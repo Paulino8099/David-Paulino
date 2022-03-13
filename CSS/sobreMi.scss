@@ -9,7 +9,7 @@
 	width: 100%;
 	justify-items: center;
 	gap: 25px;
-	padding-top: 50px;
+	padding: 50px 0;
 
 	display: grid;
 	grid-column: 1/9;
@@ -34,7 +34,7 @@
 		}
 		// icon
 		i {
-			color: #008080;
+			color: #4a4c7e;
 			margin-left: 10px;
 			transition: 0.5s;
 		}
@@ -112,24 +112,24 @@
 	}
 	// padding-box
 	.padding-box {
-		margin: 75px;
 		width: 100%;
-		height: 25px;
-		box-shadow: inset 0 0 5px #000, inset 0 0 5px #fff, 0 0 5px #000;
-		background: 
-			linear-gradient(
-				-45deg,
-				#4a4c7e 0%,
-				#4a4c7e 20%,
-				#e4f5ef 20%,
-				#e4f5ef 40%,
-				#008080 40%, 
-				#008080 60%,
-				#e4f5ef 60%,
-				#e4f5ef 80%,
-				#a5a6c7 80%,
-				#a5a6c7 100%
-			);
+		background: #4A4C7E;
+		justify-content: space-evenly;
+		overflow: hidden;
+
+		display: flex;
+		img {
+			width: 10%;
+			animation: animate 2s linear infinite;
+			@keyframes animate {
+				0% {
+					transform: rotate(0);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+		}
 	}
 }
 // ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦

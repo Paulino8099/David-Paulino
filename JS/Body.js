@@ -105,7 +105,7 @@ window.addEventListener("scroll", function () {
         let docElem = document.documentElement;
 
         // variables para detectar las diferentes alturas de la barra de escroleo vertical
-        let scroll486 = (docElem.scrollTop >= docElem.scrollHeight - (footer.offsetHeight) - 486);
+        let scroll486 = (docElem.scrollTop >= docElem.scrollHeight - (footer.offsetHeight) - 450);
         let scroll780 = (docElem.scrollTop >= docElem.scrollHeight - (footer.offsetHeight) - 700);
 
         // si la barra de navegación vertical se ubica justamente en la posición donde se encuentra el footer, el btn de "home" se eleverá un poco hacia arriba (los "486" o los "780" es porque  estos se le agregan a la barra de escroleo de forma que desconozco, no sé porqué). Si el ancho del documento es menor que 650px, la función va a leer la segunda opción para ejecutar la función escrita (el btn se moverá hacia arriba)

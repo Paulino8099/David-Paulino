@@ -210,7 +210,7 @@ body .btn-start {
   transition: 0.5s;
   text-decoration: none;
   opacity: 0;
-  z-index: 20;
+  z-index: 100;
   position: fixed;
   place-items: center;
   display: -ms-grid;
@@ -322,7 +322,7 @@ body .aside-studies .aside-studies-content {
 
 body .aside-studies .aside-studies-content .btn-download-aside-studies {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1.5rem;
   top: 0;
   left: 0;
   margin: 5px;
@@ -332,6 +332,8 @@ body .aside-studies .aside-studies-content .btn-download-aside-studies {
   stroke-width: 10px;
   -webkit-animation: animate 1s linear infinite;
           animation: animate 1s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 @-webkit-keyframes animate {
@@ -358,7 +360,7 @@ body .aside-studies .aside-studies-content .btn-download-aside-studies:active {
 
 body .aside-studies .aside-studies-content .btn-close-aside-studies {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1.5rem;
   top: 0;
   right: 0;
   margin: 5px;
@@ -371,7 +373,7 @@ body .aside-studies .aside-studies-content .btn-close-aside-studies:active {
 }
 
 body .aside-studies .aside-studies-content .title-aside-studies {
-  width: 90%;
+  width: 80%;
   color: #ffffff;
   margin-bottom: 10px;
   display: -ms-grid;
@@ -382,7 +384,7 @@ body .aside-studies .aside-studies-content .title-aside-studies h3 {
   -ms-grid-column-align: center;
       justify-self: center;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 body .aside-studies .aside-studies-content .media-aside-studies {

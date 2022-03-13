@@ -42,7 +42,7 @@
 }
 
 .contact .title-contact-container i {
-  color: #008080;
+  color: #4a4c7e;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -344,22 +344,22 @@
 
 .contact .messageDirect-container form .input-content span input.active::-webkit-input-placeholder {
   color: #ff0000;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .contact .messageDirect-container form .input-content span input.active:-ms-input-placeholder {
   color: #ff0000;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .contact .messageDirect-container form .input-content span input.active::-ms-input-placeholder {
   color: #ff0000;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .contact .messageDirect-container form .input-content span input.active::placeholder {
   color: #ff0000;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .contact .messageDirect-container form .input-content span input::-webkit-input-placeholder {
@@ -412,22 +412,22 @@
 
 .contact .messageDirect-container form textarea.active::-webkit-input-placeholder {
   color: #ff0000;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .contact .messageDirect-container form textarea.active:-ms-input-placeholder {
   color: #ff0000;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .contact .messageDirect-container form textarea.active::-ms-input-placeholder {
   color: #ff0000;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .contact .messageDirect-container form textarea.active::placeholder {
   color: #ff0000;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .contact .messageDirect-container form textarea::-webkit-input-placeholder {
@@ -458,7 +458,7 @@
 }
 
 .contact .messageDirect-container form .btn-send-messageDirect {
-  justify-self: end;
+  justify-self: flex-end;
   background: #1c003b;
   border-radius: 5px;
   margin-top: 25px;
@@ -475,6 +475,8 @@
   -webkit-transition: .3s;
   transition: .3s;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,9 +486,36 @@
   grid: 3/4;
 }
 
+.contact .messageDirect-container form .btn-send-messageDirect:hover {
+  -webkit-box-shadow: 0 0 10px #00000086;
+          box-shadow: 0 0 10px #00000086;
+}
+
+.contact .messageDirect-container form .btn-send-messageDirect:hover .left {
+  left: 0;
+}
+
+.contact .messageDirect-container form .btn-send-messageDirect:hover .right {
+  right: 0;
+}
+
+.contact .messageDirect-container form .btn-send-messageDirect:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact .messageDirect-container form .btn-send-messageDirect:active .left {
+  left: 0;
+}
+
+.contact .messageDirect-container form .btn-send-messageDirect:active .right {
+  right: 0;
+}
+
 .contact .messageDirect-container form .btn-send-messageDirect h3 {
   font-size: 1rem;
   color: #fff;
+  z-index: 10;
 }
 
 .contact .messageDirect-container form .btn-send-messageDirect i {
@@ -494,18 +523,24 @@
   -webkit-transition: .5s;
   transition: .5s;
   color: #ffffff;
+  z-index: 10;
 }
 
-.contact .messageDirect-container form .btn-send-messageDirect:hover {
-  -webkit-box-shadow: 0 0 10px #00000086;
-          box-shadow: 0 0 10px #00000086;
+.contact .messageDirect-container form .btn-send-messageDirect span {
+  position: absolute;
+  background: #008080;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-.contact .messageDirect-container form .btn-send-messageDirect:active {
-  -webkit-transition: 0;
-  transition: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.contact .messageDirect-container form .btn-send-messageDirect .right {
+  background: #a5a6c7;
+  left: inherit;
+  right: -100%;
 }
 
 @media (max-width: 800px) {
@@ -653,6 +688,16 @@
   .contact .messageDirect-container form .btn-send-messageDirect:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .contact .messageDirect-container form .btn-send-messageDirect:hover:hover {
+    -webkit-box-shadow: 0 0 10px #00000086;
+            box-shadow: 0 0 10px #00000086;
+  }
+  .contact .messageDirect-container form .btn-send-messageDirect:hover:hover .left {
+    left: -100%;
+  }
+  .contact .messageDirect-container form .btn-send-messageDirect:hover:hover .right {
+    right: -100%;
   }
 }
 /*# sourceMappingURL=contact.css.map */

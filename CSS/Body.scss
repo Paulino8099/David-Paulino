@@ -185,7 +185,7 @@ body {
 		transition: 0.5s;
 		text-decoration: none;
 		opacity: 0;
-		z-index: 20;
+		z-index: 100;
 		position: fixed;
 		place-items: center;
 
@@ -269,7 +269,7 @@ body {
 			// btn download
 			.btn-download-aside-studies {
 				color: #ffffff;
-				font-size: 15px;
+				font-size: 1.5rem;
 				top: 0;
 				left: 0;
 				margin: 5px;
@@ -278,6 +278,7 @@ body {
 				stroke: #00ff00;
 				stroke-width: 10px;
 				animation: animate 1s linear infinite;
+				animation-play-state: paused;
 				@keyframes animate {
 					0% {
 						stroke-dashoffset: 0;
@@ -293,7 +294,7 @@ body {
 			// btn close
 			.btn-close-aside-studies {
 				color: #ffffff;
-				font-size: 15px;
+				font-size: 1.5rem;
 				top: 0;
 				right: 0;
 				margin: 5px;
@@ -305,7 +306,7 @@ body {
 			}
 			// title
 			.title-aside-studies {
-				width: 90%;
+				width: 80%;
 				color: #ffffff;
 				margin-bottom: 10px;
 
@@ -313,7 +314,7 @@ body {
 				h3 {
 					justify-self: center;
 					text-align: center;
-					font-size: 1rem;
+					font-size: 1.3rem;
 				}
 			}
 			// media

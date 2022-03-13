@@ -35,11 +35,10 @@
 		}
 		// icon
 		i {
-			color: #008080;
+			color: #4a4c7e;
 			transition: 0.5s;
 		}
 	}
-
 	// contact (content)
 	.contact-content {
 		width: 90%;
@@ -270,7 +269,7 @@
 						&.active {
 							&::placeholder {
 								color: #ff0000;
-								font-size: 1.5rem;
+								font-size: 1.2rem;
 							}
 						}
 						&::placeholder {
@@ -301,7 +300,7 @@
 				&.active {
 					&::placeholder {
 						color: #ff0000;
-						font-size: 1.5rem;
+						font-size: 1.2rem;
 					}
 				}
 				&::placeholder {
@@ -316,7 +315,7 @@
 			}
 			// btn send
 			.btn-send-messageDirect {
-				justify-self: end;
+				justify-self: flex-end;
 				background: #1c003b;
 				border-radius: 5px;
 				margin-top: 25px;
@@ -328,25 +327,55 @@
 				cursor: pointer;
 				transition: .3s;
 				text-decoration: none;
+				position: relative;
+				overflow: hidden;
 
 				display: flex;
 				grid-column: 1/7;
 				grid: 3/4;
+				&:hover {
+					box-shadow: 0 0 10px #00000086;
+					.left {
+						left: 0;
+					}
+					.right {
+						right: 0;
+					}
+				}
+				&:active {
+					box-shadow: none;
+					.left {
+						left: 0;
+					}
+					.right {
+						right: 0;
+					}
+				}
 				h3 {
 					font-size: 1rem;
 					color: #fff;
+					z-index: 10;
 				}
 				i {
 					font-size: 1.5rem;
 					transition: .5s;
 					color: #ffffff;
+					z-index: 10;
 				}
-				&:hover {
-					box-shadow: 0 0 10px #00000086;
+				span {
+					position: absolute;
+					background: #008080;
+					width: 50%;
+					height: 100%;
+					top: 0;
+					left: -100%;
+					transition: .5s;
 				}
-				&:active {
-					transition: 0;
-					box-shadow: none;
+				
+				.right {
+					background: #a5a6c7;
+					left: inherit;
+					right: -100%;
 				}
 			}
 		}
@@ -499,6 +528,15 @@
 					}
 					&:hover {
 						box-shadow: none; //edit (delete: [0 0 10px #00000086], add: none)
+						&:hover {
+							box-shadow: 0 0 10px #00000086;
+							.left {
+								left: -100%; //edit (remove: 0, add: -100%)
+							}
+							.right {
+								right: -100%; //edit (remove: 0, add: -100%)
+							}
+						}
 					}
 				}
 			}
