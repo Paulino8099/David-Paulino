@@ -367,10 +367,4 @@ body .aside-studies .aside-studies-content .media-aside-studies img {
     font-size: 1.5rem;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #ff0000;
-  }
-}
 /*# sourceMappingURL=Body.css.map */
