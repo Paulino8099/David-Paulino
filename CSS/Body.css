@@ -42,9 +42,14 @@ html {
   --bgBlack50: #00000050;
   --bgWhite: #ffffff;
   --bgdarkMode: #e4f5ef;
+  --colorBlack: #000000;
+  --colorBlack50: #00000050;
+  --colorWhite: #ffffff;
+  --colordarkMode: #e4f5ef;
   --shWhite: #ffffff;
   --shBlack: #000000;
   --textPurple: #4a4c7e;
+  --textWhite: #ffffff;
   --textWhite: #000000;
   --textGray1: #777777;
   --textGray2: #444444;
@@ -229,35 +234,38 @@ body .btn-start i {
 
 body .aside-studies {
   position: fixed;
-  width: 0;
-  height: 0;
+  width: 100%;
+  height: 100%;
   -webkit-transition: .3s;
   transition: .3s;
+  top: 0;
+  left: 0;
   opacity: 0;
   pointer-events: none;
-  top: calc(.5%);
-  left: calc(50% - 15%);
   display: -ms-grid;
   display: grid;
 }
 
 body .aside-studies.active {
-  width: 30%;
-  height: 99%;
   z-index: 21000;
   opacity: 1;
   pointer-events: visible;
 }
 
+body .aside-studies.active .aside-studies-content {
+  width: 30%;
+}
+
 body .aside-studies .aside-studies-content {
-  width: 100%;
+  width: 0;
   background: #4a4c7e;
   border-radius: 5px;
   place-self: center;
-  place-items: center;
   padding: 10px 0;
   overflow: hidden;
   position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
   display: -ms-grid;
   display: grid;
 }
@@ -360,7 +368,7 @@ body .aside-studies .aside-studies-content .media-aside-studies img {
   }
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   body {
     background: #ff0000;
   }

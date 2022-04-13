@@ -107,7 +107,7 @@ window.addEventListener('scroll', () => {
     let sections = document.querySelectorAll('.section');
 
     /**
-     * ?observador de sesiones...
+     * observador de sesiones...
      */
     const obser = (entry, salida) => {
         entry.forEach(function (entry) {

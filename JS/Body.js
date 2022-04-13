@@ -5,32 +5,6 @@
 // });
 
 /**
- * *observer
- */
-// obser();
-function obser() {
-    const imagen1 = document.querySelector('.messageDirect-container');
-
-    const cargarImagen = (entry, salida) => {
-
-        entry.forEach((entrada) => {
-            if (entrada.isIntersecting) {
-                entrada.target.style.opacity = "0";
-            } else {
-                entrada.target.style.opacity = "1";
-            }
-        });
-    };
-
-    const observador = new IntersectionObserver(cargarImagen, {
-        root: null,
-        rootMargin: '500px 0px 100px 0px',
-        threshold: 1.0
-    });
-
-    observador.observe(imagen1);
-};
-/**
  * *indicador scroll
 */
 // indicador de scrolleo en la parte izquierda de la página
@@ -159,38 +133,66 @@ function darkModeConfig() {
     onOff();
     function onOff() {
         if (localStorage.getItem('darkMode') == '1') {
-            //bg de las secciones {"body",}
+            /**
+             * *bg
+             */
             document.documentElement.style.setProperty('--bgdarkMode', '#1a2c2c');
-            //bg de {"codigos QR"}
-            document.documentElement.style.setProperty('--bgWhite', '#ffffff40');
-            //bg de {"codigos QR"}
+            document.documentElement.style.setProperty('--bgWhite', '#222222');
             document.documentElement.style.setProperty('--bgBlack50', '#ffffff40');
 
-            //textos de {"mis Hobbys", "Qué me apasiona", "Datos Cualidades y Características"}
+            /**
+             * *color
+             */
+            document.documentElement.style.setProperty('--colorWhite', '#222222');
+
+            /**
+             * *text
+             */
             document.documentElement.style.setProperty('--textGray2', '#ffffff');
-            //textos de {"pensamiento", "redes sociales", "direcciones"}
             document.documentElement.style.setProperty('--textGray1', '#ffffffbf');
-            //textos de {"pensamiento (author)"}
             document.documentElement.style.setProperty('--textBlack', '#ffffff');
 
+            /**
+             * *special
+             */
+            //texto del texto del código QR de "gitHub"
+            document.querySelector('.content-gitHubQR').children[1].style.color = '#505050';
+
+            /**
+             * *option
+             */
             btnDarkMode.classList.add('active');
             btnDarkModeLogo.classList.add('active');
             document.querySelector('.head').classList.add('darkMode');
         } else {
-            //bg de las secciones {"body",}
+            /**
+             * *bg
+             */
             document.documentElement.style.setProperty('--bgdarkMode', '#e4f5ef');
-            //bg de {"codigos QR"}
             document.documentElement.style.setProperty('--bgWhite', '#ffffff');
-            //bg de {"codigos QR"}
             document.documentElement.style.setProperty('--bgBlack50', '#00000040');
 
-            //textos de {"mis Hobbys", "Qué me apasiona", "Datos Cualidades y Características"}
+            /**
+             * *color
+             */
+            document.documentElement.style.setProperty('--colorWhite', '#ffffff');
+
+            /**
+             * *text
+             */
             document.documentElement.style.setProperty('--textGray2', '#444444');
-            //textos de {"pensamiento", "redes sociales", "direcciones"}
             document.documentElement.style.setProperty('--textGray1', '#777777');
-            //textos de {"pensamiento (author)"}
             document.documentElement.style.setProperty('--textBlack', '#000000');
 
+            /**
+             * *special
+             */
+            //texto del texto del código QR de "gitHub"
+            document.querySelector('.content-gitHubQR').children[1].style.color = '#202020';
+
+            /**
+             * *option
+             */
             btnDarkMode.classList.remove('active'); //btn "darkMode"
             btnDarkModeLogo.classList.remove('active'); //btn darkMode del logo 
             document.querySelector('.head').classList.remove('darkMode');

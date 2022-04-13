@@ -120,6 +120,8 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   row-gap: 15px;
+  -webkit-transition: .3s;
+  transition: .3s;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(50px, 100px))[3];
@@ -142,11 +144,11 @@
 }
 
 .contact .contact-content .redes .logos-redes a i {
-  -webkit-transition: .3s;
-  transition: .3s;
   pointer-events: none;
   font-size: calc(1rem + 3vw);
   z-index: 50;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .contact .contact-content .redes .logos-redes a h3 {
@@ -169,6 +171,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(50px, 100px))[3];
@@ -182,6 +186,8 @@
           box-shadow: inset 0 0 5px #00000080, 0 3px 5px var(--bgBlack50);
   border-radius: 5px;
   background: var(--bgWhite);
+  -webkit-transition: .3s;
+  transition: .3s;
   display: -ms-grid;
   display: grid;
 }
@@ -190,11 +196,15 @@
   background: none;
   pointer-events: none;
   font-size: .8rem;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .contact .contact-content .redes .codigosQR-redes div img {
   pointer-events: none;
   width: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .contact .contact-content .addresses {
@@ -271,13 +281,16 @@
       justify-self: center;
 }
 
-.contact .messageDirect-container span {
+.contact .messageDirect-container .img-area-messageDirect {
   width: 50%;
+  opacity: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
   display: -ms-grid;
   display: grid;
 }
 
-.contact .messageDirect-container span img {
+.contact .messageDirect-container .img-area-messageDirect img {
   place-self: center;
   width: 80%;
   place-self: center;
@@ -329,7 +342,7 @@
 }
 
 .contact .messageDirect-container form .input-content span i {
-  color: #ffffff;
+  color: var(--colorWhite);
   font-size: 2rem;
 }
 
@@ -340,6 +353,7 @@
   padding-left: 10px;
   margin-left: 10px;
   border-radius: 10px;
+  background: var(--bgWhite);
 }
 
 .contact .messageDirect-container form .input-content span input.active::-webkit-input-placeholder {
@@ -394,6 +408,7 @@
 
 .contact .messageDirect-container form textarea {
   color: #9e9e9e;
+  background: var(--bgWhite);
   border-radius: 10px;
   padding: 10px;
   font-size: 1.2rem;
@@ -575,8 +590,8 @@
   width: 150%;
   height: 25px;
   position: absolute;
-  top: calc(50% - 12px);
   left: calc(50% - 75%);
+  top: calc(50% - 12px);
   -webkit-animation: animate-span 10s linear infinite;
           animation: animate-span 10s linear infinite;
 }
@@ -628,6 +643,7 @@
   }
   .contact .contact-content .redes .logos-redes a i {
     font-size: 3rem;
+    color: var(--c);
   }
   .contact .contact-content .redes .logos-redes a h3 {
     font-size: 1rem;
@@ -657,14 +673,14 @@
     background: -webkit-gradient(linear, left top, right top, from(#a5a6c7), color-stop(55%, #a5a6c7), color-stop(55%, #4a4c7e), to(#4a4c7e));
     background: linear-gradient(90deg, #a5a6c7 0%, #a5a6c7 55%, #4a4c7e 55%, #4a4c7e 100%);
   }
-  .contact .messageDirect-container span {
+  .contact .messageDirect-container .img-area-messageDirect {
     margin-top: 15px;
     width: 100%;
     height: 35%;
     display: -ms-grid;
     display: grid;
   }
-  .contact .messageDirect-container span img {
+  .contact .messageDirect-container .img-area-messageDirect img {
     width: 230px;
   }
   .contact .messageDirect-container form {
@@ -673,7 +689,7 @@
     height: 60%;
   }
   .contact .messageDirect-container form .input-content span {
-    background: #ffffff;
+    background: var(--bgWhite);
     border-radius: 10px;
     width: 90%;
     padding: 5px;

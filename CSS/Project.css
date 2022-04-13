@@ -238,15 +238,22 @@
           justify-content: space-evenly;
   overflow: hidden;
   margin-top: 50px;
+  -webkit-animation: 2s;
+          animation: 2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.project .padding-box img {
-  width: 10%;
+.project .padding-box.active img {
   -webkit-animation: animate 3s linear infinite;
           animation: animate 3s linear infinite;
+  -webkit-animation-delay: calc(.1s * var(--i));
+          animation-delay: calc(.1s * var(--i));
+}
+
+.project .padding-box img {
+  width: 10%;
 }
 
 @-webkit-keyframes animate {
@@ -254,21 +261,19 @@
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
-  25% {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+  10% {
+    -webkit-transform: rotate(360deg) scale(1.2);
+            transform: rotate(360deg) scale(1.2);
+    -webkit-filter: drop-shadow(0 0 5px #fff);
+            filter: drop-shadow(0 0 5px #fff);
   }
   50% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  75% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -webkit-filter: drop-shadow(0 0 5px #008080);
+            filter: drop-shadow(0 0 5px #008080);
   }
   100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
@@ -277,21 +282,19 @@
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
-  25% {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+  10% {
+    -webkit-transform: rotate(360deg) scale(1.2);
+            transform: rotate(360deg) scale(1.2);
+    -webkit-filter: drop-shadow(0 0 5px #fff);
+            filter: drop-shadow(0 0 5px #fff);
   }
   50% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  75% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -webkit-filter: drop-shadow(0 0 5px #008080);
+            filter: drop-shadow(0 0 5px #008080);
   }
   100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 

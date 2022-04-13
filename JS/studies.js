@@ -2,7 +2,7 @@
 let cards = document.querySelectorAll('.studies-content');
 
 /**
- * ?abriendo los certificados
+ * *abriendo los certificados
  */
 //abrir los certificados de cada tarjeta al dar click en abrir
 asideFunctions();
@@ -23,19 +23,19 @@ function asideFunctions() {
             let descriptionCard = e.target.parentNode.parentNode.children[2].children[2].children[2].innerText;
 
             //title cards
-            console.log(titleCard);
-            // img cards
-            console.log(`imagen card: ${imgCard}` );
-            // pdf cards
-            console.log(`pdf card: ${pdfCard}`);
-            // description cards
-            console.log(`description card: ${descriptionCard}`);
+            // console.log(titleCard);
+            // // img cards
+            // console.log(`imagen card: ${imgCard}` );
+            // // pdf cards
+            // console.log(`pdf card: ${pdfCard}`);
+            // // description cards
+            // console.log(`description card: ${descriptionCard}`);
 
             /**
              * ?onOff aside float
              */
             // cerrar ventana al dar click en btn close
-            if (e.target.classList.value == 'fa-solid fa-square-up-right btnRipples') {
+            if (e.target.classList.value == 'fa-solid fa-square-up-right') {
                 // open aside (click btns)
                 asideStudies.classList.add('active'); //aside studies (container)
                 backface.classList.add('active'); //aside studies (container)
@@ -60,7 +60,7 @@ function asideFunctions() {
             function dpw() {
                 // title aside
                 titleAside.innerHTML = `
-                                        <h3>${ titleCard }</h3>
+                                        <h3>${titleCard}</h3>
                                         `;
                 // media aside
                 mediaAside.innerHTML = `
@@ -77,7 +77,7 @@ function asideFunctions() {
             function officePack() {
                 // title aside
                 titleAside.innerHTML = `
-                                        <h3>${ titleCard }</h3>
+                                        <h3>${titleCard}</h3>
                                         `;
                 // media aside
                 mediaAside.innerHTML = `
@@ -87,7 +87,7 @@ function asideFunctions() {
                 btnDownload.setAttribute('href', `${pdfCard}`);
                 btnDownload.setAttribute('download', `${descriptionCard}`);
             }
-            
+
             /**
              * ?card representante teléfonico
              */
@@ -95,7 +95,7 @@ function asideFunctions() {
             function telephoneRepresentative() {
                 // title aside
                 titleAside.innerHTML = `
-                                        <h3>${ titleCard }</h3>
+                                        <h3>${titleCard}</h3>
                                         `;
                 // media aside
                 mediaAside.innerHTML = `
@@ -139,14 +139,14 @@ function asideFunctions() {
                 btnDownload.setAttribute('href', `${pdfCard}`);
                 btnDownload.setAttribute('download', `${descriptionCard}`);
             }
-                /**
-             * ?card window NT
-             */
+            /**
+         * ?card window NT
+         */
             windowNT();
             function windowNT() {
                 // title aside
                 titleAside.innerHTML = `
-                                        <h3>${ titleCard }</h3>
+                                        <h3>${titleCard}</h3>
                                         `;
                 // media aside
                 mediaAside.innerHTML = `
@@ -163,7 +163,7 @@ function asideFunctions() {
             function secundaria() {
                 // title aside
                 titleAside.innerHTML = `
-                                        <h3>${ titleCard }</h3>
+                                        <h3>${titleCard}</h3>
                                         `;
                 // media aside
                 mediaAside.innerHTML = `
@@ -175,4 +175,35 @@ function asideFunctions() {
             }
         });
     });
+};
+
+
+/**
+ * *observador de linea horizontal animada
+ */
+observer()
+function observer() {
+    // observador de los contenedores animado para que cuando estos estén en la pantalla pues comiencen 
+    // a animarse.
+    let animateCicle = document.querySelector('.studies .padding-box');
+
+    const chargeAnimate = (entry, salida) => {
+        entry.forEach((entradas) => {
+            // cada vez que los contenedores de animación estén dentro de la pantalla, estos tendrán una animación.
+
+            if (entradas.isIntersecting) {
+                animateCicle.classList.add('active');
+            } else {
+                animateCicle.classList.remove('active');
+            }
+        });
+
+    };
+
+    const observador = new IntersectionObserver(chargeAnimate, {
+        root: null,
+        rootMargin: "25%",
+    });
+
+    observador.observe(animateCicle);
 };

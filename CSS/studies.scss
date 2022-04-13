@@ -135,24 +135,27 @@
 		margin-top: 50px;
 
 		display: flex;
+		&.active {
+			img {
+				animation: animate 3s linear infinite;
+				animation-delay: calc(.1s * var(--i));
+			}
+		}
 		img {
 			width: 10%;
-			animation: animate 3s linear infinite;
 			@keyframes animate {
 				0% {
 					transform: rotate(0);
 				}
-				25% {
-					transform: rotate(45deg);
+				10% {
+					transform: rotate(360deg) scale(1.2);
+					filter: drop-shadow(0 0 5px #fff);
 				}
 				50% {
-					transform: rotate(0deg);
-				}
-				75% {
-					transform: rotate(-45deg);
+					filter: drop-shadow(0 0 5px #008080);
 				}
 				100% {
-					transform: rotate(0);
+					transform: rotate(0deg);
 				}
 			}
 		}

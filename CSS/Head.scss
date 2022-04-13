@@ -248,7 +248,7 @@
 			transition: 0.3s;
 		}
 	}
-	// person data float
+	// datos flotantes personales
 	.myData-float {
 		width: 100%;
 		height: 100%;
@@ -265,7 +265,7 @@
 			opacity: 1;
 			.datosPersonales-content {
 				pointer-events: visible;
-				width: 30%;
+				width: 400px;
 				height: 80%;
 			}
 		}
@@ -303,6 +303,7 @@
 				height: 100%;
 				background: #13424280;
 				position: absolute;
+				place-self: center;
 				overflow: hidden;
 				overflow-y: auto;
 
@@ -315,7 +316,7 @@
 					text-shadow: 0 0 5px #fff;
 					b {
 						color: #0E6251;
-						text-shadow: none;                                                
+						text-shadow: 0 0 2px #fff;                                             
 					}
 				}
 				&::-webkit-scrollbar {

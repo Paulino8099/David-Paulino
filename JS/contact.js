@@ -4,7 +4,11 @@ let inputName = document.querySelector('.inputName-messageDirect');
 let inputEmail = document.querySelector('.inputEmail-messageDirect');
 let InputMessage = document.querySelector('.inputMessage-messageDirect');
 
+/**
+ * *btn enviar datos
+ */
 btnSend.addEventListener('click', function () {
+    // btn send para enviar datos de los imputs
     inputNameConfig();
     inputEmailConfig();
     inputMessageConfig();
@@ -12,7 +16,7 @@ btnSend.addEventListener('click', function () {
     if (inputName.value != '' && inputEmail.value != '' && InputMessage.value != '') {
         // datos a enviar por parte del usuario al dar click en "btn send" siempre y cuando no haya ningún campo vacío
         btnSend.setAttribute('href', `mailto:dapa7928@gmail.com?subject=Mi nombre es ${inputName.value}. Mi correo electrónico es ${inputEmail.value}&body=${InputMessage.value}`);
-        
+
         // borrando valores de los inputs al hacer click en "btn send" siempre y cuando no haya nigún campo vacío
         inputName.value = "";
         inputEmail.value = "";
@@ -22,8 +26,40 @@ btnSend.addEventListener('click', function () {
     }
 });
 
+
 /**
- * ?config name
+ * *observador de imagen
+ */
+observer();
+function observer() {
+    // observador de la imagen del contenedor de "mensaje directo"
+    const img = document.querySelector('.img-area-messageDirect');
+
+    const cargarImagen = (entry, salida) => {
+
+        entry.forEach((entradas) => {
+            if (entradas.isIntersecting) {
+                entradas.target.style.transform = "translateX(0) rotate(0)";
+                entradas.target.style.transition = "3s";
+                entradas.target.style.opacity = "1";
+            } else {
+                entradas.target.style.transform = "translateX(50%) rotate(60deg)";
+                entradas.target.style.transition = "0";
+                entradas.target.style.opacity = "0";
+            };
+        });
+    };
+
+    const observador = new IntersectionObserver(cargarImagen, {
+        root: null,
+        rootMargin: '25%'
+    });
+
+    observador.observe(img);
+};
+
+/**
+ * *config name
  */
 function inputNameConfig() {
     if (inputName.value == '') {
@@ -36,7 +72,7 @@ function inputNameConfig() {
     });
 }
 /**
- * ?config email
+ * *config email
  */
 function inputEmailConfig() {
     if (inputEmail.value == '') {
@@ -49,7 +85,7 @@ function inputEmailConfig() {
     });
 }
 /**
- * ?config message
+ * *config message
  */
 function inputMessageConfig() {
     if (InputMessage.value == '') {
